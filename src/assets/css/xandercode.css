@@ -1,20 +1,30 @@
 :root {
+  --bg1: rgba(248, 235, 218, 0.9);
+  --bg2: #ccc;
+
+  --tc1: #2b2a29;
+  --x1dark: #4b4b4b;
+  --x1grey: #929292;
+  --x1greyDark: #525252;
+  --x1greyLight: #aaaaaa;
+  --x1greySuperLight: #f4f4f4;
+
+  --color1: #ff8000;
+  --color2: #f5c98c;
+
   --colorFFF: #fff;
   --color000: #000;
   --colorLightGrey: #f6f6fa;
   --colorGrey: #bebebe;
   --colorDarkGrey: #6b6b6b;
-  --color1: rgba(65, 51, 40, 0.6);
-  --color2: rgba(65, 51, 40, 0.8);
+
   /* --redFill: #f76060; */
   --redFill: #ff4141;
   --redFillhover: #ff2525;
   --tColor: #413328;
-  --x1dark: #4b4b4b;
-  --x1grey: #929292;
-  --x1greyLight: #aaaaaa;
+
   --x1border: #e0e0e0;
-  --x1greySuperLight: #cccccc;
+
   --x1greyDark: #525252;
   --title1bg: #e6e6e6;
 }
@@ -28,7 +38,6 @@
   width: 100%;
   max-width: 1280px;
   margin: 0 auto;
-  padding: 0 0 0 0;
 }
 
 .colorFFF {

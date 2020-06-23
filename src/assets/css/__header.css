@@ -1,0 +1,150 @@
+.header {
+  padding: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  /* background: var(--bg1); */
+}
+
+.topLine {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.topLine:before {
+  content: "";
+  height: 1px;
+  margin-right: 15px;
+  /* margin-left: 15px; */
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  background-color: var(--bg2);
+}
+.topLine:after {
+  content: "";
+  height: 1px;
+  /* margin-right: 15px; */
+  margin-left: 15px;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  background-color: var(--bg2);
+}
+
+.topLine__inner {
+  display: flex;
+  align-items: center;
+}
+
+.topLine__inner span {
+  font-size: 0.875rem;
+  line-height: 1;
+}
+.topLine__inner a {
+  font-size: 0.875rem;
+  line-height: 1;
+  margin-left: 20px;
+  color: var(--tc1);
+  text-decoration: none;
+}
+.topLine__inner a:hover {
+  text-decoration: underline;
+}
+
+.header__line {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 5px 0;
+}
+
+.header__phoneArea {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.header__phoneItem {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.3125rem;
+}
+.header__phoneItem span {
+  font-size: 0.875rem;
+  line-height: 1;
+  color: var(--x1grey);
+  margin-right: 0.625rem;
+}
+.header__phoneItem a {
+  font-size: 1.125rem;
+  color: var(--tc1);
+  text-decoration: none;
+}
+.header__phoneItem a:hover {
+  text-decoration: underline;
+}
+
+.header__phoneItemText {
+  font-size: 0.75rem;
+  line-height: 1;
+  color: var(--x1grey);
+}
+
+.header__callAction {
+  border: 1px solid var(--bg2);
+  padding: 10px 20px;
+  font-size: 1rem;
+  line-height: 1;
+  color: var(--color1);
+  cursor: pointer;
+}
+.header__callAction:hover {
+  border: 1px solid var(--color1);
+}
+
+.socialLink {
+  display: flex;
+}
+
+.socialLink a {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  margin: 0 2px;
+  opacity: 0.8;
+}
+.socialLink a:hover {
+  opacity: 1;
+}
+
+.socialLink a i {
+  /* color: var(--color1); */
+  font-size: 1rem;
+  color: #fff;
+}
+
+.sVk {
+  background: #2241a4;
+}
+
+.sIg {
+  background: #cc2779;
+}
+
+.sFb {
+  background: #417bf0;
+}
+
+.sOk {
+  background: #e47d08;
+}

@@ -1,0 +1,56 @@
+.topMenu__area {
+  background: var(--x1greySuperLight);
+}
+
+.topMenu__wrapper {
+  display: flex;
+  align-items: center;
+  padding: 10px 10px;
+}
+
+.topMenu__outer {
+  flex: 1;
+  width: 100%;
+}
+
+.topMenu {
+  display: flex;
+  align-items: center;
+  /* justify-content: flex-end; */
+}
+
+.topMenu li {
+  margin-right: 2rem;
+  list-style: none;
+  margin-left: auto;
+  position: relative;
+  float: right;
+}
+.topMenu li:last-child {
+  margin-right: 0;
+}
+.topMenu li a {
+  font-size: 1rem;
+  text-decoration: none;
+  color: var(--tc1);
+}
+.topMenu li a:hover {
+  text-decoration: underline;
+  color: var(--color1);
+}
+
+li.endLeftBlock {
+  flex: 1;
+}
+
+.topSearch {
+  /* width: 40px; */
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-left: 40px;
+  cursor: pointer;
+}
+.topSearch i {
+  font-size: 1.25rem;
+}
