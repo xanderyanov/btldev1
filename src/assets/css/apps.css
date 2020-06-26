@@ -29,6 +29,12 @@
 @import "__mainBox.css";
 @import "__mainBox_media.css";
 
+@import "__blog.css";
+@import "__blog_media.css";
+
+@import "__newsInMain.css";
+@import "__newsInMain_media.css";
+
 /* @import "__slider1.css";
 @import "__slider1_media.css"; */
 

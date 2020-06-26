@@ -20,3 +20,7 @@ body {
 .site__footer {
   position: relative;
 }
+
+.title {
+  margin-bottom: 1.25rem;
+}

@@ -1,0 +1,52 @@
+.newsInMain__area {
+  padding-top: 1.25rem;
+}
+
+.newsInMain {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -10px;
+}
+
+.newsInMainBox__outer {
+  width: 33.333%;
+  padding: 10px;
+}
+
+.shopLinkInMain__outer {
+  width: 66.666%;
+  padding: 10px;
+}
+
+.newsInMainBox__title {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 0.625rem;
+}
+
+.newsInMainBox__title h3 {
+  margin-bottom: 0;
+}
+
+.newsInMainBox__redmore {
+  text-decoration: none;
+  font-size: 0.875rem;
+  color: var(--tc0);
+}
+.newsInMainBox__redmore:hover {
+  text-decoration: underline;
+}
+
+.newsInMainBox {
+  display: block;
+  text-decoration: none;
+  position: relative;
+  background-size: cover;
+}
+
+.newsInMainBox img {
+  display: block;
+  width: 100%;
+}
