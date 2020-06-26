@@ -5,7 +5,7 @@
 .topMenu__wrapper {
   display: flex;
   align-items: center;
-  padding: 10px 10px;
+  padding: 10px 0;
 }
 
 .topMenu__outer {
@@ -32,7 +32,7 @@
 .topMenu li a {
   font-size: 1rem;
   text-decoration: none;
-  color: var(--tc1);
+  color: var(--tc0);
 }
 .topMenu li a:hover {
   text-decoration: underline;
@@ -53,4 +53,5 @@ li.endLeftBlock {
 }
 .topSearch i {
   font-size: 1.25rem;
+  color: var(--tc0);
 }

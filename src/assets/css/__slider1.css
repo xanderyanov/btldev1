@@ -1,10 +1,11 @@
 .mainSlider__area {
-  margin: 1.125rem auto 0;
+  margin: 1.25rem auto 0;
   display: flex;
 }
 
 .mainSlider__outer {
   width: 75%;
+  padding-right: 0.3125rem;
 }
 .mainSlider {
   width: 100%;
@@ -121,7 +122,7 @@
 
 .swiper-button-prev1:hover,
 .swiper-button-next1:hover {
-  background: var(--redFill);
+  background: var(--tc0);
 }
 
 .swiper-button-prev1:hover i,
@@ -164,7 +165,7 @@
 
 .swiper-pagination-bullet-active {
   opacity: 1;
-  background-color: var(--redFill);
+  background-color: var(--tc0);
 }
 
 .swiper-button-next.swiper-button-disabled,
@@ -191,11 +192,19 @@
 
 .mainFirstBox__outer {
   width: 25%;
-  padding-left: 1.25rem;
+  padding-left: 15px;
 }
 
 .mainFirstBox {
   width: 100%;
   height: 100%;
   background: #e7e7e7;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mainFirstBox span {
+  font-size: 2rem;
+  color: var(--x1greyLight);
 }

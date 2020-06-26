@@ -4,19 +4,9 @@ mixin mainSlider
       .mainSlider
         .swiper-container.swiper-container1
           .swiper-wrapper
-            .swiper-slide.swiper-slide1(style='background-image: url(assets/img/slider1/slide1.jpg);')
-              .swiper__cadr
-                .swiper__infoBox
-                  .swiper__infoBoxTitle Детская одежда
-                  .swiper__infoBoxDescription в магазине Каспер
-                  a.swiper__infoBoxLink(href='#') В магазин
+            a.swiper-slide.swiper-slide1(href='#', style='background-image: url(assets/img/slider1/slide1.jpg);')
               img(src='assets/img/slider1cover2.png', alt='')
-            .swiper-slide.swiper-slide1(style='background-image: url(assets/img/slider1/slide2.jpg);')
-              .swiper__cadr
-                .swiper__infoBox
-                  .swiper__infoBoxTitle Одежда для девочек
-                  .swiper__infoBoxDescription Новая летняя коллекция в магазине Каспер
-                  a.swiper__infoBoxLink(href='#') В магазин
+            a.swiper-slide.swiper-slide1(href='#', style='background-image: url(assets/img/slider1/slide2.jpg);')
               img(src='assets/img/slider1cover2.png', alt='')
           // Add Pagination
           .swiper-pagination.swiper-pagination1
@@ -27,3 +17,4 @@ mixin mainSlider
             i.icon-arr-right1
     .mainFirstBox__outer
       .mainFirstBox
+        span БАННЕР

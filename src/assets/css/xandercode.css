@@ -2,6 +2,7 @@
   --bg1: rgba(248, 235, 218, 0.9);
   --bg2: #ccc;
 
+  --tc0: #592004;
   --tc1: #2b2a29;
   --x1dark: #4b4b4b;
   --x1grey: #929292;
@@ -36,7 +37,7 @@
 
 .w1 {
   width: 100%;
-  max-width: 1280px;
+  max-width: 1200px;
   margin: 0 auto;
 }
 
