@@ -105,4 +105,35 @@
 }
 
 .shopLinkInMain__inner {
+  width: 40%;
+  margin-left: auto;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+  align-items: center;
+  justify-content: center;
+}
+.shopLinkInMain__inner span {
+  text-align: center;
+  font-size: 1.125rem;
+  line-height: 1.3;
+  color: var(--tc0);
+  margin-bottom: 1.875rem;
+}
+
+.shopLinkInMain__link {
+  padding: 0.625rem -1.25rem;
+  text-decoration: none;
+}
+
+.shopLinkInMain__link {
+  text-decoration: none;
+  padding: 0.625rem 1.875rem;
+  font-size: 0.875rem;
+  color: #fff;
+  background: var(--link1);
+}
+.shopLinkInMain__link:hover {
+  color: #fff;
 }

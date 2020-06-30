@@ -190,6 +190,135 @@
 }
 /* главный слайдер - конец */
 
+/* slickSlider */
+.juneSlider__area {
+  position: relative;
+  padding-top: 0.625rem;
+}
+
+.juneSlider {
+  width: 100%;
+  position: relative;
+  /* padding-bottom: 2.25rem; */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.slick-list {
+  display: flex;
+  /* order: 1; */
+  /* height: 100%; */
+}
+
+.slick-track {
+  display: flex;
+}
+
+.juneSlider__item {
+  /* height: 300px; */
+  /* float: none; */
+}
+
+.juneSlider__item a {
+  text-decoration: none;
+  display: block;
+  width: 100%;
+  height: 100%;
+  /* pointer-events: none; */
+  outline: none;
+  border: 0;
+  background-size: cover;
+  background-position: center;
+}
+.juneSlider__item a,
+.juneSlider__item a:active,
+.juneSlider__item a:focus {
+  outline: none;
+}
+
+.slick-slide:focus {
+  outline: none !important;
+}
+
+.juneSlider__item.slick-active a {
+  /* pointer-events: all; */
+  border: none !important;
+  outline: none !important;
+}
+
+.juneSlider__item img {
+  display: block;
+  height: 100%;
+  border: none;
+}
+
+.june__slickBtnPrev,
+.june__slickBtnNext {
+  position: absolute;
+  background: rgba(255, 255, 255, 0.8);
+  width: 2.25rem;
+  height: 2.25rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 50%;
+  margin-top: -1.125rem;
+  border-radius: 3px;
+  z-index: 100;
+}
+.june__slickBtnPrev {
+  left: 1.25rem;
+  /* order: 2; */
+}
+.june__slickBtnNext {
+  right: 1.25rem;
+  /* order: 4; */
+}
+.june__slickBtnPrev i,
+.june__slickBtnNext i {
+  color: #000;
+  font-size: 1rem;
+}
+.june__slickBtnPrev:hover,
+.june__slickBtnNext:hover {
+  background: var(--tc0);
+}
+
+.june__slickBtnPrev:hover i,
+.june__slickBtnNext:hover i {
+  color: #fff;
+}
+
+.june__dots {
+  padding-top: 0.625rem;
+  order: 3;
+  display: flex;
+  position: absolute;
+  bottom: 0.3125rem;
+  right: 1.125rem;
+}
+
+.june__dots li {
+  list-style: none;
+}
+
+.june__dots li button {
+  text-indent: -9999px;
+  outline: none;
+  border: none;
+  width: 1rem;
+  height: 1rem;
+  margin: 0 2px;
+  border-radius: 50%;
+  cursor: pointer;
+  background: #fff;
+}
+.june__dots li.slick-active button {
+  background: var(--tc0);
+}
+/* slickSlider-END */
+
 .mainFirstBox__outer {
   width: 25%;
   padding-left: 15px;

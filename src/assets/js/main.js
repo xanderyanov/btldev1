@@ -3,6 +3,25 @@
 // });
 
 $(function () {
+  if ($(".mainSlider__area").length) {
+    $(".juneSlider").slick({
+      dots: true,
+      infinite: true,
+      speed: 300,
+      slidesToShow: 1,
+      adaptiveHeight: false,
+      // centerMode: true,
+      // variableWidth: true,
+      focusOnSelect: true,
+      autoplay: true,
+      autoplaySpeed: 5000,
+      slide: ".juneSlider__item",
+      prevArrow: '<div class="june__slickBtnPrev"><i class="icon-arr-left1"></i></div>',
+      nextArrow: '<div class="june__slickBtnNext"><i class="icon-arr-right1"></i></div>',
+      dotsClass: "june__dots",
+    });
+  }
+
   // главный слайдер на главной
   if ($(".swiper-container1").length) {
     var mySwiper1 = new Swiper(".swiper-container1", {
