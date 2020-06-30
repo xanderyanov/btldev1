@@ -3,15 +3,15 @@
 // });
 
 $(function () {
-  if ($(".mainSlider__area").length) {
+  if ($(".juneSlider__area").length) {
     $(".juneSlider").slick({
       dots: true,
       infinite: true,
       speed: 300,
       slidesToShow: 1,
       adaptiveHeight: false,
-      // centerMode: true,
-      // variableWidth: true,
+      centerMode: true,
+      variableWidth: true,
       focusOnSelect: true,
       autoplay: true,
       autoplaySpeed: 5000,

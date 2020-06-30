@@ -1,5 +1,6 @@
 .mainBox__area {
-  padding-top: 0.625rem;
+  /* padding-top: 0.625rem; */
+  margin-top: -10px;
 }
 
 .mainBox {
