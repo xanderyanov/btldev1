@@ -64,6 +64,14 @@
   padding: 5px 0;
 }
 
+.logo1 {
+  position: relative;
+}
+.logo1 img {
+  width: 100%;
+  display: block;
+}
+
 .header__phoneArea {
   display: flex;
   flex-direction: column;
@@ -96,16 +104,33 @@
   color: var(--x1grey);
 }
 
+.header__rightBtns {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 35%;
+}
+
 .header__callAction {
   border: 1px solid var(--bg2);
-  padding: 10px 20px;
-  font-size: 1rem;
-  line-height: 1;
-  color: var(--color1);
+  padding: 0.625rem 1.25rem;
   cursor: pointer;
 }
 .header__callAction:hover {
   border: 1px solid var(--color1);
+}
+
+.header__callAction span {
+  font-size: 1rem;
+  line-height: 1;
+  color: var(--color1);
+}
+
+.header__callAction i {
+  font-size: 1.25rem;
+  color: var(--color1);
+  line-height: 1;
+  display: none;
 }
 
 .socialLink {

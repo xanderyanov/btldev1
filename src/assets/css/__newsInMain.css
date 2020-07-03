@@ -43,12 +43,23 @@
   display: block;
   text-decoration: none;
   position: relative;
-  background-size: cover;
+  overflow: hidden;
 }
 
-.newsInMainBox img {
+.newsInMainBox__img {
+  width: 100%;
+  position: relative;
+  background-size: cover;
+  transition: all 0.3s;
+}
+
+.newsInMainBox__img img {
   display: block;
   width: 100%;
+}
+
+.newsInMainBox:hover .newsInMainBox__img {
+  transform: scale(1.05);
 }
 
 .newsInMainBox__info {
@@ -123,17 +134,13 @@
 }
 
 .shopLinkInMain__link {
-  padding: 0.625rem -1.25rem;
-  text-decoration: none;
-}
-
-.shopLinkInMain__link {
   text-decoration: none;
   padding: 0.625rem 1.875rem;
   font-size: 0.875rem;
   color: #fff;
   background: var(--link1);
+  transition: all 0.3s;
 }
 .shopLinkInMain__link:hover {
-  color: #fff;
+  background: var(--link1hov);
 }

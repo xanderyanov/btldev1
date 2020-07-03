@@ -3,6 +3,46 @@
 // });
 
 $(function () {
+  // Открытие и закрытие адаптивного меню по кнопке
+  $(".menuButton1__area_JS").click(function (e) {
+    e.preventDefault();
+    if ($(this).hasClass("open")) {
+      $(this).removeClass("open");
+      $(".menuButton1").removeClass("open");
+      $(".topMenuAdaptive__area").slideUp(200);
+    } else {
+      $(this).addClass("open");
+      $(".menuButton1").addClass("open");
+      $(".topMenuAdaptive__area").slideDown(200);
+
+      //подгружает контент активного меню в .am_active
+      // и его родителя в .am_back
+    }
+  });
+  // Закрытие адаптивного меню по кнопке Close
+  $(".topMenuAdaptive__close").click(function () {
+    $(".menuButton1__area_JS").removeClass("open");
+    $(".menuButton1").removeClass("open");
+    $(".topMenuAdaptive__area").slideUp(200);
+  });
+
+  // Открытие и закрытие поиска по кнопке
+  $(".topSearch_JS").click(function (e) {
+    e.preventDefault();
+    if ($(this).hasClass("open")) {
+      $(this).removeClass("open");
+      $(".search1__area").slideUp(200);
+    } else {
+      $(this).addClass("open");
+      $(".search1__area").slideDown(200);
+    }
+  });
+  // Закрытие поиска по кнопке Close
+  $(".search1__close").click(function () {
+    $(".topSearch_JS").removeClass("open");
+    $(".search1__area").slideUp(200);
+  });
+
   if ($(".juneSlider__area").length) {
     $(".juneSlider").slick({
       dots: true,
@@ -19,51 +59,6 @@ $(function () {
       prevArrow: '<div class="june__slickBtnPrev"><i class="icon-arr-left1"></i></div>',
       nextArrow: '<div class="june__slickBtnNext"><i class="icon-arr-right1"></i></div>',
       dotsClass: "june__dots",
-    });
-  }
-
-  // главный слайдер на главной
-  if ($(".swiper-container1").length) {
-    var mySwiper1 = new Swiper(".swiper-container1", {
-      slidesPerView: 1,
-      loop: true,
-      autoplay: {
-        delay: 5500,
-        disableOnInteraction: false,
-      },
-      pagination: {
-        el: ".swiper-pagination1",
-        type: "bullets",
-        dynamicBullets: false,
-        clickable: true,
-      },
-      navigation: {
-        nextEl: ".swiper-button-next1",
-        prevEl: ".swiper-button-prev1",
-      },
-      on: {
-        init: function () {
-          console.log("swiper initialized");
-          $(".swiper-slide").children(".swiper__cadr").removeClass("animationfadeIn").fadeOut(500);
-          setTimeout(function () {
-            $(".swiper-slide-active")
-              .children(".swiper__cadr")
-              .fadeIn(500)
-              .addClass("animated")
-              .addClass("animationfadeIn");
-          }, 500);
-        },
-        slideChange: function () {
-          $(".swiper-slide").children(".swiper__cadr").removeClass("animationfadeIn").fadeOut(500);
-          setTimeout(function () {
-            $(".swiper-slide-active")
-              .children(".swiper__cadr")
-              .fadeIn(500)
-              .addClass("animated")
-              .addClass("animationfadeIn");
-          }, 500);
-        },
-      },
     });
   }
 });

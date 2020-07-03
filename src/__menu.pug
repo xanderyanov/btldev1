@@ -1,6 +1,15 @@
+mixin menuButton1
+  .menuButton1__area.menuButton1__area_JS
+    .menuButton1__text Главное меню
+    .menuButton1
+      span
+      span
+      span
+
 mixin topMenu
   .topMenu__area.w0
     .topMenu__wrapper.w1
+      +menuButton1
       nav.topMenu__outer
         ul.topMenu
           li
@@ -17,5 +26,41 @@ mixin topMenu
             a(href="#") Информация
           li
             a(href="#") Контакты
-      .topSearch
+      .topSearch.topSearch_JS
         i.icon-search1
+
+mixin topMenuAdaptive
+  .topMenuAdaptive__area
+    .topMenuAdaptive__wrapper
+      .topMenuAdaptive__close
+        i.icon-close1
+      nav.topMenuAdaptive__outer
+        ul.topMenuAdaptive
+          li
+            a(href="#") Главная
+          li
+            a(href="#") Услуги
+          li
+            a(href="#") Специалисты
+          li
+            a(href="#") Бренды
+          li
+            a(href="#") Советы эксперта
+          li
+            a(href="#") Информация
+          li
+            a(href="#") Контакты
+
+
+
+mixin search1
+  .search1__area
+    .search1__wrapper
+      .search1__close
+        i.icon-close1
+      .search1__outer
+        .search1__box
+          form.search1(action='#', method='get')
+            input.search1__input(type='text', name='', value='', placeholder='Поиск по сайту...')
+            button.search1__btn(type='submit')
+              i.icon-search1
