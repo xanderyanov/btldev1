@@ -1,0 +1,41 @@
+- var pageTitle = 'Процедуры'
+- var seoKeywords = 'Ключевые слова для страницы'
+- var seoDesc = 'Сео описание для страницы'
+
+include __const
+include __header
+include __menu
+include __breadcrumbs
+include __wideBlock
+include __services
+
+include __footer
+
+
+
+
+<!DOCTYPE html>
+html(lang="ru-RU")
+	+head
+body
+
+	.site__header
+		+header
+		+topMenu
+		+breadcrumbs
+		+wideBlock
+		+services
+
+	.site__center
+		//- +slider1
+
+	.site__footer
+		+footer
+
+
+	+topMenuAdaptive
+	+search1
+
+
+	+scripts
+	

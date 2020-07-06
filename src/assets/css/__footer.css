@@ -1,6 +1,7 @@
 .footer__area {
   background: var(--x1greySuperLight);
   padding: 70px 0;
+  margin-top: 10px;
 }
 
 .footer {

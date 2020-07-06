@@ -36,13 +36,15 @@
 @import "__newsInMain.css";
 @import "__newsInMain_media.css";
 
-/* @import "__slider1.css";
-@import "__slider1_media.css"; */
+@import "__sevices.css";
+@import "__services_media.css";
 
 @import "__footer.css";
 @import "__footer_media.css";
 
-/* @import "__breadcrumbs.css"; */
+@import "__breadcrumbs.css";
+@import "__wideblock.css";
 
+/* в самом низу */
 @import "main.css";
 @import "media.css";
