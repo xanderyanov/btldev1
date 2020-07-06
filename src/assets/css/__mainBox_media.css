@@ -20,7 +20,7 @@
 
 @media only screen and (max-width: 1024px) {
   .mainBox__itemOuter_rightBox .mainBox__item span {
-    display: none;
+    font-size: 0.875rem;
   }
   .mainBox__itemOuter_rightBox .mainBox__item a {
     padding: 0.625rem 1.25rem;
@@ -35,6 +35,9 @@
   .mainBox__area {
     margin-top: -5px;
   }
+  .rightBox__innerCover img:first-child {
+    margin-bottom: 10px;
+  }
 }
 
 @media only screen and (max-width: 920px) {
@@ -44,18 +47,49 @@
   .mainBox__item span {
     height: 40%;
   }
+  .logo140 {
+    display: none;
+  }
+  .logo100 {
+    display: block;
+  }
 }
 
 @media only screen and (max-width: 768px) {
+  .mainBox__itemOuter_rightBox .h-img {
+    display: none;
+  }
+  .mainBox__itemOuter {
+    width: 33.333%;
+  }
+
+  .mainBox__itemOuter_rightBox .kv-img {
+    display: block;
+  }
+  .mainBox__itemOuter.mainBox__itemOuter_big span {
+    font-size: 1rem;
+  }
+  .rightBox__innerCover img:first-child {
+    display: none;
+  }
+  .mainBox__itemOuter_rightBox .mainBox__item a {
+    margin-top: 0.3175rem;
+  }
 }
 
 @media only screen and (max-width: 600px) {
+  .mainBox__itemOuter {
+    width: 50%;
+  }
 }
 
 @media only screen and (max-width: 480px) {
 }
 
 @media only screen and (max-width: 400px) {
+  .mainBox__itemOuter {
+    width: 100%;
+  }
 }
 
 @media only screen and (max-width: 320px) {
