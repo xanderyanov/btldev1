@@ -11,6 +11,9 @@
   .juneSlider__item {
     height: 250px;
   }
+  .julySlider.swiper-container {
+    height: 240px;
+  }
 }
 
 @media only screen and (max-width: 920px) {
@@ -23,16 +26,25 @@
   .juneSlider__item {
     height: 200px;
   }
+  .julySlider.swiper-container {
+    height: 200px;
+  }
 }
 
 @media only screen and (max-width: 600px) {
   .juneSlider__item {
     height: 150px;
   }
+  .julySlider.swiper-container {
+    height: 150px;
+  }
 }
 
 @media only screen and (max-width: 480px) {
   .juneSlider__item {
+    height: 130px;
+  }
+  .julySlider.swiper-container {
     height: 130px;
   }
 }
@@ -42,6 +54,9 @@
 
 @media only screen and (max-width: 320px) {
   .juneSlider__item {
+    height: 100px;
+  }
+  .julySlider.swiper-container {
     height: 100px;
   }
 }

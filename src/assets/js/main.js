@@ -61,4 +61,40 @@ $(function () {
       dotsClass: "june__dots",
     });
   }
+
+  if ($(".julySlider__outer").length) {
+    var galleryTop = new Swiper(".julySlider", {
+      speed: 600,
+      slidesPerView: "auto",
+      centeredSlides: true,
+      spaceBetween: 5,
+      loop: true,
+      slideToClickedSlide: true,
+      autoplay: {
+        delay: 5500,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: ".julySlider__pagination",
+        type: "bullets",
+        dynamicBullets: false,
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".julySlider__Next",
+        prevEl: ".julySlider__Prev",
+      },
+      breakpoints: {
+        640: {
+          spaceBetween: 10,
+        },
+      },
+    });
+    $(".swiper-container").mouseenter(function () {
+      galleryTop.autoplay.stop();
+    });
+    $(".swiper-container").mouseleave(function () {
+      galleryTop.autoplay.start();
+    });
+  }
 });
