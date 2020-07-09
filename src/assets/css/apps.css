@@ -39,8 +39,14 @@
 @import "__sevices.css";
 @import "__services_media.css";
 
+@import "__procedure.css";
+@import "__procedure_media.css";
+
 @import "__footer.css";
 @import "__footer_media.css";
+
+@import "__gallery.css";
+@import "__gallery_media.css";
 
 @import "__breadcrumbs.css";
 @import "__wideblock.css";

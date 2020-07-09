@@ -75,20 +75,44 @@
   .mainBox__itemOuter_rightBox .mainBox__item a {
     margin-top: 0.3175rem;
   }
+  .mainContent {
+    height: auto;
+    background-size: cover;
+  }
+  .mainContent__inner {
+    width: 60%;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.8);
+  }
 }
 
 @media only screen and (max-width: 600px) {
   .mainBox__itemOuter {
     width: 50%;
   }
+  .mainContent {
+    background-position: center center;
+  }
+  .mainContent__inner {
+    width: 80%;
+  }
 }
 
 @media only screen and (max-width: 480px) {
+  .mainContent__inner {
+    width: 100%;
+  }
+  .mainContent {
+    padding: 30px;
+  }
 }
 
 @media only screen and (max-width: 400px) {
   .mainBox__itemOuter {
     width: 100%;
+  }
+  .mainContent {
+    padding: 10px;
   }
 }
 

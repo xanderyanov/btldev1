@@ -1,14 +1,14 @@
-- var pageTitle = 'Главная страница'
+- var pageTitle = 'Страница одной процедуры'
 - var seoKeywords = 'Ключевые слова для страницы'
 - var seoDesc = 'Сео описание для страницы'
 
 include __const
 include __header
 include __menu
-include __slider1
-include __mainBox
-include __blog
-include __newsInMain
+include __breadcrumbs
+include __wideBlock
+include __procedure
+
 include __footer
 
 
@@ -22,11 +22,9 @@ body
 	.site__header
 		+header
 		+topMenu
-		+sliderSwiperInMain
-		+mainBox
-		+mainContent
-		+blog
-		+newsInMain
+		+breadcrumbs
+		+wideBlock
+		+procedure
 
 	.site__center
 		//- +slider1
