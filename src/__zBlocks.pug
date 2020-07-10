@@ -1,0 +1,21 @@
+mixin zBlock1
+  .zBlock1__area.w0
+    .zBlock1.w1
+      .zBlock1__intro
+        span
+          | Запишитесь прямо сейчас на консультацию по телефону 
+          a(href='tel:+78452260000') +7 (8452) 26-00-00
+          |  или заполните форму ниже:
+      form.form1(action='#')
+        input.name1(name='name1', type='text', placeholder='Ваше имя')
+        input.phone1(name='phone1', type='text', placeholder='Контактный телефон')
+        //- input.email1(name='email1', type='text', placeholder='Email')
+        input.work_email1(name='work_email1', type='text', placeholder='Рабочий email')
+        //- textarea.message1(name='message1', cols='30', rows='10', placeholder='Ваше сообщение')
+        //- .form1__text
+        //-   | *Отправляя сообщение Вы соглашаетесь с условиями 
+        //-   a(href='privacy-policy/', target='_blank')
+        //-     | политики
+        //-     | конфиденциальности
+        button.submit1(type='submit', name='submit1')
+          | Записаться

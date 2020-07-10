@@ -51,6 +51,9 @@
 @import "__gallery.css";
 @import "__gallery_media.css";
 
+@import "__zBlocks.css";
+@import "__zBlocks_media.css";
+
 @import "__breadcrumbs.css";
 @import "__wideblock.css";
 

@@ -9,6 +9,7 @@ include __slider1
 include __mainBox
 include __blog
 include __newsInMain
+include __zBlocks
 include __footer
 
 
@@ -16,29 +17,29 @@ include __footer
 
 <!DOCTYPE html>
 html(lang="ru-RU")
-	+head
+  +head
 body
 
-	.site__header
-		+header
-		+topMenu
-		+sliderSwiperInMain
-		+mainBox
-		+mainContent
-		+blog
-		+newsInMain
+  .site__header
+    +header
+    +topMenu
 
-	.site__center
-		//- +slider1
+  .site__center
+    +sliderSwiperInMain
+    +mainBox
+    +mainContent
+    +blog
+    +newsInMain
+    +zBlock1
 
-	.site__footer
-		+footer
+  .site__footer
+    +footer
 
 
-	+topMenuAdaptive
-	+search1
+  +topMenuAdaptive
+  +search1
 
-	+toUp
+  +toUp
 
-	+scripts
-	
+  +scripts
+  

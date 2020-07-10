@@ -9,6 +9,7 @@ include __breadcrumbs
 include __wideBlock
 include __procedure
 
+include __zBlocks
 include __footer
 
 
@@ -16,27 +17,28 @@ include __footer
 
 <!DOCTYPE html>
 html(lang="ru-RU")
-	+head
+  +head
 body
 
-	.site__header
-		+header
-		+topMenu
-		+breadcrumbs
-		+wideBlock
-		+procedure
-
-	.site__center
-		//- +slider1
-
-	.site__footer
-		+footer
+  .site__header
+    +header
+    +topMenu
 
 
-	+topMenuAdaptive
-	+search1
+  .site__center
+    +breadcrumbs
+    +wideBlock
+    +procedure
+    +zBlock1
 
-	+toUp
+  .site__footer
+    +footer
 
-	+scripts
-	
+
+  +topMenuAdaptive
+  +search1
+
+  +toUp
+
+  +scripts
+  

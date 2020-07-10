@@ -1,0 +1,72 @@
+.zBlock1__area {
+  margin: 20px 0 0 0;
+}
+
+.zBlock1 {
+  padding: 30px;
+  background: var(--link1);
+  display: flex;
+  flex-direction: column;
+}
+
+.zBlock1__intro {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.zBlock1__intro span {
+  font-size: 1.25rem;
+  line-height: 1.4;
+  color: #fff;
+}
+
+.zBlock1__intro a {
+  font-size: 1.25rem;
+  line-height: 1.4;
+  color: var(--tc0);
+  text-decoration: none;
+}
+.zBlock1__intro a:hover {
+  text-decoration: underline;
+}
+
+.form1 {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.form1 input {
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  border: 1px solid #fff;
+  line-height: 2rem;
+  padding: 0 10px;
+  outline: none;
+  width: 30%;
+  box-sizing: border-box;
+}
+
+input.work_email1 {
+  display: none;
+}
+
+.form1 .submit1 {
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  text-transform: uppercase;
+  border: 1px solid var(--tc0);
+  line-height: 2rem;
+  padding: 0 10px;
+  outline: none;
+  width: 30%;
+  cursor: pointer;
+  color: #fff;
+  background: var(--tc0);
+  transition: all 0.3s;
+}
+
+.form1 .submit1:hover {
+  background: var(--link1hov);
+  border: 1px solid var(--link1hov);
+}
