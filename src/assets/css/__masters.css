@@ -1,0 +1,75 @@
+.masters__area {
+  margin-top: 1.25rem;
+}
+
+.masters__outer {
+  position: relative;
+}
+
+.masters__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.mastersBox__outer {
+  width: 75%;
+  padding-left: 1.25rem;
+}
+
+.mastersBox {
+  display: flex;
+  margin: 0 -10px;
+  flex-wrap: wrap;
+}
+
+.mastersBox__itemOuter {
+  width: 33.333%;
+  padding: 10px;
+}
+
+.mastersBox__item {
+  display: block;
+  position: relative;
+  text-decoration: none;
+}
+
+.mastersBox__item img {
+  display: block;
+  width: 100%;
+}
+
+.mastersBox__info {
+  position: absolute;
+  width: 100%;
+  height: 30%;
+  left: 0;
+  bottom: 0;
+  background: rgba(255, 255, 255, 0.7);
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  transition: all 0.3s;
+}
+
+.mastersBox__item:hover .mastersBox__info {
+  background: rgba(255, 255, 255, 0.9);
+}
+
+.mastersBox__info span {
+  color: var(--tc0);
+  font-size: 1.125rem;
+  text-align: center;
+  margin-bottom: 10px;
+}
+.mastersBox__info span:last-child {
+  font-size: 0.875rem;
+  margin-bottom: 0;
+}
+
+.masterBox__content {
+  width: 100%;
+  margin: 20px 0 0 0;
+  padding: 30px 20px;
+  background-color: #f2f2f4;
+}

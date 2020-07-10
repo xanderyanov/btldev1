@@ -8,7 +8,7 @@ h6 {
   font-family: "Roboto", sans-serif;
   margin: 0 0 10px 0;
   font-weight: 600;
-  line-height: 1.2;
+  line-height: 1.4;
 }
 
 h2,
@@ -43,9 +43,9 @@ h6 {
   font-size: 1rem;
 }
 
-.content {
+/* .content {
   margin-bottom: 20px;
-}
+} */
 
 /* a {
   text-decoration: none !important;
@@ -59,7 +59,7 @@ h6 {
   font-family: "Roboto", sans-serif;
   font-size: 1rem;
   font-weight: 400;
-  line-height: 1.2;
+  line-height: 1.4;
   margin: 0 0 10px 0;
   color: var(--tColor);
 }
@@ -88,15 +88,16 @@ h6 {
 }
 
 .content blockquote {
-  color: #000;
+  color: #fff;
   padding: 10px 20px;
-  background: var(--x1greySuperLight);
+  /* background: var(--x1greySuperLight); */
+  background: var(--link1);
   line-height: 1.5;
   font-style: italic;
 }
 
 .content blockquote p {
-  color: #000;
+  color: #fff;
   line-height: 1.5;
   font-style: italic;
 }

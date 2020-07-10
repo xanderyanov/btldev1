@@ -1,31 +1,12 @@
+include __menu
+
 mixin services
   .serv__area.w0
     .serv__outer.w1
       .title1
         h1 Процедуры нашего центра
       .serv__wrapper
-        nav.servMenu__outer
-          ul.servMenu
-            li
-              a(href="") Все процедуры
-            li
-              a(href="") Аппаратная косметология
-            li
-              a(href="") Инъекционная косметология
-            li
-              a(href="") Эстетическая косметология
-            li
-              a(href="") Эстетика тела
-            li
-              a(href="") Дерматология
-            li
-              a(href="") Трихология
-            li
-              a(href="") Nail Bar
-            li
-              a(href="") Hair стиль
-            li
-              a(href="") Brow Bar
+        +leftMenu
         .servBox__outer
           .serv
             .serv__itemOuter

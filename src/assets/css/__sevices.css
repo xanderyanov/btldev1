@@ -8,38 +8,7 @@
 
 .serv__wrapper {
   display: flex;
-}
-
-.servMenu__outer {
-  width: 25%;
-}
-
-.servMenu {
-  display: flex;
-  flex-direction: column;
-  margin-top: 0.6125rem;
-  border-top: 1px solid var(--bg2);
-}
-
-.servMenu li {
-  list-style: none;
-}
-
-.servMenu li a {
-  display: block;
-  padding: 0.625rem;
-  text-decoration: none;
-  width: 100%;
-  font-size: 1rem;
-  line-height: 1.3;
-  color: var(--tc0);
-  background: var(--x1greySuperLight);
-  border-bottom: 1px solid var(--bg2);
-  transition: all 0.3s;
-}
-
-.servMenu li a:hover {
-  background: var(--x1greyLight);
+  flex-wrap: wrap;
 }
 
 .servBox__outer {
@@ -82,7 +51,7 @@
   left: 0;
   bottom: 0;
   width: 100%;
-  height: 25%;
+  height: 40%;
   display: flex;
   justify-content: center;
   align-items: center;

@@ -97,4 +97,45 @@ $(function () {
       galleryTop.autoplay.start();
     });
   }
+
+  // прокрутка доя якоря на странице процедуры
+  $("#goToPriceAnchor").on("click", function (e) {
+    $("html,body")
+      .stop()
+      .animate({ scrollTop: $("#priceAnchor").offset().top }, 1000);
+    e.preventDefault();
+  });
+
+  $(".toTop").hide();
+  $(window).scroll(function () {
+    if ($(this).scrollTop() > 0) {
+      $(".toTop").fadeIn();
+    } else {
+      $(".toTop").fadeOut();
+    }
+  });
+  $(".toTop").click(function () {
+    $("body,html").animate({ scrollTop: 0 }, 400);
+    return false;
+  });
+
+  $("a[data-fancybox]").fancybox({
+    closeBtn: false,
+    arrows: true,
+    keyboard: true,
+    nextClick: true,
+    infobar: true,
+    protect: true,
+    backFocus: false, // убирает рассинхрон с swiper
+    nextEffect: "elastic",
+    prevEffect: "elastic",
+    padding: 0,
+    loop: true,
+    animationEffect: "zoom-in-out",
+    transitionEffect: "slide",
+    touch: {
+      vertical: true, // Allow to drag content vertically
+      momentum: true, // Continue movement after releasing mouse/touch when panning
+    },
+  });
 });

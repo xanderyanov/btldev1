@@ -22,6 +22,14 @@
   body {
     font-size: 12px;
   }
+  .toTop {
+    z-index: 2600;
+    position: fixed;
+    left: auto;
+    right: 10px;
+    bottom: 40px;
+    background: #be3f46;
+  }
 }
 
 @media only screen and (max-width: 600px) {
