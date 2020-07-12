@@ -1,4 +1,4 @@
-- var pageTitle = 'Процедуры'
+- var pageTitle = 'Страница мастера'
 - var seoKeywords = 'Ключевые слова для страницы'
 - var seoDesc = 'Сео описание для страницы'
 
@@ -7,9 +7,10 @@ include __header
 include __menu
 include __breadcrumbs
 include __wideBlock
-include __services
-include __forms
 
+include __master
+
+include __forms
 include __footer
 
 
@@ -27,8 +28,10 @@ body
 
   .site__center
     +breadcrumbs
-    +wideBlock
-    +services
+    //- +wideBlock
+    +master
+
+
     +zBlock1
 
   .site__footer

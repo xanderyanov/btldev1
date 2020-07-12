@@ -1,0 +1,21 @@
+.master__area {
+  padding: 20px 0 0 0;
+}
+
+.master__outer {
+  position: relative;
+}
+
+.master {
+  display: flex;
+  flex-direction: column;
+}
+
+.master__top {
+  margin: 10px 0 0 0;
+  display: flex;
+}
+
+.master__intro {
+  display: flex;
+}
