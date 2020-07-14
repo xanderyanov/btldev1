@@ -70,3 +70,71 @@ input.work_email1 {
   background: var(--link1hov);
   border: 1px solid var(--link1hov);
 }
+
+.formPolycy__text {
+  width: 100%;
+  margin-bottom: 10px;
+  font-size: 0.875rem;
+}
+
+.form2__area {
+  width: 100%;
+}
+
+.form2__intro {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.form2__intro span {
+  font-size: 1rem;
+  line-height: 1.4;
+  color: #fff;
+}
+.form2__intro a {
+  font-size: 1.125rem;
+  line-height: 1.4;
+  color: #fff;
+  font-weight: 700;
+}
+
+.form2 {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.form2 input {
+  width: 100%;
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  border: 1px solid #fff;
+  line-height: 2rem;
+  padding: 0 10px;
+  outline: none;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+}
+
+input.work_email2 {
+  display: none;
+}
+
+.form2 .submit2 {
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  text-transform: uppercase;
+  border: 1px solid var(--tc0);
+  line-height: 2rem;
+  padding: 0 10px;
+  outline: none;
+  width: 100%;
+  cursor: pointer;
+  color: #fff;
+  background: var(--tc0);
+  transition: all 0.3s;
+}
+
+.form2 .submit2:hover {
+  background: var(--link1hov);
+  border: 1px solid var(--link1hov);
+}

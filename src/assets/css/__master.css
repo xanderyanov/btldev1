@@ -14,8 +14,77 @@
 .master__top {
   margin: 10px 0 0 0;
   display: flex;
+  flex-wrap: wrap;
 }
 
 .master__intro {
+  width: 40%;
   display: flex;
+  border: 10px solid var(--x1greyLight);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.master__introHeader {
+  font-size: 1.125rem;
+  color: var(--x1grey);
+  font-weight: 700;
+  line-height: 1.4;
+  padding-bottom: 30px;
+}
+
+.master__introContent {
+  width: 100%;
+}
+
+.master__face {
+  width: 30%;
+  padding: 0 10px;
+}
+
+.master__face img {
+  display: block;
+  width: 100%;
+}
+
+.master__consForm {
+  width: 30%;
+  background: var(--link1);
+  padding: 30px;
+}
+
+.master__aboutContent {
+  margin-top: 20px;
+}
+
+.master__specialization {
+  margin-top: 20px;
+}
+
+.specialization__area {
+  display: flex;
+  /* flex-direction: column; */
+  flex-wrap: wrap;
+  margin: 0 -5px;
+}
+
+.specialization {
+  display: flex;
+  padding: 5px 10px;
+  margin: 5px;
+  background: var(--x1greySuperLight);
+  color: var(--tc0);
+  text-decoration: none;
+  font-size: 1rem;
+  transition: all 0.3s;
+}
+
+.specialization:hover {
+  background: var(--link1);
+  color: #fff;
+}
+
+.master__sertificats {
+  margin-top: 20px;
 }

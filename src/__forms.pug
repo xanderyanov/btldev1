@@ -19,3 +19,26 @@ mixin zBlock1
         //-     | конфиденциальности
         button.submit1(type='submit', name='submit1')
           | Записаться
+
+
+mixin formInMaster
+  .form2__area
+    .form2__intro 
+      span
+        | Запишитесь прямо сейчас на консультацию по телефону 
+        a(href='tel:+78452260000') +7 (8452) 26-00-00
+        |  или заполните форму ниже:
+
+    form.form2(action='#')
+        input.name2(name='name2', type='text', placeholder='Ваше имя')
+        input.surname2(name='surname2', type='text', placeholder='Ваша Фамилия')
+        input.phone2(name='phone2', type='text', placeholder='Контактный телефон')
+        //- input.email1(name='email1', type='text', placeholder='Email')
+        input.work_email2(name='work_email2', type='text', placeholder='Рабочий email')
+        //- textarea.message1(name='message1', cols='30', rows='10', placeholder='Ваше сообщение')
+        .formPolycy__text
+          | *Отправляя сообщение Вы соглашаетесь с условиями 
+          a(href='#', target='_blank')
+          | политики конфиденциальности
+        button.submit2(type='submit', name='submit2')
+          | Записаться
