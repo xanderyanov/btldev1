@@ -138,3 +138,113 @@ input.work_email2 {
   background: var(--link1hov);
   border: 1px solid var(--link1hov);
 }
+
+/* +formCallBack */
+
+.formZ__area {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: var(--bg0);
+  background-image: url(../img/logo100w.png);
+  background-position: bottom 0.5rem center;
+  background-repeat: no-repeat;
+  z-index: 5000;
+  display: none;
+  padding: 2rem 1.25rem;
+}
+
+.formZ__wrapper {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+}
+
+.formZ__close {
+  width: 2rem;
+  height: 2rem;
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid var(--tc0);
+  border-radius: 50%;
+}
+
+.formZ__close i {
+  font-size: 0.875rem;
+  color: var(--tc0);
+}
+
+.formZ__intro {
+  width: 100%;
+  max-width: 400px;
+  margin-bottom: 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.formZ__intro span {
+  font-size: 1rem;
+  line-height: 1.4;
+  color: #000;
+  text-align: center;
+}
+.formZ__intro a {
+  font-size: 1.125rem;
+  line-height: 1.4;
+  color: #000;
+  font-weight: 700;
+}
+
+.formZ {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  max-width: 400px;
+}
+
+.formZ input {
+  width: 100%;
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  border: 1px solid #fff;
+  line-height: 2rem;
+  padding: 0 10px;
+  outline: none;
+  box-sizing: border-box;
+  margin-bottom: 5px;
+}
+
+input.work_emailZ {
+  display: none;
+}
+
+.formZ .submitZ {
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  text-transform: uppercase;
+  border: 1px solid var(--tc0);
+  line-height: 2rem;
+  padding: 0 10px;
+  outline: none;
+  width: 100%;
+  cursor: pointer;
+  color: #fff;
+  background: var(--tc0);
+  transition: all 0.3s;
+}
+
+.formZ .submitZ:hover {
+  background: var(--link1hov);
+  border: 1px solid var(--link1hov);
+}

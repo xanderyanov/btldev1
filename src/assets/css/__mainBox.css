@@ -211,6 +211,7 @@
   background: var(--link1);
   transition: all 0.3s;
   margin-right: auto;
+  margin-top: 20px;
 }
 
 .mainContent__redmore:hover {

@@ -488,7 +488,7 @@ form.form-search .inputs-group .search-submit:hover {
   text-align: center;
   display: flex;
   flex-wrap: wrap;
-  justify-content: flex-end;
+  justify-content: center;
 }
 
 .pagin ul.pagination {
@@ -513,16 +513,16 @@ form.form-search .inputs-group .search-submit:hover {
   line-height: 1;
   width: 32px;
   height: 32px;
-  color: #be3f46;
+  color: var(--x1grey);
   display: flex;
   justify-content: center;
   align-items: center;
   text-decoration: none;
-  border: 2px solid #be3f46;
+  border: 1px solid var(--x1grey);
 }
 
 .pagin ul.pagination li.control a {
-  border: 2px solid #be3f46;
+  border: 1px solid var(--x1grey);
   background: none;
 }
 
@@ -537,14 +537,14 @@ form.form-search .inputs-group .search-submit:hover {
 .pagin ul.pagination li.active a,
 .pagin ul.pagination li a:hover {
   color: #fff;
-  border: 2px solid #be3f46;
-  background: #be3f46;
+  border: 1px solid var(--link1);
+  background: var(--link1);
 }
 
 .pagin ul.pagination li.control.active a,
 .pagin ul.pagination li.control a:hover {
   color: #fff;
-  border: 2px solid #be3f46;
+  border: 1px solid var(--link1);
 }
 
 .rows {

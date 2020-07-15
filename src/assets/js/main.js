@@ -98,6 +98,10 @@ $(function () {
     });
   }
 
+  $(".phoneZ").mask("+7 (999) 999-9999");
+  $(".phone1").mask("+7 (999) 999-9999");
+  $(".phone2").mask("+7 (999) 999-9999");
+
   // прокрутка доя якоря на странице процедуры
   $("#goToPriceAnchor").on("click", function (e) {
     $("html,body")
@@ -137,5 +141,22 @@ $(function () {
       vertical: true, // Allow to drag content vertically
       momentum: true, // Continue movement after releasing mouse/touch when panning
     },
+  });
+
+  // Открытие и закрытие заказа звонка по кнопке
+  $(".header__callAction").click(function (e) {
+    e.preventDefault();
+    if ($(this).hasClass("active")) {
+      $(this).removeClass("active");
+      $(".formZ__area").slideUp(200);
+    } else {
+      $(this).addClass("active");
+      $(".formZ__area").slideDown(200);
+    }
+  });
+  // Закрытие заказа звонка по кнопке Close
+  $(".formZ__close").click(function () {
+    $(".header__callAction").removeClass("active");
+    $(".formZ__area").slideUp(200);
   });
 });

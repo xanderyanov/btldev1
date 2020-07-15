@@ -42,3 +42,27 @@ mixin formInMaster
           | политики конфиденциальности
         button.submit2(type='submit', name='submit2')
           | Записаться
+
+
+mixin formCallBack
+  .formZ__area
+    .formZ__wrapper
+      .formZ__close
+        i.icon-close1
+      .formZ__intro 
+        span 
+          | Закажите обратный звонок, заполнив форму ниже или позвоните нам по телефону 
+        a(href='tel:+78452260000') +7 (8452) 26-00-00.
+
+      form.formZ(action='#')
+          input.nameZ(name='nameZ', type='text', placeholder='Ваше имя')
+          input.phoneZ(name='phoneZ', type='text', placeholder='Контактный телефон')
+          //- input.email1(name='email1', type='text', placeholder='Email')
+          input.work_email2(name='work_emailZ', type='text', placeholder='Рабочий email')
+          //- textarea.message1(name='message1', cols='30', rows='10', placeholder='Ваше сообщение')
+          .formPolycy__text
+            | *Отправляя сообщение Вы соглашаетесь с условиями 
+            a(href='#', target='_blank')
+            | политики конфиденциальности
+          button.submitZ(type='submit', name='submitZ')
+            | Заказать обратный звонок

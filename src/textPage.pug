@@ -1,4 +1,4 @@
-- var pageTitle = 'Страница мастера'
+- var pageTitle = 'Просто текстовая страница'
 - var seoKeywords = 'Ключевые слова для страницы'
 - var seoDesc = 'Сео описание для страницы'
 
@@ -7,8 +7,7 @@ include __header
 include __menu
 include __breadcrumbs
 include __wideBlock
-
-include __master
+include __procedure
 
 include __forms
 include __footer
@@ -28,11 +27,26 @@ body
 
   .site__center
     +breadcrumbs
-    //- +wideBlock
-    +master
+    +wideBlock
+    
+    .textPage__area.w0
+      .textPage__outer.w1
+        .title1
+          h1 Лазерная эпиляция
+        .textPage
+          .content
+            +tempContent
+        .block__video
+          .title1
+            h2 Видео
+          +videogallery
+        .block__photo
+          .title1
+            h2 Фото
+          +gallery
 
-
-
+    
+    +zBlock1
 
   .site__footer
     +footer
