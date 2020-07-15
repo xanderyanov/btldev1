@@ -39,6 +39,10 @@
   color: var(--color1);
 }
 
+.topMenu li:nth-child(3) {
+  flex: 1;
+}
+
 li.endLeftBlock {
   flex: 1;
 }
