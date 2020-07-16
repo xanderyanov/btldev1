@@ -48,6 +48,9 @@
 @import "__master.css";
 @import "__master_media.css";
 
+@import "__brands.css";
+@import "__brands_media.css";
+
 @import "__footer.css";
 @import "__footer_media.css";
 

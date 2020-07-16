@@ -177,6 +177,7 @@ input.work_email2 {
   align-items: center;
   border: 1px solid var(--tc0);
   border-radius: 50%;
+  cursor: pointer;
 }
 
 .formZ__close i {

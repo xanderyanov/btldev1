@@ -187,6 +187,7 @@ li.endLeftBlock {
   align-items: center;
   border: 1px solid var(--tc0);
   border-radius: 50%;
+  cursor: pointer;
 }
 
 .topMenuAdaptive__close i {
@@ -257,6 +258,7 @@ li.endLeftBlock {
   align-items: center;
   border: 1px solid var(--tc0);
   border-radius: 50%;
+  cursor: pointer;
 }
 
 .search1__close i {
