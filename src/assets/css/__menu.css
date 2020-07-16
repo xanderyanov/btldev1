@@ -355,6 +355,18 @@ li.endLeftBlock {
   transition: all 0.3s;
 }
 
+.leftMenu li.active a {
+  background: var(--color1);
+  border-bottom: 1px solid #fff;
+  color: #fff;
+}
+
 .leftMenu li a:hover {
   background: var(--x1greyLight);
+}
+
+.leftMenu li.active a:hover {
+  background: var(--color1);
+  border-bottom: 1px solid #fff;
+  color: #fff;
 }
