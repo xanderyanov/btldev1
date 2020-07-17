@@ -27,6 +27,14 @@
   padding: 10px;
 }
 
+.mastersBox__itemOuter.hidden {
+  display: none;
+}
+
+.mastersBox__itemOuter.visible {
+  display: block;
+}
+
 .mastersBox__item {
   display: block;
   position: relative;

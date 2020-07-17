@@ -159,4 +159,38 @@ $(function () {
     $(".header__callAction").removeClass("active");
     $(".formZ__area").slideUp(200);
   });
+
+  // фильтрация специалистов
+
+  $(".menuCategoryMastersLink").on("click", function (e) {
+    e.preventDefault();
+    $(".menuCategoryMastersLink").removeClass("active");
+    var $this = $(this);
+    var IdToFind = $this.data("id");
+    console.log("___искомый id " + IdToFind);
+    var specs = $(".mastersBox__itemOuter");
+    $.each(specs, function (index, o) {
+      var $o = $(o);
+      $o.removeClass("visible");
+      $o.addClass("hidden");
+
+      var sid = $o.data("sid");
+      console.log("Мастер " + sid);
+      var s = sid.split(",");
+      $.each(s, function (index, z) {
+        console.log("Значение " + z);
+        if (z.indexOf(IdToFind) != -1) {
+          $o.removeClass("hidden");
+          $o.addClass("visible");
+        }
+      });
+    });
+    $this.addClass("active");
+  });
+  $(".menuCategoryMastersLink__all").on("click", function (e) {
+    e.preventDefault();
+    $(this).addClass("active");
+    $(".mastersBox__itemOuter").removeClass("hidden");
+    $(".mastersBox__itemOuter").addClass("visible");
+  });
 });
