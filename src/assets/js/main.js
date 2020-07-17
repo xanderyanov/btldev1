@@ -62,41 +62,43 @@ $(function () {
     });
   }
 
-  if ($(".julySlider__outer").length) {
-    var galleryTop = new Swiper(".julySlider", {
-      speed: 600,
-      slidesPerView: "auto",
-      centeredSlides: true,
-      spaceBetween: 5,
-      loop: true,
-      slideToClickedSlide: true,
-      autoplay: {
-        delay: 5500,
-        disableOnInteraction: false,
-      },
-      pagination: {
-        el: ".julySlider__pagination",
-        type: "bullets",
-        dynamicBullets: false,
-        clickable: true,
-      },
-      navigation: {
-        nextEl: ".julySlider__Next",
-        prevEl: ".julySlider__Prev",
-      },
-      breakpoints: {
-        640: {
-          spaceBetween: 10,
+  setTimeout(function () {
+    if ($(".julySlider__outer").length) {
+      var galleryTop = new Swiper(".julySlider", {
+        speed: 600,
+        slidesPerView: "auto",
+        centeredSlides: true,
+        spaceBetween: 5,
+        loop: true,
+        slideToClickedSlide: true,
+        autoplay: {
+          delay: 5500,
+          disableOnInteraction: false,
         },
-      },
-    });
-    $(".swiper-container").mouseenter(function () {
-      galleryTop.autoplay.stop();
-    });
-    $(".swiper-container").mouseleave(function () {
-      galleryTop.autoplay.start();
-    });
-  }
+        pagination: {
+          el: ".julySlider__pagination",
+          type: "bullets",
+          dynamicBullets: false,
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".julySlider__Next",
+          prevEl: ".julySlider__Prev",
+        },
+        breakpoints: {
+          640: {
+            spaceBetween: 10,
+          },
+        },
+      });
+      $(".swiper-container").mouseenter(function () {
+        galleryTop.autoplay.stop();
+      });
+      $(".swiper-container").mouseleave(function () {
+        galleryTop.autoplay.start();
+      });
+    }
+  }, 500);
 
   $(".phoneZ").mask("+7 (999) 999-9999");
   $(".phone1").mask("+7 (999) 999-9999");
@@ -157,7 +159,7 @@ $(function () {
   // Закрытие заказа звонка по кнопке Close
   $(".formZ__close").click(function () {
     $(".header__callAction").removeClass("active");
-    $(".formZ__area").slideUp(200);
+    $(".formZ__area").slideUp(250);
   });
 
   // фильтрация специалистов
