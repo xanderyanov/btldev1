@@ -249,3 +249,81 @@ input.work_emailZ {
   background: var(--link1hov);
   border: 1px solid var(--link1hov);
 }
+
+/* formInContactPage */
+
+.form3__area {
+  width: 100%;
+}
+
+.form3__intro {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.form3__intro span {
+  font-size: 1rem;
+  line-height: 1.4;
+  color: #fff;
+}
+.form3__intro a {
+  font-size: 1.125rem;
+  line-height: 1.4;
+  color: #fff;
+  font-weight: 700;
+}
+
+.form3 {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.form3 input {
+  width: 100%;
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  border: 1px solid #fff;
+  line-height: 2rem;
+  padding: 0 10px;
+  outline: none;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+}
+
+.form3 textarea {
+  width: 100%;
+  height: 150px;
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  border: 1px solid #fff;
+  line-height: 2rem;
+  padding: 10px;
+  outline: none;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+  resize: none;
+}
+
+input.work_email3 {
+  display: none;
+}
+
+.submit3 {
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  text-transform: uppercase;
+  border: 1px solid var(--tc0);
+  line-height: 2rem;
+  padding: 0 10px;
+  outline: none;
+  width: 100%;
+  cursor: pointer;
+  color: #fff;
+  background: var(--tc0);
+  transition: all 0.3s;
+}
+
+.submit3:hover {
+  background: var(--link1hov);
+  border: 1px solid var(--link1hov);
+}

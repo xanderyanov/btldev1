@@ -107,8 +107,9 @@ h6 {
 }
 
 .content a {
-  color: var(--redFill);
+  color: var(--color1);
   text-decoration: underline;
+  font-weight: 600;
 }
 
 /* .content ol {

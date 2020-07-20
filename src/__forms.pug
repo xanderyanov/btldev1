@@ -66,3 +66,26 @@ mixin formCallBack
             | политики конфиденциальности
           button.submitZ(type='submit', name='submitZ')
             | Заказать обратный звонок
+
+
+mixin formInContactsPage
+  .form3__area
+    .form3__intro 
+      span
+        | Запишитесь прямо сейчас на консультацию по телефону 
+        a(href='tel:+78452260000') +7 (8452) 26-00-00
+        |  или заполните форму ниже:
+
+    form.form3(action='#')
+        input.name3(name='name3', type='text', placeholder='Ваше имя')
+        input.surname3(name='surname3', type='text', placeholder='Ваша Фамилия')
+        input.phone3(name='phone3', type='text', placeholder='Контактный телефон')
+        input.email3(name='email3', type='text', placeholder='Email')
+        input.work_email3(name='work_email3', type='text', placeholder='Рабочий email')
+        textarea.message3(name='message3', cols='30', rows='10', placeholder='Ваше сообщение')
+        .formPolycy__text
+          | *Отправляя сообщение Вы соглашаетесь с условиями 
+          a(href='#', target='_blank')
+          | политики конфиденциальности
+        button.submit3(type='submit', name='submit3')
+          | Записаться
