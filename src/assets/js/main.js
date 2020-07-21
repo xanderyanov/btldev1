@@ -171,16 +171,18 @@ $(function () {
     var $this = $(this);
     var IdToFind = $this.data("id");
     console.log("___искомый id " + IdToFind);
+
     var specs = $(".mastersBox__itemOuter");
+
     $.each(specs, function (index, o) {
       var $o = $(o);
       $o.removeClass("visible");
       $o.addClass("hidden");
 
       var sid = $o.data("sid");
-      console.log("Мастер " + sid);
-      var s = sid.split(",");
-      $.each(s, function (index, z) {
+      var sp = typeof sid === "number" ? [sid.toString()] : sid.split(",");
+      console.log("Мастер " + sp);
+      $.each(sp, function (index, z) {
         console.log("Значение " + z);
         if (z.indexOf(IdToFind) != -1) {
           $o.removeClass("hidden");
