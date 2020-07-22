@@ -104,6 +104,7 @@ $(function () {
   $(".phone1").mask("+7 (999) 999-9999");
   $(".phone2").mask("+7 (999) 999-9999");
   $(".phone3").mask("+7 (999) 999-9999");
+  $(".phone4").mask("+7 (999) 999-9999");
 
   // прокрутка доя якоря на странице процедуры
   $("#goToPriceAnchor").on("click", function (e) {
@@ -146,23 +147,6 @@ $(function () {
     },
   });
 
-  // Открытие и закрытие заказа звонка по кнопке
-  $(".header__callAction").click(function (e) {
-    e.preventDefault();
-    if ($(this).hasClass("active")) {
-      $(this).removeClass("active");
-      $(".formZ__area").slideUp(200);
-    } else {
-      $(this).addClass("active");
-      $(".formZ__area").slideDown(200);
-    }
-  });
-  // Закрытие заказа звонка по кнопке Close
-  $(".formZ__close").click(function () {
-    $(".header__callAction").removeClass("active");
-    $(".formZ__area").slideUp(250);
-  });
-
   // фильтрация специалистов
 
   $(".menuCategoryMastersLink").on("click", function (e) {
@@ -198,6 +182,450 @@ $(function () {
     $(".mastersBox__itemOuter").removeClass("hidden");
     $(".mastersBox__itemOuter").addClass("visible");
     $(this).addClass("active");
+  });
+
+  // formZ
+
+  // Открытие и закрытие заказа звонка по кнопке
+  $(".header__callAction").click(function (e) {
+    e.preventDefault();
+    if ($(this).hasClass("active")) {
+      $(this).removeClass("active");
+      $(".formZ__area").slideUp(200);
+    } else {
+      $(this).addClass("active");
+      $(".formZ__area").slideDown(200);
+    }
+  });
+  // Закрытие заказа звонка по кнопке Close
+  $(".formZ__close").click(function () {
+    $(".header__callAction").removeClass("active");
+    $(".formZ__area").slideUp(250);
+  });
+
+  $(".formZ").on("click", ".submitZ", function (e) {
+    e.preventDefault();
+    var name = $(".nameZ").val();
+    var phone = $(".phoneZ").val();
+    var workemail = $(".work_emailZ").val();
+    var r = /^[\w\.\d-_]+@[\w\.\d-_]+\.\w{2,4}$/i;
+    // var recaptcha = grecaptcha.getResponse("recaptcha1");
+    if (name == "") {
+      swal({
+        title: "Поле Имя пустое",
+        text: "Заполните поле имя",
+        type: "error",
+        confirmButtonText: "ок",
+      });
+      $(".nameZ").addClass("error");
+      setTimeout(function () {
+        $(".nameZ").removeClass("error");
+      }, 3000);
+    } else if (phone == "") {
+      swal({
+        title: "Поле Телефон пустое",
+        text: "Заполните поле телефон",
+        type: "error",
+        confirmButtonText: "ок",
+      });
+      $(".phoneZ").addClass("error");
+      setTimeout(function () {
+        $(".phoneZ").removeClass("error");
+      }, 3000);
+    } else if (workemail != "") {
+      swal({
+        title: "Ах ты жулик",
+        text: "Уберите робота от компьютера",
+        type: "error",
+        confirmButtonText: "ок",
+      });
+    } else {
+      $.post(
+        "mailz.php",
+        {
+          name: name,
+          phone: phone,
+        },
+        function () {
+          swal({
+            title: "Спасибо",
+            text: "Ваше сообщение отправлено",
+            type: "success",
+            confirmButtonText: "ок",
+          });
+          $(".nameZ").val("").removeClass("error");
+          $(".phoneZ").val("").removeClass("error");
+          $(".header__callAction").removeClass("active");
+          $(".formZ__area").slideUp(250);
+        }
+      );
+    }
+  });
+
+  // form1 (z1block)
+  $(".form1").on("click", ".submit1", function (e) {
+    console.log("клик");
+    e.preventDefault();
+    var subj = "Горизонтальная форма внизу страницы";
+    var name = $(".name1").val();
+    var phone = $(".phone1").val();
+    var workemail = $(".work_email1").val();
+    var r = /^[\w\.\d-_]+@[\w\.\d-_]+\.\w{2,4}$/i;
+    // var recaptcha = grecaptcha.getResponse("recaptcha1");
+    if (name == "") {
+      swal({
+        title: "Поле Имя пустое",
+        text: "Заполните поле имя",
+        type: "error",
+        confirmButtonText: "ок",
+      });
+      $(".name1").addClass("error");
+      setTimeout(function () {
+        $(".name1").removeClass("error");
+      }, 3000);
+    } else if (phone == "") {
+      swal({
+        title: "Поле Телефон пустое",
+        text: "Заполните поле телефон",
+        type: "error",
+        confirmButtonText: "ок",
+      });
+      $(".phone1").addClass("error");
+      setTimeout(function () {
+        $(".phone1").removeClass("error");
+      }, 3000);
+    } else if (workemail != "") {
+      swal({
+        title: "Ах ты жулик",
+        text: "Уберите робота от компьютера",
+        type: "error",
+        confirmButtonText: "ок",
+      });
+    } else {
+      $.post(
+        "mail.php",
+        {
+          subj: subj,
+          name: name,
+          phone: phone,
+        },
+        function () {
+          swal({
+            title: "Спасибо",
+            text: "Ваше сообщение отправлено",
+            type: "success",
+            confirmButtonText: "ок",
+          });
+          $(".name1").val("").removeClass("error");
+          $(".phone1").val("").removeClass("error");
+        }
+      );
+    }
+  });
+
+  $(".form2").on("click", ".submit2", function (e) {
+    e.preventDefault();
+    var subj = $(".subj2").val();
+    var name = $(".name2").val();
+    var surname = $(".surname2").val();
+    name = name + " " + surname;
+    var phone = $(".phone2").val();
+    var email = $(".email2").val();
+    var workemail = $(".work_email2").val();
+    var r = /^[\w\.\d-_]+@[\w\.\d-_]+\.\w{2,4}$/i;
+    if (name == "") {
+      swal({
+        title: "Поле Имя пустое",
+        text: "Заполните поле имя",
+        type: "error",
+        confirmButtonText: "ок",
+      });
+      $(".name2").addClass("error");
+      setTimeout(function () {
+        $(".name2").removeClass("error");
+      }, 3000);
+    } else if (phone == "") {
+      swal({
+        title: "Поле Телефон пустое",
+        text: "Заполните поле телефон",
+        type: "error",
+        confirmButtonText: "ок",
+      });
+      $(".phone2").addClass("error");
+      setTimeout(function () {
+        $(".phone2").removeClass("error");
+      }, 3000);
+    } else if (email == "") {
+      swal({
+        title: "Ошибка Email",
+        text: "Заполните поле Email",
+        type: "error",
+        confirmButtonText: "ок",
+      });
+      $(".email2").addClass("error");
+      setTimeout(function () {
+        $(".email2").removeClass("error");
+      }, 3000);
+    } else if (!r.test(email)) {
+      swal({
+        title: "Ошибка",
+        text: "Корректно заполните поле e-mail",
+        type: "error",
+        confirmButtonText: "ок",
+      });
+      $(".email2").addClass("error");
+      setTimeout(function () {
+        $(".email2").removeClass("error");
+      }, 3000);
+    } else if (workemail != "") {
+      swal({
+        title: "Ах ты жулик",
+        text: "Уберите робота от компьютера",
+        type: "error",
+        confirmButtonText: "ок",
+      });
+    } else {
+      $.post(
+        "mail.php",
+        {
+          subj: subj,
+          name: name,
+          phone: phone,
+          email: email,
+        },
+        function () {
+          swal({
+            title: "Спасибо",
+            text: "Ваше сообщение отправлено",
+            type: "success",
+            confirmButtonText: "ок",
+          });
+          $(".name2").val("").removeClass("error");
+          $(".surname2").val("").removeClass("error");
+          $(".phone2").val("").removeClass("error");
+          $(".email2").val("").removeClass("error");
+        }
+      );
+    }
+  });
+
+  $(".form3").on("click", ".submit3", function (e) {
+    e.preventDefault();
+    var subj = "Сообщение со страницы контактов";
+    var name = $(".name3").val();
+    var surname = $(".surname3").val();
+    name = name + " " + surname;
+    var phone = $(".phone3").val();
+    var email = $(".email3").val();
+    var workemail = $(".work_email3").val();
+    var message = $(".message3").val();
+    var r = /^[\w\.\d-_]+@[\w\.\d-_]+\.\w{2,4}$/i;
+    if (name == "") {
+      swal({
+        title: "Поле Имя пустое",
+        text: "Заполните поле имя",
+        type: "error",
+        confirmButtonText: "ок",
+      });
+      $(".name3").addClass("error");
+      setTimeout(function () {
+        $(".name3").removeClass("error");
+      }, 3000);
+    } else if (phone == "") {
+      swal({
+        title: "Поле Телефон пустое",
+        text: "Заполните поле телефон",
+        type: "error",
+        confirmButtonText: "ок",
+      });
+      $(".phone3").addClass("error");
+      setTimeout(function () {
+        $(".phone3").removeClass("error");
+      }, 3000);
+    } else if (email == "") {
+      swal({
+        title: "Ошибка Email",
+        text: "Заполните поле Email",
+        type: "error",
+        confirmButtonText: "ок",
+      });
+      $(".email3").addClass("error");
+      setTimeout(function () {
+        $(".email3").removeClass("error");
+      }, 3000);
+    } else if (!r.test(email)) {
+      swal({
+        title: "Ошибка",
+        text: "Корректно заполните поле e-mail",
+        type: "error",
+        confirmButtonText: "ок",
+      });
+      $(".email3").addClass("error");
+      setTimeout(function () {
+        $(".email3").removeClass("error");
+      }, 3000);
+    } else if (message == "") {
+      swal({
+        title: "Пустое сообщение",
+        text: "Заполните текст сообщения",
+        type: "error",
+        confirmButtonText: "ок",
+      });
+      $(".message3").addClass("error");
+      setTimeout(function () {
+        $(".message3").removeClass("error");
+      }, 3000);
+    } else if (workemail != "") {
+      swal({
+        title: "Ах ты жулик",
+        text: "Уберите робота от компьютера",
+        type: "error",
+        confirmButtonText: "ок",
+      });
+    } else {
+      $.post(
+        "mail.php",
+        {
+          subj: subj,
+          name: name,
+          phone: phone,
+          email: email,
+          message: message,
+        },
+        function () {
+          swal({
+            title: "Спасибо",
+            text: "Ваше сообщение отправлено",
+            type: "success",
+            confirmButtonText: "ок",
+          });
+          $(".name3").val("").removeClass("error");
+          $(".surname3").val("").removeClass("error");
+          $(".phone3").val("").removeClass("error");
+          $(".email3").val("").removeClass("error");
+          $(".message3").val("").removeClass("error");
+        }
+      );
+    }
+  });
+
+  // Открытие и закрытие записи с главной по кнопке
+  $(".mainConsBtn").click(function (e) {
+    e.preventDefault();
+    if ($(this).hasClass("active")) {
+      $(this).removeClass("active");
+      $(".form4__area").slideUp(200);
+    } else {
+      $(this).addClass("active");
+      $(".form4__area").slideDown(200);
+    }
+  });
+  // Закрытие записи с главной по кнопке Close
+  $(".form4__close").click(function () {
+    $(".mainConsBtn").removeClass("active");
+    $(".form4__area").slideUp(250);
+  });
+
+  $(".form4").on("click", ".submit4", function (e) {
+    e.preventDefault();
+    var subj = "Запись на консультацию с главной страницы";
+    var name = $(".name4").val();
+    var surname = $(".surname4").val();
+    name = name + " " + surname;
+    var phone = $(".phone4").val();
+    var email = $(".email4").val();
+    var workemail = $(".work_email4").val();
+    var message = $(".message4").val();
+    var r = /^[\w\.\d-_]+@[\w\.\d-_]+\.\w{2,4}$/i;
+    if (name == "" || name == " ") {
+      swal({
+        title: "Поле Имя пустое",
+        text: "Заполните поле имя",
+        type: "error",
+        confirmButtonText: "ок",
+      });
+      $(".name4").addClass("error");
+      setTimeout(function () {
+        $(".name4").removeClass("error");
+      }, 3000);
+    } else if (phone == "") {
+      swal({
+        title: "Поле Телефон пустое",
+        text: "Заполните поле телефон",
+        type: "error",
+        confirmButtonText: "ок",
+      });
+      $(".phone4").addClass("error");
+      setTimeout(function () {
+        $(".phone4").removeClass("error");
+      }, 3000);
+    } else if (email == "") {
+      swal({
+        title: "Ошибка Email",
+        text: "Заполните поле Email",
+        type: "error",
+        confirmButtonText: "ок",
+      });
+      $(".email4").addClass("error");
+      setTimeout(function () {
+        $(".email4").removeClass("error");
+      }, 3000);
+    } else if (!r.test(email)) {
+      swal({
+        title: "Ошибка",
+        text: "Корректно заполните поле e-mail",
+        type: "error",
+        confirmButtonText: "ок",
+      });
+      $(".email4").addClass("error");
+      setTimeout(function () {
+        $(".email4").removeClass("error");
+      }, 3000);
+    } else if (message == "") {
+      swal({
+        title: "Пустое сообщение",
+        text: "Заполните текст сообщения",
+        type: "error",
+        confirmButtonText: "ок",
+      });
+      $(".message4").addClass("error");
+      setTimeout(function () {
+        $(".message4").removeClass("error");
+      }, 3000);
+    } else if (workemail != "") {
+      swal({
+        title: "Ах ты жулик",
+        text: "Уберите робота от компьютера",
+        type: "error",
+        confirmButtonText: "ок",
+      });
+    } else {
+      $.post(
+        "mail.php",
+        {
+          subj: subj,
+          name: name,
+          phone: phone,
+          email: email,
+          message: message,
+        },
+        function () {
+          swal({
+            title: "Спасибо",
+            text: "Ваше сообщение отправлено",
+            type: "success",
+            confirmButtonText: "ок",
+          });
+          $(".name4").val("").removeClass("error");
+          $(".surname4").val("").removeClass("error");
+          $(".phone4").val("").removeClass("error");
+          $(".email4").val("").removeClass("error");
+          $(".message4").val("").removeClass("error");
+          $(".mainConsBtn").removeClass("active");
+          $(".form4__area").slideUp(250);
+        }
+      );
+    }
   });
 });
 

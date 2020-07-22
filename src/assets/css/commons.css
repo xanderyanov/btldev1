@@ -461,14 +461,15 @@ form.form-search .inputs-group .search-submit:hover {
   background: linear-gradient(0deg, #942121, #ff2626);
 }
 
-.sisea-highlight {
-  background: #ffbc0d;
-}
-.sisea-result {
+.simplesearch-paging {
   padding: 30px 0;
 }
-.sisea-paging {
+.simplesearch-paging {
   padding: 10px 0;
+}
+
+.simplesearch-highlight {
+  color: var(--link1);
 }
 
 .header__ssSample {
