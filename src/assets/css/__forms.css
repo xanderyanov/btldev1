@@ -34,6 +34,7 @@
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  margin-bottom: 10px;
 }
 
 .form1 input {
@@ -74,6 +75,15 @@ input.work_email1 {
 .formPolycy__text {
   width: 100%;
   margin-bottom: 10px;
+  font-size: 0.875rem;
+}
+
+.formPolycy__text_mb0 {
+  margin-bottom: 0;
+}
+
+.formPolycy__text a {
+  color: #000;
   font-size: 0.875rem;
 }
 

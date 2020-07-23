@@ -24,14 +24,14 @@
 
 .f3 {
   order: 3;
-  width: 35%;
+  width: 30%;
   display: flex;
   flex-direction: column;
 }
 
 .f4 {
   order: 4;
-  width: 15%;
+  width: 20%;
 }
 
 .tm {
@@ -127,23 +127,46 @@ a.policy1:hover {
 .footerSGlinks {
   display: flex;
   align-items: center;
+  flex-direction: column;
+  align-items: flex-start;
 }
 
 .footerSGlinks a {
   display: flex;
+  align-items: center;
+  text-decoration: none;
+  margin-bottom: 10px;
+}
+.footerSGlinks a:last-child {
+  margin-bottom: 0;
+}
+
+.footerSGlinks a:hover p {
+  text-decoration: underline;
+}
+
+.footerSGlinks a p {
+  font-size: 0.75rem;
+  line-height: 1.3;
+  margin-left: 5px;
+  color: var(--tc0);
+  text-align: left;
+}
+
+.footerSGlinks a span {
+  /* width: 1.75rem;
+  height: 1.75rem; */
+  /* border-radius: 50%; */
+  display: flex;
   justify-content: center;
   align-items: center;
-  width: 1.5rem;
-  height: 1.5rem;
   text-decoration: none;
 }
 
-.footerSGlinks a i {
+.footerSGlinks a span i {
+  /* color: var(--color1); */
   font-size: 1rem;
-  color: var(--tc0);
-  transition: all 0.3s;
-}
-
-.footerSGlinks a:hover i {
-  color: var(--link1);
+  /* color: #fff; */
+  color: var(--tColor);
+  text-decoration: none !important;
 }

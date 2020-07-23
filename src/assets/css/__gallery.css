@@ -48,6 +48,7 @@
   display: block;
   width: 100%;
   transition: all 0.5s;
+  margin: 0 !important;
 }
 
 .gallery__item a:hover img {
@@ -101,7 +102,7 @@
 .videoBox a img {
   display: block;
   width: 100%;
-  margin-bottom: 5px;
+  margin: 0 !important;
 }
 
 .videoBox a span {
