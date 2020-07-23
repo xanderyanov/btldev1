@@ -14,6 +14,9 @@
 }
 
 @media only screen and (max-width: 800px) {
+  .serv__item span {
+    height: 30%;
+  }
 }
 
 @media only screen and (max-width: 768px) {

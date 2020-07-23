@@ -69,6 +69,7 @@
 
 .videoBox {
   position: relative;
+  border: 2px solid #eee;
 }
 
 /* .videoBox:hover {
