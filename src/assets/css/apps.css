@@ -69,6 +69,9 @@
 @import "__breadcrumbs.css";
 @import "__wideblock.css";
 
+@import "__instagram.css";
+@import "__instagram_media.css";
+
 /* в самом низу */
 @import "main.css";
 @import "media.css";

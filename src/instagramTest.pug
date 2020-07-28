@@ -1,0 +1,40 @@
+- var pageTitle = 'Instagram'
+- var seoKeywords = 'Ключевые слова для страницы'
+- var seoDesc = 'Сео описание для страницы'
+
+include __const
+include __header
+include __menu
+include __instagram
+include __forms
+include __footer
+
+
+
+
+<!DOCTYPE html>
+html(lang="ru-RU")
+  +head
+body
+
+  .site__header
+    +header
+    +topMenu
+
+  .site__center
+    +instagram
+
+  .site__footer
+    +footer
+
+
+  +topMenuAdaptive
+  +search1
+
+  +toUp
+
+  +formCallBack
+
+  +formConsInMain
+
+  +scripts

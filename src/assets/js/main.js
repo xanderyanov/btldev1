@@ -627,6 +627,30 @@ $(function () {
       );
     }
   });
+
+  // $("#instafeed").length;
+  // ? ((a = new Instafeed({
+  //     get: "user",
+  //     userId: 17841403346668216,
+  //     clientId: "10fdf054a0284eaeb40ad704cccde93d",
+  //     accessToken: "IGQVJVZAzY1YU1OcEVuQVRSQkNIUVZAQV1NFQjFVdDNkdjlRc2Y1TUFhMkxKbzBLWWhqajJzcUo2dmlXeG4wN3hRVUJJR2pmUFhTaUJiQ09SZAmxINjZACY1FGMGlzT0N6M3duWjBDb3MtdW92enNCNEVySnNZAZAVJacm10RUhv",
+  //     limit: 12,
+  //     resolution: "low_resolution",
+  //     template:
+  //       '<div class="ig__item"><a class="ig__link" href="{{link}}" target="_blank" style="background-image: url({{image}});"><img src="assets/img/igtrbg.png" alt="{{caption}}"/></a></div>',
+  //   })),
+  //   a.run())
+  // : void 0;
+
+  // var feed = new Instafeed({
+  //   accessToken:
+  //     "IGQVJVZAzY1YU1OcEVuQVRSQkNIUVZAQV1NFQjFVdDNkdjlRc2Y1TUFhMkxKbzBLWWhqajJzcUo2dmlXeG4wN3hRVUJJR2pmUFhTaUJiQ09SZAmxINjZACY1FGMGlzT0N6M3duWjBDb3MtdW92enNCNEVySnNZAZAVJacm10RUhv",
+  //   limit: 12,
+  //   resolution: "low_resolution",
+  //   template:
+  //     '<div class="ig__item"><a class="ig__link" href="{{link}}" target="_blank" style="background-image: url({{image}});"><img src="assets/img/igtrbg.png" alt="{{caption}}"/></a></div>',
+  // });
+  // feed.run();
 });
 
 var isMobile = {

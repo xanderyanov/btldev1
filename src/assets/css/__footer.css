@@ -56,11 +56,21 @@ a.policy1 {
   line-height: 1.4;
   text-transform: capitalize;
   color: var(--tc0);
-  text-decoration: none;
+  text-decoration: underline;
 }
 
 a.policy1:hover {
   text-decoration: underline !important;
+}
+
+.dev {
+  margin-top: 20px;
+}
+
+.dev a {
+  font-size: 0.75rem;
+  line-height: 1.4;
+  color: rgba(65, 51, 40, 0.5);
 }
 
 .footerMenu {
