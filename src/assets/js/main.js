@@ -641,7 +641,6 @@ $(function () {
   //   })),
   //   a.run())
   // : void 0;
-
   // var feed = new Instafeed({
   //   accessToken:
   //     "IGQVJVZAzY1YU1OcEVuQVRSQkNIUVZAQV1NFQjFVdDNkdjlRc2Y1TUFhMkxKbzBLWWhqajJzcUo2dmlXeG4wN3hRVUJJR2pmUFhTaUJiQ09SZAmxINjZACY1FGMGlzT0N6M3duWjBDb3MtdW92enNCNEVySnNZAZAVJacm10RUhv",
