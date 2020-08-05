@@ -271,7 +271,6 @@ $(function () {
     var phone = $(".phone1").val();
     var workemail = $(".work_email1").val();
     var r = /^[\w\.\d-_]+@[\w\.\d-_]+\.\w{2,4}$/i;
-    // var recaptcha = grecaptcha.getResponse("recaptcha1");
     if (name == "") {
       swal({
         title: "Поле Имя пустое",
@@ -308,6 +307,7 @@ $(function () {
           subj: subj,
           name: name,
           phone: phone,
+          recaptcha: recaptcha,
         },
         function () {
           swal({
@@ -420,6 +420,7 @@ $(function () {
     var workemail = $(".work_email3").val();
     var message = $(".message3").val();
     var r = /^[\w\.\d-_]+@[\w\.\d-_]+\.\w{2,4}$/i;
+    // var recaptcha = grecaptcha.getResponse();
     if (name == "") {
       swal({
         title: "Поле Имя пустое",
@@ -482,7 +483,16 @@ $(function () {
         type: "error",
         confirmButtonText: "ок",
       });
-    } else {
+    }
+    // else if (!recaptcha) {
+    //   swal({
+    //     title: "поставьте галочку",
+    //     text: "при проверке на спам",
+    //     type: "error",
+    //     confirmButtonText: "ок",
+    //   });
+    // }
+    else {
       $.post(
         "mail.php",
         {
@@ -491,6 +501,7 @@ $(function () {
           phone: phone,
           email: email,
           message: message,
+          // recaptcha: recaptcha,
         },
         function () {
           swal({
