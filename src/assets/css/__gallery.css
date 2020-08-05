@@ -76,7 +76,7 @@
 
 } */
 
-/* .videoBox a:after {
+.videoBox a:after {
   content: "";
   position: absolute;
   top: 0;
@@ -87,13 +87,13 @@
   background-position: center center;
   background-repeat: no-repeat;
   background-image: url(../img/play.png);
-  opacity: 0;
-  transition: all 0.3s;
-} */
-
-/* .videoBox a:hover:after {
   opacity: 1;
-} */
+  transition: all 0.3s;
+}
+
+.videoBox a:hover:after {
+  opacity: 0;
+}
 
 .videoBox a {
   display: block;
@@ -112,7 +112,7 @@
   right: 0;
   bottom: 0;
   left: 0;
-  background: rgba(112, 112, 112, 0.6);
+  background: rgba(255, 255, 255, 0.9);
   opacity: 0;
   transition: all 0.3s;
   display: flex;
@@ -122,7 +122,7 @@
   line-height: 1.5;
   text-align: center;
   padding: 10px;
-  color: #fff;
+  color: var(--tc0);
 }
 
 .videoBox a:hover span {
