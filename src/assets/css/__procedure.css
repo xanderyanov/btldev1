@@ -147,3 +147,15 @@
 .popular__area {
   margin: 30px 0 0 0;
 }
+
+.outerLink {
+  font-size: 1.25rem;
+  color: var(--link1);
+  display: block;
+  margin-top: 20px;
+}
+
+.outerLink:hover {
+  font-size: var(--link1hov);
+  font-size: 1.25rem;
+}
