@@ -148,14 +148,27 @@
   margin: 30px 0 0 0;
 }
 
-.outerLink {
-  font-size: 1.25rem;
-  color: var(--link1);
-  display: block;
+.outerLink__area {
+  width: 100%;
+  display: flex;
   margin-top: 20px;
+  align-items: center;
 }
 
-.outerLink:hover {
-  font-size: var(--link1hov);
+.outerLink__area span {
   font-size: 1.25rem;
+  color: var(--link1);
+}
+.outerLink {
+  color: #fff;
+  background: var(--link1);
+  padding: 0.625rem 1.25rem;
+  cursor: pointer;
+  white-space: nowrap;
+  margin-left: 20px;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+.outerLink:hover {
+  background: var(--link1hov);
 }
