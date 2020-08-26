@@ -1,0 +1,44 @@
+.outerLinkBox__area {
+  width: 100%;
+  margin-top: 30px;
+}
+
+.outerLinkBox__outer {
+  width: 100%;
+}
+
+.outerLinkBox {
+  display: flex;
+  flex-direction: column;
+}
+
+.outerLinkBox__item {
+  display: flex;
+  align-items: center;
+  background: var(--x1greySuperLight);
+  justify-content: space-between;
+  margin-bottom: 4px;
+}
+
+.outerLinkBox__itemTitle {
+  padding: 10px;
+  font-size: 1.125rem;
+  line-height: 1.5;
+  color: var(--tc0);
+}
+
+a.outerLinkBox__itemLink {
+  color: #fff;
+  background: var(--link1);
+  padding: 10px;
+  font-size: 1.125rem;
+  line-height: 1.5;
+  cursor: pointer;
+  white-space: nowrap;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+
+a.outerLinkBox__itemLink:hover {
+  background: var(--link1hov);
+}

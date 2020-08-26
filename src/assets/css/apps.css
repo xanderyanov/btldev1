@@ -72,6 +72,9 @@
 @import "__instagram.css";
 @import "__instagram_media.css";
 
+@import "__newBlocks.css";
+@import "__newBlocks_media.css";
+
 /* в самом низу */
 @import "main.css";
 @import "media.css";
