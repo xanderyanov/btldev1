@@ -1,5 +1,5 @@
 .header {
-  padding: 10px 0;
+  padding: 10px 0 2px;
   display: flex;
   flex-wrap: wrap;
   /* background: var(--bg1); */
@@ -61,14 +61,14 @@
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
-  padding: 5px 0;
+  padding: 1px 0;
 }
 
 .logo1 {
   position: relative;
 }
 .logo1 img {
-  width: 100%;
+  width: 140%;
   display: block;
 }
 
