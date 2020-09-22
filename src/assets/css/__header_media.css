@@ -5,6 +5,15 @@
 }
 
 @media only screen and (max-width: 1080px) {
+  .header {
+    padding: 10px 0;
+  }
+  .logo1 img {
+    width: 100%;
+  }
+  .header__line {
+    padding: 5px 0;
+  }
 }
 
 @media only screen and (max-width: 1024px) {
