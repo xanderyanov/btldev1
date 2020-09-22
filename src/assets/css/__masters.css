@@ -18,13 +18,21 @@
 
 .mastersBox {
   display: flex;
-  margin: 0 -10px;
+  margin: 0 -5px;
   flex-wrap: wrap;
 }
 
 .mastersBox__itemOuter {
-  width: 33.333%;
-  padding: 10px;
+  width: 25%;
+  padding: 5px;
+}
+
+.mastersBox__itemOuter.hidden {
+  display: none;
+}
+
+.mastersBox__itemOuter.visible {
+  display: block;
 }
 
 .mastersBox__item {
@@ -58,7 +66,7 @@
 
 .mastersBox__info span {
   color: var(--tc0);
-  font-size: 1.125rem;
+  font-size: 1rem;
   text-align: center;
   margin-bottom: 10px;
 }

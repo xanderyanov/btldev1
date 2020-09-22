@@ -17,19 +17,34 @@ mixin header
             span Запись на прием:
             a(href="tel:+78452650500") +7 (8452) 65-05-00
           .header__phoneItemText ежедневно с 9:00 до 21:00
-        .header__rightBtns
+        //- .header__rightBtns
+        .header__callActionNewArea
           .header__callAction(title="Заказать звонок")
             span Заказать звонок
             i.icon-phone1
-          .socialLink
-            a(href="#").sIg
+          a.header__callAction2(href="https://n322952.yclients.com/" target="_blank" title="Заказать звонок")
+            span Онлайн запись
+            i.icon-calendar2
+        .socialLink
+          a(href="#")
+            p Центр косметологии и красоты
+            span.sIg
               i.icon-ig
-            a(href="#").sFb
-              i.icon-fb
-            a(href="#").sVk
-              i.icon-vk
-            a(href="#").sOk
-              i.icon-ok
+          a(href="#")
+            p Имиджевый центр
+            span.sIg
+              i.icon-ig
+          a(href="#")
+            p Центр косметологии
+            span.sIg
+              i.icon-ig
+              
+            //- a(href="#").sFb
+            //-   i.icon-fb
+            //- a(href="#").sVk
+            //-   i.icon-vk
+            //- a(href="#").sOk
+            //-   i.icon-ok
 
 
 

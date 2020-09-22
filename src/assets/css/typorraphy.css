@@ -21,6 +21,7 @@ h6 {
 
 h1 {
   font-size: 1.625rem;
+  text-transform: uppercase;
 }
 
 h2 {
@@ -72,7 +73,10 @@ h6 {
   margin-bottom: 0;
 }
 
-.content ul,
+.content ul {
+  padding: 0 0 15px 15px;
+}
+
 .content ol {
   padding: 0 0 15px 25px;
 }
@@ -84,7 +88,7 @@ h6 {
 }
 
 .content ul li {
-  list-style-image: url("../img/ulbg.png");
+  /* list-style-image: url("../img/ulbg.png"); */
 }
 
 .content blockquote {
@@ -103,11 +107,12 @@ h6 {
 }
 
 .content a {
-  color: var(--redFill);
+  color: var(--color1);
   text-decoration: underline;
+  font-weight: 600;
 }
 
-.content ol {
+/* .content ol {
   counter-reset: li;
   padding: 0;
   list-style: none;
@@ -122,9 +127,9 @@ h6 {
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5rem;
-}
+} */
 
-.content ol li:before {
+/* .content ol li:before {
   content: counter(li) ".";
   counter-increment: li;
   position: absolute;
@@ -132,17 +137,17 @@ h6 {
   width: 25px;
   text-align: right;
   display: inline-block;
-  color: var(--redFill);
+  color: var(--tc0);
   font-family: "Roboto", sans-serif;
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5rem;
-}
+} */
 
 .content img {
   max-width: 100%;
   display: inline-block;
-  margin-bottom: 10px;
+  margin: 0 10px 10px 10px;
   height: auto;
 }
 

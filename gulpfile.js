@@ -67,7 +67,7 @@ var jsfiles = [
   "node_modules/swiper/js/swiper.min.js",
   "node_modules/jquery.maskedinput/src/jquery.maskedinput.js",
   "node_modules/sweetalert/dist/sweetalert.min.js",
-  // "node_modules/instafeed.js/instafeed.min.js"
+  "node_modules/instafeed.js/instafeed.min.js",
 ];
 
 gulp.task("js", function () {

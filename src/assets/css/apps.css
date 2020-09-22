@@ -48,6 +48,15 @@
 @import "__master.css";
 @import "__master_media.css";
 
+@import "__brands.css";
+@import "__brands_media.css";
+
+@import "__news.css";
+@import "__news_media.css";
+
+@import "__contacts.css";
+@import "__contacts_media.css";
+
 @import "__footer.css";
 @import "__footer_media.css";
 
@@ -59,6 +68,12 @@
 
 @import "__breadcrumbs.css";
 @import "__wideblock.css";
+
+@import "__instagram.css";
+@import "__instagram_media.css";
+
+@import "__newBlocks.css";
+@import "__newBlocks_media.css";
 
 /* в самом низу */
 @import "main.css";

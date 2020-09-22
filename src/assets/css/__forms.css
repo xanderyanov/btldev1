@@ -34,6 +34,7 @@
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  margin-bottom: 10px;
 }
 
 .form1 input {
@@ -67,6 +68,401 @@ input.work_email1 {
 }
 
 .form1 .submit1:hover {
+  background: var(--link1hov);
+  border: 1px solid var(--link1hov);
+}
+
+.formPolycy__text {
+  width: 100%;
+  margin-bottom: 10px;
+  font-size: 0.875rem;
+}
+
+.formPolycy__text_mb0 {
+  margin-bottom: 0;
+}
+
+.formPolycy__text a {
+  color: #000;
+  font-size: 0.875rem;
+}
+
+.form2__area {
+  width: 100%;
+}
+
+.form2__intro {
+  width: 100%;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.form2__intro span {
+  font-size: 1rem;
+  line-height: 1.4;
+  color: #fff;
+}
+.form2__intro a {
+  font-size: 1.125rem;
+  line-height: 1.4;
+  color: #fff;
+  font-weight: 700;
+}
+
+.form2 {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.form2 input {
+  width: 100%;
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  border: 1px solid #fff;
+  line-height: 2rem;
+  padding: 0 10px;
+  outline: none;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+}
+
+input.work_email2 {
+  display: none;
+}
+
+input.subj2 {
+  display: none;
+}
+
+.form2 .submit2 {
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  text-transform: uppercase;
+  border: 1px solid var(--tc0);
+  line-height: 2rem;
+  padding: 0 10px;
+  outline: none;
+  width: 100%;
+  cursor: pointer;
+  color: #fff;
+  background: var(--tc0);
+  transition: all 0.3s;
+}
+
+.form2 .submit2:hover {
+  background: var(--link1hov);
+  border: 1px solid var(--link1hov);
+}
+
+/* +formCallBack */
+
+.formZ__area {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: var(--bg0);
+  background-image: url(../img/logo100w.png);
+  background-position: bottom 0.5rem center;
+  background-repeat: no-repeat;
+  z-index: 5000;
+  display: none;
+  padding: 2rem 1.25rem;
+}
+
+.formZ__wrapper {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+}
+
+.formZ__close {
+  width: 2rem;
+  height: 2rem;
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid var(--tc0);
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.formZ__close i {
+  font-size: 0.875rem;
+  color: var(--tc0);
+}
+
+.formZ__intro {
+  width: 100%;
+  max-width: 400px;
+  margin-bottom: 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.formZ__intro span {
+  font-size: 1rem;
+  line-height: 1.4;
+  color: #000;
+  text-align: center;
+}
+.formZ__intro a {
+  font-size: 1.125rem;
+  line-height: 1.4;
+  color: #000;
+  font-weight: 700;
+}
+
+.formZ {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  max-width: 400px;
+}
+
+.formZ input {
+  width: 100%;
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  border: 1px solid #fff;
+  line-height: 2rem;
+  padding: 0 10px;
+  outline: none;
+  box-sizing: border-box;
+  margin-bottom: 5px;
+}
+
+input.work_emailZ {
+  display: none;
+}
+
+.formZ .submitZ {
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  text-transform: uppercase;
+  border: 1px solid var(--tc0);
+  line-height: 2rem;
+  padding: 0 10px;
+  outline: none;
+  width: 100%;
+  cursor: pointer;
+  color: #fff;
+  background: var(--tc0);
+  transition: all 0.3s;
+}
+
+.formZ .submitZ:hover {
+  background: var(--link1hov);
+  border: 1px solid var(--link1hov);
+}
+
+/* formInContactPage */
+
+.form3__area {
+  width: 100%;
+}
+
+.form3__intro {
+  width: 100%;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.form3__intro span {
+  font-size: 1rem;
+  line-height: 1.4;
+  color: #fff;
+}
+.form3__intro a {
+  font-size: 1.125rem;
+  line-height: 1.4;
+  color: #fff;
+  font-weight: 700;
+}
+
+.form3 {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.form3 input {
+  width: 100%;
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  border: 1px solid #fff;
+  line-height: 2rem;
+  padding: 0 10px;
+  outline: none;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+}
+
+.form3 textarea {
+  width: 100%;
+  height: 150px;
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  border: 1px solid #fff;
+  line-height: 2rem;
+  padding: 10px;
+  outline: none;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+  resize: none;
+}
+
+input.work_email3 {
+  display: none;
+}
+
+.submit3 {
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  text-transform: uppercase;
+  border: 1px solid var(--tc0);
+  line-height: 2rem;
+  padding: 0 10px;
+  outline: none;
+  width: 100%;
+  cursor: pointer;
+  color: #fff;
+  background: var(--tc0);
+  transition: all 0.3s;
+}
+
+.submit3:hover {
+  background: var(--link1hov);
+  border: 1px solid var(--link1hov);
+}
+
+/* form4 */
+
+.form4__area {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: var(--bg0);
+  background-image: url(../img/logo100w.png);
+  background-position: bottom 0.5rem center;
+  background-repeat: no-repeat;
+  z-index: 5000;
+  display: none;
+  padding: 2rem 1.25rem;
+}
+
+.form4__wrapper {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+}
+
+.form4__close {
+  width: 2rem;
+  height: 2rem;
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid var(--tc0);
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.form4__close i {
+  font-size: 0.875rem;
+  color: var(--tc0);
+}
+
+.form4__intro {
+  width: 100%;
+  max-width: 400px;
+  margin-bottom: 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.form4__intro span {
+  font-size: 1rem;
+  line-height: 1.4;
+  color: #000;
+  text-align: center;
+}
+.form4__intro a {
+  font-size: 1.125rem;
+  line-height: 1.4;
+  color: #000;
+  font-weight: 700;
+}
+
+.form4 {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.form4 input {
+  width: 100%;
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  border: 1px solid #fff;
+  line-height: 2rem;
+  padding: 0 10px;
+  outline: none;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+}
+
+.form4 textarea {
+  width: 100%;
+  height: 150px;
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  border: 1px solid #fff;
+  line-height: 2rem;
+  padding: 10px;
+  outline: none;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+  resize: none;
+}
+
+input.work_email4 {
+  display: none;
+}
+
+.submit4 {
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  text-transform: uppercase;
+  border: 1px solid var(--tc0);
+  line-height: 2rem;
+  padding: 0 10px;
+  outline: none;
+  width: 100%;
+  cursor: pointer;
+  color: #fff;
+  background: var(--tc0);
+  transition: all 0.3s;
+}
+
+.submit4:hover {
   background: var(--link1hov);
   border: 1px solid var(--link1hov);
 }

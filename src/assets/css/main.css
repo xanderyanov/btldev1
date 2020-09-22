@@ -50,3 +50,12 @@ body {
 .title1 h3 {
   margin: 0;
 }
+
+.textPage__area {
+  margin: 20px 0 0 0;
+}
+
+.block__video,
+.block__photo {
+  margin: 20px 0 0 0;
+}

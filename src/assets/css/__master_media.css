@@ -1,4 +1,15 @@
 @media only screen and (max-width: 1200px) {
+  .master__consForm {
+    width: 100%;
+    margin-top: 20px;
+  }
+  .master__intro {
+    width: 70%;
+  }
+  .master__face {
+    width: 30%;
+    padding: 0 0 0 10px;
+  }
 }
 
 @media only screen and (max-width: 1140px) {
@@ -17,16 +28,40 @@
 }
 
 @media only screen and (max-width: 768px) {
+  .master__intro {
+    width: 60%;
+  }
+  .master__face {
+    width: 40%;
+  }
 }
 
 @media only screen and (max-width: 600px) {
 }
 
 @media only screen and (max-width: 480px) {
+  .master__face {
+    width: 100%;
+    padding: 0 30px;
+    order: 1;
+  }
+  .master__intro {
+    width: 100%;
+    order: 2;
+    margin-top: 10px;
+    padding: 10px;
+  }
+  .master__consForm {
+    order: 3;
+    margin-top: 10px;
+  }
 }
 
 @media only screen and (max-width: 400px) {
 }
 
 @media only screen and (max-width: 320px) {
+  .master__face {
+    padding: 0;
+  }
 }

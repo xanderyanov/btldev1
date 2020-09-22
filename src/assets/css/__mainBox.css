@@ -52,7 +52,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background: rgba(255, 255, 255, 0.6);
+  background: rgba(255, 255, 255, 0.8);
   color: #000;
   font-size: 1rem;
   text-align: center;
@@ -69,7 +69,8 @@
   transform: scale(1.02);
 } */
 .mainBox__item:hover span {
-  background: rgba(255, 255, 255, 0.7);
+  background: rgba(255, 255, 255, 0.9);
+  color: var(--color1);
 }
 
 .mainBox__itemOuter_rightBox {
@@ -89,7 +90,8 @@
   position: relative;
   width: 100%;
   /* height: 590px; */
-  background: var(--color1);
+  /* background: var(--x1greySuperLight); */
+  background: var(--bg0);
 }
 
 .rightBox__innerCover {
@@ -127,9 +129,11 @@
   font-size: 0.875rem;
   color: var(--tc0);
   background: #fff;
+  transition: all 0.3s;
 }
 .mainBox__itemOuter_rightBox .mainBox__item a:hover {
-  color: var(--color1);
+  color: #fff;
+  background: var(--link1);
 }
 
 /* .mainBox__itemOuter_rightBox .mainBox__item {
@@ -211,6 +215,7 @@
   background: var(--link1);
   transition: all 0.3s;
   margin-right: auto;
+  margin-top: 20px;
 }
 
 .mainContent__redmore:hover {

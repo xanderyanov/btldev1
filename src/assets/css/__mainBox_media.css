@@ -53,6 +53,15 @@
   .logo100 {
     display: block;
   }
+  .mainContent__inner {
+    width: 100%;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.8);
+  }
+  .mainContent {
+    background-position: center center;
+    background-size: cover;
+  }
 }
 
 @media only screen and (max-width: 768px) {
@@ -79,23 +88,16 @@
     height: auto;
     background-size: cover;
   }
-  .mainContent__inner {
-    width: 60%;
-    padding: 20px;
-    background: rgba(255, 255, 255, 0.8);
-  }
 }
 
 @media only screen and (max-width: 600px) {
   .mainBox__itemOuter {
     width: 50%;
   }
-  .mainContent {
-    background-position: center center;
-  }
-  .mainContent__inner {
+
+  /* .mainContent__inner {
     width: 80%;
-  }
+  } */
 }
 
 @media only screen and (max-width: 480px) {
