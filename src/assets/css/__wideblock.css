@@ -1,5 +1,6 @@
 .wideBlock {
   position: relative;
+  margin-bottom: 10px;
 }
 
 .wideBlock__link {

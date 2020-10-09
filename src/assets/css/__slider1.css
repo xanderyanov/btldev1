@@ -149,6 +149,10 @@
 }
 /* slickSlider-END */
 
+.sliderPlus {
+  display: flex;
+}
+
 /* julySlider */
 
 .julySlider__area {
@@ -157,8 +161,7 @@
   margin: 10px 0 10px;
 }
 .julySlider__outer {
-  /* display: flex;
-  flex-direction: column; */
+  width: 66.666%;
 }
 
 .julySlider {
@@ -344,4 +347,28 @@
 .julySlider__pagination .swiper-pagination-bullet-active {
   opacity: 1;
   background: var(--tc0);
+}
+
+.promoBox1__area {
+  width: 33.333%;
+  padding: 0 0 0 20px;
+}
+
+.promoBox1 {
+  background: var(--tc0);
+  width: 100%;
+  height: 250px;
+  display: flex;
+  overflow: hidden;
+}
+
+.promoBox1 img {
+  display: block;
+  width: 100%;
+  object-fit: cover;
+  transition: all 0.5s;
+}
+
+.promoBox1:hover img {
+  transform: scale(1.02);
 }

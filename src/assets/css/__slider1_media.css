@@ -14,6 +14,9 @@
   .julySlider.swiper-container {
     height: 240px;
   }
+  .promoBox1 {
+    height: 240px;
+  }
 }
 
 @media only screen and (max-width: 920px) {
@@ -29,6 +32,9 @@
   .julySlider.swiper-container {
     height: 200px;
   }
+  .promoBox1 {
+    height: 200px;
+  }
 }
 
 @media only screen and (max-width: 600px) {
@@ -37,6 +43,20 @@
   }
   .julySlider.swiper-container {
     height: 150px;
+  }
+  .sliderPlus {
+    display: flex;
+    flex-direction: column;
+  }
+  .julySlider__outer {
+    width: 100%;
+  }
+  .promoBox1__area {
+    width: 100%;
+    padding: 10px 0 0 0;
+  }
+  .promoBox1 {
+    height: 100px;
   }
 }
 
