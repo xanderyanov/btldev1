@@ -372,3 +372,11 @@
 .promoBox1:hover img {
   transform: scale(1.02);
 }
+
+img.creative1__dt {
+  display: block;
+}
+
+img.creative1_mb {
+  display: none;
+}

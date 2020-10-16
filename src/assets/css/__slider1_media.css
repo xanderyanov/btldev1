@@ -55,8 +55,15 @@
     width: 100%;
     padding: 10px 0 0 0;
   }
-  .promoBox1 {
+  /* .promoBox1 {
     height: 100px;
+  } */
+  img.creative1_dt {
+    display: none;
+  }
+
+  img.creative1_mb {
+    display: block;
   }
 }
 
