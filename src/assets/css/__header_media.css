@@ -29,6 +29,9 @@
   .header__rightBtns {
     width: 40%;
   }
+  .logo1 {
+    max-width: 160px;
+  }
 }
 
 @media only screen and (max-width: 768px) {
@@ -47,7 +50,7 @@
 
 @media only screen and (max-width: 600px) {
   .logo1 {
-    width: 80px;
+    max-width: 110px;
   }
 }
 
@@ -70,11 +73,14 @@
   .socialLink a p {
     margin-right: 3px;
   }
+  .logo1 {
+    max-width: 140px;
+  }
 }
 
 @media only screen and (max-width: 400px) {
   .logo1 {
-    width: 70px;
+    width: 80px;
   }
 }
 

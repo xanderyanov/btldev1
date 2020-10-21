@@ -66,9 +66,11 @@
 
 .logo1 {
   position: relative;
+  width: 100%;
+  max-width: 200px;
 }
 .logo1 img {
-  width: 140%;
+  /* width: 140%; */
   display: block;
 }
 

@@ -377,10 +377,24 @@
   transform: scale(1.02);
 }
 
-img.creative1__dt {
+img.creative1 {
   display: block;
 }
 
-img.creative1_mb {
+img.creative2 {
   display: none;
+  height: auto;
+  width: 100%;
+}
+
+img.creative2_all {
+  display: block;
+  height: auto;
+  width: 100%;
+}
+
+img.creative3 {
+  display: none;
+  height: auto;
+  width: 100%;
 }
