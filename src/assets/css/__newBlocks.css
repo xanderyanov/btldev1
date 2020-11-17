@@ -42,3 +42,67 @@ a.outerLinkBox__itemLink {
 a.outerLinkBox__itemLink:hover {
   background: var(--link1hov);
 }
+
+.pageContainer__area {
+  width: 100%;
+}
+
+.pageContainer__outer {
+  width: 100%;
+  padding: 10px 0 20px;
+}
+
+.pageContainer {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 0 -10px;
+}
+
+.pageContainer__itemOuter {
+  width: 33.333%;
+  padding: 10px;
+}
+
+.pageContainer__item {
+  display: flex;
+  position: relative;
+  text-decoration: none;
+}
+
+.pageContainer__itemImg {
+  width: 100%;
+  overflow: hidden;
+}
+.pageContainer__itemImg img {
+  display: block;
+  width: 100%;
+  transition: all 0.8s;
+}
+
+.pageContainer__item span {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 25%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.8);
+  color: #000;
+  font-size: 1rem;
+  text-align: center;
+  padding: 0 10px;
+  transition: all 0.3s;
+  z-index: 10;
+}
+
+.pageContainer__item:hover span {
+  background: rgba(255, 255, 255, 0.9);
+  color: var(--color1);
+}
+
+.pageContainer__item:hover img {
+  transform: scale(1.05);
+}

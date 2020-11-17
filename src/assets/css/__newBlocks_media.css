@@ -27,10 +27,16 @@
     flex-direction: column;
     padding: 10px;
   }
+  .pageContainer__itemOuter {
+    width: 50%;
+  }
 }
 
 @media only screen and (max-width: 400px) {
 }
 
 @media only screen and (max-width: 320px) {
+  .pageContainer__itemOuter {
+    width: 100%;
+  }
 }
