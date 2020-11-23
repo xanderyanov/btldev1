@@ -15,13 +15,35 @@
 
 .topMenu__area {
   /* background: var(--x1greySuperLight); */
-  background-image: url(../img/newyear/bg3.jpg);
-  background-size: contain;
+  /* background-image: url(../img/newyear/bg3.jpg);
+  background-size: contain; */
+  position: relative;
+}
+
+.topMenu__area:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-image: url(../img/newyear/bg1.jpg);
+  opacity: 0.1;
 }
 
 .footer__area {
-  background-image: url(../img/newyear/bg3.jpg);
-  background-size: contain;
+  position: relative;
+}
+
+.footer__area:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-image: url(../img/newyear/bg1.jpg);
+  opacity: 0.1;
 }
 
 html,
@@ -36,7 +58,7 @@ body {
   right: 0;
   bottom: 0;
   left: 0;
-  background-image: url(../img/newyear/bg4.jpg);
+  background-image: url(../img/newyear/bg61.jpg);
   opacity: 0.1;
 }
 
@@ -47,7 +69,7 @@ body {
   right: 0;
   bottom: 0;
   left: 0;
-  background-image: url(../img/newyear/bg4.jpg);
+  background-image: url(../img/newyear/bg61.jpg);
   background-size: contain;
   opacity: 0.1;
 }
