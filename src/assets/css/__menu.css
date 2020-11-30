@@ -54,6 +54,7 @@ li.endLeftBlock {
   align-items: center;
   margin-left: 40px;
   cursor: pointer;
+  position: relative;
 }
 .topSearch i {
   font-size: 1.25rem;
