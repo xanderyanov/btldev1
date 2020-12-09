@@ -339,40 +339,137 @@ li.endLeftBlock {
   border-top: 1px solid var(--bg2);
 }
 
-.leftMenu li {
+.leftMenu li.lev0 {
   list-style: none;
 }
 
-.leftMenu li a {
+.leftMenu li.lev0 {
+  list-style: none;
+}
+
+.leftMenu li.lev0 .lev0wrapper {
+  position: relative;
+}
+
+.leftMenu li.lev0 .lev0wrapper > a {
   display: block;
-  padding: 0.625rem;
+  padding: 0.625rem 2.25rem 0.625rem 0.625rem;
   text-decoration: none;
   width: 100%;
   font-size: 1rem;
   line-height: 1.3;
+  font-weight: 500;
   color: var(--tc0);
   background: var(--x1greySuperLight);
   border-bottom: 1px solid var(--bg2);
   transition: all 0.3s;
+  position: relative;
 }
 
-.leftMenu li.active a {
-  background: var(--color1);
-  border-bottom: 1px solid #fff;
-  color: #fff;
+.leftMenu li.lev0 .lev0wrapper .openInner {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 1.625rem;
+  background: #ececec;
+  border-bottom: 1px solid var(--bg2);
+  cursor: pointer;
+  transition: all 0.3s;
 }
 
-.leftMenu li a:hover {
+.leftMenu li.lev0 .lev0wrapper .openInner:after {
+  content: "\e954";
+  font-family: "icomoon";
+  font-size: 1rem;
+  color: #000;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate3d(-50%, -50%, 0);
+  z-index: 10;
+}
+
+.leftMenu li.lev0 .lev0wrapper .openInner:hover {
   background: var(--x1greyLight);
 }
 
-.leftMenu li.active a:hover {
+.leftMenu li.lev0 .lev0wrapper .openInner img {
+  height: 100%;
+  width: auto;
+}
+
+/* .leftMenu li.lev0 div > a.hasInner:after {
+  content: "\e954";
+  font-family: "icomoon";
+  font-size: 1rem;
+  color: #000;
+  position: absolute;
+  right: 0.625rem;
+  top: 50%;
+  transform: translate3d(0, -50%, 0);
+  z-index: 10;
+} */
+
+.leftMenu li.lev0 > ul {
+  display: none;
+}
+
+.leftMenu li.lev0.active .lev0wrapper > a {
   background: var(--color1);
   border-bottom: 1px solid #fff;
   color: #fff;
 }
 
-.leftMenu li span {
+.leftMenu li.lev0 .lev0wrapper > a:hover {
+  background: var(--x1greyLight);
+}
+
+.leftMenu li.lev0.active .lev0wrapper > a:hover {
+  background: var(--color1);
+  border-bottom: 1px solid #fff;
+  color: #fff;
+}
+
+.openInner {
+}
+
+.leftMenu li.lev1 {
+  list-style: none;
+}
+
+.leftMenu li.lev1 > a {
+  display: block;
+  padding: 0.625rem 0.625rem 0.625rem 1.5rem;
+  text-decoration: none;
+  width: 100%;
+  font-size: 0.875rem;
+  line-height: 1.3;
+  color: var(--tc0);
+  background: #fffefe;
+  border-bottom: 1px solid var(--bg2);
+  transition: all 0.3s;
+  position: relative;
+}
+
+.leftMenu li.lev1 > a:before {
+  content: "";
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--tc0);
+  left: 0.625rem;
+  top: 50%;
+  margin-top: -3px;
+  z-index: 10;
+}
+
+.leftMenu li.lev1 > a:hover {
+  background: #ececec;
+}
+
+/* .leftMenu li span {
   display: block;
   padding: 0.625rem;
   text-decoration: none;
@@ -400,7 +497,7 @@ li.endLeftBlock {
   background: var(--color1);
   border-bottom: 1px solid #fff;
   color: #fff;
-}
+} */
 
 .solutionMenu__outer {
   width: 100%;

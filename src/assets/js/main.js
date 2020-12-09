@@ -4,6 +4,20 @@
 
 $(function () {
 
+  $(".openInner").on("click", function (e) {
+    e.preventDefault();
+
+    var daughterUl = $(this).closest('.lev0').find('ul');
+
+    if ($(this).hasClass("open")) {
+      $(this).removeClass("open");
+      daughterUl.slideUp(200);
+    } else {
+      $(this).addClass("open");
+      daughterUl.slideDown(200);
+    }
+  });
+
   $(".solution__btn").on("click", function (e) {
     e.preventDefault();
     if ($(this).hasClass("active")) {

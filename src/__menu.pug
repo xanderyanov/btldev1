@@ -66,23 +66,41 @@ mixin leftMenu
         li
           a(href="") Акне
     ul.leftMenu
-      li
-        a(href="") Все процедуры
-      li
-        a(href="") Аппаратная косметология
-      li
-        a(href="") Инъекционная косметология
-      li
-        a(href="") Эстетическая косметология
-      li
-        a(href="") Эстетика тела
-      li
-        a(href="") Дерматология
-      li
-        a(href="") Трихология
-      li
-        a(href="") Nail Bar
-      li
-        a(href="") Hair стиль
-      li
-        a(href="") Brow Bar
+      li.lev0
+        .lev0wrapper
+          a(href="") Все процедуры
+      li.lev0
+        .lev0wrapper
+          a.hasInner(href="") Инъекционная косметология
+          .openInner
+        ul
+          li.lev1
+            a(href="") Candela GENTLELASEPRO-U
+          li.lev1
+            a(href="") Venus Legasy
+          li.lev1
+            a(href="") Fotona
+      li.lev0
+        .lev0wrapper
+          a(href="") Инъекционная косметология
+      li.lev0
+        .lev0wrapper
+          a(href="") Эстетическая косметология
+      li.lev0
+        .lev0wrapper
+          a(href="") Эстетика тела
+      li.lev0
+        .lev0wrapper
+          a(href="") Дерматология
+      li.lev0
+        .lev0wrapper
+          a(href="") Трихология
+      li.lev0
+        .lev0wrapper
+          a(href="") Nail Bar
+      li.lev0
+        .lev0wrapper
+          a(href="") Hair стиль
+      li.lev0
+        .lev0wrapper
+          a(href="") Brow Bar
