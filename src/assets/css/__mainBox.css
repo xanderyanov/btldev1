@@ -127,8 +127,8 @@
   text-decoration: none;
   padding: 10px 20px;
   font-size: 0.875rem;
-  color: var(--tc0);
-  background: #fff;
+  color: #fff;
+  background: var(--tc0);
   transition: all 0.3s;
 }
 .mainBox__itemOuter_rightBox .mainBox__item a:hover {

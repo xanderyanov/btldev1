@@ -3,8 +3,24 @@
 // });
 
 $(function () {
+
+  $(".solution__btn").on("click", function (e) {
+    e.preventDefault();
+    if ($(this).hasClass("active")) {
+      $(this).removeClass("active");
+      $(".solution").slideUp(200);
+    } else {
+      $(this).addClass("active");
+      $(".solution").slideDown(200);
+    }
+  });
+
+
+
+
+
   // Открытие и закрытие адаптивного меню по кнопке
-  $(".menuButton1__area_JS").click(function (e) {
+  $(".menuButton1__area_JS").on("click", function (e) {
     e.preventDefault();
     if ($(this).hasClass("open")) {
       $(this).removeClass("open");
