@@ -22,6 +22,10 @@ body {
   position: relative;
 }
 
+.mt20 {
+  margin-top: 20px;
+}
+
 .title {
   margin-bottom: 1.25rem;
 }

@@ -3,17 +3,18 @@
 // });
 
 $(function () {
-
   $(".openInner").on("click", function (e) {
     e.preventDefault();
-
-    var daughterUl = $(this).closest('.lev0').find('ul');
-
+    var daughterUl = $(this).closest(".lev1").find("ul");
+    var allUl = $(this).closest(".leftMenu").find("li.lev1 ul");
+    var otherOpenInner = $(this).closest(".leftMenu").find(".openInner");
     if ($(this).hasClass("open")) {
       $(this).removeClass("open");
       daughterUl.slideUp(200);
     } else {
+      otherOpenInner.removeClass("open");
       $(this).addClass("open");
+      allUl.slideUp(200);
       daughterUl.slideDown(200);
     }
   });
@@ -28,10 +29,6 @@ $(function () {
       $(".solution").slideDown(200);
     }
   });
-
-
-
-
 
   // Открытие и закрытие адаптивного меню по кнопке
   $(".menuButton1__area_JS").on("click", function (e) {

@@ -44,6 +44,10 @@ h6 {
   font-size: 1rem;
 }
 
+.content__outer {
+  padding: 20px 0;
+}
+
 /* .content {
   margin-bottom: 20px;
 } */

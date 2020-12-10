@@ -339,19 +339,19 @@ li.endLeftBlock {
   border-top: 1px solid var(--bg2);
 }
 
-.leftMenu li.lev0 {
+.leftMenu li.lev1 {
   list-style: none;
 }
 
-.leftMenu li.lev0 {
+.leftMenu li.lev1 {
   list-style: none;
 }
 
-.leftMenu li.lev0 .lev0wrapper {
+.leftMenu li.lev1 .lev_a_wrapper {
   position: relative;
 }
 
-.leftMenu li.lev0 .lev0wrapper > a {
+.leftMenu li.lev1 .lev_a_wrapper > a {
   display: block;
   padding: 0.625rem 2.25rem 0.625rem 0.625rem;
   text-decoration: none;
@@ -366,7 +366,7 @@ li.endLeftBlock {
   position: relative;
 }
 
-.leftMenu li.lev0 .lev0wrapper .openInner {
+.leftMenu li.lev1 .lev_a_wrapper .openInner {
   position: absolute;
   top: 0;
   right: 0;
@@ -378,7 +378,7 @@ li.endLeftBlock {
   transition: all 0.3s;
 }
 
-.leftMenu li.lev0 .lev0wrapper .openInner:after {
+.leftMenu li.lev1 .lev_a_wrapper .openInner:after {
   content: "\e954";
   font-family: "icomoon";
   font-size: 1rem;
@@ -390,16 +390,25 @@ li.endLeftBlock {
   z-index: 10;
 }
 
-.leftMenu li.lev0 .lev0wrapper .openInner:hover {
+.leftMenu li.lev1 .lev_a_wrapper .openInner:hover {
   background: var(--x1greyLight);
 }
 
-.leftMenu li.lev0 .lev0wrapper .openInner img {
+.leftMenu li.lev1 .lev_a_wrapper .openInner img {
   height: 100%;
   width: auto;
 }
 
-/* .leftMenu li.lev0 div > a.hasInner:after {
+.leftMenu li.lev1.active .lev_a_wrapper .openInner {
+  background: var(--color1);
+  border-bottom: 1px solid #fff;
+}
+
+.leftMenu li.lev1.active .lev_a_wrapper .openInner:after {
+  color: #fff;
+}
+
+/* .leftMenu li.lev1 div > a.hasInner:after {
   content: "\e954";
   font-family: "icomoon";
   font-size: 1rem;
@@ -411,21 +420,25 @@ li.endLeftBlock {
   z-index: 10;
 } */
 
-.leftMenu li.lev0 > ul {
+.leftMenu li.lev1 > ul {
   display: none;
 }
 
-.leftMenu li.lev0.active .lev0wrapper > a {
+.leftMenu li.lev1.active > ul {
+  display: block;
+}
+
+.leftMenu li.lev1.active .lev_a_wrapper > a {
   background: var(--color1);
   border-bottom: 1px solid #fff;
   color: #fff;
 }
 
-.leftMenu li.lev0 .lev0wrapper > a:hover {
+.leftMenu li.lev1 .lev_a_wrapper > a:hover {
   background: var(--x1greyLight);
 }
 
-.leftMenu li.lev0.active .lev0wrapper > a:hover {
+.leftMenu li.lev1.active .lev_a_wrapper > a:hover {
   background: var(--color1);
   border-bottom: 1px solid #fff;
   color: #fff;
@@ -434,11 +447,11 @@ li.endLeftBlock {
 .openInner {
 }
 
-.leftMenu li.lev1 {
+.leftMenu li.lev2 {
   list-style: none;
 }
 
-.leftMenu li.lev1 > a {
+.leftMenu li.lev2 > a {
   display: block;
   padding: 0.625rem 0.625rem 0.625rem 1.5rem;
   text-decoration: none;
@@ -452,7 +465,11 @@ li.endLeftBlock {
   position: relative;
 }
 
-.leftMenu li.lev1 > a:before {
+.leftMenu li.lev2.active > a {
+  background: rgba(255, 128, 0, 0.5);
+}
+
+.leftMenu li.lev2 > a:before {
   content: "";
   position: absolute;
   width: 6px;
@@ -465,8 +482,12 @@ li.endLeftBlock {
   z-index: 10;
 }
 
-.leftMenu li.lev1 > a:hover {
+.leftMenu li.lev2 > a:hover {
   background: #ececec;
+}
+
+.leftMenu li.lev2.active > a:hover {
+  background: rgba(255, 128, 0, 0.8);
 }
 
 /* .leftMenu li span {
