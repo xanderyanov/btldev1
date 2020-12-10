@@ -41,11 +41,16 @@
     border: none;
     margin: 0 -5px;
   }
-  .leftMenu li {
-    padding: 5px;
+  .leftMenu li.lev1 {
+    padding: 0 5px 5px;
+    width: 100%;
   }
   .leftMenu li a {
     border: none;
+  }
+
+  .menuCategoryMastersLink {
+    padding: 2px;
   }
 }
 

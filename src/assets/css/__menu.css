@@ -490,7 +490,7 @@ li.endLeftBlock {
   background: rgba(255, 128, 0, 0.8);
 }
 
-/* .leftMenu li span {
+.leftMenu li span {
   display: block;
   padding: 0.625rem;
   text-decoration: none;
@@ -518,7 +518,11 @@ li.endLeftBlock {
   background: var(--color1);
   border-bottom: 1px solid #fff;
   color: #fff;
-} */
+}
+
+.menuCategoryMastersLink {
+  list-style: none;
+}
 
 .solutionMenu__outer {
   width: 100%;
