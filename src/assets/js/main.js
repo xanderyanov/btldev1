@@ -3,6 +3,77 @@
 // });
 
 $(function () {
+  //Открытие мобильного меню услуг - начало
+  $(".mbMenu__servBtn_JS").on("click", function (e) {
+    e.preventDefault();
+    $(".mbMenu__overlay").fadeOut(200);
+    $(".mbMenu__openBox_solutionJs").slideUp(200);
+    $(".mbMenu__solutionBtn_JS").removeClass("open");
+    if ($(this).hasClass("open")) {
+      $(this).removeClass("open");
+      $(".mbMenu__overlay").fadeOut(200);
+      $(".mbMenu__openBox_servJs").slideUp(200);
+      $("body").removeClass("stop");
+    } else {
+      $(this).addClass("open");
+      $(".mbMenu__overlay").fadeIn(200);
+      $(".mbMenu__openBox_servJs").slideDown(200);
+      $("body").addClass("stop");
+    }
+  });
+  $(".mbMenu__openBoxClose").click(function () {
+    $(".mbMenu__servBtn_JS").removeClass("open");
+    $(".mbMenu__overlay").fadeOut(200);
+    $(".mbMenu__openBox_servJs").slideUp(200);
+    $("body").removeClass("stop");
+  });
+  $(".mbMenu__overlay").click(function () {
+    $(".mbMenu__servBtn_JS").removeClass("open");
+    $(this).fadeOut(200);
+    $(".mbMenu__openBox_servJs").slideUp(200);
+    $("body").removeClass("stop");
+  });
+  //Открытие мобильного меню - конец
+
+  //Открытие мобильного меню решить проблему - начало
+  $(".mbMenu__solutionBtn_JS").on("click", function (e) {
+    e.preventDefault();
+    $(".mbMenu__overlay").fadeOut(200);
+    $(".mbMenu__openBox_servJs").slideUp(200);
+    $(".mbMenu__servBtn_JS").removeClass("open");
+    if ($(this).hasClass("open")) {
+      $(this).removeClass("open");
+      $(".mbMenu__overlay").fadeOut(200);
+      $(".mbMenu__openBox_solutionJs").slideUp(200);
+      $("body").removeClass("stop");
+    } else {
+      $(this).addClass("open");
+      $(".mbMenu__overlay").fadeIn(200);
+      $(".mbMenu__openBox_solutionJs").slideDown(200);
+      $("body").addClass("stop");
+    }
+  });
+  $(".mbMenu__openBoxClose").click(function () {
+    $(".mbMenu__solutionBtn_JS").removeClass("open");
+    $(".mbMenu__overlay").fadeOut(200);
+    $(".mbMenu__openBox_solutionJs").slideUp(200);
+    $("body").removeClass("stop");
+  });
+  $(".mbMenu__overlay").click(function () {
+    $(".mbMenu__solutionBtn_JS").removeClass("open");
+    $(this).fadeOut(200);
+    $(".mbMenu__openBox_solutionJs").slideUp(200);
+    $("body").removeClass("stop");
+  });
+  //Открытие мобильного меню решить проблему - конец
+
+  $(window).on("resize", function () {
+    var bm = $(".mbMenu__outer").outerHeight();
+    $(".mbMenu__fake").css({ height: bm });
+    $(".mbMenu__openBox").css({ bottom: bm });
+  });
+  $(window).resize();
+
   $(".openInner").on("click", function (e) {
     e.preventDefault();
     var daughterUl = $(this).closest(".lev1").find("ul");

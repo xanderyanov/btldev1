@@ -29,8 +29,9 @@
   }
 
   .leftMenu__outer {
-    width: 100%;
-    margin-bottom: 10px;
+    display: none;
+    /* width: 100%;
+    margin-bottom: 10px; */
   }
 
   .leftMenu {
@@ -51,6 +52,12 @@
 
   .menuCategoryMastersLink {
     padding: 2px;
+  }
+  .leftMenu li.lev1 .lev_a_wrapper .openInner {
+    width: 3rem;
+  }
+  .leftMenu li.lev1 .lev_a_wrapper > a {
+    padding: 0.625rem 3rem 0.625rem 0.625rem;
   }
 }
 

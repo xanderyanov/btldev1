@@ -1,14 +1,13 @@
 @media only screen and (max-width: 1200px) {
-  .w0 {
-    padding-right: 10px;
-    padding-left: 10px;
-  }
 }
 
 @media only screen and (max-width: 1140px) {
 }
 
 @media only screen and (max-width: 1080px) {
+}
+
+@media only screen and (max-width: 1024px) {
 }
 
 @media only screen and (max-width: 920px) {
@@ -18,28 +17,34 @@
 }
 
 @media only screen and (max-width: 768px) {
-  html,
-  body {
-    font-size: 12px;
+  .topMenu__area {
+    display: none;
   }
-  .toTop {
-    z-index: 2600;
-    position: fixed;
-    left: auto;
-    right: 10px;
-    bottom: 100px;
-    /* background: #be3f46; */
+  .mbMenu__area {
+    display: block;
+  }
+  .solution {
+    display: block;
   }
 }
 
 @media only screen and (max-width: 600px) {
+  a.mbMenu__item i {
+    font-size: 1.5rem;
+    margin-bottom: 5px;
+  }
+
+  a.mbMenu__item span {
+    font-size: 0.875rem;
+  }
 }
 
 @media only screen and (max-width: 480px) {
-  .content img {
-    width: 100%;
-    float: none !important;
-    margin: 10px 0;
+  .mbMenu {
+    justify-content: space-between;
+  }
+  a.mbMenu__item i {
+    font-size: 1.375rem;
   }
 }
 

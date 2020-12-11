@@ -83,6 +83,14 @@ mixin leftMenu
       li.lev1
         .lev_a_wrapper
           a(href="") Инъекционная косметология
+          .openInner
+        ul
+          li.lev2
+            a(href="") Babor
+          li.lev2
+            a(href="") Prophilo
+          li.lev2
+            a(href="") Botox
       li.lev1
         .lev_a_wrapper
           a(href="") Эстетическая косметология
@@ -104,3 +112,61 @@ mixin leftMenu
       li.lev1
         .lev_a_wrapper
           a(href="") Brow Bar
+
+mixin leftMenuAdaptive
+  ul.leftMenu
+    li.lev1
+      .lev_a_wrapper
+        a(href="") Все процедуры
+    li.lev1
+      .lev_a_wrapper
+        a.hasInner(href="") Инъекционная косметология
+        .openInner
+      ul
+        li.lev2
+          a(href="") Candela GENTLELASEPRO-U
+        li.lev2
+          a(href="") Venus Legasy
+        li.lev2
+          a(href="") Fotona
+    li.lev1
+      .lev_a_wrapper
+        a(href="") Инъекционная косметология
+        .openInner
+      ul
+        li.lev2
+          a(href="") Babor
+        li.lev2
+          a(href="") Prophilo
+        li.lev2
+          a(href="") Botox
+    li.lev1
+      .lev_a_wrapper
+        a(href="") Эстетическая косметология
+    li.lev1
+      .lev_a_wrapper
+        a(href="") Эстетика тела
+    li.lev1
+      .lev_a_wrapper
+        a(href="") Дерматология
+    li.lev1
+      .lev_a_wrapper
+        a(href="") Трихология
+    li.lev1
+      .lev_a_wrapper
+        a(href="") Nail Bar
+    li.lev1
+      .lev_a_wrapper
+        a(href="") Hair стиль
+    li.lev1
+      .lev_a_wrapper
+        a(href="") Brow Bar
+
+mixin onlySolutions
+  ul.solution
+    li
+      a(href="") Лифтинг лица
+    li
+      a(href="") Пигментация
+    li
+      a(href="") Акне
