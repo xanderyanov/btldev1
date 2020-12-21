@@ -15,7 +15,7 @@
 
 @media only screen and (max-width: 800px) {
   .serv__item span {
-    height: 30%;
+    height: 60px;
   }
 }
 
