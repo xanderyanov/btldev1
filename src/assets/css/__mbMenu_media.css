@@ -26,6 +26,10 @@
   .solution {
     display: block;
   }
+  .mbMenu__openBoxContentInner {
+    width: 100%;
+    position: relative;
+  }
 }
 
 @media only screen and (max-width: 600px) {
