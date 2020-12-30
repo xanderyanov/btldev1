@@ -77,6 +77,47 @@
   .logo1 {
     max-width: 140px;
   }
+  .topLine__inner a span {
+    display: none;
+  }
+
+  .topLine__inner a i {
+    display: block;
+  }
+  .topLine__inner > span {
+    order: 2;
+  }
+  .topLine__inner a {
+    margin: 0 10px 0 0;
+  }
+  .topLine__inner a:focus,
+  .topLine__inner a:hover {
+    text-decoration: none;
+  }
+  .header__phoneItem > span {
+    display: none;
+  }
+  .header__phoneItem a > i {
+    display: block;
+  }
+  .header__phoneItemText {
+    display: none;
+  }
+  .header__phoneItem {
+    margin: 0.625rem 0 0 0;
+  }
+  .header__phoneItem:first-child {
+    margin: 0;
+  }
+  .igTopBtn {
+    display: flex;
+  }
+  .socialLink {
+    display: none;
+  }
+  .header {
+    padding: 10px 0 0;
+  }
 }
 
 @media only screen and (max-width: 400px) {

@@ -3,19 +3,26 @@ mixin header
     header.header.w1
       .topLine
         .topLine__inner
-          span Московская д. 117, ТК «Мир»
-          a(href="#") Посмотреть на карте
+          span г.Саратов, ул.Московская д. 117, ТК «Мир»
+          a(href="#") 
+            span Посмотреть на карте
+            i.icon-marker1  
+
       .header__line
         .logo1
           a(href="#")
-            img(src="assets/img/logo-ng2.png", alt="Центр косметологии и красоты Бьюти Лаунж")
+            img(src="assets/img/logo-ng.png", alt="Центр косметологии и красоты Бьюти Лаунж")
         .header__phoneArea
           .header__phoneItem
             span Центр косметлогии:
-            a(href="tel:+78452260000") +7 (8452) 26-00-00
+            a(href="tel:+78452260000") 
+              i.icon-phone-call-12
+              span +7 (8452) 26-00-00
           .header__phoneItem
             span Запись на прием:
-            a(href="tel:+78452650500") +7 (8452) 65-05-00
+            a(href="tel:+78452650500") 
+              i.icon-phone-call-12
+              span +7 (8452) 65-05-00
           .header__phoneItemText ежедневно с 9:00 до 21:00
         //- .header__rightBtns
         .header__callActionNewArea
@@ -25,6 +32,8 @@ mixin header
           a.header__callAction2(href="https://n322952.yclients.com/" target="_blank" title="Заказать звонок")
             span Онлайн запись
             i.icon-calendar2
+        .igTopBtn
+          i.icon-instagram2
         .socialLink
           a(href="#")
             p Центр косметологии и красоты

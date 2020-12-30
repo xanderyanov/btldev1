@@ -16,6 +16,9 @@
 }
 
 @media only screen and (max-width: 1080px) {
+  .mainBox__item span {
+    font-size: 0.875rem;
+  }
 }
 
 @media only screen and (max-width: 1024px) {
@@ -45,7 +48,7 @@
 
 @media only screen and (max-width: 800px) {
   .mainBox__item span {
-    height: 40%;
+    height: 25%;
   }
   .logo140 {
     display: none;
@@ -88,6 +91,10 @@
     height: auto;
     background-size: cover;
   }
+  .mainBox__item span {
+    height: 20%;
+    font-size: 1rem;
+  }
 }
 
 @media only screen and (max-width: 600px) {
@@ -110,11 +117,30 @@
 }
 
 @media only screen and (max-width: 400px) {
-  .mainBox__itemOuter {
+  /* .mainBox__itemOuter {
+    width: 100%;
+  } */
+  .mainBox__itemOuter_big {
+    width: 100%;
+  }
+  .mainBox__itemOuter_rightBox {
     width: 100%;
   }
   .mainContent {
     padding: 10px;
+  }
+  .mainBox__item span {
+    font-size: 0.875rem;
+  }
+  .rightBox__innerCover {
+    display: none;
+  }
+  .rightBox__inner {
+    position: relative;
+    padding: 20px 10px;
+  }
+  .mainBox__itemOuter.mainBox__itemOuter_big span {
+    height: 12%;
   }
 }
 
