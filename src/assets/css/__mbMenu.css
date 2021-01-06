@@ -11,22 +11,31 @@
 
 .mbMenu__outer {
   width: 100%;
-  position: fixed;
+  /* position: fixed;
   bottom: 0;
-  left: 0;
+  left: 0; */
 }
 
 .mbMenu {
   width: 100%;
-  background: var(--bg0);
+  /* background: var(--bg0); */
   display: flex;
   align-items: center;
   justify-content: space-around;
   padding: 10px;
+
+  flex-wrap: wrap;
 }
 
 .mbMenu__itemOuter {
   position: relative;
+
+  width: 48%;
+  padding: 20px 0;
+  border: 1px solid var(--tc0);
+  background: var(--bg0);
+  margin: 2% 0;
+  border-radius: 5px;
 }
 
 a.mbMenu__item {

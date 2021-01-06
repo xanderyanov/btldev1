@@ -55,6 +55,9 @@
 }
 
 @media only screen and (max-width: 480px) {
+  .header__line {
+    padding: 5px 10px;
+  }
   .header__callActionNewArea {
     width: 100%;
     display: flex;
@@ -76,7 +79,14 @@
   }
   .logo1 {
     max-width: 140px;
+    order: 1;
   }
+  .header__phoneArea {
+    order: 0;
+    width: 35%;
+    align-items: flex-start;
+  }
+
   .topLine__inner a span {
     display: none;
   }
@@ -111,18 +121,28 @@
   }
   .igTopBtn {
     display: flex;
+    /* margin-right: auto; */
   }
   .socialLink {
     display: none;
   }
   .header {
     padding: 10px 0 0;
+    justify-content: flex-end;
   }
+  .header__phoneItem a > span {
+    font-size: 0.75rem;
+    font-weight: 300;
+  }
+  /* .header__line {
+    justify-content: flex-end;
+  } */
 }
 
 @media only screen and (max-width: 400px) {
   .logo1 {
-    width: 75px;
+    width: 90px;
+    width: 30%;
   }
 }
 
