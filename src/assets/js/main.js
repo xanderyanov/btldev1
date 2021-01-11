@@ -3,6 +3,40 @@
 // });
 
 $(function () {
+
+//Открытие мобильного инстаграм - начало
+$(".igTopBtn").on("click", function (e) {
+  e.preventDefault();
+  if ($(this).hasClass("open")) {
+    $(this).removeClass("open");
+    $(".igMobile__overlay").fadeOut(200);
+    $(".igMobile__area").slideUp(200);
+    $("body").removeClass("stop");
+  } else {
+    $(this).addClass("open");
+    $(".igMobile__overlay").fadeIn(200);
+    $(".igMobile__area").slideDown(200);
+    $("body").addClass("stop");
+  }
+});
+$(".igMobile__close").on("click", function () {
+  $(".igTopBtn").removeClass("open");
+  $(".igMobile__overlay").fadeOut(200);
+  $(".igMobile__area").slideUp(200);
+  $("body").removeClass("stop");
+});
+$(".igMobile__overlay").on("click", function () {
+  $(".igTopBtn").removeClass("open");
+  $(this).fadeOut(200);
+  $(".igMobile__area").slideUp(200);
+  $("body").removeClass("stop");
+});
+//Открытие мобильного инстаграм - конец
+
+
+
+
+
   //Открытие мобильного меню главного - начало
   $(".mbMenu__mainBtn_JS").on("click", function (e) {
     e.preventDefault();

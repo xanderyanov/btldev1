@@ -141,6 +141,7 @@
   width: 35%;
   display: flex;
   justify-content: flex-end;
+  display: none;
 }
 
 .igTopBtn {

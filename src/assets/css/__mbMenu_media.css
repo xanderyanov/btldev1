@@ -23,6 +23,9 @@
   .mbMenu__area {
     display: block;
   }
+  .mbMenu__outer {
+    display: block;
+  }
   .solution {
     display: block;
   }
