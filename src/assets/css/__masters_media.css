@@ -8,12 +8,21 @@
 }
 
 @media only screen and (max-width: 1024px) {
-  .mastersBox__itemOuter {
-    width: 33.333%;
-  }
+  /* .mastersBox__itemOuter {
+    width: 50%;
+  } */
 }
 
 @media only screen and (max-width: 920px) {
+  .mastersBox__itemOuter {
+    width: 50%;
+  }
+  .mastersBox__outer {
+    width: 70%;
+  }
+  .leftMenu__outer {
+    width: 30%;
+  }
 }
 
 @media only screen and (max-width: 800px) {
@@ -23,6 +32,9 @@
   .mastersBox__outer {
     width: 100%;
     padding: 0;
+  }
+  .mastersBox__info span {
+    margin-bottom: 5px;
   }
 }
 
@@ -34,14 +46,21 @@
   .mastersBox__itemOuter {
     padding: 5px;
   }
-  .mastersBox__info {
+  /* .mastersBox__info {
     height: 40%;
-  }
+  } */
 }
 
 @media only screen and (max-width: 480px) {
   .mastersBox__itemOuter {
     width: 50%;
+  }
+  .mastersBox__info {
+    height: 24%;
+  }
+  .mastersBox__info span {
+    font-size: 0.875rem;
+    margin-bottom: 3px;
   }
 }
 
@@ -51,5 +70,8 @@
 @media only screen and (max-width: 320px) {
   .mastersBox__itemOuter {
     width: 100%;
+  }
+  .mastersBox__info {
+    height: 20%;
   }
 }

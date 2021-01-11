@@ -1,5 +1,5 @@
 .topMenu__area {
-  background: var(--x1greySuperLight);
+  /* background: var(--x1greySuperLight); */
 }
 
 .topMenu__wrapper {
@@ -20,11 +20,11 @@
 }
 
 .topMenu li {
-  margin-right: 2rem;
+  margin-right: 1rem;
   list-style: none;
-  margin-left: auto;
+  /* margin-left: auto; */
   position: relative;
-  float: right;
+  /* float: right; */
 }
 .topMenu li:last-child {
   margin-right: 0;
@@ -33,19 +33,28 @@
   font-size: 1rem;
   text-decoration: none;
   color: var(--tc0);
+  /* color: #fff; */
+  padding: 5px 15px;
+  /* background: var(--tc0); */
+  background: var(--x1greySuperLight);
+  border-radius: 4px;
+  white-space: nowrap;
+  display: block;
 }
 .topMenu li a:hover {
-  text-decoration: underline;
-  color: var(--color1);
+  /* text-decoration: underline; */
+  /* color: var(--color1); */
+  color: #fff;
+  background: var(--tc0);
 }
 
-.topMenu li:nth-child(3) {
+/* .topMenu li:nth-child(3) {
   flex: 1;
 }
 
 li.endLeftBlock {
   flex: 1;
-}
+} */
 
 .topSearch {
   /* width: 40px; */
