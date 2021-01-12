@@ -216,6 +216,11 @@ a.mbMenu__item span {
   align-items: center;
 }
 
+.igMobile__item span {
+  font-size: 1rem;
+  color: var(--tc0);
+}
+
 .igMobile__icon {
   position: relative;
   width: 2rem;
@@ -226,14 +231,7 @@ a.mbMenu__item span {
   align-items: center;
   border-radius: 40%;
   background: #d6249f;
-  background: radial-gradient(
-    circle at 30% 107%,
-    #fdf497 0%,
-    #fdf497 5%,
-    #fd5949 45%,
-    #d6249f 60%,
-    #285aeb 90%
-  );
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285aeb 90%);
   margin-right: 10px;
 }
 
