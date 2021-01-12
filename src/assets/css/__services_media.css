@@ -11,6 +11,9 @@
 }
 
 @media only screen and (max-width: 920px) {
+  .servBox__outer {
+    width: 70%;
+  }
 }
 
 @media only screen and (max-width: 800px) {
