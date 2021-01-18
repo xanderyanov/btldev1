@@ -1,4 +1,7 @@
 @media only screen and (max-width: 1200px) {
+  .topMenu li a {
+    padding: 5px 10px;
+  }
 }
 
 @media only screen and (max-width: 1140px) {
@@ -90,7 +93,7 @@
 
   .solution li a {
     display: block;
-    padding: 0.625rem 2.25rem 0.625rem 0.625rem;
+    /* padding: 0.625rem 0.625rem 0.625rem 1.5rem; */
     text-decoration: none;
     width: 100%;
     font-size: 1rem;
