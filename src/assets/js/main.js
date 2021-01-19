@@ -5,7 +5,7 @@
 $(function () {
 
 //Открытие мобильного инстаграм - начало
-$(".igTopBtn").on("click", function (e) {
+$(".igTopBtn2").on("click", function (e) {
   e.preventDefault();
   if ($(this).hasClass("open")) {
     $(this).removeClass("open");
@@ -20,13 +20,13 @@ $(".igTopBtn").on("click", function (e) {
   }
 });
 $(".igMobile__close").on("click", function () {
-  $(".igTopBtn").removeClass("open");
+  $(".igTopBtn2").removeClass("open");
   $(".igMobile__overlay").fadeOut(200);
   $(".igMobile__area").slideUp(200);
   $("body").removeClass("stop");
 });
 $(".igMobile__overlay").on("click", function () {
-  $(".igTopBtn").removeClass("open");
+  $(".igTopBtn2").removeClass("open");
   $(this).fadeOut(200);
   $(".igMobile__area").slideUp(200);
   $("body").removeClass("stop");

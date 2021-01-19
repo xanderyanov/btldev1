@@ -7,6 +7,7 @@
   --link1hov: #ff5e00;
 
   --tc0: #592004;
+  --tc0_light: #692604;
   --tc1: #2b2a29;
   --x1dark: #4b4b4b;
   --x1grey: #929292;
@@ -27,6 +28,7 @@
   --redFill: #ff4141;
   --redFillhover: #ff2525;
   --tColor: #413328;
+  --tColorLight: #574435;
 
   --x1border: #e0e0e0;
 
@@ -113,7 +115,14 @@ a.hover {
   line-height: 250px;
   vertical-align: middle;
   background: #d6249f;
-  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285aeb 90%);
+  background: radial-gradient(
+    circle at 30% 107%,
+    #fdf497 0%,
+    #fdf497 5%,
+    #fd5949 45%,
+    #d6249f 60%,
+    #285aeb 90%
+  );
   box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.25);
 }
 
