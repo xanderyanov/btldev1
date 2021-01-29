@@ -7,6 +7,7 @@ body {
   line-height: 1.2;
   position: relative;
   height: 100%;
+  background: #f3f2f2;
 }
 
 .site__header {

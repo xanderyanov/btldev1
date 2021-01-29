@@ -22,7 +22,6 @@
   }
   .topLine2__sLinks {
     padding: 0;
-    margin-left: auto;
   }
   .topLine2__sLinkItem {
     margin: 0 0 0 20px;
@@ -35,6 +34,15 @@
 @media only screen and (max-width: 600px) {
   .topLine2__time {
     display: none;
+  }
+  .header2__contactsItemTitle {
+    display: none;
+  }
+  .header2__logo {
+    max-width: 140px;
+  }
+  .header2 {
+    padding: 10px 0 0;
   }
 }
 

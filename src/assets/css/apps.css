@@ -81,6 +81,15 @@
 @import "__mbMenu.css";
 @import "__mbMenu_media.css";
 
+@import "__index2.css";
+@import "__index2_media.css";
+
+@import "__mainTop.css";
+@import "__mainTop_media.css";
+
+@import "__mainProblem.css";
+@import "__mainProblem_media.css";
+
 /* в самом низу */
 @import "main.css";
 @import "media.css";

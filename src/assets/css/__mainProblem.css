@@ -1,0 +1,60 @@
+.mainProblem__area {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.mainProblem__outer {
+  position: relative;
+}
+
+.mainProblem {
+  display: flex;
+  margin: 0 -10px;
+  flex-wrap: wrap;
+}
+
+.mainProblem__itemOuter {
+  width: 50%;
+  padding: 10px;
+}
+
+.mainProblem__item {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  background: #fff;
+}
+
+.mainProblem__itemImg {
+  width: 50%;
+  order: 1;
+  padding: 5px;
+}
+.mainProblem__itemImg img {
+  display: block;
+  width: 100%;
+}
+.mainProblem__itemInfo {
+  width: 50%;
+  order: 2;
+  display: flex;
+  flex-direction: column;
+  padding: 0 20px 0 30px;
+  /* align-items: flex-end; */
+}
+
+.mainProblem__itemInfoTitle {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  color: #000;
+}
+
+.mainProblem__itemInfoUl {
+  list-style: none;
+}
+
+.mainProblem__itemInfoUl li {
+  font-size: 1rem;
+  margin-bottom: 5px;
+  color: #000;
+}

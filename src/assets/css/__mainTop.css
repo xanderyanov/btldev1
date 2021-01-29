@@ -1,0 +1,74 @@
+.mainTop__area {
+  position: relative;
+  /* margin-bottom: 10px; */
+}
+
+.mainTop__outer {
+  position: relative;
+}
+
+.mainTop {
+  display: flex;
+  margin: 0 -10px;
+}
+
+.mainTop__left {
+  width: 50%;
+  position: relative;
+  padding: 10px;
+}
+.mainTop__promo {
+  width: 100%;
+  position: relative;
+  height: 100%;
+  /* padding-top: 50%; */
+  background: #7c7a7a;
+}
+
+.mainTop__right {
+  width: 50%;
+  position: relative;
+  padding: 10px;
+}
+
+.mainTop__menu {
+  /* width: 100%; */
+  display: flex;
+  flex-wrap: wrap;
+  margin: -10px;
+}
+
+.mainTop__menuItemOuter {
+  width: 50%;
+  padding: 10px;
+}
+
+.mainTop__menuItemWrapper {
+  width: 100%;
+  position: relative;
+  height: 0;
+  padding-top: 50%;
+  background: #7c7a7a;
+}
+
+.mainTop__menuItemWrapper_a {
+  background: #e7b9b9;
+}
+.mainTop__menuItemWrapper_b {
+  background: #c4da89;
+}
+.mainTop__menuItemWrapper_c {
+  background: #a1a8e4;
+}
+.mainTop__menuItemWrapper_d {
+  background: #87f1c0;
+}
+
+.mainTop__menuItem {
+  display: flex;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}

@@ -2,6 +2,7 @@
   width: 100%;
   /* background: #272E36; */
   background: linear-gradient(#272e36, #676c70);
+  /* background: var(--tc0_light); */
 }
 
 .topLine2 {
@@ -26,15 +27,16 @@
 }
 
 .topLine2__sLinks {
-  padding: 0 20px 0 20px;
+  padding: 0 0 0 20px;
   display: flex;
   align-items: center;
+  margin-left: auto;
 }
 
 .topLine2__sLinkItem {
   display: flex;
   align-items: center;
-  margin: 0 20px 0 0;
+  margin: 0 0 0 20px;
   text-decoration: none;
   cursor: pointer;
 }

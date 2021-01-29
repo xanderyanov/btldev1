@@ -4,7 +4,10 @@
 
 include __const
 include __header
+include __header2
 include __menu
+include __mainTop
+include __mainProblem
 include __slider1
 include __wideBlock
 include __mainBox
@@ -22,11 +25,14 @@ html(lang="ru-RU")
 body
 
   .site__header
-    +header
+    +header2
     +topMenu
+    //- +mbMenu-01-2021
 
   .site__center
-    +sliderSwiperInMain
+    +mainTop
+    +mainProblem
+    //- +sliderSwiperInMain
     //- +testBlock
     //- +wideBlock
     +mainBox
