@@ -72,7 +72,6 @@
 @media only screen and (max-width: 480px) {
   .mainTop__menuItem {
     padding: 10px;
-    background: linear-gradient(#272e36, #c5c6c7);
   }
   .mainTop__menuItemTitle {
     font-size: 1.25rem;

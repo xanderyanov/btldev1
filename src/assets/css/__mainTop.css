@@ -8,6 +8,7 @@
 
 .mainTop {
   display: flex;
+  margin: 0 -10px;
 }
 
 .mainTop__left {
@@ -17,6 +18,7 @@
 .mainTop__promo {
   width: 100%;
   position: relative;
+  padding: 10px;
 }
 
 .mainTop__promo video {
@@ -43,36 +45,53 @@
 }
 
 .mainTop__menuItemOuter_a {
-  background: var(--bg0);
+  /* background: var(--bg0); */
   /* background: #e7b9b9; */
   left: 0;
   top: 0;
 }
 .mainTop__menuItemOuter_b {
-  background: #ac6f52;
-  background: rgba(89, 32, 4, 0.3);
+  /* background: #ac6f52;
+  background: rgba(89, 32, 4, 0.3); */
   right: 0;
   top: 0;
 }
 .mainTop__menuItemOuter_c {
-  background: #ac6f52;
-  background: rgba(89, 32, 4, 0.3);
+  /* background: #ac6f52;
+  background: rgba(89, 32, 4, 0.3); */
   left: 0;
   bottom: 0;
 }
 .mainTop__menuItemOuter_d {
   /* background: #ac6f52; */
-  background: var(--link1);
+  /* background: var(--link1);
+  background: var(--bg0); */
   right: 0;
   bottom: 0;
 }
 
+.mainTop__menuItem_a {
+  background: var(--bg0);
+}
+.mainTop__menuItem_b {
+  background: #ac6f52;
+  background: rgba(89, 32, 4, 0.3);
+}
+.mainTop__menuItem_c {
+  background: #ac6f52;
+  background: rgba(89, 32, 4, 0.3);
+}
+.mainTop__menuItem_d {
+  background: var(--link1);
+  background: var(--bg0);
+}
+
 .mainTop__menuItemWrapper {
   position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
+  top: 10px;
+  right: 10px;
+  bottom: 10px;
+  left: 10px;
 }
 
 /* .mainTop__menuItemWrapper_a {
