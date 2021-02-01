@@ -4,18 +4,36 @@ mixin mainTop
       .mainTop
         .mainTop__left
           .mainTop__promo
+            video(width="100%" height="auto" muted="" playsinline="" autoplay="" loop="" preload="auto")
+              source(src='assets/video/video1.mp4' type='video/mp4')
         .mainTop__right
           .mainTop__menu
-            .mainTop__menuItemOuter
-              .mainTop__menuItemWrapper.mainTop__menuItemWrapper_a
-                a.mainTop__menuItem(href="")
-            .mainTop__menuItemOuter
-              .mainTop__menuItemWrapper.mainTop__menuItemWrapper_b
-                a.mainTop__menuItem(href="")
-            .mainTop__menuItemOuter
-              .mainTop__menuItemWrapper.mainTop__menuItemWrapper_c
-                a.mainTop__menuItem(href="")
-            .mainTop__menuItemOuter
-              .mainTop__menuItemWrapper.mainTop__menuItemWrapper_d
-                a.mainTop__menuItem(href="")
+            .mainTop__menuItemOuter.mainTop__menuItemOuter_a
+              .mainTop__menuItemWrapper
+                a.mainTop__menuItem(href="#")
+                  .mainTop__menuItemTop
+                    .mainTop__menuItemTitle Меню
+                    i.icon-menu
+                  .mainTop__menuItemBottom Информация о нашем Центре
+            .mainTop__menuItemOuter.mainTop__menuItemOuter_b
+              .mainTop__menuItemWrapper
+                a.mainTop__menuItem(href="#")
+                  .mainTop__menuItemTop
+                    .mainTop__menuItemTitle Услуги
+                    i.icon-smile
+                  .mainTop__menuItemBottom Выбрать нужную услугу нашего Центра
+            .mainTop__menuItemOuter.mainTop__menuItemOuter_c
+              .mainTop__menuItemWrapper
+                a.mainTop__menuItem(href="#")
+                  .mainTop__menuItemTop
+                    .mainTop__menuItemTitle Акции
+                    i.icon-percentage
+                  .mainTop__menuItemBottom  Информация по акциям нашего Центра
+            .mainTop__menuItemOuter.mainTop__menuItemOuter_d
+              .mainTop__menuItemWrapper
+                a.mainTop__menuItem(href="#")
+                  .mainTop__menuItemTop
+                    .mainTop__menuItemTitle Запись
+                    i.icon-writing
+                  .mainTop__menuItemBottom Оставьте заявку и мы свяжемся с Вами
 

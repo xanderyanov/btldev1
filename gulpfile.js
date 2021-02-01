@@ -101,11 +101,15 @@ gulp.task("fonts", function () {
   return gulp.src("src/assets/fonts/**/*.*").pipe(gulp.dest("build/assets/fonts"));
 });
 
+gulp.task("video", function () {
+  return gulp.src("src/assets/video/**/*.*").pipe(gulp.dest("build/assets/video"));
+});
+
 gulp.task("clean", function () {
   return del("build");
 });
 
-gulp.task("build", gulp.series("clean", gulp.parallel("css", "pug", "image", "js", "myJs", "fonts")));
+gulp.task("build", gulp.series("clean", gulp.parallel("css", "pug", "image", "js", "myJs", "fonts", "video")));
 
 gulp.task("watch", function () {
   gulp.watch("src/assets/**/*.css*", gulp.series("css")).on("uplink", function (filepath) {

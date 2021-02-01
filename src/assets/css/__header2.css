@@ -125,6 +125,18 @@
   text-decoration: underline;
 }
 
+.header2__contactsItem_mb {
+  display: none;
+}
+
+.header2__contactsItemLink_mb,
+.header2__contactsItemLink_mb:hover,
+.header2__contactsItemLink_mb:focus {
+  text-decoration: none;
+  color: var(--tc0);
+  font-size: 4rem;
+}
+
 .header2__btn {
   background: var(--tc0);
   color: #fff;

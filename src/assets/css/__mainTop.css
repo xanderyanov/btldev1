@@ -1,6 +1,5 @@
 .mainTop__area {
   position: relative;
-  /* margin-bottom: 10px; */
 }
 
 .mainTop__outer {
@@ -9,49 +8,74 @@
 
 .mainTop {
   display: flex;
-  margin: 0 -10px;
 }
 
 .mainTop__left {
   width: 50%;
   position: relative;
-  padding: 10px;
 }
 .mainTop__promo {
   width: 100%;
   position: relative;
-  height: 100%;
-  /* padding-top: 50%; */
-  background: #7c7a7a;
+}
+
+.mainTop__promo video {
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+  vertical-align: bottom;
 }
 
 .mainTop__right {
   width: 50%;
   position: relative;
-  padding: 10px;
 }
 
 .mainTop__menu {
-  /* width: 100%; */
   display: flex;
   flex-wrap: wrap;
-  margin: -10px;
 }
 
 .mainTop__menuItemOuter {
   width: 50%;
-  padding: 10px;
+  height: 50%;
+  position: absolute;
+}
+
+.mainTop__menuItemOuter_a {
+  background: var(--bg0);
+  /* background: #e7b9b9; */
+  left: 0;
+  top: 0;
+}
+.mainTop__menuItemOuter_b {
+  background: #ac6f52;
+  background: rgba(89, 32, 4, 0.3);
+  right: 0;
+  top: 0;
+}
+.mainTop__menuItemOuter_c {
+  background: #ac6f52;
+  background: rgba(89, 32, 4, 0.3);
+  left: 0;
+  bottom: 0;
+}
+.mainTop__menuItemOuter_d {
+  /* background: #ac6f52; */
+  background: var(--link1);
+  right: 0;
+  bottom: 0;
 }
 
 .mainTop__menuItemWrapper {
-  width: 100%;
-  position: relative;
-  height: 0;
-  padding-top: 50%;
-  background: #7c7a7a;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
 }
 
-.mainTop__menuItemWrapper_a {
+/* .mainTop__menuItemWrapper_a {
   background: #e7b9b9;
 }
 .mainTop__menuItemWrapper_b {
@@ -62,7 +86,7 @@
 }
 .mainTop__menuItemWrapper_d {
   background: #87f1c0;
-}
+} */
 
 .mainTop__menuItem {
   display: flex;
@@ -71,4 +95,34 @@
   right: 0;
   bottom: 0;
   left: 0;
+  padding: 20px;
+  flex-direction: column;
+  text-decoration: none;
+  color: #000;
+}
+.mainTop__menuItem:hover,
+.mainTop__menuItem:focus {
+  text-decoration: none;
+}
+
+.mainTop__menuItemTop {
+  display: flex;
+  justify-content: space-between;
+}
+
+.mainTop__menuItemTitle {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #000;
+}
+
+.mainTop__menuItemTop i {
+  font-size: 3rem;
+}
+
+.mainTop__menuItemBottom {
+  width: 100%;
+  margin-top: auto;
+  font-size: 1rem;
+  line-height: 1.5;
 }

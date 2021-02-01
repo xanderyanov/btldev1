@@ -41,10 +41,10 @@
     float: none !important;
     margin: 10px 0;
   }
-  .site__center {
+  /* .site__center {
     position: relative;
     padding: 0 0 10px;
-  }
+  } */
 }
 
 @media only screen and (max-width: 400px) {
