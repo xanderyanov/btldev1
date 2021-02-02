@@ -4,6 +4,21 @@
 
 $(function () {
 
+  if ($(".mainPageIdx").length) {
+    var topScrollCount = $(".mainTop__area").outerHeight();
+    var menu = $(".menuBottom1__area_main");
+    var menuHeight = $(".menuBottom1__area_main").outerHeight();
+    $(window).on("scroll",function(){
+      if ( $(this).scrollTop() > topScrollCount ){
+        menu.css({'position' : 'fixed', 'bottom':'0'});
+          // $('.topTextAfter').css({'height':topMenuHeight});
+      } else if($(this).scrollTop() <= topScrollCount){
+        menu.css({'position' : 'fixed', 'bottom':-menuHeight});
+          // $('.topTextAfter').css({'height':'0'});
+      }
+    });
+}
+
 //Открытие мобильного инстаграм - начало
 $(".igTopBtn2").on("click", function (e) {
   e.preventDefault();
@@ -328,7 +343,7 @@ $(".igMobile__overlay").on("click", function () {
   });
 
   $(".toTop").hide();
-  $(window).scroll(function () {
+  $(window).on("scroll",function () {
     if ($(this).scrollTop() > 0) {
       $(".toTop").fadeIn();
     } else {

@@ -15,6 +15,7 @@ include __blog
 include __newsInMain
 include __forms
 include __footer
+include __menuBottom1
 
 
 
@@ -24,7 +25,7 @@ html(lang="ru-RU")
   +head
 body
 
-  .site__header
+  .site__header.mainPageIdx
     +header2
     +topMenu
     //- +mbMenu-01-2021
@@ -53,6 +54,8 @@ body
   +formCallBack
 
   +formConsInMain
+
+  +menuBottom1
 
   +scripts
   

@@ -90,6 +90,9 @@
 @import "__mainProblem.css";
 @import "__mainProblem_media.css";
 
+@import "__menuBottom1.css";
+@import "__menuBottom1_media.css";
+
 /* в самом низу */
 @import "main.css";
 @import "media.css";

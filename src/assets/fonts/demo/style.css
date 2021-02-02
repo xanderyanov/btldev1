@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('fonts/icomoon.eot?jfe80p');
-  src:  url('fonts/icomoon.eot?jfe80p#iefix') format('embedded-opentype'),
-    url('fonts/icomoon.ttf?jfe80p') format('truetype'),
-    url('fonts/icomoon.woff?jfe80p') format('woff'),
-    url('fonts/icomoon.svg?jfe80p#icomoon') format('svg');
+  src:  url('fonts/icomoon.eot?g9a2iy');
+  src:  url('fonts/icomoon.eot?g9a2iy#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?g9a2iy') format('truetype'),
+    url('fonts/icomoon.woff?g9a2iy') format('woff'),
+    url('fonts/icomoon.svg?g9a2iy#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -25,6 +25,27 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-question-round:before {
+  content: "\e969";
+}
+.icon-bulb:before {
+  content: "\e963";
+}
+.icon-idea:before {
+  content: "\e964";
+}
+.icon-phone-call:before {
+  content: "\e965";
+}
+.icon-puzzle:before {
+  content: "\e966";
+}
+.icon-question:before {
+  content: "\e967";
+}
+.icon-target:before {
+  content: "\e968";
+}
 .icon-menu:before {
   content: "\e95f";
 }

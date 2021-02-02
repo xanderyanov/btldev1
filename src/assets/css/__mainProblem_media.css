@@ -23,15 +23,45 @@
   .mainProblem__itemOuter {
     padding: 5px;
   }
+  .mainProblem__itemInfoTitle {
+    margin-bottom: 10px;
+  }
+  .mainProblem__itemInfoUl li {
+    margin-bottom: 1px;
+  }
+  .mainProblem__itemInfo {
+    padding: 0 10px 0 10px;
+  }
 }
 
 @media only screen and (max-width: 600px) {
+  .mainProblem__itemInfo {
+    padding: 0 5px 0 5px;
+  }
+  .mainProblem__itemInfoTitle {
+    font-size: 1.25rem;
+    line-height: 1;
+    font-weight: 600;
+  }
+  .mainProblem__itemInfoUl li {
+    font-size: 0.875rem;
+  }
 }
 
 @media only screen and (max-width: 480px) {
   .mainProblem__itemOuter {
     width: 100%;
     /* padding: 10px; */
+  }
+  .mainProblem__itemInfo {
+    padding: 0 10px 0 10px;
+  }
+  .mainProblem__itemInfoTitle {
+    font-size: 1.5rem;
+    line-height: 1.2;
+  }
+  .mainProblem__itemInfoUl li {
+    font-size: 1rem;
   }
 }
 
