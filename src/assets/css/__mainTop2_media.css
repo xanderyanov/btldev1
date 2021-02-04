@@ -44,9 +44,23 @@
   .mainTop__menuItem {
     padding: 15px;
   }
+
+  /*////////////////////////////////*/
+
+  /* .mainTop__hideBox {
+    position: fixed;
+    width: 50%;
+    top: 50%;
+    left: 25%;
+    height: auto;
+    transform: translate(0, -50%);
+  } */
 }
 
 @media only screen and (max-width: 920px) {
+  .mainTop__menuItemBottom {
+    line-height: 1.2;
+  }
 }
 
 @media only screen and (max-width: 800px) {
@@ -73,6 +87,16 @@
 }
 
 @media only screen and (max-width: 768px) {
+  .mainTop__hideBox {
+    width: 70%;
+    left: 15%;
+  }
+}
+
+@media only screen and (max-height: 600px) {
+  .mainTop__hideBox {
+    height: 70vh;
+  }
 }
 
 @media only screen and (max-width: 600px) {
@@ -91,6 +115,16 @@
 
   .mainTop__menuItemTop i {
     font-size: 2rem;
+  }
+  .mainTop__hideBox {
+    width: 90%;
+    left: 5%;
+  }
+}
+
+@media only screen and (max-height: 414px) {
+  .mainTop__hideBox {
+    height: 90vh;
   }
 }
 

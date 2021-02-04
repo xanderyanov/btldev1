@@ -17,6 +17,17 @@
 }
 
 @media only screen and (max-width: 768px) {
+  .menuBottom1__area {
+    top: auto;
+    bottom: 0;
+  }
+  .menuBottom1__area_main {
+    bottom: -200px;
+    top: auto;
+  }
+  .menuBottom1__area_active {
+    bottom: 0;
+  }
 }
 
 @media only screen and (max-width: 600px) {

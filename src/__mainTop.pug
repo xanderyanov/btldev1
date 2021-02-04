@@ -7,33 +7,91 @@ mixin mainTop
             video(width="100%" height="auto" muted="" playsinline="" autoplay="" loop="" preload="auto")
               source(src='assets/video/video1.mp4' type='video/mp4')
         .mainTop__right
+          .mainTop__hideBoxOverlay
+          //- .mainTop__hideContainer
+          .mainTop__hideBox(data-index="menu1")
+            .mainTop__hideBoxInner.colorBox_a
+              .mainTop__hideBoxInnerHeader
+                .mainTop__hideBoxInnerTitle
+                  i.icon-menu
+                  span Меню
+                .mainTop__hideBoxClose
+                  i.icon-close2021
+              .mainTop__hideBoxInnerContent.xScroll2
+                .mainTop__hideBoxInnerContentInner
+                  +topMenuBox 
+              //- ниже по коду
           .mainTop__menu
             .mainTop__menuItemOuter.mainTop__menuItemOuter_a
               .mainTop__menuItemWrapper
-                a.mainTop__menuItem.mainTop__menuItem_a(href="#")
+                a.mainTop__menuItem.colorBox_a(href="#", data-id="menu1")
                   .mainTop__menuItemTop
                     .mainTop__menuItemTitle Меню
                     i.icon-menu
                   .mainTop__menuItemBottom Информация о нашем Центре
             .mainTop__menuItemOuter.mainTop__menuItemOuter_b
               .mainTop__menuItemWrapper
-                a.mainTop__menuItem.mainTop__menuItem_b(href="#")
+                a.mainTop__menuItem.colorBox_b(href="#", data-id="menu2")
                   .mainTop__menuItemTop
                     .mainTop__menuItemTitle Услуги
                     i.icon-smile
                   .mainTop__menuItemBottom Выбрать нужную услугу нашего Центра
             .mainTop__menuItemOuter.mainTop__menuItemOuter_c
               .mainTop__menuItemWrapper
-                a.mainTop__menuItem.mainTop__menuItem_c(href="#")
+                a.mainTop__menuItem.colorBox_c(href="#")
                   .mainTop__menuItemTop
-                    .mainTop__menuItemTitle Акции
-                    i.icon-percentage
-                  .mainTop__menuItemBottom  Информация по акциям нашего Центра
+                    .mainTop__menuItemTitle E-Shop
+                    i.icon-shopping-bag
+                  .mainTop__menuItemBottom  Интернет-магазин профессиональной косметики
             .mainTop__menuItemOuter.mainTop__menuItemOuter_d
               .mainTop__menuItemWrapper
-                a.mainTop__menuItem.mainTop__menuItem_d(href="#")
+                a.mainTop__menuItem.colorBox_d(href="#")
                   .mainTop__menuItemTop
-                    .mainTop__menuItemTitle Запись
-                    i.icon-writing
-                  .mainTop__menuItemBottom Оставьте заявку и мы свяжемся с Вами
+                    .mainTop__menuItemTitle Специалисты
+                    i.icon-user
+                  .mainTop__menuItemBottom Наши врачи-косметологи и стилисты
 
+mixin topMenuBox
+  ul.topMenuBox
+    li
+      a(href="#") Главная
+    li
+      a(href="#") Услуги
+    li
+      a(href="#") Специалисты
+    li
+      a(href="#") Бренды
+    li
+      a(href="#") Советы эксперта
+    li
+      a(href="#") Информация
+    li
+      a(href="#") Контакты
+    li
+      a(href="#") Главная
+    li
+      a(href="#") Услуги
+    li
+      a(href="#") Специалисты
+    li
+      a(href="#") Бренды
+    li
+      a(href="#") Советы эксперта
+    li
+      a(href="#") Информация
+    //- li
+    //-   a(href="#") Контакты
+    //- li
+    //-   a(href="#") Главная
+    //- li
+    //-   a(href="#") Услуги
+    //- li
+    //-   a(href="#") Специалисты
+    //- li
+    //-   a(href="#") Бренды
+    //- li
+    //-   a(href="#") Советы эксперта
+    //- li
+    //-   a(href="#") Информация
+    //- li
+    //-   a(href="#") Контакты

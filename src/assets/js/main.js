@@ -3,54 +3,88 @@
 // });
 
 $(function () {
+  $(".mainTop__menuItem, .menuBottom1__item").on("click", function (e) {
+    e.preventDefault();
+    var $this = $(this);
+    var menuId = $this.data("id");
+    console.log("___искомый id " + menuId);
+
+    var hideBox = $(".mainTop__hideBox");
+
+    $(".mainTop__hideBoxOverlay").fadeIn();
+    $("body").addClass("stop");
+
+    $.each(hideBox, function (index, o) {
+      var $o = $(o);
+      // $o.removeClass("visible");
+      // $o.addClass("hidden");
+
+      var hideBoxId = $o.data("index");
+      if (menuId === hideBoxId) {
+        $o.addClass("mainTop__hideBox_open").slideDown(300);
+      }
+    });
+  });
+  $(".mainTop__hideBoxClose").on("click", function (e) {
+    e.preventDefault();
+    $(".mainTop__hideBox").slideUp(300).removeClass("mainTop__hideBox_open");
+    $(".mainTop__hideBoxOverlay").fadeOut();
+    $("body").removeClass("stop");
+  });
+  $(".mainTop__hideBoxOverlay").on("click", function (e) {
+    e.preventDefault();
+    $(".mainTop__hideBox").slideUp(300).removeClass("mainTop__hideBox_open");
+    $(".mainTop__hideBoxOverlay").fadeOut();
+    $("body").removeClass("stop");
+  });
+
+  var menuBottom1_height = $(".menuBottom1__area").outerHeight();
+  console.log(menuBottom1_height);
+  $(".menuBottom1__areaFake").css({ height: menuBottom1_height });
 
   if ($(".mainPageIdx").length) {
     var topScrollCount = $(".mainTop__area").outerHeight();
     var menu = $(".menuBottom1__area_main");
     var menuHeight = $(".menuBottom1__area_main").outerHeight();
-    $(window).on("scroll",function(){
-      if ( $(this).scrollTop() > topScrollCount ){
-        menu.css({'position' : 'fixed', 'bottom':'0'});
-          // $('.topTextAfter').css({'height':topMenuHeight});
-      } else if($(this).scrollTop() <= topScrollCount){
-        menu.css({'position' : 'fixed', 'bottom':-menuHeight});
-          // $('.topTextAfter').css({'height':'0'});
+    $(window).on("scroll", function () {
+      if ($(this).scrollTop() > topScrollCount) {
+        // menu.css({ bottom: "0" });
+        menu.addClass("menuBottom1__area_active");
+      } else if ($(this).scrollTop() <= topScrollCount) {
+        // menu.css({ bottom: -menuHeight });
+        menu.removeClass("menuBottom1__area_active");
       }
     });
-}
+  }
 
-//Открытие мобильного инстаграм - начало
-$(".igTopBtn2").on("click", function (e) {
-  e.preventDefault();
-  if ($(this).hasClass("open")) {
-    $(this).removeClass("open");
+  //Открытие мобильного инстаграм - начало
+  $(".igTopBtn2").on("click", function (e) {
+    e.preventDefault();
+    if ($(this).hasClass("open")) {
+      $(this).removeClass("open");
+      $(".igMobile__overlay").fadeOut(200);
+      $(".igMobile__area").slideUp(200);
+      $("body").removeClass("stop");
+    } else {
+      $(this).addClass("open");
+      $(".igMobile__overlay").fadeIn(200);
+      $(".igMobile__area").slideDown(200);
+      $("body").addClass("stop");
+    }
+  });
+  $(".igMobile__close").on("click", function () {
+    $(".igTopBtn2").removeClass("open");
     $(".igMobile__overlay").fadeOut(200);
     $(".igMobile__area").slideUp(200);
     $("body").removeClass("stop");
-  } else {
-    $(this).addClass("open");
-    $(".igMobile__overlay").fadeIn(200);
-    $(".igMobile__area").slideDown(200);
-    $("body").addClass("stop");
-  }
-});
-$(".igMobile__close").on("click", function () {
-  $(".igTopBtn2").removeClass("open");
-  $(".igMobile__overlay").fadeOut(200);
-  $(".igMobile__area").slideUp(200);
-  $("body").removeClass("stop");
-});
-$(".igMobile__overlay").on("click", function () {
-  $(".igTopBtn2").removeClass("open");
-  $(this).fadeOut(200);
-  $(".igMobile__area").slideUp(200);
-  $("body").removeClass("stop");
-});
-//Открытие мобильного инстаграм - конец
-
-
-
-
+  });
+  $(".igMobile__overlay").on("click", function () {
+    $(".igTopBtn2").removeClass("open");
+    $(this).fadeOut(200);
+    $(".igMobile__area").slideUp(200);
+    $("body").removeClass("stop");
+  });
+  //Открытие мобильного инстаграм - конец
 
   //Открытие мобильного меню главного - начало
   $(".mbMenu__mainBtn_JS").on("click", function (e) {
@@ -87,7 +121,6 @@ $(".igMobile__overlay").on("click", function () {
     $("body").removeClass("stop");
   });
   //Открытие мобильного главного - конец
-
 
   //Открытие мобильного меню услуг - начало
   $(".mbMenu__servBtn_JS").on("click", function (e) {
@@ -161,41 +194,41 @@ $(".igMobile__overlay").on("click", function () {
   });
   //Открытие мобильного меню решить проблему - конец
 
-    //Открытие мобильного поиска - начало
-    $(".mbMenu__searchBtn_JS").on("click", function (e) {
-      e.preventDefault();
-      $(".mbMenu__overlay").fadeOut(200);
-      $(".mbMenu__openBox_servJs").slideUp(200);
-      $(".mbMenu__servBtn_JS").removeClass("open");
-      $(".mbMenu__openBox_mainMenuJs").slideUp(200);
-      $(".mbMenu__mainBtn_JS").removeClass("open");
-      $(".mbMenu__openBox_solutionJs").slideUp(200);
-      $(".mbMenu__solutionBtn_JS").removeClass("open");
-      if ($(this).hasClass("open")) {
-        $(this).removeClass("open");
-        $(".mbMenu__overlay").fadeOut(200);
-        $(".mbMenu__openBox_searchJs").slideUp(200);
-        $("body").removeClass("stop");
-      } else {
-        $(this).addClass("open");
-        $(".mbMenu__overlay").fadeIn(200);
-        $(".mbMenu__openBox_searchJs").slideDown(200);
-        $("body").addClass("stop");
-      }
-    });
-    $(".mbMenu__openBoxClose").on("click", function () {
-      $(".mbMenu__searchBtn_JS").removeClass("open");
+  //Открытие мобильного поиска - начало
+  $(".mbMenu__searchBtn_JS").on("click", function (e) {
+    e.preventDefault();
+    $(".mbMenu__overlay").fadeOut(200);
+    $(".mbMenu__openBox_servJs").slideUp(200);
+    $(".mbMenu__servBtn_JS").removeClass("open");
+    $(".mbMenu__openBox_mainMenuJs").slideUp(200);
+    $(".mbMenu__mainBtn_JS").removeClass("open");
+    $(".mbMenu__openBox_solutionJs").slideUp(200);
+    $(".mbMenu__solutionBtn_JS").removeClass("open");
+    if ($(this).hasClass("open")) {
+      $(this).removeClass("open");
       $(".mbMenu__overlay").fadeOut(200);
       $(".mbMenu__openBox_searchJs").slideUp(200);
       $("body").removeClass("stop");
-    });
-    $(".mbMenu__overlay").on("click", function () {
-      $(".mbMenu__searchBtn_JS").removeClass("open");
-      $(this).fadeOut(200);
-      $(".mbMenu__openBox_searchJs").slideUp(200);
-      $("body").removeClass("stop");
-    });
-    //Открытие мобильного поиска - конец
+    } else {
+      $(this).addClass("open");
+      $(".mbMenu__overlay").fadeIn(200);
+      $(".mbMenu__openBox_searchJs").slideDown(200);
+      $("body").addClass("stop");
+    }
+  });
+  $(".mbMenu__openBoxClose").on("click", function () {
+    $(".mbMenu__searchBtn_JS").removeClass("open");
+    $(".mbMenu__overlay").fadeOut(200);
+    $(".mbMenu__openBox_searchJs").slideUp(200);
+    $("body").removeClass("stop");
+  });
+  $(".mbMenu__overlay").on("click", function () {
+    $(".mbMenu__searchBtn_JS").removeClass("open");
+    $(this).fadeOut(200);
+    $(".mbMenu__openBox_searchJs").slideUp(200);
+    $("body").removeClass("stop");
+  });
+  //Открытие мобильного поиска - конец
 
   $(window).on("resize", function () {
     var bm = $(".mbMenu__outer").outerHeight();
@@ -343,7 +376,7 @@ $(".igMobile__overlay").on("click", function () {
   });
 
   $(".toTop").hide();
-  $(window).on("scroll",function () {
+  $(window).on("scroll", function () {
     if ($(this).scrollTop() > 0) {
       $(".toTop").fadeIn();
     } else {

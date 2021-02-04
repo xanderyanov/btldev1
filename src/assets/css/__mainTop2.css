@@ -57,50 +57,28 @@
   top: 0;
 }
 .mainTop__menuItemOuter_c {
-  /* background: #ac6f52;
-  background: rgba(89, 32, 4, 0.3); */
   left: 0;
   bottom: 0;
 }
 .mainTop__menuItemOuter_d {
-  /* background: #ac6f52; */
-  /* background: var(--link1);
-  background: var(--bg0); */
   right: 0;
   bottom: 0;
 }
 
-.mainTop__menuItem_a {
-  /* background: var(--bg0); */
-  background: #cac6bb;
-  background: #d9cfcd;
+.colorBox_a {
   background: #aba299;
   color: #000;
 }
-.mainTop__menuItem_b {
-  /* background: #ac6f52;
-  background: rgba(89, 32, 4, 0.3); */
-  background: #c9a99a;
-  background: #a49693;
+.colorBox_b {
   background: #6a6e79;
-  color: #000;
   color: #fff;
 }
-.mainTop__menuItem_c {
-  /* background: #ac6f52;
-  background: rgba(89, 32, 4, 0.3); */
-  background: #9e6f65;
-  background: #5c6670;
+.colorBox_c {
   background: #c24b35;
-  color: #000;
   color: #fff;
 }
-.mainTop__menuItem_d {
-  /* /* background: var(--link1); */
-  background: var(--tc0);
-  background: #493638;
+.colorBox_d {
   background: #3a2f29;
-  /* background: #53423a; */
   color: #fff;
 }
 
@@ -161,5 +139,104 @@
   width: 100%;
   margin-top: auto;
   font-size: 1rem;
+  line-height: 1.5;
+}
+
+.mainTop__hideBoxOverlay {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 2490;
+  display: none;
+  background: rgba(0, 0, 0, 0.8);
+}
+
+.mainTop__hideContainer {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2500;
+  padding: 10px;
+}
+
+/*Если делать раскрытие в квадрате кнопок - то разкомментировать этот блок и закоментировать следующий*/
+/* .mainTop__hideBox {
+  position: absolute;
+  z-index: 2500;
+  display: none;
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+  left: 0;
+  top: 0;
+} */
+.mainTop__hideBox {
+  display: none;
+  position: fixed;
+  z-index: 2500;
+  width: 50%;
+  top: 50%;
+  left: 25%;
+  height: auto;
+  padding: 10px;
+  transform: translate(0, -50%);
+}
+
+.mainTop__hideBoxInner {
+  height: 100%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.mainTop__hideBoxInnerHeader {
+  display: flex;
+  justify-content: space-between;
+}
+
+.mainTop__hideBoxInnerTitle {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.mainTop__hideBoxInnerTitle i {
+  font-size: 2rem;
+  margin-right: 10px;
+}
+.mainTop__hideBoxInnerTitle span {
+  font-size: 1.5rem;
+}
+
+.mainTop__hideBoxClose i {
+  font-size: 1.5rem;
+}
+
+.mainTop__hideBoxInnerContent {
+  flex: 1;
+  overflow-y: scroll;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.mainTop__hideBoxInnerContentInner {
+  position: relative;
+}
+
+.topMenuBox {
+  position: relative;
+}
+.topMenuBox li {
+  list-style: none;
+}
+.topMenuBox li a {
+  text-decoration: none;
+  color: #000;
+  font-size: 1.5rem;
   line-height: 1.5;
 }
