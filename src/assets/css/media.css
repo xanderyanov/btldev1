@@ -23,11 +23,12 @@
     font-size: 12px;
   }
   .toTop {
-    z-index: 2600;
     position: fixed;
     left: auto;
     right: 10px;
     bottom: 100px;
+    width: 2rem;
+    height: 2rem;
     /* background: #be3f46; */
   }
 }

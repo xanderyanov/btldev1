@@ -8,6 +8,12 @@
   transition: all 0.5s;
 }
 
+.menuBottom1__area_page {
+  top: auto;
+  bottom: 0;
+  display: none;
+}
+
 .menuBottom1__area_main {
   top: -200px;
 }
@@ -38,7 +44,9 @@
   flex-direction: column;
   align-items: center;
   height: 100%;
-  padding: 10px 5px 20px;
+  padding: 10px 5px 10px;
+  text-decoration: none;
+  cursor: pointer;
 }
 
 .menuBottom1__item i {

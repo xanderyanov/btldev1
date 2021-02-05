@@ -18,17 +18,26 @@
   .topMenu li {
     margin-right: 10px;
   }
+  .leftMenu__outer {
+    width: 25%;
+  }
 }
 
 @media only screen and (max-width: 920px) {
+  .leftMenu__outer {
+    width: 30%;
+  }
 }
 
 @media only screen and (max-width: 800px) {
 }
 
 @media only screen and (max-width: 768px) {
-  .topMenu__outer {
+  .leftMenu__outerHideInMobile {
     display: none;
+  }
+  .leftMenu__outer {
+    width: 100%;
   }
   .menuButton1__area {
     display: flex;
@@ -37,23 +46,15 @@
     justify-content: space-between;
     padding: 0.3125rem 0;
   }
-
-  .leftMenu__outer {
-    display: none;
-    /* width: 100%;
-    margin-bottom: 10px; */
-  }
-
   .leftMenu {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     margin: 0;
     border: none;
-    margin: 0 -5px;
   }
   .leftMenu li.lev1 {
-    padding: 0 5px 5px;
+    /* padding: 0 5px 5px; */
     width: 100%;
   }
   .leftMenu li a {
@@ -63,7 +64,7 @@
   .menuCategoryMastersLink {
     padding: 2px;
   }
-  .leftMenu li.lev1 .lev_a_wrapper .openInner {
+  /* .leftMenu li.lev1 .lev_a_wrapper .openInner {
     width: 3rem;
   }
   .leftMenu li.lev1 .lev_a_wrapper > a {
@@ -84,7 +85,7 @@
   }
   .leftMenu li.lev2.active > a:before {
     background: #fff;
-  }
+  } */
 
   .solution li {
     padding: 0 0 5px;

@@ -1,3 +1,5 @@
+include __menu
+
 mixin mainTop
   .mainTop__area.w0
     .mainTop__outer.w1
@@ -7,31 +9,18 @@ mixin mainTop
             video(width="100%" height="auto" muted="" playsinline="" autoplay="" loop="" preload="auto")
               source(src='assets/video/video1.mp4' type='video/mp4')
         .mainTop__right
-          .mainTop__hideBoxOverlay
-          //- .mainTop__hideContainer
-          .mainTop__hideBox(data-index="menu1")
-            .mainTop__hideBoxInner.colorBox_a
-              .mainTop__hideBoxInnerHeader
-                .mainTop__hideBoxInnerTitle
-                  i.icon-menu
-                  span Меню
-                .mainTop__hideBoxClose
-                  i.icon-close2021
-              .mainTop__hideBoxInnerContent.xScroll2
-                .mainTop__hideBoxInnerContentInner
-                  +topMenuBox 
-              //- ниже по коду
+          //- +hideBox
           .mainTop__menu
             .mainTop__menuItemOuter.mainTop__menuItemOuter_a
               .mainTop__menuItemWrapper
-                a.mainTop__menuItem.colorBox_a(href="#", data-id="menu1")
+                a.mainTop__menuItem.mainTop__menuItem_js.colorBox_a(href="#", data-id="menu1")
                   .mainTop__menuItemTop
                     .mainTop__menuItemTitle Меню
                     i.icon-menu
                   .mainTop__menuItemBottom Информация о нашем Центре
             .mainTop__menuItemOuter.mainTop__menuItemOuter_b
               .mainTop__menuItemWrapper
-                a.mainTop__menuItem.colorBox_b(href="#", data-id="menu2")
+                a.mainTop__menuItem.mainTop__menuItem_js.colorBox_b(href="#", data-id="menu2")
                   .mainTop__menuItemTop
                     .mainTop__menuItemTitle Услуги
                     i.icon-smile
@@ -50,6 +39,55 @@ mixin mainTop
                     .mainTop__menuItemTitle Специалисты
                     i.icon-user
                   .mainTop__menuItemBottom Наши врачи-косметологи и стилисты
+
+
+mixin hideBox
+  .mainTop__hideBoxOverlay
+  //- .mainTop__hideContainer
+  .mainTop__hideBox(data-index="menu1")
+    .mainTop__hideBoxInner.colorBox_e
+      .mainTop__hideBoxInnerHeader
+        .mainTop__hideBoxInnerTitle
+          i.icon-menu
+          span Меню
+        .mainTop__hideBoxClose
+          i.icon-close2021
+      .mainTop__hideBoxInnerContent.xScroll2
+        .mainTop__hideBoxInnerContentInner
+          +MenuBottom1__menu 
+  .mainTop__hideBox(data-index="menu2")
+    .mainTop__hideBoxInner.colorBox_e
+      .mainTop__hideBoxInnerHeader
+        .mainTop__hideBoxInnerTitle
+          i.icon-smile
+          span Услуги
+        .mainTop__hideBoxClose
+          i.icon-close2021
+      .mainTop__hideBoxInnerContent.xScroll2
+        .mainTop__hideBoxInnerContentInner
+          +MenuBottom1__serv 
+  .mainTop__hideBox(data-index="menu3")
+    .mainTop__hideBoxInner.colorBox_e
+      .mainTop__hideBoxInnerHeader
+        .mainTop__hideBoxInnerTitle
+          i.icon-question-round
+          span Решить проблему
+        .mainTop__hideBoxClose
+          i.icon-close2021
+      .mainTop__hideBoxInnerContent.xScroll2
+        .mainTop__hideBoxInnerContentInner
+          +MenuBottom1__probl 
+  //- .mainTop__hideBox(data-index="menu4")
+  //-   .mainTop__hideBoxInner.colorBox_e
+  //-     .mainTop__hideBoxInnerHeader
+  //-       .mainTop__hideBoxInnerTitle
+  //-         i.icon-menu
+  //-         span Меню
+  //-       .mainTop__hideBoxClose
+  //-         i.icon-close2021
+  //-     .mainTop__hideBoxInnerContent.xScroll2
+  //-       .mainTop__hideBoxInnerContentInner
+  //-         +MenuBottom1__probl
 
 mixin topMenuBox
   ul.topMenuBox

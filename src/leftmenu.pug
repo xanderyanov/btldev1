@@ -6,12 +6,14 @@ include __const
 //- include __header
 include __header2
 include __menu
+include __mainTop
 include __breadcrumbs
 include __wideBlock
 include __services
 include __forms
 
 include __footer
+include __menuBottom1
 
 
 
@@ -23,12 +25,12 @@ body
 
   .site__header
     +header2
-    +topMenu
+    //- +topMenu
 
 
   .site__center
     +breadcrumbs
-    +wideBlock
+    //- +wideBlock
     +services
     +zBlock1
 
@@ -42,6 +44,11 @@ body
   +toUp
   
   +formCallBack
+
+  +menuBottom1_page
+
+  //- далее вывод не на главной
+  +hideBox
 
   +scripts
   

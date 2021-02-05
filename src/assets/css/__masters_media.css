@@ -20,9 +20,6 @@
   .mastersBox__outer {
     width: 70%;
   }
-  .leftMenu__outer {
-    width: 30%;
-  }
 }
 
 @media only screen and (max-width: 800px) {

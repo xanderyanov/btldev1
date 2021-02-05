@@ -314,7 +314,7 @@
 }
 
 .toTop {
-  z-index: 2600;
+  z-index: 2450;
   position: fixed;
   left: 10px;
   bottom: 40px;
@@ -323,10 +323,11 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  border-radius: 50%;
-  width: 2rem;
-  height: 2rem;
-  background: var(--tc0);
+  /* border-radius: 50%; */
+  width: 3rem;
+  height: 3rem;
+  background: #c24b35;
+  transition: all 0.3s;
 }
 
 .toTop:hover {

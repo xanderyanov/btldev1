@@ -3,7 +3,7 @@
 // });
 
 $(function () {
-  $(".mainTop__menuItem, .menuBottom1__item").on("click", function (e) {
+  $(".mainTop__menuItem_js, .menuBottom1__item_js").on("click", function (e) {
     e.preventDefault();
     var $this = $(this);
     var menuId = $this.data("id");
@@ -44,6 +44,21 @@ $(function () {
 
   if ($(".mainPageIdx").length) {
     var topScrollCount = $(".mainTop__area").outerHeight();
+    var menu = $(".menuBottom1__area_main");
+    var menuHeight = $(".menuBottom1__area_main").outerHeight();
+    $(window).on("scroll", function () {
+      if ($(this).scrollTop() > topScrollCount) {
+        // menu.css({ bottom: "0" });
+        menu.addClass("menuBottom1__area_active");
+      } else if ($(this).scrollTop() <= topScrollCount) {
+        // menu.css({ bottom: -menuHeight });
+        menu.removeClass("menuBottom1__area_active");
+      }
+    });
+  }
+
+  if (!$(".mainPageIdx").length) {
+    var topScrollCount = $(".site__header").outerHeight();
     var menu = $(".menuBottom1__area_main");
     var menuHeight = $(".menuBottom1__area_main").outerHeight();
     $(window).on("scroll", function () {
@@ -237,11 +252,28 @@ $(function () {
   });
   $(window).resize();
 
+  // $(".openInner").on("click", function (e) {
+  //   e.preventDefault();
+  //   var daughterUl = $(this).closest(".lev1").find("ul");
+  //   var allUl = $(this).closest(".leftMenu").find("li.lev1 ul");
+  //   var otherOpenInner = $(this).closest(".leftMenu").find(".openInner");
+  //   if ($(this).hasClass("open")) {
+  //     $(this).removeClass("open");
+  //     daughterUl.slideUp(200);
+  //   } else {
+  //     otherOpenInner.removeClass("open");
+  //     $(this).addClass("open");
+  //     allUl.slideUp(200);
+  //     daughterUl.slideDown(200);
+  //   }
+  // });
+
+  //это для трех уровней раздвижного вертикального меню, в теории дл любого количества уровней
   $(".openInner").on("click", function (e) {
     e.preventDefault();
-    var daughterUl = $(this).closest(".lev1").find("ul");
-    var allUl = $(this).closest(".leftMenu").find("li.lev1 ul");
-    var otherOpenInner = $(this).closest(".leftMenu").find(".openInner");
+    var daughterUl = $(this).closest("li").find("> ul");
+    var allUl = $(this).closest("ul").find("li ul");
+    var otherOpenInner = $(this).closest("ul").find(".openInner");
     if ($(this).hasClass("open")) {
       $(this).removeClass("open");
       daughterUl.slideUp(200);
