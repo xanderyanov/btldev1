@@ -3,22 +3,17 @@
 // });
 
 $(function () {
+  //- START Мобтльное меню - функционал типа табов
   $(".mainTop__menuItem_js, .menuBottom1__item_js").on("click", function (e) {
     e.preventDefault();
     var $this = $(this);
     var menuId = $this.data("id");
-    console.log("___искомый id " + menuId);
-
+    // console.log("___искомый id " + menuId);
     var hideBox = $(".mainTop__hideBox");
-
     $(".mainTop__hideBoxOverlay").fadeIn();
     $("body").addClass("stop");
-
     $.each(hideBox, function (index, o) {
       var $o = $(o);
-      // $o.removeClass("visible");
-      // $o.addClass("hidden");
-
       var hideBoxId = $o.data("index");
       if (menuId === hideBoxId) {
         $o.addClass("mainTop__hideBox_open").slideDown(300);
@@ -38,6 +33,9 @@ $(function () {
     $("body").removeClass("stop");
   });
 
+  //- END Мобтльное меню - функционал типа табов
+
+  //-START Адаптивное меню на главной и остальных - появление самого меню
   var menuBottom1_height = $(".menuBottom1__area").outerHeight();
   console.log(menuBottom1_height);
   $(".menuBottom1__areaFake").css({ height: menuBottom1_height });
@@ -48,32 +46,27 @@ $(function () {
     var menuHeight = $(".menuBottom1__area_main").outerHeight();
     $(window).on("scroll", function () {
       if ($(this).scrollTop() > topScrollCount) {
-        // menu.css({ bottom: "0" });
         menu.addClass("menuBottom1__area_active");
       } else if ($(this).scrollTop() <= topScrollCount) {
-        // menu.css({ bottom: -menuHeight });
         menu.removeClass("menuBottom1__area_active");
       }
     });
   }
-
   if (!$(".mainPageIdx").length) {
     var topScrollCount = $(".site__header").outerHeight();
     var menu = $(".menuBottom1__area_main");
     var menuHeight = $(".menuBottom1__area_main").outerHeight();
-    // $(".menuBottom1__areaFake").addClass("menuBottom1__areaFakeMb");
     $(window).on("scroll", function () {
       if ($(this).scrollTop() > topScrollCount) {
-        // menu.css({ bottom: "0" });
         menu.addClass("menuBottom1__area_active");
       } else if ($(this).scrollTop() <= topScrollCount) {
-        // menu.css({ bottom: -menuHeight });
         menu.removeClass("menuBottom1__area_active");
       }
     });
   }
+  //-END Адаптивное меню на главной и остальных
 
-  //Открытие мобильного инстаграм - начало
+  //-START - Открытие мобильного инстаграм - начало
   $(".igTopBtn2").on("click", function (e) {
     e.preventDefault();
     if ($(this).hasClass("open")) {
@@ -100,158 +93,158 @@ $(function () {
     $(".igMobile__area").slideUp(200);
     $("body").removeClass("stop");
   });
-  //Открытие мобильного инстаграм - конец
+  //- END - Открытие мобильного инстаграм - конец
 
-  //Открытие мобильного меню главного - начало
-  $(".mbMenu__mainBtn_JS").on("click", function (e) {
-    e.preventDefault();
-    $(".mbMenu__overlay").fadeOut(200);
-    $(".mbMenu__openBox_solutionJs").slideUp(200);
-    $(".mbMenu__solutionBtn_JS").removeClass("open");
-    $(".mbMenu__openBox_servJs").slideUp(200);
-    $(".mbMenu__servBtn_JS").removeClass("open");
-    $(".mbMenu__openBox_searchJs").slideUp(200);
-    $(".mbMenu__searchBtn_JS").removeClass("open");
-    if ($(this).hasClass("open")) {
-      $(this).removeClass("open");
-      $(".mbMenu__overlay").fadeOut(200);
-      $(".mbMenu__openBox_mainMenuJs").slideUp(200);
-      $("body").removeClass("stop");
-    } else {
-      $(this).addClass("open");
-      $(".mbMenu__overlay").fadeIn(200);
-      $(".mbMenu__openBox_mainMenuJs").slideDown(200);
-      $("body").addClass("stop");
-    }
-  });
-  $(".mbMenu__openBoxClose").on("click", function () {
-    $(".mbMenu__mainBtn_JS").removeClass("open");
-    $(".mbMenu__overlay").fadeOut(200);
-    $(".mbMenu__openBox_mainMenuJs").slideUp(200);
-    $("body").removeClass("stop");
-  });
-  $(".mbMenu__overlay").on("click", function () {
-    $(".mbMenu__mainBtn_JS").removeClass("open");
-    $(this).fadeOut(200);
-    $(".mbMenu__openBox_mainMenuJs").slideUp(200);
-    $("body").removeClass("stop");
-  });
+  //Открытие старого мобильного меню главного - начало
+  // $(".mbMenu__mainBtn_JS").on("click", function (e) {
+  //   e.preventDefault();
+  //   $(".mbMenu__overlay").fadeOut(200);
+  //   $(".mbMenu__openBox_solutionJs").slideUp(200);
+  //   $(".mbMenu__solutionBtn_JS").removeClass("open");
+  //   $(".mbMenu__openBox_servJs").slideUp(200);
+  //   $(".mbMenu__servBtn_JS").removeClass("open");
+  //   $(".mbMenu__openBox_searchJs").slideUp(200);
+  //   $(".mbMenu__searchBtn_JS").removeClass("open");
+  //   if ($(this).hasClass("open")) {
+  //     $(this).removeClass("open");
+  //     $(".mbMenu__overlay").fadeOut(200);
+  //     $(".mbMenu__openBox_mainMenuJs").slideUp(200);
+  //     $("body").removeClass("stop");
+  //   } else {
+  //     $(this).addClass("open");
+  //     $(".mbMenu__overlay").fadeIn(200);
+  //     $(".mbMenu__openBox_mainMenuJs").slideDown(200);
+  //     $("body").addClass("stop");
+  //   }
+  // });
+  // $(".mbMenu__openBoxClose").on("click", function () {
+  //   $(".mbMenu__mainBtn_JS").removeClass("open");
+  //   $(".mbMenu__overlay").fadeOut(200);
+  //   $(".mbMenu__openBox_mainMenuJs").slideUp(200);
+  //   $("body").removeClass("stop");
+  // });
+  // $(".mbMenu__overlay").on("click", function () {
+  //   $(".mbMenu__mainBtn_JS").removeClass("open");
+  //   $(this).fadeOut(200);
+  //   $(".mbMenu__openBox_mainMenuJs").slideUp(200);
+  //   $("body").removeClass("stop");
+  // });
   //Открытие мобильного главного - конец
 
   //Открытие мобильного меню услуг - начало
-  $(".mbMenu__servBtn_JS").on("click", function (e) {
-    e.preventDefault();
-    $(".mbMenu__overlay").fadeOut(200);
-    $(".mbMenu__openBox_solutionJs").slideUp(200);
-    $(".mbMenu__solutionBtn_JS").removeClass("open");
-    $(".mbMenu__openBox_mainMenuJs").slideUp(200);
-    $(".mbMenu__mainBtn_JS").removeClass("open");
-    $(".mbMenu__openBox_searchJs").slideUp(200);
-    $(".mbMenu__searchBtn_JS").removeClass("open");
-    if ($(this).hasClass("open")) {
-      $(this).removeClass("open");
-      $(".mbMenu__overlay").fadeOut(200);
-      $(".mbMenu__openBox_servJs").slideUp(200);
-      $("body").removeClass("stop");
-    } else {
-      $(this).addClass("open");
-      $(".mbMenu__overlay").fadeIn(200);
-      $(".mbMenu__openBox_servJs").slideDown(200);
-      $("body").addClass("stop");
-    }
-  });
-  $(".mbMenu__openBoxClose").on("click", function () {
-    $(".mbMenu__servBtn_JS").removeClass("open");
-    $(".mbMenu__overlay").fadeOut(200);
-    $(".mbMenu__openBox_servJs").slideUp(200);
-    $("body").removeClass("stop");
-  });
-  $(".mbMenu__overlay").on("click", function () {
-    $(".mbMenu__servBtn_JS").removeClass("open");
-    $(this).fadeOut(200);
-    $(".mbMenu__openBox_servJs").slideUp(200);
-    $("body").removeClass("stop");
-  });
+  // $(".mbMenu__servBtn_JS").on("click", function (e) {
+  //   e.preventDefault();
+  //   $(".mbMenu__overlay").fadeOut(200);
+  //   $(".mbMenu__openBox_solutionJs").slideUp(200);
+  //   $(".mbMenu__solutionBtn_JS").removeClass("open");
+  //   $(".mbMenu__openBox_mainMenuJs").slideUp(200);
+  //   $(".mbMenu__mainBtn_JS").removeClass("open");
+  //   $(".mbMenu__openBox_searchJs").slideUp(200);
+  //   $(".mbMenu__searchBtn_JS").removeClass("open");
+  //   if ($(this).hasClass("open")) {
+  //     $(this).removeClass("open");
+  //     $(".mbMenu__overlay").fadeOut(200);
+  //     $(".mbMenu__openBox_servJs").slideUp(200);
+  //     $("body").removeClass("stop");
+  //   } else {
+  //     $(this).addClass("open");
+  //     $(".mbMenu__overlay").fadeIn(200);
+  //     $(".mbMenu__openBox_servJs").slideDown(200);
+  //     $("body").addClass("stop");
+  //   }
+  // });
+  // $(".mbMenu__openBoxClose").on("click", function () {
+  //   $(".mbMenu__servBtn_JS").removeClass("open");
+  //   $(".mbMenu__overlay").fadeOut(200);
+  //   $(".mbMenu__openBox_servJs").slideUp(200);
+  //   $("body").removeClass("stop");
+  // });
+  // $(".mbMenu__overlay").on("click", function () {
+  //   $(".mbMenu__servBtn_JS").removeClass("open");
+  //   $(this).fadeOut(200);
+  //   $(".mbMenu__openBox_servJs").slideUp(200);
+  //   $("body").removeClass("stop");
+  // });
   //Открытие мобильного меню - конец
 
   //Открытие мобильного меню решить проблему - начало
-  $(".mbMenu__solutionBtn_JS").on("click", function (e) {
-    e.preventDefault();
-    $(".mbMenu__overlay").fadeOut(200);
-    $(".mbMenu__openBox_servJs").slideUp(200);
-    $(".mbMenu__servBtn_JS").removeClass("open");
-    $(".mbMenu__openBox_mainMenuJs").slideUp(200);
-    $(".mbMenu__mainBtn_JS").removeClass("open");
-    $(".mbMenu__openBox_searchJs").slideUp(200);
-    $(".mbMenu__searchBtn_JS").removeClass("open");
-    if ($(this).hasClass("open")) {
-      $(this).removeClass("open");
-      $(".mbMenu__overlay").fadeOut(200);
-      $(".mbMenu__openBox_solutionJs").slideUp(200);
-      $("body").removeClass("stop");
-    } else {
-      $(this).addClass("open");
-      $(".mbMenu__overlay").fadeIn(200);
-      $(".mbMenu__openBox_solutionJs").slideDown(200);
-      $("body").addClass("stop");
-    }
-  });
-  $(".mbMenu__openBoxClose").on("click", function () {
-    $(".mbMenu__solutionBtn_JS").removeClass("open");
-    $(".mbMenu__overlay").fadeOut(200);
-    $(".mbMenu__openBox_solutionJs").slideUp(200);
-    $("body").removeClass("stop");
-  });
-  $(".mbMenu__overlay").on("click", function () {
-    $(".mbMenu__solutionBtn_JS").removeClass("open");
-    $(this).fadeOut(200);
-    $(".mbMenu__openBox_solutionJs").slideUp(200);
-    $("body").removeClass("stop");
-  });
+  // $(".mbMenu__solutionBtn_JS").on("click", function (e) {
+  //   e.preventDefault();
+  //   $(".mbMenu__overlay").fadeOut(200);
+  //   $(".mbMenu__openBox_servJs").slideUp(200);
+  //   $(".mbMenu__servBtn_JS").removeClass("open");
+  //   $(".mbMenu__openBox_mainMenuJs").slideUp(200);
+  //   $(".mbMenu__mainBtn_JS").removeClass("open");
+  //   $(".mbMenu__openBox_searchJs").slideUp(200);
+  //   $(".mbMenu__searchBtn_JS").removeClass("open");
+  //   if ($(this).hasClass("open")) {
+  //     $(this).removeClass("open");
+  //     $(".mbMenu__overlay").fadeOut(200);
+  //     $(".mbMenu__openBox_solutionJs").slideUp(200);
+  //     $("body").removeClass("stop");
+  //   } else {
+  //     $(this).addClass("open");
+  //     $(".mbMenu__overlay").fadeIn(200);
+  //     $(".mbMenu__openBox_solutionJs").slideDown(200);
+  //     $("body").addClass("stop");
+  //   }
+  // });
+  // $(".mbMenu__openBoxClose").on("click", function () {
+  //   $(".mbMenu__solutionBtn_JS").removeClass("open");
+  //   $(".mbMenu__overlay").fadeOut(200);
+  //   $(".mbMenu__openBox_solutionJs").slideUp(200);
+  //   $("body").removeClass("stop");
+  // });
+  // $(".mbMenu__overlay").on("click", function () {
+  //   $(".mbMenu__solutionBtn_JS").removeClass("open");
+  //   $(this).fadeOut(200);
+  //   $(".mbMenu__openBox_solutionJs").slideUp(200);
+  //   $("body").removeClass("stop");
+  // });
   //Открытие мобильного меню решить проблему - конец
 
   //Открытие мобильного поиска - начало
-  $(".mbMenu__searchBtn_JS").on("click", function (e) {
-    e.preventDefault();
-    $(".mbMenu__overlay").fadeOut(200);
-    $(".mbMenu__openBox_servJs").slideUp(200);
-    $(".mbMenu__servBtn_JS").removeClass("open");
-    $(".mbMenu__openBox_mainMenuJs").slideUp(200);
-    $(".mbMenu__mainBtn_JS").removeClass("open");
-    $(".mbMenu__openBox_solutionJs").slideUp(200);
-    $(".mbMenu__solutionBtn_JS").removeClass("open");
-    if ($(this).hasClass("open")) {
-      $(this).removeClass("open");
-      $(".mbMenu__overlay").fadeOut(200);
-      $(".mbMenu__openBox_searchJs").slideUp(200);
-      $("body").removeClass("stop");
-    } else {
-      $(this).addClass("open");
-      $(".mbMenu__overlay").fadeIn(200);
-      $(".mbMenu__openBox_searchJs").slideDown(200);
-      $("body").addClass("stop");
-    }
-  });
-  $(".mbMenu__openBoxClose").on("click", function () {
-    $(".mbMenu__searchBtn_JS").removeClass("open");
-    $(".mbMenu__overlay").fadeOut(200);
-    $(".mbMenu__openBox_searchJs").slideUp(200);
-    $("body").removeClass("stop");
-  });
-  $(".mbMenu__overlay").on("click", function () {
-    $(".mbMenu__searchBtn_JS").removeClass("open");
-    $(this).fadeOut(200);
-    $(".mbMenu__openBox_searchJs").slideUp(200);
-    $("body").removeClass("stop");
-  });
+  // $(".mbMenu__searchBtn_JS").on("click", function (e) {
+  //   e.preventDefault();
+  //   $(".mbMenu__overlay").fadeOut(200);
+  //   $(".mbMenu__openBox_servJs").slideUp(200);
+  //   $(".mbMenu__servBtn_JS").removeClass("open");
+  //   $(".mbMenu__openBox_mainMenuJs").slideUp(200);
+  //   $(".mbMenu__mainBtn_JS").removeClass("open");
+  //   $(".mbMenu__openBox_solutionJs").slideUp(200);
+  //   $(".mbMenu__solutionBtn_JS").removeClass("open");
+  //   if ($(this).hasClass("open")) {
+  //     $(this).removeClass("open");
+  //     $(".mbMenu__overlay").fadeOut(200);
+  //     $(".mbMenu__openBox_searchJs").slideUp(200);
+  //     $("body").removeClass("stop");
+  //   } else {
+  //     $(this).addClass("open");
+  //     $(".mbMenu__overlay").fadeIn(200);
+  //     $(".mbMenu__openBox_searchJs").slideDown(200);
+  //     $("body").addClass("stop");
+  //   }
+  // });
+  // $(".mbMenu__openBoxClose").on("click", function () {
+  //   $(".mbMenu__searchBtn_JS").removeClass("open");
+  //   $(".mbMenu__overlay").fadeOut(200);
+  //   $(".mbMenu__openBox_searchJs").slideUp(200);
+  //   $("body").removeClass("stop");
+  // });
+  // $(".mbMenu__overlay").on("click", function () {
+  //   $(".mbMenu__searchBtn_JS").removeClass("open");
+  //   $(this).fadeOut(200);
+  //   $(".mbMenu__openBox_searchJs").slideUp(200);
+  //   $("body").removeClass("stop");
+  // });
   //Открытие мобильного поиска - конец
 
-  $(window).on("resize", function () {
-    var bm = $(".mbMenu__outer").outerHeight();
-    $(".mbMenu__fake").css({ height: bm });
-    $(".mbMenu__openBox").css({ bottom: bm });
-  });
-  $(window).resize();
+  // $(window).on("resize", function () {
+  //   var bm = $(".mbMenu__outer").outerHeight();
+  //   $(".mbMenu__fake").css({ height: bm });
+  //   $(".mbMenu__openBox").css({ bottom: bm });
+  // });
+  // $(window).resize();
 
   // $(".openInner").on("click", function (e) {
   //   e.preventDefault();
@@ -286,39 +279,39 @@ $(function () {
     }
   });
 
-  $(".solution__btn").on("click", function (e) {
-    e.preventDefault();
-    if ($(this).hasClass("active")) {
-      $(this).removeClass("active");
-      $(".solution").slideUp(200);
-    } else {
-      $(this).addClass("active");
-      $(".solution").slideDown(200);
-    }
-  });
+  // $(".solution__btn").on("click", function (e) {
+  //   e.preventDefault();
+  //   if ($(this).hasClass("active")) {
+  //     $(this).removeClass("active");
+  //     $(".solution").slideUp(200);
+  //   } else {
+  //     $(this).addClass("active");
+  //     $(".solution").slideDown(200);
+  //   }
+  // });
 
   // Открытие и закрытие адаптивного меню по кнопке
-  $(".menuButton1__area_JS").on("click", function (e) {
-    e.preventDefault();
-    if ($(this).hasClass("open")) {
-      $(this).removeClass("open");
-      $(".menuButton1").removeClass("open");
-      $(".topMenuAdaptive__area").slideUp(200);
-    } else {
-      $(this).addClass("open");
-      $(".menuButton1").addClass("open");
-      $(".topMenuAdaptive__area").slideDown(200);
+  // $(".menuButton1__area_JS").on("click", function (e) {
+  //   e.preventDefault();
+  //   if ($(this).hasClass("open")) {
+  //     $(this).removeClass("open");
+  //     $(".menuButton1").removeClass("open");
+  //     $(".topMenuAdaptive__area").slideUp(200);
+  //   } else {
+  //     $(this).addClass("open");
+  //     $(".menuButton1").addClass("open");
+  //     $(".topMenuAdaptive__area").slideDown(200);
 
-      //подгружает контент активного меню в .am_active
-      // и его родителя в .am_back
-    }
-  });
+  //подгружает контент активного меню в .am_active
+  // и его родителя в .am_back
+  //   }
+  // });
   // Закрытие адаптивного меню по кнопке Close
-  $(".topMenuAdaptive__close").click(function () {
-    $(".menuButton1__area_JS").removeClass("open");
-    $(".menuButton1").removeClass("open");
-    $(".topMenuAdaptive__area").slideUp(200);
-  });
+  // $(".topMenuAdaptive__close").click(function () {
+  //   $(".menuButton1__area_JS").removeClass("open");
+  //   $(".menuButton1").removeClass("open");
+  //   $(".topMenuAdaptive__area").slideUp(200);
+  // });
 
   //START--- Открытие и закрытие поиска по кнопке .topSearch_JS
   $(".topSearch_JS").click(function (e) {
