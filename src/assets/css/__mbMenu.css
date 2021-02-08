@@ -168,11 +168,12 @@ a.mbMenu__item span {
 .igMobile__outer {
   display: flex;
   flex-direction: column;
-  background: var(--bg0);
+  /* background: var(--bg0); */
+  background: var(--x1greySuperLight);
   /* height: 100%; */
-  -webkit-border-radius: 10px;
+  /* -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
-  border-radius: 10px;
+  border-radius: 10px; */
 }
 
 .igMobile__title {
@@ -190,17 +191,14 @@ a.mbMenu__item span {
 }
 
 .igMobile__close {
-  background: var(--tc0);
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 2rem;
-  height: 2rem;
   border-radius: 50%;
 }
 .igMobile__close i {
-  font-size: 1rem;
-  color: #fff;
+  font-size: 1.5rem;
+  color: var(--tc0);
 }
 
 .igMobile {
@@ -233,14 +231,7 @@ a.mbMenu__item span {
   align-items: center;
   border-radius: 40%;
   background: #d6249f;
-  background: radial-gradient(
-    circle at 30% 107%,
-    #fdf497 0%,
-    #fdf497 5%,
-    #fd5949 45%,
-    #d6249f 60%,
-    #285aeb 90%
-  );
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285aeb 90%);
   margin-right: 10px;
 }
 

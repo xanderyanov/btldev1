@@ -21,6 +21,9 @@
     top: auto;
     bottom: 0;
   }
+  .menuBottom1__areaFake {
+    display: block;
+  }
   .menuBottom1__area_main {
     bottom: -200px;
     top: auto;

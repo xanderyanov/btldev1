@@ -8,6 +8,10 @@
   transition: all 0.5s;
 }
 
+.menuBottom1__areaFake {
+  display: none;
+}
+
 .menuBottom1__area_page {
   top: auto;
   bottom: 0;

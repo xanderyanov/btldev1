@@ -114,9 +114,9 @@
   .search1__box {
     width: 100%;
   }
-  .search1__close {
+  /* .search1__close {
     display: none;
-  }
+  } */
 }
 
 @media only screen and (max-width: 600px) {

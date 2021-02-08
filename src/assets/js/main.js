@@ -61,6 +61,7 @@ $(function () {
     var topScrollCount = $(".site__header").outerHeight();
     var menu = $(".menuBottom1__area_main");
     var menuHeight = $(".menuBottom1__area_main").outerHeight();
+    // $(".menuBottom1__areaFake").addClass("menuBottom1__areaFakeMb");
     $(window).on("scroll", function () {
       if ($(this).scrollTop() > topScrollCount) {
         // menu.css({ bottom: "0" });
@@ -319,22 +320,34 @@ $(function () {
     $(".topMenuAdaptive__area").slideUp(200);
   });
 
-  // Открытие и закрытие поиска по кнопке
+  //START--- Открытие и закрытие поиска по кнопке .topSearch_JS
   $(".topSearch_JS").click(function (e) {
     e.preventDefault();
     if ($(this).hasClass("open")) {
       $(this).removeClass("open");
       $(".search1__area").slideUp(200);
+      $("body").removeClass("stop");
+      $(".search1__overlay").fadeOut();
     } else {
       $(this).addClass("open");
       $(".search1__area").slideDown(200);
+      $("body").addClass("stop");
+      $(".search1__overlay").fadeIn();
     }
   });
-  // Закрытие поиска по кнопке Close
   $(".search1__close").click(function () {
     $(".topSearch_JS").removeClass("open");
     $(".search1__area").slideUp(200);
+    $("body").removeClass("stop");
+    $(".search1__overlay").fadeOut();
   });
+  $(".search1__overlay").click(function () {
+    $(".topSearch_JS").removeClass("open");
+    $(".search1__area").slideUp(200);
+    $("body").removeClass("stop");
+    $(".search1__overlay").fadeOut();
+  });
+  //END--- Открытие и закрытие поиска по кнопке .topSearch_JS
 
   if ($(".juneSlider__area").length) {
     $(".juneSlider").slick({
