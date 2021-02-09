@@ -12,7 +12,10 @@
     display: none;
   }
   .header2__contactsItem_mb {
-    display: block;
+    display: flex;
+  }
+  .header2__contacts {
+    margin: 0 20px 0 auto;
   }
 }
 
@@ -53,9 +56,10 @@
   .header2 {
     padding: 10px 0 0;
   }
-  .header2__contactsItemLink_mb,
-  .header2__contactsItemLink_mb:hover,
-  .header2__contactsItemLink_mb:focus {
+  .header2__contactsItemLink_mb i {
+    font-size: 3rem;
+  }
+  .header2__menuBtn i {
     font-size: 3rem;
   }
 }

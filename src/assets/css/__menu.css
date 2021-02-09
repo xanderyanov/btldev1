@@ -550,7 +550,7 @@ li.endLeftBlock {
   list-style: none;
 }
 
-.leftMenu li.lev3 > a {
+.leftMenu li.lev3 > .lev_a_wrapper a {
   display: block;
   padding: 0.625rem 0.625rem 0.625rem 2.5rem;
   text-decoration: none;
@@ -564,11 +564,11 @@ li.endLeftBlock {
   position: relative;
 }
 
-.leftMenu li.lev3.active > a {
+.leftMenu li.lev3.active > .lev_a_wrapper a {
   background: rgba(255, 128, 0, 0.5);
 }
 
-.leftMenu li.lev3 > a:before {
+.leftMenu li.lev3 > .lev_a_wrapper a:before {
   content: "";
   position: absolute;
   width: 6px;
@@ -581,11 +581,11 @@ li.endLeftBlock {
   z-index: 10;
 }
 
-.leftMenu li.lev3 > a:hover {
+.leftMenu li.lev3 > .lev_a_wrapper a:hover {
   background: #ececec;
 }
 
-.leftMenu li.lev3.active > a:hover {
+.leftMenu li.lev3.active > .lev_a_wrapper a:hover {
   background: rgba(255, 128, 0, 0.8);
 }
 

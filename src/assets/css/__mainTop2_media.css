@@ -44,6 +44,9 @@
   .mainTop__menuItem {
     padding: 15px;
   }
+  .mainTop__menuItemTitle {
+    font-size: 1.375rem;
+  }
 
   /*////////////////////////////////*/
 
@@ -63,7 +66,7 @@
   }
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 820px) {
   .mainTop__menuItemWrapper {
     height: auto;
     padding: 0;
@@ -83,6 +86,7 @@
     order: 2;
     margin-top: 5px;
     font-weight: 400;
+    font-size: 1.25rem;
   }
 }
 
@@ -90,6 +94,9 @@
   .mainTop__hideBox {
     width: 70%;
     left: 15%;
+  }
+  .mainTop__menuItem {
+    padding: 15px 5px;
   }
 }
 
@@ -119,6 +126,9 @@
   .mainTop__hideBox {
     width: 90%;
     left: 5%;
+  }
+  .mainTop__menuItemTitle {
+    font-size: 1.125rem;
   }
 }
 

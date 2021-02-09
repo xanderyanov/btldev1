@@ -4,7 +4,7 @@
 
 $(function () {
   //- START Мобтльное меню - функционал типа табов
-  $(".mainTop__menuItem_js, .menuBottom1__item_js").on("click", function (e) {
+  $(".mainTop__menuItem_js, .menuBottom1__item_js, .header2__menuBtn_js").on("click", function (e) {
     e.preventDefault();
     var $this = $(this);
     var menuId = $this.data("id");
