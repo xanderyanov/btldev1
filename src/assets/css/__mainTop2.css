@@ -145,12 +145,14 @@
 
 .mainTop__hideContainer {
   position: absolute;
-  left: 0;
   top: 0;
-  width: 100%;
-  height: 100%;
+  right: 0;
+  bottom: 0;
+  left: 0;
   z-index: 2500;
-  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 /*Если делать раскрытие в квадрате кнопок - то разкомментировать этот блок и закоментировать следующий*/
@@ -164,7 +166,8 @@
   left: 0;
   top: 0;
 } */
-.mainTop__hideBox {
+
+/* .mainTop__hideBox {
   display: none;
   position: fixed;
   z-index: 2500;
@@ -172,16 +175,26 @@
   top: 50%;
   left: 25%;
   height: auto;
+  max-height: 60vh;
   padding: 10px;
   transform: translate(0, -50%);
+} */
+
+.mainTop__hideBox {
+  display: none;
+  width: 50%;
+  /* height: auto; */
+  /* max-height: 60vh; */
+  padding: 10px;
+  position: relative;
 }
 
 .mainTop__hideBoxInner {
-  height: 100%;
+  max-height: 100%;
   padding: 20px;
   display: flex;
   flex-direction: column;
-  max-height: 90%;
+  /* max-height: 90%; */
 }
 
 .mainTop__hideBoxInnerHeader {
@@ -218,6 +231,7 @@
   display: flex;
   flex-wrap: wrap;
   padding: 0 5px 0 0;
+  max-height: 60vh;
 }
 
 .mainTop__hideBoxInnerContentInner {

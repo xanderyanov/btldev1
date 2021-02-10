@@ -11,15 +11,13 @@
   /* .mastersBox__itemOuter {
     width: 50%;
   } */
+  .mastersBox__outer {
+    width: 100%;
+    padding-left: 0;
+  }
 }
 
 @media only screen and (max-width: 920px) {
-  .mastersBox__itemOuter {
-    width: 50%;
-  }
-  .mastersBox__outer {
-    width: 70%;
-  }
 }
 
 @media only screen and (max-width: 800px) {
@@ -32,6 +30,12 @@
   }
   .mastersBox__info span {
     margin-bottom: 5px;
+  }
+  .mastersBox__itemOuter {
+    width: 50%;
+  }
+  .mastersBox__info {
+    height: 30%;
   }
 }
 
@@ -61,7 +65,13 @@
   }
 }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 414px) {
+  .mastersBox__itemOuter {
+    width: 100%;
+  }
+  .mastersBox__info {
+    height: 20%;
+  }
 }
 
 @media only screen and (max-width: 320px) {

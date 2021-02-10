@@ -90,10 +90,12 @@
   }
 }
 
+@media only screen and (max-height: 768px) {
+}
+
 @media only screen and (max-width: 768px) {
   .mainTop__hideBox {
     width: 70%;
-    left: 15%;
   }
   .mainTop__menuItem {
     padding: 15px 5px;
@@ -101,9 +103,6 @@
 }
 
 @media only screen and (max-height: 600px) {
-  .mainTop__hideBox {
-    height: 70vh;
-  }
 }
 
 @media only screen and (max-width: 600px) {
@@ -125,7 +124,6 @@
   }
   .mainTop__hideBox {
     width: 90%;
-    left: 5%;
   }
   .mainTop__menuItemTitle {
     font-size: 1.125rem;
@@ -133,8 +131,8 @@
 }
 
 @media only screen and (max-height: 414px) {
-  .mainTop__hideBox {
-    height: 90vh;
+  .mainTop__hideBoxInnerContent {
+    max-height: 50vh;
   }
 }
 

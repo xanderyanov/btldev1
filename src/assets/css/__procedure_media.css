@@ -23,11 +23,14 @@
   .procedure__introImg__outer {
     order: 0;
     width: 100%;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
   }
   .procedure__introText {
     order: 1;
     width: 100%;
+  }
+  .procedure__introImg {
+    padding: 10px 0;
   }
 }
 

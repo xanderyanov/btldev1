@@ -619,8 +619,26 @@ li.endLeftBlock {
   color: #fff;
 }
 
+.mastersTagMenu__outer {
+  width: 100%;
+}
+
+.mastersTagMenu {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .menuCategoryMastersLink {
   list-style: none;
+  padding: 10px 20px;
+  background: #ececec;
+  margin: 2px 2px;
+  cursor: pointer;
+}
+
+.menuCategoryMastersLink.active {
+  background: var(--color1);
+  color: #fff;
 }
 
 .solutionMenu__outer {

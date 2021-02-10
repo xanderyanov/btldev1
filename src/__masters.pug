@@ -6,101 +6,194 @@ mixin masters
       .title1
         h1 Специалисты нашего центра
       .masters__wrapper
-        +leftMenu
+        +leftMenuSuperTree
         .mastersBox__outer
-          .mastersBox
-            .mastersBox__itemOuter
-              a.mastersBox__item(href="#")
-                img(src="assets/img/sotr/chumakova-olga.jpg", alt="")
-                span.mastersBox__info
-                  span Иванова Ирина Владимировна
-                  span Косметолог
-            .mastersBox__itemOuter
-              a.mastersBox__item(href="#")
-                img(src="assets/img/sotr/gamayunova-dasha1.jpg", alt="")
-                span.mastersBox__info
-                  span Иванова Ирина Владимировна
-                  span Косметолог
-            .mastersBox__itemOuter
-              a.mastersBox__item(href="#")
-                img(src="assets/img/sotr/morozova-olga1.jpg", alt="")
-                span.mastersBox__info
-                  span Иванова Ирина Владимировна
-                  span Косметолог
-            .mastersBox__itemOuter
-              a.mastersBox__item(href="#")
-                img(src="assets/img/sotr/stetsura-elena2.png", alt="")
-                span.mastersBox__info
-                  span Иванова Ирина Владимировна
-                  span Косметолог
-            .mastersBox__itemOuter
-              a.mastersBox__item(href="#")
-                img(src="assets/img/sotr/masha-simonova1.jpg", alt="")
-                span.mastersBox__info
-                  span Иванова Ирина Владимировна
-                  span Косметолог
-            .mastersBox__itemOuter
-              a.mastersBox__item(href="#")
-                img(src="assets/img/sotr/narek.jpg", alt="")
-                span.mastersBox__info
-                  span Иванова Ирина Владимировна
-                  span Косметолог
-            .mastersBox__itemOuter
-              a.mastersBox__item(href="#")
-                img(src="assets/img/sotr/shevchenko-anna-02.jpg", alt="")
-                span.mastersBox__info
-                  span Иванова Ирина Владимировна
-                  span Косметолог
-            .mastersBox__itemOuter
-              a.mastersBox__item(href="#")
-                img(src="assets/img/sotr/chumakova-olga.jpg", alt="")
-                span.mastersBox__info
-                  span Иванова Ирина Владимировна
-                  span Косметолог
-            .mastersBox__itemOuter
-              a.mastersBox__item(href="#")
-                img(src="assets/img/sotr/gamayunova-dasha1.jpg", alt="")
-                span.mastersBox__info
-                  span Иванова Ирина Владимировна
-                  span Косметолог
-            .mastersBox__itemOuter
-              a.mastersBox__item(href="#")
-                img(src="assets/img/sotr/morozova-olga1.jpg", alt="")
-                span.mastersBox__info
-                  span Иванова Ирина Владимировна
-                  span Косметолог
-            .mastersBox__itemOuter
-              a.mastersBox__item(href="#")
-                img(src="assets/img/sotr/stetsura-elena2.png", alt="")
-                span.mastersBox__info
-                  span Иванова Ирина Владимировна
-                  span Косметолог
-            .mastersBox__itemOuter
-              a.mastersBox__item(href="#")
-                img(src="assets/img/sotr/masha-simonova1.jpg", alt="")
-                span.mastersBox__info
-                  span Иванова Ирина Владимировна
-                  span Косметолог
-            .mastersBox__itemOuter
-              a.mastersBox__item(href="#")
-                img(src="assets/img/sotr/narek.jpg", alt="")
-                span.mastersBox__info
-                  span Иванова Ирина Владимировна
-                  span Косметолог
-            .mastersBox__itemOuter
-              a.mastersBox__item(href="#")
-                img(src="assets/img/sotr/shevchenko-anna-02.jpg", alt="")
-                span.mastersBox__info
-                  span Иванова Ирина Владимировна
-                  span Косметолог
-            .mastersBox__itemOuter
-              a.mastersBox__item(href="#")
-                img(src="assets/img/sotr/vigo1.jpg", alt="")
-                span.mastersBox__info
-                  span Иванова Ирина Владимировна
-                  span Косметолог
+          +mastersTagMenu
+          +mastersBox
       .masterBox__content
         .content
           p Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut aliquam debitis officia voluptatibus vero repellat ab quia amet assumenda fuga. Quo, inventore, molestias, commodi sapiente necessitatibus soluta fugiat rerum impedit ullam dicta sequi saepe? Tempora molestiae nam quibusdam eaque sunt fugiat rem et nihil quisquam, voluptate minus dolorem, hic repellendus.
           p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat, odit molestias hic accusantium odio repellendus expedita iste ut cumque porro officia unde dolorem voluptatem autem accusamus. Amet et deserunt laboriosam!
           p Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, repellendus?
+
+
+mixin mastersTagMenu 
+  nav.mastersTagMenu__outer
+    ul.mastersTagMenu
+      li.menuCategoryMastersLink.menuCategoryMastersLink__all(data-id='all')
+        span Все специалисты центра
+      li.menuCategoryMastersLink(data-id='17')
+        span Аппаратная косметология
+      li.menuCategoryMastersLink(data-id='201')
+        span Инъекционная косметология
+      li.menuCategoryMastersLink(data-id='18')
+        span Косметологические препараты
+      li.menuCategoryMastersLink.active(data-id='21')
+        span Эстетическая косметология и дерматология
+      li.menuCategoryMastersLink(data-id='19')
+        span Уходовая косметология
+      li.menuCategoryMastersLink(data-id='20')
+        span Коррекция фигуры
+      li.menuCategoryMastersLink(data-id='25')
+        span Удаление волос
+      li.menuCategoryMastersLink(data-id='24')
+        span Hair Beauty bar
+      li.menuCategoryMastersLink(data-id='23')
+        span Nail Bar
+      li.menuCategoryMastersLink(data-id='62')
+        span Менеджмент
+
+mixin mastersBox 
+  
+  .mastersBox
+    .mastersBox__itemOuter.hidden(data-sid='62')
+      a.mastersBox__item(href='#')
+        img(src='assets/img/sotr/chumakova-olga.jpg' alt='')
+        span.mastersBox__info
+          span Гольбрайх Геннадий Ефимович
+          span Главный врач
+    .mastersBox__itemOuter.visible(data-sid='17,18,19,21')
+      a.mastersBox__item(href='#')
+        img(src='assets/img/sotr/chumakova-olga.jpg' alt='')
+        span.mastersBox__info
+          span Чумакова Ольга Владимировна
+          span Врач-косметолог
+    .mastersBox__itemOuter.visible(data-sid='17,18,19,20,21')
+      a.mastersBox__item(href='#')
+        img(src='assets/img/sotr/chumakova-olga.jpg' alt='')
+        span.mastersBox__info
+          span Жукова Светлана Юрьевна
+          span Врач-косметолог
+    .mastersBox__itemOuter.visible(data-sid='17,18,19,20,21')
+      a.mastersBox__item(href='#')
+        img(src='assets/img/sotr/chumakova-olga.jpg' alt='')
+        span.mastersBox__info
+          span Солод Екатерина Олеговна
+          span Врач-косметолог
+    .mastersBox__itemOuter.visible(data-sid='17,18,19,20,21')
+      a.mastersBox__item(href='#')
+        img(src='assets/img/sotr/chumakova-olga.jpg' alt='')
+        span.mastersBox__info
+          span Спирина Виктория Геннадьевна
+          span Врач-косметолог
+    .mastersBox__itemOuter.visible(data-sid='17,18,19,21,22')
+      a.mastersBox__item(href='kuzneczova-tatyana-alekseevna/')
+        img(src='assets/img/sotr/chumakova-olga.jpg' alt='')
+        span.mastersBox__info
+          span Кузнецова Татьяна Алексеевна
+          span Врач-косметолог
+    .mastersBox__itemOuter.visible(data-sid='17,18,19,21,25,201')
+      a.mastersBox__item(href='xrapova-svetlana-leonidovna/')
+        img(src='assets/img/sotr/chumakova-olga.jpg' alt='')
+        span.mastersBox__info
+          span Храпова Светлана Леонидовна
+          span Врач-косметолог
+    .mastersBox__itemOuter.hidden(data-sid='17,18,19')
+      a.mastersBox__item(href='gorohova/')
+        img(src='assets/img/sotr/chumakova-olga.jpg' alt='')
+        span.mastersBox__info
+          span Горохова Марина Сергеевна
+          span Врач-косметолог
+    .mastersBox__itemOuter.hidden(data-sid='17,19,20')
+      a.mastersBox__item(href='pichugina-kseniya-sergeevna/')
+        img(src='assets/img/sotr/chumakova-olga.jpg' alt='')
+        span.mastersBox__info
+          span Пичугина Ксения Сергеевна
+          span врач-диетолог, физиотерапевт 
+    .mastersBox__itemOuter.hidden(data-sid='20')
+      a.mastersBox__item(href='alimbekova-elmira/')
+        img(src='assets/img/sotr/chumakova-olga.jpg' alt='')
+        span.mastersBox__info
+          span Алимбекова Эльмира
+          span SPA-Технолог, Косметик-Эстетист.
+    .mastersBox__itemOuter.hidden(data-sid='24')
+      a.mastersBox__item(href='malyishko-mariya/')
+        img(src='assets/img/sotr/chumakova-olga.jpg' alt='')
+        span.mastersBox__info
+          span Малышко Мария
+          span Стилист-колорист
+    .mastersBox__itemOuter.hidden(data-sid='24,25')
+      a.mastersBox__item(href='sarkisyan-narek/')
+        img(src='assets/img/sotr/chumakova-olga.jpg' alt='')
+        span.mastersBox__info
+          span Саркисян Нарек
+          span Стилист-колорист международного класса
+    .mastersBox__itemOuter.hidden(data-sid='24')
+      a.mastersBox__item(href='bobrova-ekaterina/')
+        img(src='assets/img/sotr/chumakova-olga.jpg' alt='')
+        span.mastersBox__info
+          span Боброва Екатерина
+          span Стилист-колорист
+    .mastersBox__itemOuter.hidden(data-sid='24,25')
+      a.mastersBox__item(href='ruzavina-marina/')
+        img(src='assets/img/sotr/chumakova-olga.jpg' alt='')
+        span.mastersBox__info
+          span Рузавина Марина
+          span Стилист-колорист
+    .mastersBox__itemOuter.hidden(data-sid='23,55')
+      a.mastersBox__item(href='marina-olga/')
+        img(src='assets/img/sotr/chumakova-olga.jpg' alt='')
+        span.mastersBox__info
+          span Марьина Ольга
+          span
+            | Специалист маникюра и педикюра, Спа-специалист: массажист, медицинская сестра по массажу
+    .mastersBox__itemOuter.hidden(data-sid='23,55')
+      a.mastersBox__item(href='simonova-mariya/')
+        img(src='assets/img/sotr/chumakova-olga.jpg' alt='')
+        span.mastersBox__info
+          span Симонова Мария
+          span Специалист маникюра и педикюра
+    .mastersBox__itemOuter.hidden(data-sid='23,55')
+      a.mastersBox__item(href='toshheva-anastasiya/')
+        img(src='assets/img/sotr/chumakova-olga.jpg' alt='')
+        span.mastersBox__info
+          span Тощева Анастасия
+          span Специалист маникюра и педикюра
+    .mastersBox__itemOuter.hidden(data-sid='23,55')
+      a.mastersBox__item(href='zajczeva-svetlana/')
+        img(src='assets/img/sotr/chumakova-olga.jpg' alt='')
+        span.mastersBox__info
+          span Зайцева Светлана
+          span Специалист маникюра и педикюра
+    .mastersBox__itemOuter.hidden(data-sid='23,55')
+      a.mastersBox__item(href='nechaeva-svetlana-evgenevna/')
+        img(src='assets/img/sotr/chumakova-olga.jpgg' alt='')
+        span.mastersBox__info
+          span Нечаева Светлана Евгеньевна
+          span Специалист маникюра и педикюра
+    .mastersBox__itemOuter.hidden(data-sid='23')
+      a.mastersBox__item(href='zhdanova-anna/')
+        img(src='assets/img/sotr/chumakova-olga.jpg' alt='')
+        span.mastersBox__info
+          span Жданова Анна
+          span Специалист маникюра и педикюра
+    .mastersBox__itemOuter.hidden(data-sid='62')
+      a.mastersBox__item(href='rechenko-marina/')
+        img(src='assets/img/sotr/chumakova-olga.jpg' alt='')
+        span.mastersBox__info
+          span Реченко Марина
+          span Администратор
+    .mastersBox__itemOuter.hidden(data-sid='62')
+      a.mastersBox__item(href='tihomirova-maria/')
+        img(src='assets/img/sotr/chumakova-olga.jpg' alt='')
+        span.mastersBox__info
+          span Тихомирова Мария
+          span Администратор
+    .mastersBox__itemOuter.hidden(data-sid='62')
+      a.mastersBox__item(href='sheluxina-irina/')
+        img(src='assets/img/sotr/chumakova-olga.jpg' alt='')
+        span.mastersBox__info
+          span Филиппова Екатерина
+          span Администратор
+    .mastersBox__itemOuter.hidden(data-sid='62')
+      a.mastersBox__item(href='filimonova-irina-sergeevna/')
+        img(src='assets/img/sotr/chumakova-olga.jpg' alt='')
+        span.mastersBox__info
+          span Филимонова Ирина Сергеевна
+          span Управляющий центра косметологии 
+    .mastersBox__itemOuter.hidden(data-sid='62')
+      a.mastersBox__item(href='shushpannikova-irina-sergeevna/')
+        img(src='assets/img/sotr/chumakova-olga.jpg' alt='')
+        span.mastersBox__info
+          span Шушпанникова Ирина Сергеевна
+          span Управляющий имиджевым центром

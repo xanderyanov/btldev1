@@ -4,13 +4,18 @@
 
 include __const
 include __header
+include __header2
 include __menu
 include __breadcrumbs
 include __wideBlock
 include __masters
 include __forms
 
+include __mainTop
+include __mainProblem
+
 include __footer
+include __menuBottom1
 
 
 
@@ -21,8 +26,7 @@ html(lang="ru-RU")
 body
 
   .site__header
-    +header
-    +topMenu
+    +header2
 
 
   .site__center
@@ -40,6 +44,9 @@ body
   +toUp
   
   +formCallBack
+
+  +menuBottom1_main
+  +hideBox
 
   +scripts
 	

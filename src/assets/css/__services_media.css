@@ -9,14 +9,12 @@
 
 @media only screen and (max-width: 1024px) {
   .servBox__outer {
-    width: 75%;
+    width: 100%;
+    padding: 0;
   }
 }
 
 @media only screen and (max-width: 920px) {
-  .servBox__outer {
-    width: 70%;
-  }
 }
 
 @media only screen and (max-width: 800px) {
@@ -26,10 +24,6 @@
 }
 
 @media only screen and (max-width: 768px) {
-  .servBox__outer {
-    width: 100%;
-    padding: 0;
-  }
   .serv {
     margin: 0 -5px;
   }

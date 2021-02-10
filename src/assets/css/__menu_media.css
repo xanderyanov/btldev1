@@ -19,7 +19,7 @@
     margin-right: 10px;
   }
   .leftMenu__outer {
-    width: 25%;
+    display: none;
   }
 }
 
@@ -36,9 +36,7 @@
   .leftMenu__outerHideInMobile {
     display: none;
   }
-  .leftMenu__outer {
-    width: 100%;
-  }
+
   .menuButton1__area {
     display: flex;
   }
@@ -62,7 +60,7 @@
   }
 
   .menuCategoryMastersLink {
-    padding: 2px;
+    padding: 5px 10px;
   }
   /* .leftMenu li.lev1 .lev_a_wrapper .openInner {
     width: 3rem;
