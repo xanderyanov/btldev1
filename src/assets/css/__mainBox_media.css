@@ -22,6 +22,9 @@
 }
 
 @media only screen and (max-width: 1024px) {
+  .mainContent__area {
+    margin-top: 5px;
+  }
   .mainBox__itemOuter_rightBox .mainBox__item span {
     font-size: 0.875rem;
   }
@@ -44,6 +47,15 @@
 }
 
 @media only screen and (max-width: 920px) {
+  .mainContent__inner {
+    width: 100%;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.8);
+  }
+  .mainContent {
+    background-position: center center;
+    background-size: cover;
+  }
 }
 
 @media only screen and (max-width: 800px) {
@@ -55,15 +67,6 @@
   }
   .logo100 {
     display: block;
-  }
-  .mainContent__inner {
-    width: 100%;
-    padding: 20px;
-    background: rgba(255, 255, 255, 0.8);
-  }
-  .mainContent {
-    background-position: center center;
-    background-size: cover;
   }
 }
 

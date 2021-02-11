@@ -32,10 +32,10 @@
     margin-bottom: 5px;
   }
   .mastersBox__itemOuter {
-    width: 50%;
+    width: 33.333%;
   }
   .mastersBox__info {
-    height: 30%;
+    height: 20%;
   }
 }
 
@@ -47,9 +47,9 @@
   .mastersBox__itemOuter {
     padding: 5px;
   }
-  /* .mastersBox__info {
-    height: 40%;
-  } */
+  .mastersBox__info {
+    height: 30%;
+  }
 }
 
 @media only screen and (max-width: 480px) {
@@ -57,7 +57,7 @@
     width: 50%;
   }
   .mastersBox__info {
-    height: 24%;
+    height: 25%;
   }
   .mastersBox__info span {
     font-size: 0.875rem;
@@ -66,19 +66,16 @@
 }
 
 @media only screen and (max-width: 414px) {
-  .mastersBox__itemOuter {
-    width: 100%;
-  }
   .mastersBox__info {
-    height: 20%;
+    height: 30%;
   }
 }
 
 @media only screen and (max-width: 320px) {
-  .mastersBox__itemOuter {
+  /* .mastersBox__itemOuter {
     width: 100%;
-  }
+  } */
   .mastersBox__info {
-    height: 20%;
+    height: 35%;
   }
 }

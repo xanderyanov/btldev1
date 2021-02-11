@@ -3,8 +3,8 @@
   --bg1: rgba(248, 235, 218, 0.9);
   --bg2: #ccc;
 
-  --link1: #ff8000;
-  --link1hov: #ff5e00;
+  --link1: #c24b35;
+  --link1hov: #692604;
 
   --tc0: #592004;
   --tc0_light: #692604;
@@ -15,7 +15,8 @@
   --x1greyLight: #dadada;
   --x1greySuperLight: #f4f4f4;
 
-  --color1: #ff8000;
+  /* --color1: #ff8000; */
+  --color1: #c24b35;
   --color2: #f5c98c;
 
   --colorFFF: #fff;

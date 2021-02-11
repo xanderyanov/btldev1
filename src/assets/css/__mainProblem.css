@@ -1,6 +1,5 @@
 .mainProblem__area {
   position: relative;
-  margin-bottom: 20px;
 }
 
 .mainProblem__outer {
@@ -49,12 +48,25 @@
   color: #000;
 }
 
-.mainProblem__itemInfoUl {
+.mainProblem__itemInfoContent {
+  font-size: 1rem;
+  color: #000;
+}
+
+.mainProblem__itemInfoContent ul {
   list-style: none;
 }
 
-.mainProblem__itemInfoUl li {
-  font-size: 1rem;
+.mainProblem__itemInfoContent li {
   margin-bottom: 5px;
   color: #000;
+}
+.mainProblem__itemInfoContent p {
+  margin-bottom: 5px;
+  color: #000;
+}
+
+.mainProblem__itemInfoContent p:last-child,
+.mainProblem__itemInfoContent li:last-child {
+  margin: 0;
 }
