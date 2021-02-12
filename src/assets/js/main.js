@@ -223,7 +223,7 @@ $(function () {
   $("#goToPriceAnchor").on("click", function (e) {
     $("html,body")
       .stop()
-      .animate({ scrollTop: $("#priceAnchor").offset().top }, 1000);
+      .animate({ scrollTop: $("#priceAnchor").offset().top - 200}, 1000);
     e.preventDefault();
   });
 

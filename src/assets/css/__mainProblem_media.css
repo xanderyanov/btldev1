@@ -20,7 +20,9 @@
   }
   .mainProblem__itemInfoTitle {
     font-size: 1.375rem;
-    margin-bottom: 10px;
+  }
+  .mainProblem__itemInfoContent {
+    margin: 10px 0 0 0;
   }
 }
 
@@ -66,11 +68,10 @@
   }
   .mainProblem__itemInfoTitle {
     font-size: 1.25rem;
-    margin-bottom: 5px;
   }
-  /* .mainProblem__itemInfoContent {
-    display: none;
-  } */
+  .mainProblem__itemInfoContent {
+    margin: 5px 0 0 0;
+  }
 }
 
 @media only screen and (max-width: 414px) {
@@ -79,8 +80,10 @@
   }
   .mainProblem__itemInfoTitle {
     font-size: 1rem;
-    margin-bottom: 10px;
     font-weight: bold;
+  }
+  .mainProblem__itemInfoContent {
+    margin: 10px 0 0 0;
   }
   .mainProblem__itemInfoContent li,
   .mainProblem__itemInfoContent p {
