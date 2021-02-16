@@ -219,13 +219,57 @@ $(function () {
   $(".phone3").mask("+7 (999) 999-9999");
   $(".phone4").mask("+7 (999) 999-9999");
 
-  // прокрутка доя якоря на странице процедуры
+  // прокрутка до якорtq на странице процедуры
+
+  if ($(window).width() >= 768) {
+    var menuHeight = $('.menuBottom1__area').height();
+  }else{
+    var menuHeight = 0;
+  }
+  
+
+  $("#goToAboutAnchor").on("click", function (e) {
+    $("html,body")
+      .stop()
+      .animate({ scrollTop: $("#aboutAnchor").offset().top - menuHeight}, 1000);
+    e.preventDefault();
+  });
+
+  $("#goToDescriptionAnchor").on("click", function (e) {
+    $("html,body")
+      .stop()
+      .animate({ scrollTop: $("#descriptionAnchor").offset().top - menuHeight}, 1000);
+    e.preventDefault();
+  });
+
+  $("#goToResultAnchor").on("click", function (e) {
+    $("html,body")
+      .stop()
+      .animate({ scrollTop: $("#ResultAnchor").offset().top - menuHeight}, 1000);
+    e.preventDefault();
+  });
+
+  $("#goToPokazAnchor").on("click", function (e) {
+    $("html,body")
+      .stop()
+      .animate({ scrollTop: $("#PokazAnchor").offset().top - menuHeight}, 1000);
+    e.preventDefault();
+  });
+
+  $("#goToAdvantageAnchor").on("click", function (e) {
+    $("html,body")
+      .stop()
+      .animate({ scrollTop: $("#AdvantageAnchor").offset().top - menuHeight}, 1000);
+    e.preventDefault();
+  });
+  
   $("#goToPriceAnchor").on("click", function (e) {
     $("html,body")
       .stop()
-      .animate({ scrollTop: $("#priceAnchor").offset().top - 200}, 1000);
+      .animate({ scrollTop: $("#priceAnchor").offset().top - menuHeight}, 1000);
     e.preventDefault();
   });
+
 
   $(".toTop").hide();
   $(window).on("scroll", function () {

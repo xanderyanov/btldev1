@@ -28,11 +28,18 @@
   width: 50%;
   order: 1;
   padding: 5px;
+  overflow: hidden;
 }
 .mainProblem__itemImg img {
   display: block;
   width: 100%;
+  transition: all 0.3s;
 }
+
+/* .mainProblem__item:hover img {
+  transform: scale(1.02);
+} */
+
 .mainProblem__itemInfo {
   width: 50%;
   order: 2;

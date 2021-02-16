@@ -310,7 +310,8 @@
   margin: -33px 0 0 -33px;
   width: 66px;
   height: 66px;
-  background: transparent url("../img/loader.gif") no-repeat scroll center center;
+  background: transparent url("../img/loader.gif") no-repeat scroll center
+    center;
 }
 
 .toTop {
@@ -339,7 +340,7 @@
   color: #fff;
 }
 
-.breadcrumbs__area {
+/* .breadcrumbs__area {
   padding: 10px 0 10px;
 }
 .breadcrumbs {
@@ -381,7 +382,7 @@
   text-decoration: none;
   display: block;
   position: relative;
-}
+} */
 
 .header__ss {
   /*width: 250px;*/
