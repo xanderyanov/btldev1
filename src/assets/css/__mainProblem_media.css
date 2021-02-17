@@ -49,6 +49,9 @@
   .mainProblem__itemInfo {
     width: 70%;
   }
+  .innerPriceBox {
+    width: 70%;
+  }
 }
 
 @media only screen and (max-width: 600px) {
@@ -59,9 +62,15 @@
   .mainProblem__itemInfo {
     width: 60%;
   }
+  .innerPriceBox {
+    width: 80%;
+  }
 }
 
 @media only screen and (max-width: 480px) {
+  .mainProblem {
+    margin: 0 -5px 0;
+  }
   .mainProblem__itemInfo {
     padding: 10px;
   }
@@ -77,6 +86,9 @@
   }
   .mainProblem__itemInfoContent {
     margin: 5px 0 0 0;
+  }
+  .innerPriceBox {
+    width: 90%;
   }
 }
 

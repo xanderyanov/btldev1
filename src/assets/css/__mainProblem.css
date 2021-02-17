@@ -22,6 +22,7 @@
   display: flex;
   align-items: center;
   background: #fff;
+  position: relative;
 }
 
 .mainProblem__itemImg {
@@ -91,4 +92,85 @@
 .mainProblem__itemInfoContent p:last-child,
 .mainProblem__itemInfoContent li:last-child {
   margin: 0;
+}
+
+.innerPriceBtn {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  width: 2rem;
+  height: 2rem;
+  background: var(--color1);
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  font-size: 1rem;
+}
+
+.innerPriceBox__wrapper {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 2490;
+  display: none;
+}
+
+.innerPriceBox__overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 2490;
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.innerPriceBox {
+  width: 50%;
+  padding: 10px;
+  position: relative;
+  display: none;
+}
+
+.priceBox2__area {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.innerPriceBox__header {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 10px;
+}
+
+.innerPriceBox__title {
+  font-size: 1.5rem;
+  color: var(--tc0);
+}
+
+.innerPriceBox__close {
+  cursor: pointer;
+}
+
+.innerPriceBox__close i {
+  font-size: 1.5rem;
+  color: var(--tc0);
+}
+
+.innerPriceBox__content {
+  flex: 1;
+  overflow-y: scroll;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 5px 0 0;
+  max-height: 60vh;
 }

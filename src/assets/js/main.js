@@ -3,6 +3,47 @@
 // });
 
 $(function () {
+
+  // START всплывающий прайс по клику на Р
+  $(".innerPriceBtn").on("click", function (e) {
+    e.preventDefault();
+    e.stopPropagation();
+    var $this = $(this);
+    $("body").addClass("stop");
+    $this.next('.innerPriceBox__wrapper').fadeIn(300);
+    $this.next('.innerPriceBox__wrapper').find('.innerPriceBox').slideDown(300);
+  });
+  $(".innerPriceBox__wrapper").on("click", function (e) {
+    e.preventDefault();
+    e.stopPropagation();
+  });
+  $(".innerPriceBox__wrapper").on("click", function (e) {
+    e.preventDefault();
+    e.stopPropagation();
+    var $this = $(this);
+    $this.fadeOut(300);
+    $this.find('.innerPriceBox').slideUp(300);
+    $("body").removeClass("stop");
+  });
+  $(".innerPriceBox").on("click", function (e) {
+    e.preventDefault();
+    e.stopPropagation();
+  });
+  $(".innerPriceBox__close").on("click", function (e) {
+    e.preventDefault();
+    e.stopPropagation();
+    var $this = $(this);
+    $this.closest('.mainProblem__item').find('.innerPriceBox__wrapper').fadeOut(300);
+    $this.closest('.mainProblem__item').find('.innerPriceBox').slideUp(300);
+    $("body").removeClass("stop");
+  });
+
+
+
+
+
+  // END всплывающий прайс по клику на Р
+
   //- START Мобтльное меню - функционал типа табов
   $(".mainTop__menuItem_js, .menuBottom1__item_js, .header2__menuBtn_js").on("click", function (e) {
     e.preventDefault();
@@ -44,7 +85,11 @@ $(function () {
   $(".menuBottom1__areaFake").css({ height: menuBottom1_height });
 
   if ($(".mainPageIdx").length) {
-    var topScrollCount = $(".mainTop__area").outerHeight();
+    if ($(window).width() >= 1024) {
+      var topScrollCount = $(".mainTop__area").outerHeight();
+    }else{
+      var topScrollCount = $(".mainTop__right").outerHeight();
+    }
     var menu = $(".menuBottom1__area_main");
     var menuHeight = $(".menuBottom1__area_main").outerHeight();
     $(window).on("scroll", function () {
@@ -56,7 +101,7 @@ $(function () {
     });
   }
   if (!$(".mainPageIdx").length) {
-    var topScrollCount = $(".site__header").outerHeight();
+    var topScrollCount = $(".header2__area").outerHeight();
     var menu = $(".menuBottom1__area_main");
     var menuHeight = $(".menuBottom1__area_main").outerHeight();
     $(window).on("scroll", function () {

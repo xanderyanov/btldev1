@@ -16,7 +16,7 @@
     width: 100%;
   }
   .mainTop__promo {
-    padding: 5px 10px 0;
+    padding: 5px 10px 10px;
   }
   .mainTop__right {
     order: 1;
@@ -100,6 +100,9 @@
   .mainTop__menuItem {
     padding: 15px 5px;
   }
+  .mainTop__menuItemTitle {
+    font-size: 1.125rem;
+  }
 }
 
 @media only screen and (max-height: 600px) {
@@ -112,6 +115,9 @@
 }
 
 @media only screen and (max-width: 480px) {
+  .mainTop__promo {
+    padding: 5px 10px 5px;
+  }
   .mainTop__menuItem {
     padding: 10px;
   }
