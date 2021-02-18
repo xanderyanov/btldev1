@@ -40,7 +40,10 @@
 @media only screen and (max-width: 480px) {
 }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 414px) {
+  .procedure__introLinks {
+    margin-top: 0;
+  }
 }
 
 @media only screen and (max-width: 320px) {

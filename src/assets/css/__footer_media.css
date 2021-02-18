@@ -99,7 +99,10 @@
   }
 }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 414px) {
+  .footer__address {
+    font-size: 0.875rem;
+  }
 }
 
 @media only screen and (max-width: 320px) {

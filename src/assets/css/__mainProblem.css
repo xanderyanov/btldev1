@@ -77,12 +77,12 @@
 }
 
 .mainProblem__itemInfoContent ul {
-  list-style: none;
+  padding: 0 0 0 10px;
 }
 
 .mainProblem__itemInfoContent li {
-  margin-bottom: 5px;
   color: #000;
+  list-style-position: inside;
 }
 .mainProblem__itemInfoContent p {
   margin-bottom: 5px;

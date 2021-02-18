@@ -106,7 +106,9 @@
   .mainProblem__itemInfoContent li,
   .mainProblem__itemInfoContent p {
     font-size: 0.75rem;
-    margin-bottom: 0;
+  }
+  .mainProblem__itemInfoContent ul {
+    padding: 0 0 0 5px;
   }
 }
 

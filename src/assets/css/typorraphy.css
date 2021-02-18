@@ -87,7 +87,8 @@ h6 {
 
 .content ul li,
 .content ol li {
-  margin: 0 0 5px 0;
+  /* margin: 0 0 5px 0; */
+  margin: 0;
   padding: 0 0 0 0;
 }
 

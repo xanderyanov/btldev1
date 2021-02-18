@@ -104,13 +104,19 @@ $(function () {
     var topScrollCount = $(".header2__area").outerHeight();
     var menu = $(".menuBottom1__area_main");
     var menuHeight = $(".menuBottom1__area_main").outerHeight();
-    $(window).on("scroll", function () {
-      if ($(this).scrollTop() > topScrollCount) {
-        menu.addClass("menuBottom1__area_active");
-      } else if ($(this).scrollTop() <= topScrollCount) {
-        menu.removeClass("menuBottom1__area_active");
-      }
-    });
+
+    if ($(window).width() >= 1024) {
+      $(window).on("scroll", function () {
+        if ($(this).scrollTop() > topScrollCount) {
+          menu.addClass("menuBottom1__area_active");
+        } else if ($(this).scrollTop() <= topScrollCount) {
+          menu.removeClass("menuBottom1__area_active");
+        }
+      });
+    }else{
+      menu.addClass("menuBottom1__area_active");
+    }
+    
   }
   //-END Адаптивное меню на главной и остальных
 
