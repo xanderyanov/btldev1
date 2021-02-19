@@ -37,7 +37,7 @@
 .procedure__introImg {
   width: 100%;
   background: var(--x1greySuperLight);
-  padding: 10px;
+  /* padding: 10px; */
 }
 
 .procedure__introImg img {

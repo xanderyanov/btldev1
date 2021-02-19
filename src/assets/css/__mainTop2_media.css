@@ -142,7 +142,10 @@
   }
 }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 414px) {
+  .mainTop__hideBoxInner {
+    padding: 10px;
+  }
 }
 
 @media only screen and (max-width: 320px) {

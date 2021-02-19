@@ -102,6 +102,11 @@
   height: 2rem;
   background: var(--color1);
   color: #fff;
+  /* border: 1px solid var(--color1);
+
+  background: #fff;
+  color: var(--color1); */
+
   display: flex;
   justify-content: center;
   align-items: center;

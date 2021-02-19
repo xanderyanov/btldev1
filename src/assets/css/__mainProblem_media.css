@@ -93,6 +93,11 @@
 }
 
 @media only screen and (max-width: 414px) {
+  .innerPriceBtn {
+    width: 3rem;
+    height: 3rem;
+    font-size: 1.5rem;
+  }
   .mainProblem__itemInfo {
     padding: 10px 5px;
   }

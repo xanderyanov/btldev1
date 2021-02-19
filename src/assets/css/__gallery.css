@@ -128,3 +128,23 @@
 .videoBox a:hover span {
   opacity: 1;
 }
+
+.videoBox iframe {
+}
+
+.videoBox_i {
+  position: relative;
+  padding: 0 0 56.25% 0;
+  height: 0;
+  overflow: hidden;
+}
+
+.videoBox_i iframe,
+.videoBox_i object,
+.videoBox_i embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}

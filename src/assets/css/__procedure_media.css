@@ -35,6 +35,14 @@
   .procedure__introImg {
     padding: 10px 0;
   }
+  .procedure__introLinks {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .link1 {
+    margin: 2px 10px 2px 0;
+    display: inline-block;
+  }
 }
 
 @media only screen and (max-width: 480px) {
