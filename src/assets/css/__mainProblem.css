@@ -82,8 +82,22 @@
 
 .mainProblem__itemInfoContent li {
   color: #000;
-  list-style-position: inside;
+  list-style: none;
+  position: relative;
+  padding: 0 0 0 10px;
 }
+.mainProblem__itemInfoContent li:before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translate3d(0, -50%, 0);
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background: #000;
+}
+
 .mainProblem__itemInfoContent p {
   margin-bottom: 5px;
   color: #000;
