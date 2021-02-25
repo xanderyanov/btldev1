@@ -536,8 +536,8 @@ $(function () {
         {
           subj: subj,
           name: name,
-          phone: phone,
-          recaptcha: recaptcha,
+          phone: phone
+          // recaptcha: recaptcha,
         },
         function () {
           swal({
