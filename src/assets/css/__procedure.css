@@ -122,7 +122,7 @@
 .priceBox {
   position: relative;
   min-width: 60%;
-  max-width: 1000px;
+  /* max-width: 1000px; */
 }
 
 .priceBox table {
