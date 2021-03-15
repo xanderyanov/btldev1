@@ -1,4 +1,10 @@
 @media only screen and (max-width: 1200px) {
+  .topLine3{
+    padding: 10px;
+  }
+  .header3{
+    padding: 0 10px;
+  }
 }
 
 @media only screen and (max-width: 1140px) {
@@ -12,6 +18,15 @@
 }
 
 @media only screen and (max-width: 920px) {
+  .header3__menuBtn{
+    display: block;
+  }
+  .topMenu3{
+    display: none;
+  }
+  .topLine3__menu{
+    display: none;
+  }
  
 }
 
@@ -23,14 +38,31 @@
 }
 
 @media only screen and (max-width: 600px) {
+  .topLine3__address{
+    margin: 0;
+  }
+  .topLine3__time{
+    display: none;
+  }
+  .topLine3__sLinkItem{
+    margin: 0 20px 0 0;
+  }
   
 }
 
 @media only screen and (max-width: 480px) {
-  
+  .topLine3__sLinkItem{
+    margin: 0 10px 0 0;
+  }
+  .topLine3__address i{
+    display: none;
+  }
 }
 
 @media only screen and (max-width: 414px) {
+  .topLine3{
+    padding: 5px 10px;
+  }
   
 }
 

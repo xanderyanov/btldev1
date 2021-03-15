@@ -7,7 +7,7 @@ mixin header3
           span ул. Московская, 117, 2 этаж, ТК "МИР"
         .topLine3__time ежедневно с 9:00 до 21:00
       .topLine3__sLinks
-        .topLine3__sLinkItem.igTopBtn2
+        a.topLine3__sLinkItem(href="#")
           i.icon-instagram2
         a.topLine3__sLinkItem(href="#")
           i.icon-youtube
@@ -23,6 +23,7 @@ mixin header3
             a(href="#") Правовая информация
           li
             a(href="#") Контакты
+  .header3__fake
   .header3__area
     header.header3
       .header3__logo
@@ -30,10 +31,8 @@ mixin header3
           img(src="assets/img/logo-1.svg", alt="Центр косметологии и красоты Бьюти Лаунж")
       a.solution3__btn(href="#") Решить проблему
       ul.topMenu3 
-        li
+        li.active
           a(href="#") Услуги
-        li
-          a(href="#") Специалисты
           ul
             li
               a(href="") Аппаратная косметология 
@@ -46,31 +45,20 @@ mixin header3
             li
               a(href="") Лечебная косметология 
         li
+          a(href="#") Специалисты
+        li
           a(href="#") Оборудование
         li
-          a(href="#") E-каталог
+          a(href="#") E-shop
+      a.header3__contItem(href="tel:+78452260000") 
+        i.icon-phone-call
+        .header3__contItemInfo 
+          span Центр косметологии:
+          span +7 (8452) 26-00-00
+      .header3__menuBtn.header2__menuBtn_js(data-id="menu1")
+        i.icon-menu
         
-  //- .header2__area.w0
-  //-   header.header2.w1
-  //-     .header2__logo
-  //-       a(href="#")
-  //-         img(src="assets/img/logo-1.svg", alt="Центр косметологии и красоты Бьюти Лаунж")
-  //-     .header2__contacts
-  //-       .header2__contactsItem
-  //-         .header2__contactsItemTitle Центр косметологии:
-  //-         a.header2__contactsItemLink(href="tel:+78452260000")
-  //-           i.icon-phone2
-  //-           span +7 (8452) 26-00-00
-  //-       .header2__contactsItem
-  //-         .header2__contactsItemTitle Запись на прием:
-  //-         a.header2__contactsItemLink(href="tel:+78452650500")
-  //-           i.icon-phone2
-  //-           span +7 (8452) 65-05-00
-  //-       .header2__contactsItem_mb
-  //-         a.header2__contactsItemLink_mb(href="tel:+78452650500")
-  //-           i.icon-phone-call-12
-  //-     .header2__menuBtn.header2__menuBtn_js(data-id="menu1")
-  //-       i.icon-menu
+
           
 
         

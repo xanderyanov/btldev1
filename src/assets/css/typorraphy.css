@@ -4,10 +4,8 @@ h3,
 h4,
 h5,
 h6 {
-  color: var(--tc0);
-  font-family: "Roboto", sans-serif;
-  margin: 0 0 10px 0;
-  font-weight: 600;
+  color: #333333;
+  font-weight: 700;
   line-height: 1.4;
 }
 
@@ -20,28 +18,28 @@ h6 {
 }
 
 h1 {
-  font-size: 1.625rem;
-  text-transform: uppercase;
+  font-size: 2.25rem;
+  margin: 0 0 30px 0;
 }
 
 h2 {
-  font-size: 1.5rem;
+  font-size: 2rem;
 }
 
 h3 {
-  font-size: 1.375rem;
+  font-size: 1.75rem;
 }
 
 h4 {
-  font-size: 1.25rem;
+  font-size: 1.5rem;
 }
 
 h5 {
-  font-size: 1.125rem;
+  font-size: 1.25rem;
 }
 
 h6 {
-  font-size: 1rem;
+  font-size: 1.125rem;
 }
 
 .content__outer {
@@ -61,11 +59,10 @@ h6 {
 .content ol,
 .content blockquote,
 .content table {
-  font-family: "Roboto", sans-serif;
   font-size: 1rem;
   font-weight: 400;
-  line-height: 1.4;
-  margin: 0 0 10px 0;
+  line-height: 1.5rem;
+  margin: 0 0 20px 0;
   color: var(--tColor);
 }
 

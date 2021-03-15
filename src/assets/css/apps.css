@@ -16,11 +16,11 @@
 
 @import "xandercode.css";
 
-/* @import "__header.css";
-@import "__header_media.css"; */
+@import "__header.css";
+@import "__header_media.css";
 
-/* @import "__header2.css";
-@import "__header2_media.css"; */
+@import "__header2.css";
+@import "__header2_media.css";
 
 @import "__header3.css";
 @import "__header3_media.css";
@@ -46,8 +46,11 @@
 @import "__sevices.css";
 @import "__services_media.css";
 
-@import "__procedure.css";
+@import "__procedure.css";      /*старая но пока тут*/
 @import "__procedure_media.css";
+
+@import "__procedure3.css";
+@import "__procedure3_media.css";
 
 @import "__masters.css";
 @import "__masters_media.css";

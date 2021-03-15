@@ -93,6 +93,10 @@
 
 .header3__area{
   width: 100%;
+  position: relative;
+  z-index: 100;
+  box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.08);
+  background: #fff;
 }
 
 .header3{
@@ -136,11 +140,120 @@
 
 .topMenu3 li{
   list-style: none;
+  position: relative;
+  margin: 0 40px 0 0;
+  
+}
+.topMenu3 li:last-child{
+  margin: 0;
 }
 
-.topMenu3 li a{
+.topMenu3 > li a{
   text-decoration: none;
   font-weight: 600;
   font-size: .875rem;
   color: #4F4F4F;
+  line-height: 4.5rem;
+  position: relative;
+  display: inline-block;
+}
+
+.topMenu3 > li > a:hover, .topMenu3 > li.active > a{
+  color: var(--brick);
+}
+.topMenu3 > li:hover > a:after, .topMenu3 > li.active > a:after{
+  content: '';
+  position: absolute;
+  height: 3px;
+  width: 100%;
+  background: var(--brick);
+  left: 0;
+  bottom: 0;
+}
+
+.topMenu3 ul{
+  position: absolute;
+  left: -30px;
+  top: 100%;
+  display: flex;
+  flex-direction: column;
+  display: none;
+  background: #FFFFFF;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.08);
+  padding: 30px;
+}
+
+.topMenu3 li:hover ul{
+  display: flex;
+}
+
+.topMenu3 ul li{
+  width: 100%;
+  border-bottom: 1px dashed #E0E0E0;
+  padding: 10px 0;
+}
+
+.topMenu3 ul li a{
+  line-height: 1;
+  white-space: nowrap;
+}
+
+.topMenu3 ul li a:hover, .topMenu3 ul li.active a{
+  color: var(--brick);
+}
+
+.header3__contItem{
+  display: flex;
+  align-items: center;
+  color: #4F4F4F;
+  text-decoration: none;
+}
+
+.header3__contItem i{
+  font-size: 1rem;
+  color: #4F4F4F;
+  margin-right: 20px;
+}
+
+.header3__contItem:hover i{
+  color: var(--brick);
+}
+
+.header3__contItemInfo{
+  display: flex;
+  flex-direction: column;
+}
+
+.header3__contItemInfo span{
+  font-size: 0.875rem;
+  color: #4F4F4F;
+  font-weight: 400;
+  
+}
+
+.header3__contItemInfo span:last-child{
+  font-size: 1rem;
+  color: #4F4F4F;
+  font-weight: 600;
+  margin-top: 5px;
+}
+
+.header3__contItem:hover .header3__contItemInfo span:last-child{
+  color: var(--brick);
+}
+
+.header3__menuBtn {
+  position: relative;
+  cursor: pointer;
+  display: none;
+}
+
+.header3__menuBtn i {
+  font-size: 3rem;
+  color: var(--brown1);
+  transition: all 0.3s;
+}
+
+.header3__menuBtn:hover i {
+  color: var(--brick);
 }

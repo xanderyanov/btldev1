@@ -4,6 +4,19 @@
 
 $(function () {
 
+  var topLine3 = $(".topLine3__area").height();
+    var header3 = $(".header3__area");
+    var header3Height = $(".header3__area").height();
+    $(window).scroll(function(){
+        if ( $(this).scrollTop() > topLine3 ){
+            header3.css({'position' : 'fixed', 'top':'0', 'left':'0', 'backgroundColor':'#fff'});
+            $('.header3__fake').css({'height':header3Height});
+        } else if($(this).scrollTop() <= topLine3){
+            header3.css({'position' : 'relative', 'backgroundColor':'rgba(255,255,255,.7)'});
+            $('.header3__fake').css({'height':'0'});
+        }
+    });
+
 
   // var $iframes = $( "iframe" );
   // $iframes.each(function () {
