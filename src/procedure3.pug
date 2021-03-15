@@ -1,0 +1,159 @@
+- var pageTitle = 'Страница одной процедуры'
+- var seoKeywords = 'Ключевые слова для страницы'
+- var seoDesc = 'Сео описание для страницы'
+
+include __const
+include __header3
+include __menu
+include __mainTop
+include __mainBox
+include __breadcrumbs
+include __wideBlock
+include __procedure2
+
+include __forms
+include __footer
+
+include __menuBottom1
+
+
+
+
+<!DOCTYPE html>
+html(lang="ru-RU")
+  +head
+body
+
+  .site__header
+    +header3
+    +topMenu
+
+
+  .site__center
+    +breadcrumbs
+    +wideBlock
+    .serv__area.w0
+    .serv__outer.w1
+      .serv__wrapper
+        +leftMenuSuperTree
+        .servBox__outer
+          .procedure__area.w0
+            .procedure__outer.w1
+              .title1
+                h1 Лазерная эпиляция
+              .procedure
+                +procedure2__intro
+                
+                .procedure__masters
+                  .title1
+                    h2 Наши специалисты
+                  .procedure__masterscontent
+                    .procedure__masterOuter
+                      a.procedure__master(href="") Лукьянова Наталья
+                    .procedure__masterOuter
+                      a.procedure__master(href="") Лукьянова Наталья
+                    .procedure__masterOuter
+                      a.procedure__master(href="") Лукьянова Наталья
+                    .procedure__masterOuter
+                      a.procedure__master(href="") Лукьянова Наталья
+                    .procedure__masterOuter
+                      a.procedure__master(href="") Лукьянова Наталья
+                .procedure__longContent
+                  .title1
+                    h2 Описание
+                  .content
+                    +tempContent
+                .procedure__video
+                  +videogallery
+                .procedure__photo
+                  .title1
+                    h3 Фото
+                  +gallery
+                .price__area#priceAnchor
+                  .title1
+                    h2 Цены
+                  .priceBox__area
+                    .priceBox__title 
+                      h3 Лазерная эпиляция лица и шеи
+                    .priceBox
+                      table
+                        tr
+                          td Лоб
+                          td 2500 руб.
+                        tr
+                          td Шея (задняя поверхность)
+                          td 3400 руб.
+                        tr
+                          td Шея (передняя поверхность)
+                          td 3400 руб.
+                        tr
+                          td Лицо
+                          td 5800 руб.
+                        tr
+                          td Крылья носа
+                          td 2000 руб.
+                  .priceBox__area
+                    .priceBox__title 
+                      h3 Лазерная эпиляция лица и шеи
+                    .priceBox
+                      table
+                        tr
+                          td Лоб
+                          td 2500 руб.
+                        tr
+                          td Шея (задняя поверхность)
+                          td 3400 руб.
+                        tr
+                          td Шея (передняя поверхность)
+                          td 3400 руб.
+                        tr
+                          td Лицо
+                          td 5800 руб.
+                        tr
+                          td Крылья носа!
+                          td 2000 руб.
+                  .outerLink__area
+                    span Все для домашнего ухода Вы можете приобрести в нашем Бьюти-бутике.
+                    a.outerLink(href="#", target="_blank", rel="nofollow") Открыть
+                .popular__area
+                  .title1
+                    h2 Популярные процедуры
+                  .popular.mainBox.clearfix
+                    .mainBox__itemOuter
+                      a.mainBox__item(href="#")
+                        .mainBox__itemImg(style="background-image: url(assets/img/serv/0001.jpg);")
+                          img.kv-img(src="assets/img/w285h285.png", alt="")
+                        span Описание первого блока в несколько строчек
+                    .mainBox__itemOuter
+                      a.mainBox__item(href="#")
+                        .mainBox__itemImg(style="background-image: url(assets/img/serv/0001.jpg);")
+                          img.kv-img(src="assets/img/w285h285.png", alt="")
+                        span Описание первого блока в несколько строчек
+                    .mainBox__itemOuter
+                      a.mainBox__item(href="#")
+                        .mainBox__itemImg(style="background-image: url(assets/img/serv/0001.jpg);")
+                          img.kv-img(src="assets/img/w285h285.png", alt="")
+                        span Описание первого блока в несколько строчек
+                    .mainBox__itemOuter
+                      a.mainBox__item(href="#")
+                        .mainBox__itemImg(style="background-image: url(assets/img/serv/0001.jpg);")
+                          img.kv-img(src="assets/img/w285h285.png", alt="")
+                        span Описание первого блока в несколько строчек
+    +zBlock1
+
+  .site__footer
+    +footer
+
+
+  +topMenuAdaptive
+  +search1
+
+  +toUp
+  
+  +formCallBack
+
+  +menuBottom1_main
+  +hideBox
+
+  +scripts
+  

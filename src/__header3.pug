@@ -1,33 +1,76 @@
 mixin header3
-  .topLine2__area.w0
-    .topLine2.w1
-      .topLine2__address ул. Московская, 117, 2 этаж, ТК "МИР"
-      .topLine2__time ежедневно с 9:00 до 21:00
-      .topLine2__sLinks
-        .topLine2__sLinkItem.igTopBtn2
+  .topLine3__area
+    .topLine3
+      .topLine3__cont
+        .topLine3__address
+          i.icon-marker1
+          span ул. Московская, 117, 2 этаж, ТК "МИР"
+        .topLine3__time ежедневно с 9:00 до 21:00
+      .topLine3__sLinks
+        .topLine3__sLinkItem.igTopBtn2
           i.icon-instagram2
-          span Инстаграм
-        a.topLine2__sLinkItem(href="")
+        a.topLine3__sLinkItem(href="#")
           i.icon-youtube
-          span Наш youtube-канал
-  .header2__area.w0
-    header.header2.w1
-      .header2__logo
+        a.topLine3__sLinkItem.topSearch_JS(href="#")
+          i.icon-search2
+      .topLine3__menu 
+        ul.topLineMenu 
+          li
+            a(href="#") О нас 
+          li
+            a(href="#") Блог
+          li
+            a(href="#") Правовая информация
+          li
+            a(href="#") Контакты
+  .header3__area
+    header.header3
+      .header3__logo
         a(href="#")
           img(src="assets/img/logo-1.svg", alt="Центр косметологии и красоты Бьюти Лаунж")
-      //- .header2__right
-      .header2__contacts
-        .header2__contactsItem
-          .header2__contactsItemTitle Центр косметологии:
-          a.header2__contactsItemLink(href="tel:+78452260000")
-            i.icon-phone2
-            span +7 (8452) 26-00-00
-        .header2__contactsItem
-          .header2__contactsItemTitle Запись на прием:
-          a.header2__contactsItemLink(href="tel:+78452650500")
-            i.icon-phone2
-            span +7 (8452) 65-05-00
-      .header2__btn Записаться на прием
+      a.solution3__btn(href="#") Решить проблему
+      ul.topMenu3 
+        li
+          a(href="#") Услуги
+        li
+          a(href="#") Специалисты
+          ul
+            li
+              a(href="") Аппаратная косметология 
+            li
+              a(href="") Инъекционная косметология 
+            li
+              a(href="") Имидж-студия 
+            li
+              a(href="") Эстетика и уход 
+            li
+              a(href="") Лечебная косметология 
+        li
+          a(href="#") Оборудование
+        li
+          a(href="#") E-каталог
+        
+  //- .header2__area.w0
+  //-   header.header2.w1
+  //-     .header2__logo
+  //-       a(href="#")
+  //-         img(src="assets/img/logo-1.svg", alt="Центр косметологии и красоты Бьюти Лаунж")
+  //-     .header2__contacts
+  //-       .header2__contactsItem
+  //-         .header2__contactsItemTitle Центр косметологии:
+  //-         a.header2__contactsItemLink(href="tel:+78452260000")
+  //-           i.icon-phone2
+  //-           span +7 (8452) 26-00-00
+  //-       .header2__contactsItem
+  //-         .header2__contactsItemTitle Запись на прием:
+  //-         a.header2__contactsItemLink(href="tel:+78452650500")
+  //-           i.icon-phone2
+  //-           span +7 (8452) 65-05-00
+  //-       .header2__contactsItem_mb
+  //-         a.header2__contactsItemLink_mb(href="tel:+78452650500")
+  //-           i.icon-phone-call-12
+  //-     .header2__menuBtn.header2__menuBtn_js(data-id="menu1")
+  //-       i.icon-menu
           
 
         
