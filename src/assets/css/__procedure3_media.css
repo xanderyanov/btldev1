@@ -1,6 +1,12 @@
 @media only screen and (max-width: 1200px) {
+  .procedure3__introOuter {
+    padding: 0 10px 0;
+  }
   .procedure3__intro {
-    padding: 0 10px 40px;
+    padding: 0 0 30px 0;
+  }
+  .wideBox3 {
+    padding: 0 10px 0;
   }
 }
 
@@ -20,6 +26,12 @@
 }
 
 @media only screen and (max-width: 768px) {
+  .procedure3__introLinks {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    padding: 0 0 0 20px;
+  }
 }
 
 @media only screen and (max-width: 600px) {
@@ -46,6 +58,15 @@
     margin: 2px 10px 2px 0;
     display: inline-block;
   }
+  .procedure3__introText {
+    width: 100%;
+    order: 2;
+  }
+  .procedure3__introImg__outer {
+    width: 100%;
+    order: 1;
+    padding: 0 0 20px 0;
+  }
 }
 
 @media only screen and (max-width: 480px) {
@@ -59,6 +80,25 @@
 
   .priceBox table td:nth-child(2) {
     width: 30%;
+  }
+  .procedure3__introLinks a {
+    margin-bottom: 5px;
+  }
+  .imgSlider__left,
+  .imgSlider__right {
+    width: 2rem;
+    height: 2rem;
+    margin-top: -1rem;
+  }
+  .imgSlider__left {
+    left: -2.5rem;
+  }
+
+  .imgSlider__right {
+    right: -2.5rem;
+  }
+  .imgSlider__outer {
+    padding: 1rem 2.5rem;
   }
 }
 

@@ -5,7 +5,6 @@ mixin procedure3__intro
   .procedure3__intro
     .procedure3__introText
       .content
-        h1 Лазерная эпиляция Candela
         p Лазерная эпиляция волос  Candela GentleLasePro-U - это самый простой и быстрый способ избавиться от нежелательных волос. 
         p Каждая женщина хочет иметь гладкую и нежную кожу, но многие сталкиваются с проблемой роста нежелательных волос, и эта проблема касаема не только женщин, но и мужчин. Способов избавления от нежелательных волос существует много, и самый эффективный и надежный из них - лазерная эпиляция волос  Candela GentleLasePro-U. 
         p Всего за несколько сеансов можно навсегда распрощаться с нежелательными волосами.
@@ -28,6 +27,26 @@ mixin procedure3__intro
       //- .procedure__introImg.videoBox.videoBox_i
       //-   iframe(width='560' height='315' src='https://www.youtube.com/embed/YCF6qjf1-h8' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture' allowfullscreen='')
 
+
+mixin imgSlider-2pic
+  .imgSlider__area
+    .imgSlider__outer
+      .imgSliderCaroucel
+        .swiper-container.imgSlider-container
+          .swiper-wrapper.imgSlider-wrapper
+            .swiper-slide.imgSlider-slide
+              .imgSlider-slideInner
+                a(href="assets/img/before-after/01.jpg" data-fancybox="group1" data-caption="002" style="background-image: url(assets/img/before-after/01.jpg)")
+            .swiper-slide.imgSlider-slide
+              .imgSlider-slideInner
+                a(href="assets/img/before-after/02.jpg" data-fancybox="group1" data-caption="002" style="background-image: url(assets/img/before-after/02.jpg)")
+            .swiper-slide.imgSlider-slide
+              .imgSlider-slideInner
+                a(href="assets/img/before-after/03.jpg" data-fancybox="group1" data-caption="002" style="background-image: url(assets/img/before-after/03.jpg)")
+        .imgSlider__left
+          i.icon-arr-left1
+        .imgSlider__right
+          i.icon-arr-right1
  
 mixin procedure
   .procedure__area.w0

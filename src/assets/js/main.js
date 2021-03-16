@@ -18,6 +18,40 @@ $(function () {
     });
 
 
+
+    //-START Сладйре похожих товаров на странице VARIANTS
+
+  var imgSliderOptions = {};
+  if ($(".imgSlider-container .imgSlider-slide").length) {
+    imgSliderOptions = {
+      slidesPerView: 2,
+      loop: false,
+      spaceBetween: 20,
+      speed: 600,
+      autoplay: {
+        delay: 15000,
+        disableOnInteraction: true,
+      },
+      navigation: {
+        nextEl: ".imgSlider__right",
+        prevEl: ".imgSlider__left",
+      },
+      keyboard: true,
+      watchOverflow: true,
+      breakpoints: {
+        0: {
+          slidesPerView: 1,
+        },
+        768: {
+          slidesPerView: 2,
+        }
+      
+      },
+    };
+  } 
+  var swiper = new Swiper(".imgSlider-container", imgSliderOptions);
+
+
   // var $iframes = $( "iframe" );
   // $iframes.each(function () {
   //   $( this ).data( "ratio", this.height / this.width )

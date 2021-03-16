@@ -15,7 +15,6 @@
 
 @media only screen and (max-width: 920px) {
   .breadcrumbs3__area {
-    
     padding: 20px 0 20px;
   }
 }
@@ -24,12 +23,18 @@
 }
 
 @media only screen and (max-width: 768px) {
+  .breadcrumbs3__area {
+    padding: 15px 0 15px;
+  }
 }
 
 @media only screen and (max-width: 600px) {
 }
 
 @media only screen and (max-width: 480px) {
+  .breadcrumbs3__area {
+    padding: 10px 0 10px;
+  }
 }
 
 @media only screen and (max-width: 400px) {

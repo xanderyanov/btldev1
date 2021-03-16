@@ -1,9 +1,8 @@
-
 .procedure3__introArea {
   width: 100%;
 }
 
-.procedure3__intro {
+.procedure3__introOuter {
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
@@ -32,7 +31,7 @@
   padding: 0 0 0 30px;
 }
 
-.procedure3__introLinks a{
+.procedure3__introLinks a {
   font-weight: 600;
   font-size: 1rem;
   line-height: 1.4;
@@ -42,16 +41,17 @@
   position: relative;
   padding: 0 0 0 25px;
 }
-.procedure3__introLinks a:last-child{
+.procedure3__introLinks a:last-child {
   margin-bottom: 0;
 }
 
-.procedure3__introLinks a:hover, .procedure3__introLinks a.active{
+.procedure3__introLinks a:hover,
+.procedure3__introLinks a.active {
   color: var(--brick);
 }
 
-.procedure3__introLinks a:before{
-  content: '';
+.procedure3__introLinks a:before {
+  content: "";
   position: absolute;
   left: 0;
   top: 50%;
@@ -63,13 +63,15 @@
   box-sizing: border-box;
 }
 
-.procedure3__introLinks a:hover:before, .procedure3__introLinks a.active:before{
-  background: var(--brick);;
+.procedure3__introLinks a:hover:before,
+.procedure3__introLinks a.active:before {
+  background: var(--brick);
   border: 1px solid var(--brick);
 }
 
 .procedure3__introImg__outer {
-  width: 45%;
+  width: 50%;
+  padding: 0 0 0 20px;
 }
 
 .procedure3__introImg {
@@ -83,15 +85,203 @@
   width: 100%;
 }
 
+.wideBox3__area {
+  width: 100%;
+}
 
+.wideBox3 {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
 
+/**************** Слайдер ДО-ПОСЛЕ ******************/
+.imgSlider__area {
+  width: 100%;
+}
 
+.imgSlider__outer {
+  width: 100%;
+  padding: 1rem 3rem;
+}
 
+.imgSliderCaroucel {
+  width: 100%;
+  position: relative;
+}
 
+.imgSlider-slide {
+  height: auto;
+}
 
+.imgSlider-container {
+  position: relative;
+  /* width: 90%; */
+  margin: 0 auto;
+  /* padding: 0 20px; */
+}
 
+.imgSlider-wrapper {
+  align-items: stretch;
+  padding: 0 0 10px 0;
+}
+.imgSlider-slide {
+  height: auto;
+  /* padding: 0 20px; */
+}
 
+.imgSlider-slideInner {
+  position: relative;
+  height: 0;
+  padding-top: 50%;
+}
 
+.imgSlider-slideInner2 {
+  position: relative;
+  height: 0;
+  padding-top: 133%;
+}
 
+.imgSlider-slide a {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  transition: all 0.3s;
+}
 
+.imgSlider__left,
+.imgSlider__right {
+  position: absolute;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  top: 50%;
+  margin-top: -1.25rem;
+  background: #fff;
+  box-shadow: 0px 0px 18px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+  cursor: pointer;
+  transition: all 0.3s;
+}
 
+.imgSlider__left:hover,
+.imgSlider__right:hover {
+  background: var(--brick);
+}
+
+.imgSlider__left:focus,
+.imgSlider__right:focus {
+  border: none;
+  outline: none;
+}
+
+.imgSlider__left.disabled,
+.imgSlider__right.disabled {
+  display: none;
+}
+
+.imgSlider__left {
+  left: -3rem;
+}
+
+.imgSlider__right {
+  right: -3rem;
+}
+
+.imgSlider__left i,
+.imgSlider__right i {
+  font-size: 1rem;
+  color: var(--brown1);
+  transition: all 0.3s;
+}
+
+.imgSlider__left:hover i,
+.imgSlider__right:hover i {
+  color: #fff;
+}
+
+.swiper-button-disabled,
+.swiper-button-disabled:hover {
+  background: #fff;
+}
+.swiper-button-disabled i {
+  color: #ddd;
+}
+.swiper-button-disabled:hover i {
+  color: #ddd;
+}
+
+.swiper-button-lock {
+  display: none;
+}
+
+/********************************************/
+
+.videoPhotoBox {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto 30px;
+  display: flex;
+}
+
+.videoPhotoBox__video {
+  width: 65%;
+  order: 0;
+}
+.videoPhotoBox__videoItem {
+  width: 100%;
+}
+
+.videoPhotoBox__photo {
+  width: 35%;
+  padding: 0 0 0 20px;
+  order: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.videoPhotoBox__photoItemOuter {
+  width: 100%;
+}
+
+.videoPhotoBox__photoItem {
+  width: 100%;
+  padding-top: 52%;
+  position: relative;
+}
+
+.videoPhotoBox__photoItem a {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  transition: all 0.3s;
+}
+
+.videoPhotoBox:nth-child(odd) .videoPhotoBox__video {
+  order: 1;
+}
+
+.videoPhotoBox:nth-child(odd) .videoPhotoBox__photo {
+  order: 0;
+  padding: 0 20px 0 0;
+}
