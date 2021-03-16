@@ -1,4 +1,7 @@
 @media only screen and (max-width: 1200px) {
+  .procedure3__intro {
+    padding: 0 10px 40px;
+  }
 }
 
 @media only screen and (max-width: 1140px) {
