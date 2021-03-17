@@ -1,0 +1,121 @@
+@media only screen and (max-width: 1200px) {
+}
+
+@media only screen and (max-width: 1140px) {
+}
+
+@media only screen and (max-width: 1080px) {
+}
+
+@media only screen and (max-width: 1024px) {
+  .card3 {
+    margin: 5px -5px 0;
+  }
+
+  .card3__itemOuter {
+    padding: 5px;
+  }
+  .card3__itemInfo {
+    padding: 0 10px 0 10px;
+  }
+  .card3__itemInfoTitle {
+    font-size: 1.375rem;
+  }
+  .card3__itemInfoContent {
+    margin: 10px 0 0 0;
+  }
+}
+
+@media only screen and (max-width: 920px) {
+  .card3__itemInfoTitle {
+    font-size: 1.25rem;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .card3__itemInfoTitle {
+    font-size: 1.125rem;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .card3__itemOuter {
+    width: 100%;
+  }
+  .card3__itemImg {
+    width: 30%;
+  }
+
+  .card3__itemInfo {
+    width: 70%;
+  }
+  .innerPriceBox {
+    width: 70%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .card3__itemImg {
+    width: 40%;
+  }
+
+  .card3__itemInfo {
+    width: 60%;
+  }
+  .innerPriceBox {
+    width: 80%;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .card3 {
+    margin: 0 -5px 0;
+  }
+  .card3__itemInfo {
+    padding: 10px;
+  }
+  .card3__itemImg {
+    width: 50%;
+  }
+
+  .card3__itemInfo {
+    width: 50%;
+  }
+  .card3__itemInfoTitle {
+    font-size: 1.25rem;
+  }
+  .card3__itemInfoContent {
+    margin: 5px 0 0 0;
+  }
+  .innerPriceBox {
+    width: 90%;
+  }
+}
+
+@media only screen and (max-width: 414px) {
+  .innerPriceBtn {
+    width: 3rem;
+    height: 3rem;
+    font-size: 1.5rem;
+  }
+  .card3__itemInfo {
+    padding: 10px 5px;
+  }
+  .card3__itemInfoTitle {
+    font-size: 1rem;
+    font-weight: bold;
+  }
+  .card3__itemInfoContent {
+    margin: 10px 0 0 0;
+  }
+  .card3__itemInfoContent li,
+  .card3__itemInfoContent p {
+    font-size: 0.75rem;
+  }
+  .card3__itemInfoContent ul {
+    padding: 0 0 0 5px;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+}

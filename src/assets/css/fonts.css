@@ -1,9 +1,9 @@
 @font-face {
   font-family: "icomoon";
-  src: url("../fonts/icomoon.eot?hebcf1");
-  src: url("../fonts/icomoon.eot?hebcf1#iefix") format("embedded-opentype"),
-    url("../fonts/icomoon.ttf?hebcf1") format("truetype"), url("../fonts/icomoon.woff?hebcf1") format("woff"),
-    url("../fonts/icomoon.svg?hebcf1#icomoon") format("svg");
+  src: url("../fonts/icomoon.eot?rp5qky");
+  src: url("../fonts/icomoon.eot?rp5qky#iefix") format("embedded-opentype"),
+    url("../fonts/icomoon.ttf?rp5qky") format("truetype"), url("../fonts/icomoon.woff?rp5qky") format("woff"),
+    url("../fonts/icomoon.svg?rp5qky#icomoon") format("svg");
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -25,6 +25,25 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-instagram3:before {
+  content: "\e918";
+}
+.icon-marker3:before {
+  content: "\e919";
+}
+.icon-rrubles:before {
+  content: "\e91b";
+}
+.icon-search3:before {
+  content: "\e91c";
+}
+.icon-telephone3:before {
+  content: "\e924";
+  color: #4f4f4f;
+}
+.icon-youtube3:before {
+  content: "\e925";
+}
 .icon-close2021:before {
   content: "\e906";
 }

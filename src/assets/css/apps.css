@@ -1,5 +1,5 @@
 /* @import url("https://fonts.googleapis.com/css?family=Roboto:300,400,400i,500,500i,600,700&display=swap&subset=cyrillic"); */
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,400&display=swap&subset=cyrillic');
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,400&display=swap&subset=cyrillic");
 @import "../../../node_modules/sweetalert/dist/sweetalert.css";
 /* @import "../../../node_modules/nouislider/distribute/nouislider.css"; */
 
@@ -46,7 +46,7 @@
 @import "__sevices.css";
 @import "__services_media.css";
 
-@import "__procedure.css";      /*старая но пока тут*/
+@import "__procedure.css"; /*старая но пока тут*/
 @import "__procedure_media.css";
 
 @import "__procedure3.css";
@@ -98,6 +98,9 @@
 
 @import "__mainProblem.css";
 @import "__mainProblem_media.css";
+
+@import "__card.css";
+@import "__card_media.css";
 
 @import "__menuBottom1.css";
 @import "__menuBottom1_media.css";

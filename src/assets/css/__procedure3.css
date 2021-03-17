@@ -363,7 +363,7 @@
 }
 
 .priceBox3 table td {
-  padding: 10px;
+  padding: 10px 0;
   /* background: var(--x1greySuperLight); */
   font-size: 1rem;
   color: var(--dark);

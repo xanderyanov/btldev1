@@ -74,36 +74,45 @@ $(function () {
 
 
   // START всплывающий прайс по клику на Р
-  $(".innerPriceBtn").on("click", function (e) {
+  $(".innerPriceBtn, .card3__priceBtn").on("click", function (e) {
     e.preventDefault();
     e.stopPropagation();
     var $this = $(this);
     $("body").addClass("stop");
-    $this.next('.innerPriceBox__wrapper').fadeIn(300);
-    $this.next('.innerPriceBox__wrapper').find('.innerPriceBox').slideDown(300);
+    $this.next('.innerPriceBox__wrapper').fadeIn(300);/********* */
+    $this.next('.innerPriceBox__wrapper').find('.innerPriceBox').slideDown(300);/********** */
+    $this.next('.innerPriceBox3__wrapper').fadeIn(300);
+    $this.next('.innerPriceBox3__wrapper').find('.innerPriceBox3').slideDown(300);
   });
-  $(".innerPriceBox__wrapper").on("click", function (e) {
+  $(".innerPriceBox__wrapper").on("click", function (e) {/********* */
+    e.preventDefault();
+    e.stopPropagation();
+  });/********** */
+  $(".innerPriceBox3__wrapper").on("click", function (e) {
     e.preventDefault();
     e.stopPropagation();
   });
-  $(".innerPriceBox__wrapper").on("click", function (e) {
+  $(".innerPriceBox__wrapper, .innerPriceBox3__wrapper").on("click", function (e) {/****** */
     e.preventDefault();
     e.stopPropagation();
     var $this = $(this);
     $this.fadeOut(300);
-    $this.find('.innerPriceBox').slideUp(300);
+    $this.find('.innerPriceBox').slideUp(300); /********* */
+    $this.find('.innerPriceBox3').slideUp(300);
     $("body").removeClass("stop");
   });
-  $(".innerPriceBox").on("click", function (e) {
+  $(".innerPriceBox, .innerPriceBox3").on("click", function (e) {/******** */
     e.preventDefault();
     e.stopPropagation();
   });
-  $(".innerPriceBox__close").on("click", function (e) {
+  $(".innerPriceBox__close, .innerPriceBox3__close").on("click", function (e) {/******** */
     e.preventDefault();
     e.stopPropagation();
     var $this = $(this);
     $this.closest('.mainProblem__item').find('.innerPriceBox__wrapper').fadeOut(300);
     $this.closest('.mainProblem__item').find('.innerPriceBox').slideUp(300);
+    $this.closest('.card3__item').find('.innerPriceBox3__wrapper').fadeOut(300);
+    $this.closest('.card3__item').find('.innerPriceBox3').slideUp(300);
     $("body").removeClass("stop");
   });
 
