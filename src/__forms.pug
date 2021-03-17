@@ -21,6 +21,37 @@ mixin zBlock1
           | Записаться
 
 
+mixin zBlock3
+  .zBlock3__area
+    .zBlock3
+      .zBlock3__left(style="background-image: url(assets/img/proc1.jpg)")
+
+      .zBlock3__right
+        .zBlock3__intro
+          h2 Запишитесь прямо сейчас на консультацию
+          span по телефону 
+            a(href='tel:+78452260000') +7 (8452) 26-00-00
+          span или заполните форму ниже:
+        form.form13(action='#')
+          label(for="name13") Ваше имя
+          input.name13(name='name13', type='text', placeholder='')
+
+          label(for="phone13") Ваш телефон
+          input.phone13(name='phone13', type='text', placeholder='')
+          //- input.email13(name='email13', type='text', placeholder='Email')
+          input.work_email13(name='work_email13', type='text', placeholder='Рабочий email')
+          //- textarea.message13(name='message13', cols='30', rows='10', placeholder='Ваше сообщение')
+          //- .form13__text
+          //-   | *Отправляя сообщение Вы соглашаетесь с условиями 
+          //-   a(href='privacy-policy/', target='_blank')
+          //-     | политики
+          //-     | конфиденциальности
+          .alrightBox
+            input(type='checkbox' required='')
+            span Согласен на обработку персональных данных
+          button.submit13(type='submit', name='submit13')
+            | Записаться
+
 mixin formInMaster
   .form2__area
     .form2__intro 
