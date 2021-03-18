@@ -17,9 +17,13 @@
 }
 
 @media only screen and (max-width: 768px) {
+}
+
+@media only screen and (max-width: 600px) {
   .menuBottom1__area {
     top: auto;
     bottom: 0;
+    display: block;
   }
   .menuBottom1__areaFake {
     display: block;
@@ -37,9 +41,6 @@
   .menuBottom1__area_page {
     display: block;
   }
-}
-
-@media only screen and (max-width: 600px) {
 }
 
 @media only screen and (max-width: 480px) {

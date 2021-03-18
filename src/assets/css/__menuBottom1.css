@@ -1,11 +1,13 @@
 .menuBottom1__area {
   position: fixed;
   left: 0;
-  top: 0;
+  /* top: 0; */
+  bottom: 0;
   right: 0;
   background: #aba299;
   z-index: 2000;
   transition: all 0.5s;
+  display: none;
 }
 
 .menuBottom1__areaFake {
@@ -13,18 +15,18 @@
 }
 
 .menuBottom1__area_page {
-  top: auto;
-  bottom: 0;
+  /* top: auto;
+  bottom: 0; */
   display: none;
 }
 
-.menuBottom1__area_main {
+/* .menuBottom1__area_main {
   top: -200px;
-}
+} */
 
-.menuBottom1__area_active {
+/* .menuBottom1__area_active {
   top: 0;
-}
+} */
 
 .menuBottom1__outer {
   position: relative;

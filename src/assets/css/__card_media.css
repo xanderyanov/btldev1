@@ -16,10 +16,7 @@
     padding: 5px;
   }
   .card3__itemInfo {
-    padding: 0 10px 0 10px;
-  }
-  .card3__itemInfoTitle {
-    font-size: 1.375rem;
+    padding: 30px 20px;
   }
   .card3__itemInfoContent {
     margin: 10px 0 0 0;
@@ -27,15 +24,15 @@
 }
 
 @media only screen and (max-width: 920px) {
-  .card3__itemInfoTitle {
+  /* .card3__itemInfoTitle {
     font-size: 1.25rem;
-  }
+  } */
 }
 
 @media only screen and (max-width: 800px) {
-  .card3__itemInfoTitle {
+  /* .card3__itemInfoTitle {
     font-size: 1.125rem;
-  }
+  } */
 }
 
 @media only screen and (max-width: 768px) {
@@ -52,6 +49,9 @@
   .innerPriceBox {
     width: 70%;
   }
+  .innerPriceBox3 {
+    width: 70%;
+  }
 }
 
 @media only screen and (max-width: 600px) {
@@ -65,30 +65,41 @@
   .innerPriceBox {
     width: 80%;
   }
+  .innerPriceBox3 {
+    width: 80%;
+  }
 }
 
 @media only screen and (max-width: 480px) {
   .card3 {
     margin: 0 -5px 0;
   }
-  .card3__itemInfo {
+  /* .card3__itemInfo {
     padding: 10px;
-  }
-  .card3__itemImg {
+  } */
+  /* .card3__itemImg {
     width: 50%;
   }
 
   .card3__itemInfo {
     width: 50%;
-  }
-  .card3__itemInfoTitle {
+  } */
+  /* .card3__itemInfoTitle {
     font-size: 1.25rem;
-  }
+  } */
   .card3__itemInfoContent {
     margin: 5px 0 0 0;
   }
   .innerPriceBox {
     width: 90%;
+  }
+  .card3__priceBtn {
+    bottom: 10px;
+    right: 10px;
+  }
+  .innerPriceBox3 {
+    width: 90%;
+    padding: 20px;
   }
 }
 
@@ -99,7 +110,7 @@
     font-size: 1.5rem;
   }
   .card3__itemInfo {
-    padding: 10px 5px;
+    padding: 15px 20px;
   }
   .card3__itemInfoTitle {
     font-size: 1rem;

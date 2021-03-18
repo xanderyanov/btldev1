@@ -34,6 +34,20 @@
 .card3__itemImg {
   width: 40%;
   order: 1;
+  position: relative;
+}
+.card3__itemImg:after {
+  content: "";
+  padding-top: 133%;
+  height: 0;
+  display: block;
+}
+.card3__itemImgInner {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;

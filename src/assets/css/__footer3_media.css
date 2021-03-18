@@ -17,12 +17,37 @@
 }
 
 @media only screen and (max-width: 768px) {
+  .footer3a {
+    width: 50%;
+  }
+  .footer3b {
+    display: none;
+  }
+  .footer3c {
+    width: 50%;
+    flex-direction: column;
+    padding: 0 0 0 40px;
+  }
 }
 
 @media only screen and (max-width: 600px) {
+  .footer3__area {
+    padding: 40px 0;
+  }
 }
 
 @media only screen and (max-width: 480px) {
+  .footer3a {
+    width: 100%;
+    align-items: center;
+  }
+  .footer3c {
+    width: 100%;
+    padding: 20px 0 0 0;
+  }
+  .footer3__tm {
+    text-align: center;
+  }
 }
 
 @media only screen and (max-width: 414px) {
