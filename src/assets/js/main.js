@@ -3,23 +3,20 @@
 // });
 
 $(function () {
-
   var topLine3 = $(".topLine3__area").height();
-    var header3 = $(".header3__area");
-    var header3Height = $(".header3__area").height();
-    $(window).scroll(function(){
-        if ( $(this).scrollTop() > topLine3 ){
-            header3.css({'position' : 'fixed', 'top':'0', 'left':'0', 'backgroundColor':'#fff'});
-            $('.header3__fake').css({'height':header3Height});
-        } else if($(this).scrollTop() <= topLine3){
-            header3.css({'position' : 'relative', 'backgroundColor':'rgba(255,255,255,.7)'});
-            $('.header3__fake').css({'height':'0'});
-        }
-    });
+  var header3 = $(".header3__area");
+  var header3Height = $(".header3__area").height();
+  $(window).scroll(function () {
+    if ($(this).scrollTop() > topLine3) {
+      header3.css({ position: "fixed", top: "0", left: "0", backgroundColor: "#fff" });
+      $(".header3__fake").css({ height: header3Height });
+    } else if ($(this).scrollTop() <= topLine3) {
+      header3.css({ position: "relative", backgroundColor: "rgba(255,255,255,.7)" });
+      $(".header3__fake").css({ height: "0" });
+    }
+  });
 
-
-
-    //-START Сладйре похожих товаров на странице VARIANTS
+  //-START Сладйре похожих товаров на странице VARIANTS
 
   var imgSliderOptions = {};
   if ($(".imgSlider-container .imgSlider-slide").length) {
@@ -44,13 +41,11 @@ $(function () {
         },
         768: {
           slidesPerView: 2,
-        }
-      
+        },
       },
     };
-  } 
+  }
   var swiper = new Swiper(".imgSlider-container", imgSliderOptions);
-
 
   // var $iframes = $( "iframe" );
   // $iframes.each(function () {
@@ -66,59 +61,48 @@ $(function () {
   //   });
   // }).resize();
 
-
-
-
-
-
-
-
   // START всплывающий прайс по клику на Р
   $(".innerPriceBtn, .card3__priceBtn").on("click", function (e) {
     e.preventDefault();
     e.stopPropagation();
     var $this = $(this);
     $("body").addClass("stop");
-    $this.next('.innerPriceBox__wrapper').fadeIn(300);/********* */
-    $this.next('.innerPriceBox__wrapper').find('.innerPriceBox').slideDown(300);/********** */
-    $this.next('.innerPriceBox3__wrapper').fadeIn(300);
-    $this.next('.innerPriceBox3__wrapper').find('.innerPriceBox3').slideDown(300);
+    $this.next(".innerPriceBox__wrapper").fadeIn(300); /********* */
+    $this.next(".innerPriceBox__wrapper").find(".innerPriceBox").slideDown(300); /********** */
+    $this.closest(".card3__item").find(".innerPriceBox3__wrapper").fadeIn(300);
+    $this.closest(".card3__item").find(".innerPriceBox3__wrapper").find(".innerPriceBox3").slideDown(300);
   });
-  $(".innerPriceBox__wrapper").on("click", function (e) {/********* */
-    e.preventDefault();
+  $(".innerPriceBox__wrapper").on("click", function (e) {
+    /********* */ e.preventDefault();
     e.stopPropagation();
-  });/********** */
+  }); /********** */
   $(".innerPriceBox3__wrapper").on("click", function (e) {
     e.preventDefault();
     e.stopPropagation();
   });
-  $(".innerPriceBox__wrapper, .innerPriceBox3__wrapper").on("click", function (e) {/****** */
-    e.preventDefault();
+  $(".innerPriceBox__wrapper, .innerPriceBox3__wrapper").on("click", function (e) {
+    /****** */ e.preventDefault();
     e.stopPropagation();
     var $this = $(this);
     $this.fadeOut(300);
-    $this.find('.innerPriceBox').slideUp(300); /********* */
-    $this.find('.innerPriceBox3').slideUp(300);
+    $this.find(".innerPriceBox").slideUp(300); /********* */
+    $this.find(".innerPriceBox3").slideUp(300);
     $("body").removeClass("stop");
   });
-  $(".innerPriceBox, .innerPriceBox3").on("click", function (e) {/******** */
-    e.preventDefault();
+  $(".innerPriceBox, .innerPriceBox3").on("click", function (e) {
+    /******** */ e.preventDefault();
     e.stopPropagation();
   });
-  $(".innerPriceBox__close, .innerPriceBox3__close").on("click", function (e) {/******** */
-    e.preventDefault();
+  $(".innerPriceBox__close, .innerPriceBox3__close").on("click", function (e) {
+    /******** */ e.preventDefault();
     e.stopPropagation();
     var $this = $(this);
-    $this.closest('.mainProblem__item').find('.innerPriceBox__wrapper').fadeOut(300);
-    $this.closest('.mainProblem__item').find('.innerPriceBox').slideUp(300);
-    $this.closest('.card3__item').find('.innerPriceBox3__wrapper').fadeOut(300);
-    $this.closest('.card3__item').find('.innerPriceBox3').slideUp(300);
+    $this.closest(".mainProblem__item").find(".innerPriceBox__wrapper").fadeOut(300);
+    $this.closest(".mainProblem__item").find(".innerPriceBox").slideUp(300);
+    $this.closest(".card3__item").find(".innerPriceBox3__wrapper").fadeOut(300);
+    $this.closest(".card3__item").find(".innerPriceBox3").slideUp(300);
     $("body").removeClass("stop");
   });
-
-
-
-
 
   // END всплывающий прайс по клику на Р
 
@@ -165,7 +149,7 @@ $(function () {
   if ($(".mainPageIdx").length) {
     if ($(window).width() >= 1024) {
       var topScrollCount = $(".mainTop__area").outerHeight();
-    }else{
+    } else {
       var topScrollCount = $(".mainTop__right").outerHeight();
     }
     var menu = $(".menuBottom1__area_main");
@@ -191,10 +175,9 @@ $(function () {
           menu.removeClass("menuBottom1__area_active");
         }
       });
-    }else{
+    } else {
       menu.addClass("menuBottom1__area_active");
     }
-    
   }
   //-END Адаптивное меню на главной и остальных
 
@@ -351,54 +334,52 @@ $(function () {
   // прокрутка до якорtq на странице процедуры
 
   if ($(window).width() >= 768) {
-    var menuHeight = $('.menuBottom1__area').height();
-  }else{
+    var menuHeight = $(".menuBottom1__area").height();
+  } else {
     var menuHeight = 0;
   }
-  
 
   $("#goToAboutAnchor").on("click", function (e) {
     $("html,body")
       .stop()
-      .animate({ scrollTop: $("#aboutAnchor").offset().top - menuHeight}, 1000);
+      .animate({ scrollTop: $("#aboutAnchor").offset().top - menuHeight }, 1000);
     e.preventDefault();
   });
 
   $("#goToDescriptionAnchor").on("click", function (e) {
     $("html,body")
       .stop()
-      .animate({ scrollTop: $("#descriptionAnchor").offset().top - menuHeight}, 1000);
+      .animate({ scrollTop: $("#descriptionAnchor").offset().top - menuHeight }, 1000);
     e.preventDefault();
   });
 
   $("#goToResultAnchor").on("click", function (e) {
     $("html,body")
       .stop()
-      .animate({ scrollTop: $("#ResultAnchor").offset().top - menuHeight}, 1000);
+      .animate({ scrollTop: $("#ResultAnchor").offset().top - menuHeight }, 1000);
     e.preventDefault();
   });
 
   $("#goToPokazAnchor").on("click", function (e) {
     $("html,body")
       .stop()
-      .animate({ scrollTop: $("#PokazAnchor").offset().top - menuHeight}, 1000);
+      .animate({ scrollTop: $("#PokazAnchor").offset().top - menuHeight }, 1000);
     e.preventDefault();
   });
 
   $("#goToAdvantageAnchor").on("click", function (e) {
     $("html,body")
       .stop()
-      .animate({ scrollTop: $("#AdvantageAnchor").offset().top - menuHeight}, 1000);
-    e.preventDefault();
-  });
-  
-  $("#goToPriceAnchor").on("click", function (e) {
-    $("html,body")
-      .stop()
-      .animate({ scrollTop: $("#priceAnchor").offset().top - menuHeight}, 1000);
+      .animate({ scrollTop: $("#AdvantageAnchor").offset().top - menuHeight }, 1000);
     e.preventDefault();
   });
 
+  $("#goToPriceAnchor").on("click", function (e) {
+    $("html,body")
+      .stop()
+      .animate({ scrollTop: $("#priceAnchor").offset().top - menuHeight }, 1000);
+    e.preventDefault();
+  });
 
   $(".toTop").hide();
   $(window).on("scroll", function () {
@@ -592,7 +573,7 @@ $(function () {
         {
           subj: subj,
           name: name,
-          phone: phone
+          phone: phone,
           // recaptcha: recaptcha,
         },
         function () {

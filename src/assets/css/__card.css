@@ -32,13 +32,13 @@
 }
 
 .card3__itemImg {
-  width: 40%;
+  width: 50%;
   order: 1;
   position: relative;
 }
 .card3__itemImg:after {
   content: "";
-  padding-top: 133%;
+  padding-top: 100%;
   height: 0;
   display: block;
 }
@@ -54,11 +54,11 @@
 }
 
 .card3__itemInfo {
-  width: 60%;
+  width: 50%;
   order: 2;
   display: flex;
   flex-direction: column;
-  padding: 60px 30px;
+  padding: 40px 30px;
   /* align-items: flex-end; */
 }
 

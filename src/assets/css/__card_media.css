@@ -21,6 +21,10 @@
   .card3__itemInfoContent {
     margin: 10px 0 0 0;
   }
+  .card3__priceBtn {
+    bottom: 10px;
+    right: 10px;
+  }
 }
 
 @media only screen and (max-width: 920px) {
@@ -40,11 +44,11 @@
     width: 100%;
   }
   .card3__itemImg {
-    width: 30%;
+    width: 40%;
   }
 
   .card3__itemInfo {
-    width: 70%;
+    width: 60%;
   }
   .innerPriceBox {
     width: 70%;
@@ -56,11 +60,11 @@
 
 @media only screen and (max-width: 600px) {
   .card3__itemImg {
-    width: 40%;
+    width: 45%;
   }
 
   .card3__itemInfo {
-    width: 60%;
+    width: 55%;
   }
   .innerPriceBox {
     width: 80%;
@@ -93,10 +97,10 @@
   .innerPriceBox {
     width: 90%;
   }
-  .card3__priceBtn {
+  /* .card3__priceBtn {
     bottom: 10px;
     right: 10px;
-  }
+  } */
   .innerPriceBox3 {
     width: 90%;
     padding: 20px;
@@ -110,7 +114,7 @@
     font-size: 1.5rem;
   }
   .card3__itemInfo {
-    padding: 15px 20px;
+    padding: 10px 10px;
   }
   .card3__itemInfoTitle {
     font-size: 1rem;
@@ -125,6 +129,19 @@
   }
   .card3__itemInfoContent ul {
     padding: 0 0 0 5px;
+  }
+  .card3__priceBtn {
+    position: relative;
+    margin: auto 0 0 auto;
+    bottom: auto;
+    right: auto;
+  }
+  .card3__itemImg {
+    width: 50%;
+  }
+
+  .card3__itemInfo {
+    width: 50%;
   }
 }
 

@@ -28,10 +28,10 @@
   .menuBottom1__areaFake {
     display: block;
   }
-  .menuBottom1__area_main {
+  /* .menuBottom1__area_main {
     bottom: -200px;
     top: auto;
-  }
+  } */
   .menuBottom1__area_active {
     bottom: 0;
   }
