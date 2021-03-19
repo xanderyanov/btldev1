@@ -45,8 +45,21 @@
     margin: 0 20px 0 0;
   }
 
-  .header3__area {
+  /* .header3__area {
     display: none;
+  } */
+  .solution3__btn {
+    display: none;
+  }
+  .header3__contItemInfo {
+    display: none;
+  }
+  .header3__contItem {
+    margin: 0 30px 0 auto;
+  }
+  .header3__contItem i {
+    font-size: 2.375rem;
+    margin: 0;
   }
 }
 

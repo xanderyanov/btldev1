@@ -1,22 +1,32 @@
 // $(window).on("load", function () {
 
 // });
+var topLine3;
+var header3;
+var header3Height;
 
+function FNheader3() {
+  topLine3 = $(".topLine3__area").height();
+  header3 = $(".header3__area");
+  header3Height = $(".header3__area").height();
+}
 $(function () {
-  var topLine3 = $(".topLine3__area").height();
-  var header3 = $(".header3__area");
-  var header3Height = $(".header3__area").height();
+  FNheader3();
+  $(window).on("resize", FNheader3);
+
   $(window).scroll(function () {
-    if ($(this).scrollTop() > topLine3) {
-      header3.css({ position: "fixed", top: "0", left: "0", backgroundColor: "#fff" });
-      $(".header3__fake").css({ height: header3Height });
-    } else if ($(this).scrollTop() <= topLine3) {
-      header3.css({ position: "relative", backgroundColor: "rgba(255,255,255,.7)" });
-      $(".header3__fake").css({ height: "0" });
+    if ($(window).width() > 600) {
+      if ($(this).scrollTop() > topLine3) {
+        header3.css({ position: "fixed", top: "0", left: "0" });
+        $(".header3__fake").css({ height: header3Height });
+      } else if ($(this).scrollTop() <= topLine3) {
+        header3.css({ position: "relative" });
+        $(".header3__fake").css({ height: "0" });
+      }
     }
   });
 
-  //-START Сладйре похожих товаров на странице VARIANTS
+  //-START Слайдер похожих товаров на странице VARIANTS
 
   var imgSliderOptions = {};
   if ($(".imgSlider-container .imgSlider-slide").length) {
