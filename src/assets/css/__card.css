@@ -135,6 +135,11 @@
 .card3__priceBtn i {
   color: #bdbdbd;
   font-size: 2rem;
+  transition: all 0.3s;
+}
+
+.card3__priceBtn:hover i {
+  color: var(--brick);
 }
 
 .innerPriceBox3__wrapper {
@@ -180,8 +185,11 @@
 }
 
 .innerPriceBox3__title {
-  font-size: 1.5rem;
-  color: var(--tc0);
+  font-size: 2rem;
+  color: #333333;
+  font-weight: 700;
+  line-height: 1.4;
+  margin: 0;
 }
 
 .innerPriceBox3__close {

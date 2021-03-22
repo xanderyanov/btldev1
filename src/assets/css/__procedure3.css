@@ -36,10 +36,11 @@
   font-size: 1rem;
   line-height: 1.4;
   text-decoration: none;
-  color: #333333;
+  /* color: #333333; */
   margin-bottom: 10px;
   position: relative;
-  padding: 0 0 0 25px;
+  /* padding: 0 0 0 25px; */
+  color: var(--brick);
 }
 .procedure3__introLinks a:last-child {
   margin-bottom: 0;
@@ -48,9 +49,10 @@
 .procedure3__introLinks a:hover,
 .procedure3__introLinks a.active {
   color: var(--brick);
+  text-decoration: underline;
 }
 
-.procedure3__introLinks a:before {
+/* .procedure3__introLinks a:before {
   content: "";
   position: absolute;
   left: 0;
@@ -67,7 +69,7 @@
 .procedure3__introLinks a.active:before {
   background: var(--brick);
   border: 1px solid var(--brick);
-}
+} */
 
 .procedure3__introImg__outer {
   width: 50%;
@@ -328,7 +330,7 @@
   margin: 60px 0;
   background: #fff;
   box-shadow: 0px 12px 25px rgb(0 0 0 / 8%);
-  padding: 40px 10%;
+  padding: 40px 60px;
 }
 
 .priceBox3__area {
@@ -381,7 +383,7 @@
 .outerLink3__area {
   width: 100%;
   display: flex;
-  margin-top: 20px;
+  margin-top: 2.5rem;
   align-items: center;
 }
 

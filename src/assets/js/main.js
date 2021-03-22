@@ -337,6 +337,7 @@ $(function () {
 
   $(".phoneZ").mask("+7 (999) 999-9999");
   $(".phone1").mask("+7 (999) 999-9999");
+  $(".phone13").mask("+7 (999) 999-9999");
   $(".phone2").mask("+7 (999) 999-9999");
   $(".phone3").mask("+7 (999) 999-9999");
   $(".phone4").mask("+7 (999) 999-9999");
@@ -595,6 +596,74 @@ $(function () {
           });
           $(".name1").val("").removeClass("error");
           $(".phone1").val("").removeClass("error");
+        }
+      );
+    }
+  });
+
+  $(".form13").on("click", ".submit13", function (e) {
+    e.preventDefault();
+    var subj = "Горизонтальная форма внизу страницы";
+    var name = $(".name13").val();
+    var phone = $(".phone13").val();
+    var checkbox = $(".checkbox13");
+    var workemail = $(".work_email13").val();
+    var r = /^[\w\.\d-_]+@[\w\.\d-_]+\.\w{2,4}$/i;
+    if (name == "") {
+      swal({
+        title: "Поле Имя пустое",
+        text: "Заполните поле имя",
+        type: "error",
+        confirmButtonText: "ок",
+      });
+      $(".name13").addClass("error");
+      setTimeout(function () {
+        $(".name13").removeClass("error");
+      }, 3000);
+    } else if (phone == "") {
+      swal({
+        title: "Поле Телефон пустое",
+        text: "Заполните поле телефон",
+        type: "error",
+        confirmButtonText: "ок",
+      });
+      $(".phone13").addClass("error");
+      setTimeout(function () {
+        $(".phone13").removeClass("error");
+      }, 3000);
+    } else if (workemail != "") {
+      swal({
+        title: "Ах ты жулик",
+        text: "Уберите робота от компьютера",
+        type: "error",
+        confirmButtonText: "ок",
+      });
+    } else if (checkbox.is(":checked") == false) {
+      swal({
+        title: "Отметьте чекбокс",
+        text: "Дайте свое согласие на обработку данных!",
+        type: "error",
+        confirmButtonText: "ок",
+      });
+    } else {
+      $.post(
+        "mail.php",
+        {
+          subj: subj,
+          name: name,
+          phone: phone,
+          // recaptcha: recaptcha,
+        },
+        function () {
+          swal({
+            title: "Спасибо",
+            text: "Ваше сообщение отправлено",
+            type: "success",
+            confirmButtonText: "ок",
+          });
+          $(".name13").val("").removeClass("error");
+          $(".phone13").val("").removeClass("error");
+          $(".checkbox13:checked").prop("checked", false);
         }
       );
     }

@@ -11,7 +11,7 @@
 }
 
 .footer3a {
-  width: 30%;
+  width: 35%;
   display: flex;
   flex-direction: column;
 }
@@ -36,7 +36,7 @@
 
 .footer3b {
   display: flex;
-  width: 70%;
+  width: 65%;
   padding: 0 0 0 20px;
 }
 
@@ -70,7 +70,6 @@
   font-size: 0.875rem;
   line-height: 1;
   color: var(--dark);
-  text-transform: capitalize;
 }
 
 .footer3__menu li a:hover {

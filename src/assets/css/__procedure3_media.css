@@ -8,6 +8,11 @@
   .wideBox3 {
     padding: 0 10px 0;
   }
+  .price3__area {
+    margin: 50px auto;
+    width: 90%;
+    padding: 30px 50px;
+  }
 }
 
 @media only screen and (max-width: 1140px) {
@@ -97,6 +102,10 @@
   .videoPhotoBox__photoItemOuter {
     width: 49%;
   }
+  .price3__area {
+    margin: 30px auto;
+    padding: 20px 40px;
+  }
 }
 
 @media only screen and (max-width: 480px) {
@@ -141,6 +150,11 @@
   }
   .videoPhotoBox__photoItemOuter:first-child {
     margin-bottom: 10px;
+  }
+  .price3__area {
+    margin: 20px auto;
+    padding: 20px 20px;
+    width: 100%;
   }
 }
 
