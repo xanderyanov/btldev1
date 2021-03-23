@@ -197,7 +197,7 @@
   background-size: contain;
   background-position: right center;
   background-repeat: no-repeat;
-  background-color: #f2f2f4;
+  /* background-color: #f2f2f4; */
 }
 
 .mainContent__inner {

@@ -7,7 +7,7 @@ mixin mainTop
         .mainTop__left
           .mainTop__promo
             video(width="100%" height="auto" muted="" playsinline="" autoplay="" loop="" preload="auto")
-              source(src='assets/video/video5.mp4' type='video/mp4')
+              source(src='assets/video/video1803.mp4' type='video/mp4')
         .mainTop__right
           //- +hideBox
           .mainTop__menu
@@ -29,9 +29,9 @@ mixin mainTop
               .mainTop__menuItemWrapper
                 a.mainTop__menuItem.colorBox_c(href="#")
                   .mainTop__menuItemTop
-                    .mainTop__menuItemTitle E-Shop
-                    i.icon-shopping-bag
-                  .mainTop__menuItemBottom  Интернет-магазин профессиональной косметики
+                    .mainTop__menuItemTitle Оборудование
+                    i.icon-equipment
+                  .mainTop__menuItemBottom  Современное оборудование в нашем «Бьюти Лаунж»
             .mainTop__menuItemOuter.mainTop__menuItemOuter_d
               .mainTop__menuItemWrapper
                 a.mainTop__menuItem.colorBox_d(href="#")
@@ -39,7 +39,18 @@ mixin mainTop
                     .mainTop__menuItemTitle Специалисты
                     i.icon-user
                   .mainTop__menuItemBottom Наши врачи-косметологи и стилисты
-
+      .mainTopLineBox 
+        .mainTopLineBox__leftOuter
+          .mainTopLineBox__leftWrapper
+            a.mainTopLineBox__leftItem.colorBox_f(href="#")
+              i.icon-shopping-bag
+              .mainTopLineBox__itemTitle E-shop
+              .mainTopLineBox__itemDesc Интернет-магазин профессиональной косметики
+        .mainTopLineBox__rightOuter
+          a.mainTopLineBox__rightLink1(href="")
+            img(src="assets/img/creative/m22-1200х150.jpg", alt="")
+          a.mainTopLineBox__rightLink2(href="")
+            img(src="assets/img/creative/m22-600х150.jpg", alt="")
 
 mixin hideBox
   .mainTop__hideBoxOverlay

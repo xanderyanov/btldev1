@@ -4,9 +4,11 @@
 
 include __const
 include __header
-include __header2
+//- include __header2
+include __header3
 include __menu
 include __mainTop
+include __card
 include __mainProblem
 include __slider1
 include __wideBlock
@@ -26,17 +28,22 @@ html(lang="ru-RU")
   body
 
     .site__header.mainPageIdx
-      +header2
+      +header3
       //- +topMenu
       //- +mbMenu-01-2021
 
     .site__center
       +mainTop
-      +mainProblem
+      .wideBox3__area 
+        .wideBox3
+          .title3
+              h2 Популярные процедуры  
+          +card3
+      //- +mainProblem
       //- +sliderSwiperInMain
       //- +testBlock
       //- +wideBlock
-      +mainBox
+      //- +mainBox
       +mainContent
       +blog
       +newsInMain

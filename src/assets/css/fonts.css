@@ -1,9 +1,9 @@
 @font-face {
   font-family: "icomoon";
-  src: url("../fonts/icomoon.eot?rp5qky");
-  src: url("../fonts/icomoon.eot?rp5qky#iefix") format("embedded-opentype"),
-    url("../fonts/icomoon.ttf?rp5qky") format("truetype"), url("../fonts/icomoon.woff?rp5qky") format("woff"),
-    url("../fonts/icomoon.svg?rp5qky#icomoon") format("svg");
+  src: url("../fonts/icomoon.eot?p37aya");
+  src: url("../fonts/icomoon.eot?p37aya#iefix") format("embedded-opentype"),
+    url("../fonts/icomoon.ttf?p37aya") format("truetype"), url("../fonts/icomoon.woff?p37aya") format("woff"),
+    url("../fonts/icomoon.svg?p37aya#icomoon") format("svg");
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -25,6 +25,18 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-menu:before {
+  content: "\e926";
+}
+.icon-equipment:before {
+  content: "\e927";
+}
+.icon-menu4block:before {
+  content: "\e928";
+}
+.icon-shopping-cart5:before {
+  content: "\e932";
+}
 .icon-instagram3:before {
   content: "\e918";
 }
@@ -76,9 +88,6 @@
 }
 .icon-target:before {
   content: "\e968";
-}
-.icon-menu:before {
-  content: "\e95f";
 }
 .icon-percentage:before {
   content: "\e960";
