@@ -57,6 +57,35 @@ $(function () {
   }
   var swiper = new Swiper(".imgSlider-container", imgSliderOptions);
 
+  var blogSliderOptions = {};
+  if ($(".blogSlider-container .blogSlider-slide").length) {
+    blogSliderOptions = {
+      slidesPerView: 2,
+      loop: false,
+      spaceBetween: 20,
+      speed: 600,
+      autoplay: {
+        delay: 15000,
+        disableOnInteraction: true,
+      },
+      navigation: {
+        nextEl: ".blogSlider__right",
+        prevEl: ".blogSlider__left",
+      },
+      keyboard: true,
+      watchOverflow: true,
+      breakpoints: {
+        0: {
+          slidesPerView: 1,
+        },
+        768: {
+          slidesPerView: 2,
+        },
+      },
+    };
+  }
+  var swiper = new Swiper(".blogSlider-container", blogSliderOptions);
+
   // var $iframes = $( "iframe" );
   // $iframes.each(function () {
   //   $( this ).data( "ratio", this.height / this.width )
