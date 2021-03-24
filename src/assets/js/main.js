@@ -60,7 +60,7 @@ $(function () {
   var blogSliderOptions = {};
   if ($(".blogSlider-container .blogSlider-slide").length) {
     blogSliderOptions = {
-      slidesPerView: 2,
+      slidesPerView: 3,
       loop: false,
       spaceBetween: 20,
       speed: 600,
@@ -68,23 +68,47 @@ $(function () {
         delay: 15000,
         disableOnInteraction: true,
       },
-      navigation: {
-        nextEl: ".blogSlider__right",
-        prevEl: ".blogSlider__left",
+      // navigation: {
+      //   nextEl: ".blogSlider__right",
+      //   prevEl: ".blogSlider__left",
+      // },
+      pagination: {
+        el: ".blogSlider__pagination",
+        type: "bullets",
+        dynamicBullets: false,
+        clickable: true,
       },
       keyboard: true,
       watchOverflow: true,
       breakpoints: {
         0: {
-          slidesPerView: 1,
+          slidesPerView: 3,
         },
         768: {
-          slidesPerView: 2,
+          slidesPerView: 5,
         },
       },
     };
   }
-  var swiper = new Swiper(".blogSlider-container", blogSliderOptions);
+
+  if ($(window).width() <= 768) {
+    var swiper = new Swiper(".blogSlider-container", blogSliderOptions);
+  }
+  // else {
+  //   swiper.destroy();
+  // }
+
+  $(window).on("resize", function () {
+    if ($(window).width() <= 768) {
+      var swiper = new Swiper(".blogSlider-container", blogSliderOptions);
+    } else {
+      swiper.destroy();
+    }
+  });
+
+  $(".blogSliderItem__coverVideo").on("click", function (e) {
+    e.stopPropagation();
+  });
 
   // var $iframes = $( "iframe" );
   // $iframes.each(function () {

@@ -31,6 +31,21 @@
   .news__itemInfo {
     width: 70%;
   }
+
+  .blogSlider-wrapper {
+    flex-wrap: nowrap;
+  }
+
+  .blogSlider-slide {
+    width: auto;
+  }
+
+  .blogSlider-slide:nth-child(1) {
+    width: auto;
+  }
+  .blogSlider-slide:nth-child(2) {
+    width: auto;
+  }
 }
 
 @media only screen and (max-width: 600px) {
