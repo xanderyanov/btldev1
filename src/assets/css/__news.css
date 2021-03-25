@@ -72,6 +72,9 @@
   max-width: 1200px;
   margin: 0 auto;
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .blogSliderCaroucel {
@@ -200,16 +203,36 @@
   width: 16px;
   height: 16px;
   background-color: #fff;
-  border: 1px solid #9d8edb;
+  border: 1px solid #d74d63;
   border-radius: 50%;
   outline: none;
   margin: 0 5px;
 }
 
 .blogSlider__pagination .swiper-pagination-bullet-active {
-  background-color: #9d8edb;
+  background-color: #d74d63;
 }
 
 .blogSlider__pagination.swiper-pagination-lock {
   display: none;
+}
+
+.mainNews__redmore {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  font-size: 1rem;
+  line-height: 1.25rem;
+  background: var(--brick);
+  color: #fff;
+  padding: 0.75rem 2rem;
+  border-radius: 6px;
+  text-decoration: none;
+  margin: 50px 0 30px;
+  transition: all 0.3s;
+}
+
+.mainNews__redmore:hover {
+  background: var(--reden);
 }

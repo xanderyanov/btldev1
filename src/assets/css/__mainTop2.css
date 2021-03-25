@@ -68,22 +68,28 @@
 
 .colorBox_a {
   /* background: #aba299; */
-  background: #9b3a83;
+  /* background: #9b3a83; */
+  background: #a38182;
+  background: #5d4b63;
   color: #fff;
 }
 .colorBox_b {
   /* background: #6a6e79; */
-  background: #7c52be;
+  /* background: #7c52be; */
+
+  background: #d74d63;
   color: #fff;
 }
 .colorBox_c {
   /* background: #c24b35; */
-  background: #c14032;
+  /* background: #c14032; */
+  background: #cecbda;
   color: #fff;
 }
 .colorBox_d {
   /* background: #3a2f29; */
-  background: #e2b929;
+  /* background: #e2b929; */
+  background: #a38182;
   color: #fff;
 }
 
@@ -92,7 +98,9 @@
 }
 
 .colorBox_f {
-  background: #2e2e2e;
+  /* background: #2e2e2e; */
+  /* background: #f6e5e4; */
+  background: #5d4b63;
   color: #fff;
 }
 

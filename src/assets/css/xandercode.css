@@ -38,8 +38,13 @@
   --title1bg: #e6e6e6;
 
   --brown1: #514240;
-  --brick: #9f3125;
+  /* --brick: #9f3125; */
+  --brick: #5d4b63;
   --dark: #4f4f4f;
+
+  --reden: #d74d63;
+
+  --formBtn: #7b87dc;
 }
 
 .stop {

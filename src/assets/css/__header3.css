@@ -1,6 +1,6 @@
 .topLine3__area {
-  background: var(--brown1);
   width: 100%;
+  background: var(--brick);
 }
 
 .topLine3 {
@@ -133,6 +133,12 @@
   padding: 0.75rem 2rem;
   border-radius: 6px;
   text-decoration: none;
+  transition: all 0.3s;
+}
+
+.solution3__btn:hover {
+  background: #d74d63;
+  /* background: #a38182; */
 }
 
 .topMenu3 {

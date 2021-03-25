@@ -67,20 +67,25 @@
 }
 
 .mColor1 {
-  background: #aba299;
+  /* background: #aba299; */
+  background: #cecbda;
 }
 .mColor2 {
-  background: #6a6e79;
+  /* background: #6a6e79; */
+  background: #d74d63;
   color: #fff;
 }
 .mColor3 {
-  background: #a49693;
+  /* background: #a49693; */
+  background: #5d4b63;
+  color: #fff;
 }
 .mColor4 {
   background: #3a2f29;
   color: #fff;
 }
 .mColor5 {
-  background: #c24b35;
+  /* background: #c24b35; */
+  background: #a38182;
   color: #fff;
 }

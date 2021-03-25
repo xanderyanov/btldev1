@@ -1,4 +1,7 @@
 @media only screen and (max-width: 1200px) {
+  .mainForm3__area {
+    padding: 0 10px;
+  }
 }
 
 @media only screen and (max-width: 1140px) {
@@ -8,6 +11,13 @@
 }
 
 @media only screen and (max-width: 1024px) {
+  .mainForm3__left {
+    width: 50%;
+    padding: 0 30px 0 0;
+  }
+  .mainForm3__right {
+    width: 50%;
+  }
 }
 
 @media only screen and (max-width: 920px) {
@@ -41,6 +51,19 @@
   .form13 {
     width: 100%;
   }
+  .mainForm3__area {
+    margin: 0 0 10px;
+  }
+  .mainForm3__left {
+    width: 70%;
+    padding: 0;
+  }
+  .mainForm3__right {
+    display: none;
+  }
+  .form_m3 {
+    max-width: none;
+  }
 }
 
 @media only screen and (max-width: 600px) {
@@ -70,6 +93,9 @@
   }
   .form13 label {
     margin-bottom: 5px;
+  }
+  .mainForm3__left {
+    width: 100%;
   }
 }
 

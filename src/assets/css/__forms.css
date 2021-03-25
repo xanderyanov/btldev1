@@ -204,6 +204,135 @@ input.work_email13 {
 
 /**********/
 
+/***********/
+
+.mainForm3__area {
+  margin: 40px 0;
+}
+
+.mainForm3 {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+
+.mainForm3__left {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  padding: 0 30px 0 0;
+}
+.mainForm3__right {
+  width: 60%;
+  background-position: right center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.mainForm3__intro {
+  width: 100%;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.mainForm3__intro span {
+  font-size: 1rem;
+  line-height: 1.4;
+  color: var(--dark);
+  margin-bottom: 5px;
+}
+
+.mainForm3__intro a {
+  font-size: 1rem;
+  line-height: 1.4;
+  color: var(--dark);
+  font-weight: 700;
+  text-decoration: none;
+}
+.mainForm3__intro a:hover {
+  text-decoration: underline;
+}
+
+.form_m3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 100%;
+  max-width: 380px;
+}
+
+.form_m3 label {
+  font-size: 0.875rem;
+  line-height: 1.4;
+  color: var(--dark);
+  margin-bottom: 10px;
+}
+
+.form_m3 input {
+  font-family: "Open Sans", sans-serif;
+  font-size: 0.875rem;
+  border: 1px solid #bdbdbd;
+  line-height: 2.875rem;
+  padding: 0 10px;
+  outline: none;
+  width: 100%;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+}
+
+input.work_email_m3 {
+  display: none;
+}
+
+.form_m3 .submit_m3 {
+  font-family: "Open Sans", sans-serif;
+  outline: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  font-size: 1rem;
+  line-height: 1.25rem;
+  color: #fff;
+  background: var(--brick);
+  padding: 0.75rem 2rem;
+  border-radius: 6px;
+  text-decoration: none;
+  border: none;
+}
+
+.form_m3 .submit_m3:hover {
+  background: var(--reden);
+}
+
+.form_m3alrightBox {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.form_m3alrightBox input {
+  font-size: 0.875rem;
+  border: none;
+  line-height: auto;
+  padding: 0;
+  outline: none;
+  width: auto;
+  margin-bottom: 0;
+}
+
+.form_m3alrightBox span {
+  padding-left: 10px;
+  font-size: 0.875rem;
+  line-height: 1.4;
+  color: var(--dark);
+}
+
 .formPolycy__text {
   width: 100%;
   margin-bottom: 10px;
