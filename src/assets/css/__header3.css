@@ -214,18 +214,18 @@
 .header3__contItem {
   display: flex;
   align-items: center;
-  color: #4f4f4f;
+  color: var(--brick);
   text-decoration: none;
 }
 
 .header3__contItem i {
   font-size: 1rem;
-  color: #4f4f4f;
+  color: var(--brick);
   margin-right: 20px;
 }
 
 .header3__contItem:hover i {
-  color: var(--brick);
+  color: var(--reden);
 }
 
 .header3__contItemInfo {
@@ -258,10 +258,10 @@
 
 .header3__menuBtn i {
   font-size: 3rem;
-  color: var(--brown1);
+  color: var(--brick);
   transition: all 0.3s;
 }
 
 .header3__menuBtn:hover i {
-  color: var(--brick);
+  color: var(--reden);
 }
