@@ -216,6 +216,9 @@ input.work_email13 {
   margin: 0 auto;
   display: flex;
   justify-content: center;
+  background-position: right center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .mainForm3__left {
@@ -226,9 +229,9 @@ input.work_email13 {
 }
 .mainForm3__right {
   width: 60%;
-  background-position: right center;
+  /* background-position: right center;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: cover; */
 }
 
 .mainForm3__intro {
