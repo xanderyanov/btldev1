@@ -521,6 +521,7 @@ form.form-search .inputs-group .search-submit:hover {
   align-items: center;
   text-decoration: none;
   border: 1px solid var(--x1grey);
+  border-radius: 4px;
 }
 
 .pagin ul.pagination li.control a {
@@ -539,14 +540,14 @@ form.form-search .inputs-group .search-submit:hover {
 .pagin ul.pagination li.active a,
 .pagin ul.pagination li a:hover {
   color: #fff;
-  border: 1px solid var(--link1);
-  background: var(--link1);
+  border: 1px solid var(--brick);
+  background: var(--brick);
 }
 
 .pagin ul.pagination li.control.active a,
 .pagin ul.pagination li.control a:hover {
   color: #fff;
-  border: 1px solid var(--link1);
+  border: 1px solid var(--brick);
 }
 
 .rows {

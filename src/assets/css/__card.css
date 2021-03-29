@@ -186,7 +186,7 @@
 
 .innerPriceBox3__title {
   font-size: 2rem;
-  color: #333333;
+  color: var(--brick);
   font-weight: 700;
   line-height: 1.4;
   margin: 0;
@@ -198,7 +198,7 @@
 
 .innerPriceBox3__close i {
   font-size: 1.5rem;
-  color: var(--tc0);
+  color: var(--brick);
 }
 
 .innerPriceBox3__content {

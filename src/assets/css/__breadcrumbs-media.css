@@ -35,6 +35,16 @@
   .breadcrumbs3__area {
     padding: 10px 0 10px;
   }
+  .backBtn3 i {
+    font-size: 0.875rem;
+    line-height: 1.125rem;
+  }
+
+  .backBtn3 span {
+    font-size: 0.75rem;
+    line-height: 1.125rem;
+    margin-left: 5px;
+  }
 }
 
 @media only screen and (max-width: 400px) {

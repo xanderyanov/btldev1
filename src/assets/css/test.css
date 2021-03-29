@@ -788,6 +788,10 @@ ul.serviceLink_mobile li a:hover {
   margin-bottom: 15px;
 }
 
+.title3 h1 {
+  margin: 0 0 10px;
+}
+
 .title3 h2 {
   margin: 0;
   color: #592004;

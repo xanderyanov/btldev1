@@ -127,6 +127,13 @@ $(function () {
     e.stopPropagation();
   });
 
+  if (window.history.length > 1) {
+    $(".backBtn3__outer").show();
+    $(".backBtn3").on("click", function () {
+      window.history.back();
+    });
+  }
+
   // var $iframes = $( "iframe" );
   // $iframes.each(function () {
   //   $( this ).data( "ratio", this.height / this.width )

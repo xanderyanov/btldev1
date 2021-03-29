@@ -12,12 +12,17 @@ mixin breadcrumbs
 
 mixin breadcrumbs3
   .breadcrumbs3__area.w0
-    .breadcrumbs3.w1
-      div
-        a(href='#') Главная 
-      |           /
-      div
-        a(href='#') Категория 
-      |           /
-      div
-        span Текущий пункт
+    .breadcrumbs3__wrapper
+      .breadcrumbs3.w1
+        div
+          a(href='#') Главная 
+        |           /
+        div
+          a(href='#') Категория 
+        |           /
+        div
+          span Текущий пункт
+      .backBtn3__outer
+        .backBtn3 
+          i.icon-leftss2
+          span Назад

@@ -323,7 +323,7 @@ li.endLeftBlock {
 .search1__btn {
   border: none;
   outline: none;
-  background: var(--x1grey);
+  background: var(--brick);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -336,7 +336,7 @@ li.endLeftBlock {
 }
 
 .search1__btn:hover {
-  background: var(--redFillhover);
+  background: var(--reden);
 }
 
 .search1__btn i {
@@ -378,7 +378,7 @@ li.endLeftBlock {
   font-size: 1.125rem;
   line-height: 1.3;
   font-weight: 500;
-  color: var(--tc0);
+  color: var(--brick);
   background: var(--x1greySuperLight);
   border-bottom: 1px solid var(--bg2);
   transition: all 0.3s;
@@ -436,7 +436,7 @@ li.endLeftBlock {
 }
 
 .leftMenu li.lev1.active > .lev_a_wrapper > a {
-  background: var(--tc0);
+  background: var(--brick);
   border-bottom: 1px solid #fff;
   color: #fff;
 }
@@ -626,18 +626,20 @@ li.endLeftBlock {
 .mastersTagMenu {
   display: flex;
   flex-wrap: wrap;
+  margin: 0 -5px;
 }
 
 .menuCategoryMastersLink {
   list-style: none;
   padding: 10px 20px;
   background: #ececec;
-  margin: 2px 2px;
+  margin: 2px 5px;
   cursor: pointer;
+  border-radius: 6px;
 }
 
 .menuCategoryMastersLink.active {
-  background: var(--color1);
+  background: var(--brick);
   color: #fff;
 }
 

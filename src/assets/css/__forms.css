@@ -174,9 +174,11 @@ input.work_email13 {
   border-radius: 6px;
   text-decoration: none;
   border: none;
+  transition: all 0.3s;
 }
 
 .form13 .submit13:hover {
+  background: var(--reden);
 }
 
 .alrightBox {

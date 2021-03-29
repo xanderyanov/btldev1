@@ -409,3 +409,25 @@
 .outerLink3:hover {
   background: var(--link1hov);
 }
+
+a.aboutApparatus {
+  border: 2px solid var(--brick);
+  color: var(--brick);
+  font-weight: bold;
+  font-size: 1.25rem;
+  line-height: 1.5;
+  border-radius: 6px;
+  text-decoration: none !important;
+  margin: 50px auto 0;
+  display: flex;
+  justify-content: center;
+  padding: 10px 50px;
+  transition: all 0.3s;
+  text-align: center;
+}
+
+a.aboutApparatus:hover {
+  color: #fff;
+  border: 2px solid var(--reden);
+  background: var(--reden);
+}

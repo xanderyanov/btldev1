@@ -4,6 +4,7 @@
 
 .mainTop__outer {
   position: relative;
+  padding: 20px 0;
 }
 
 .mainTop {
@@ -251,9 +252,11 @@
 .mainTop__hideBoxInnerTitle i {
   font-size: 2rem;
   margin-right: 10px;
+  color: var(--brick);
 }
 .mainTop__hideBoxInnerTitle span {
   font-size: 2rem;
+  color: var(--brick);
 }
 
 .mainTop__hideBoxClose {
@@ -262,6 +265,7 @@
 
 .mainTop__hideBoxClose i {
   font-size: 2rem;
+  color: var(--brick);
 }
 
 .mainTop__hideBoxInnerContent {

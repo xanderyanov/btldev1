@@ -12,8 +12,9 @@
 }
 
 .mastersBox__outer {
-  width: 80%;
-  padding-left: 1.25rem;
+  /* width: 80%;
+  padding-left: 1.25rem; */
+  width: 100%;
 }
 
 .mastersBox {
