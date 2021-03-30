@@ -433,6 +433,7 @@ $(function () {
   $(".phone2").mask("+7 (999) 999-9999");
   $(".phone3").mask("+7 (999) 999-9999");
   $(".phone4").mask("+7 (999) 999-9999");
+  $(".phone_mf3").mask("+7 (999) 999-9999");
 
   // прокрутка до якорtq на странице процедуры
 
@@ -824,6 +825,75 @@ $(function () {
           $(".name_m3").val("").removeClass("error");
           $(".phone_m3").val("").removeClass("error");
           $(".checkbox_m3:checked").prop("checked", false);
+        }
+      );
+    }
+  });
+
+  $(".mf3").on("click", ".submit_mf3", function (e) {
+    e.preventDefault();
+    var masterName = $(".mf3_subj").text();
+    var subj = "Форма со страницы мастера " + masterName;
+    var name = $(".name_mf3").val();
+    var phone = $(".phone_mf3").val();
+    var checkbox = $(".checkbox_mf3");
+    var workemail = $(".work_email_mf3").val();
+    var r = /^[\w\.\d-_]+@[\w\.\d-_]+\.\w{2,4}$/i;
+    if (name == "") {
+      swal({
+        title: "Поле Имя пустое",
+        text: "Заполните поле имя",
+        type: "error",
+        confirmButtonText: "ок",
+      });
+      $(".name_mf3").addClass("error");
+      setTimeout(function () {
+        $(".name_mf3").removeClass("error");
+      }, 3000);
+    } else if (phone == "") {
+      swal({
+        title: "Поле Телефон пустое",
+        text: "Заполните поле телефон",
+        type: "error",
+        confirmButtonText: "ок",
+      });
+      $(".phone_mf3").addClass("error");
+      setTimeout(function () {
+        $(".phone_mf3").removeClass("error");
+      }, 3000);
+    } else if (workemail != "") {
+      swal({
+        title: "Ах ты жулик",
+        text: "Уберите робота от компьютера",
+        type: "error",
+        confirmButtonText: "ок",
+      });
+    } else if (checkbox.is(":checked") == false) {
+      swal({
+        title: "Отметьте чекбокс",
+        text: "Дайте свое согласие на обработку данных!",
+        type: "error",
+        confirmButtonText: "ок",
+      });
+    } else {
+      $.post(
+        "mail.php",
+        {
+          subj: subj,
+          name: name,
+          phone: phone,
+          // recaptcha: recaptcha,
+        },
+        function () {
+          swal({
+            title: "Спасибо",
+            text: "Ваше сообщение отправлено",
+            type: "success",
+            confirmButtonText: "ок",
+          });
+          $(".name_mf3").val("").removeClass("error");
+          $(".phone_mf3").val("").removeClass("error");
+          $(".checkbox_mf3:checked").prop("checked", false);
         }
       );
     }

@@ -48,10 +48,11 @@ mixin mastersBox
   .mastersBox
     .mastersBox__itemOuter.hidden(data-sid='62')
       a.mastersBox__item(href='#')
-        img(src='assets/img/sotr/chumakova-olga.jpg' alt='')
-        span.mastersBox__info
-          span Гольбрайх Геннадий Ефимович
-          span Главный врач
+        .mastersBox__itemImg
+          img(src='assets/img/sotr/chumakova-olga.jpg' alt='')
+        .mastersBox__itemInfo
+          .mastersBox__itemInfoTitle Гольбрайх Геннадий Ефимович
+          .mastersBox__itemInfoDesc Главный врач
     .mastersBox__itemOuter.visible(data-sid='17,18,19,21')
       a.mastersBox__item(href='#')
         img(src='assets/img/sotr/chumakova-olga.jpg' alt='')
@@ -203,3 +204,19 @@ mixin mastersBox
         span.mastersBox__info
           span Шелухина Ирина
           span Мега-маркетолог
+
+
+
+mixin masters3
+  .wideBox3__area 
+    .wideBox3
+      .title3
+        h1 Специалисты нашего центра
+      .mastersBox__outer
+        +mastersTagMenu
+        +mastersBox
+      .masterBox__content
+        .content
+          p Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut aliquam debitis officia voluptatibus vero repellat ab quia amet assumenda fuga. Quo, inventore, molestias, commodi sapiente necessitatibus soluta fugiat rerum impedit ullam dicta sequi saepe? Tempora molestiae nam quibusdam eaque sunt fugiat rem et nihil quisquam, voluptate minus dolorem, hic repellendus.
+          p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat, odit molestias hic accusantium odio repellendus expedita iste ut cumque porro officia unde dolorem voluptatem autem accusamus. Amet et deserunt laboriosam!
+          p Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, repellendus?

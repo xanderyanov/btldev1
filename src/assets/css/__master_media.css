@@ -10,6 +10,9 @@
     width: 30%;
     padding: 0 0 0 10px;
   }
+  .master3__page {
+    padding: 0 10px;
+  }
 }
 
 @media only screen and (max-width: 1140px) {
@@ -33,6 +36,33 @@
   }
   .master__face {
     width: 40%;
+  }
+  .master3__top {
+    padding: 20px 30px;
+  }
+  .master3__topContentLeft {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 0 0 20px 0;
+  }
+  .master3__topContentRight {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0 20px 0;
+  }
+  .master3__formOuter {
+    width: 100%;
+    max-width: none;
+  }
+  .mf3 {
+    max-width: 380px;
+  }
+  .mf3__area {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 }
 

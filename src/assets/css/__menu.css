@@ -621,6 +621,7 @@ li.endLeftBlock {
 
 .mastersTagMenu__outer {
   width: 100%;
+  padding: 40px 0;
 }
 
 .mastersTagMenu {
@@ -630,12 +631,18 @@ li.endLeftBlock {
 }
 
 .menuCategoryMastersLink {
+  padding: 10px 30px;
+  margin: 5px;
+  text-decoration: none;
+  transition: all 0.3s;
+  border: 1px solid #e0e0e0;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  color: #4f4f4f;
+  border-radius: 50px;
   list-style: none;
-  padding: 10px 20px;
-  background: #ececec;
-  margin: 2px 5px;
   cursor: pointer;
-  border-radius: 6px;
 }
 
 .menuCategoryMastersLink.active {

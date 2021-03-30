@@ -309,6 +309,7 @@ input.work_email_m3 {
   border-radius: 6px;
   text-decoration: none;
   border: none;
+  transition: all .3s;
 }
 
 .form_m3 .submit_m3:hover {
@@ -731,4 +732,109 @@ input.work_email4 {
 .submit4:hover {
   background: var(--link1hov);
   border: 1px solid var(--link1hov);
+}
+
+
+
+/*************************************/
+.mf3__intro {
+  width: 100%;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.mf3__intro span {
+  font-size: 1rem;
+  line-height: 1.4;
+  color: var(--dark);
+  margin-bottom: 5px;
+}
+
+.mf3__intro a {
+  font-size: 1rem;
+  line-height: 1.4;
+  color: var(--dark);
+  font-weight: 700;
+  text-decoration: none;
+}
+.mf3__intro a:hover {
+  text-decoration: underline;
+}
+
+.mf3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+}
+
+.mf3 label {
+  font-size: 0.875rem;
+  line-height: 1.4;
+  color: var(--dark);
+  margin-bottom: 10px;
+}
+
+.mf3 input {
+  font-family: "Open Sans", sans-serif;
+  font-size: 0.875rem;
+  border: 1px solid #bdbdbd;
+  line-height: 2.875rem;
+  padding: 0 10px;
+  outline: none;
+  width: 100%;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+}
+
+input.work_email_mf3 {
+  display: none;
+}
+
+.submit_mf3 {
+  font-family: "Open Sans", sans-serif;
+  outline: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  font-size: 1rem;
+  line-height: 1.25rem;
+  color: #fff;
+  background: var(--brick);
+  padding: 0.75rem 2rem;
+  border-radius: 6px;
+  text-decoration: none;
+  border: none;
+  transition: all .3s;
+}
+
+.submit_mf3:hover {
+  background: var(--reden);
+}
+
+.form_mf3alrightBox {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.form_mf3alrightBox input {
+  font-size: 0.875rem;
+  border: none;
+  line-height: auto;
+  padding: 0;
+  outline: none;
+  width: auto;
+  margin-bottom: 0;
+}
+
+.form_mf3alrightBox span {
+  padding-left: 10px;
+  font-size: 0.875rem;
+  line-height: 1.4;
+  color: var(--dark);
 }
