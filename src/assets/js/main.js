@@ -26,6 +26,20 @@ $(function () {
     }
   });
 
+  // $(window).on("navigate", function (event, data) {
+  //   var direction = data.state.direction;
+  //   if (direction == "back") {
+  //     console.log("Назад");
+  //   }
+  //   if (direction == "forward") {
+  //     console.log("Вперед");
+  //   }
+  // });
+
+  // $(window).on("navigate", function (event, data) {
+  //   console.log(data.state);
+  // });
+
   //-START Слайдер похожих товаров на странице VARIANTS
 
   var imgSliderOptions = {};
@@ -97,31 +111,31 @@ $(function () {
         },
       },
     };
-  }
 
-  var swiper;
-  var swiperNowInit = false;
-  console.log(swiperNowInit);
-  if ($(window).width() <= 768) {
-    swiper = new Swiper(".blogSlider-container", blogSliderOptions);
-    swiperNowInit = true;
-  }
-  $(window).on("resize", function () {
-    if ($(window).width() <= 768) {
-      if (!swiperNowInit) {
-        swiper = new Swiper(".blogSlider-container", blogSliderOptions);
-        swiperNowInit = true;
-      } else {
-        swiper.update();
-      }
-    } else {
-      if (swiperNowInit) {
-        swiperNowInit = false;
-        swiper.destroy();
-      }
-    }
+    var swiper;
+    var swiperNowInit = false;
     console.log(swiperNowInit);
-  });
+    if ($(window).width() <= 768) {
+      swiper = new Swiper(".blogSlider-container", blogSliderOptions);
+      swiperNowInit = true;
+    }
+    $(window).on("resize", function () {
+      if ($(window).width() <= 768) {
+        if (!swiperNowInit) {
+          swiper = new Swiper(".blogSlider-container", blogSliderOptions);
+          swiperNowInit = true;
+        } else {
+          swiper.update();
+        }
+      } else {
+        if (swiperNowInit) {
+          swiperNowInit = false;
+          swiper.destroy();
+        }
+      }
+      console.log(swiperNowInit);
+    });
+  }
 
   $(".blogSliderItem__coverVideo").on("click", function (e) {
     e.stopPropagation();

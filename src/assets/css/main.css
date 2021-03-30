@@ -10,6 +10,8 @@ body {
   /* background: #f3f2f2; */
   background: #fafafa;
   /* background: var(--bg0); */
+  display: flex;
+  flex-direction: column;
 }
 
 .site__header {
@@ -23,6 +25,7 @@ body {
 
 .site__footer {
   position: relative;
+  margin-top: auto;
 }
 
 .mt20 {
