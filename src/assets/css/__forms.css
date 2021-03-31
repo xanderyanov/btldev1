@@ -309,7 +309,7 @@ input.work_email_m3 {
   border-radius: 6px;
   text-decoration: none;
   border: none;
-  transition: all .3s;
+  transition: all 0.3s;
 }
 
 .form_m3 .submit_m3:hover {
@@ -734,8 +734,6 @@ input.work_email4 {
   border: 1px solid var(--link1hov);
 }
 
-
-
 /*************************************/
 .mf3__intro {
   width: 100%;
@@ -767,7 +765,6 @@ input.work_email4 {
   flex-direction: column;
   justify-content: space-between;
   flex-wrap: wrap;
-
 }
 
 .mf3 label {
@@ -809,7 +806,7 @@ input.work_email_mf3 {
   border-radius: 6px;
   text-decoration: none;
   border: none;
-  transition: all .3s;
+  transition: all 0.3s;
 }
 
 .submit_mf3:hover {
@@ -838,3 +835,5 @@ input.work_email_mf3 {
   line-height: 1.4;
   color: var(--dark);
 }
+
+/*******************************************/

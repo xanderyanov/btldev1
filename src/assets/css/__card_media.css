@@ -143,6 +143,15 @@
   .card3__itemInfo {
     width: 50%;
   }
+  /* .card3__itemImg_ap:after {
+    padding-top: 100%;
+  } */
+  .card3__item_ap {
+    align-items: center;
+  }
+  .card3__itemInfo_ap {
+    padding: 20px 10px;
+  }
 }
 
 @media only screen and (max-width: 320px) {
