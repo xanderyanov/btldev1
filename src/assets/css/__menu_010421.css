@@ -372,26 +372,17 @@ li.endLeftBlock {
 
 .leftMenu li.lev1 > .lev_a_wrapper a {
   display: block;
-  padding: 11px 40px 11px 16px;
+  padding: 0.625rem 2.25rem 0.625rem 0.625rem;
   text-decoration: none;
   width: 100%;
   font-size: 1.125rem;
   line-height: 1.3;
   font-weight: 500;
   color: var(--brick);
-  background: #fff;
+  background: var(--x1greySuperLight);
   border-bottom: 1px solid var(--bg2);
   transition: all 0.3s;
   position: relative;
-}
-
-.leftMenu li.lev1 > .lev_a_wrapper:hover > a {
-  background: var(--reden);
-  color: #fff;
-}
-
-.leftMenu li.lev1 > .lev_a_wrapper:hover > .openInner:after {
-  color: #fff;
 }
 
 .leftMenu li.lev1 > .lev_a_wrapper > .openInner {
@@ -399,8 +390,8 @@ li.endLeftBlock {
   top: 0;
   right: 0;
   height: 100%;
-  width: 30px;
-  background: transparent;
+  width: 1.625rem;
+  background: #ececec;
   border-bottom: 1px solid var(--bg2);
   cursor: pointer;
   transition: all 0.3s;
@@ -419,7 +410,7 @@ li.endLeftBlock {
 }
 
 .leftMenu li.lev1 > .lev_a_wrapper > .openInner:hover {
-  background: var(--brick);
+  background: var(--x1greyLight);
 }
 
 .leftMenu li.lev1 > .lev_a_wrapper > .openInner img {
@@ -428,17 +419,12 @@ li.endLeftBlock {
 }
 
 .leftMenu li.lev1.active > .lev_a_wrapper > .openInner {
-  background: var(--reden);
+  background: var(--tc0);
   border-bottom: 1px solid #fff;
 }
 
 .leftMenu li.lev1.active > .lev_a_wrapper > .openInner:after {
   color: #fff;
-}
-
-.leftMenu li.lev1.active > .lev_a_wrapper > .openInner:hover {
-  color: #fff;
-  background: var(--brick);
 }
 
 .leftMenu li.lev1 > ul {
@@ -450,13 +436,17 @@ li.endLeftBlock {
 }
 
 .leftMenu li.lev1.active > .lev_a_wrapper > a {
-  background: var(--reden);
+  background: var(--brick);
   border-bottom: 1px solid #fff;
   color: #fff;
 }
 
+.leftMenu li.lev1 > .lev_a_wrapper > a:hover {
+  background: var(--x1greyLight);
+}
+
 .leftMenu li.lev1.active > .lev_a_wrapper > a:hover {
-  background: var(--reden);
+  background: var(--tc0);
   border-bottom: 1px solid #fff;
   color: #fff;
 }
@@ -478,7 +468,7 @@ li.endLeftBlock {
   font-size: 1rem;
   line-height: 1.3;
   color: var(--tc0);
-  background: #fff;
+  background: #ececec;
   /* background: var(--bg0); */
   border-bottom: 1px solid var(--bg2);
   transition: all 0.3s;
@@ -490,8 +480,8 @@ li.endLeftBlock {
   top: 0;
   right: 0;
   height: 100%;
-  width: 30px;
-  background: transparent;
+  width: 1.625rem;
+  background: #ececec;
   border-bottom: 1px solid var(--bg2);
   cursor: pointer;
   transition: all 0.3s;
@@ -510,7 +500,7 @@ li.endLeftBlock {
 }
 
 .leftMenu li.lev2 > .lev_a_wrapper > .openInner:hover {
-  background: #cecbda;
+  background: var(--x1greyLight);
 }
 
 .leftMenu li.lev2 > .lev_a_wrapper > .openInner img {
@@ -519,12 +509,8 @@ li.endLeftBlock {
 }
 
 .leftMenu li.lev2.active > .lev_a_wrapper > .openInner {
-  background: var(--reden);
+  background: var(--tc0);
   border-bottom: 1px solid #fff;
-}
-
-.leftMenu li.lev2.active > .lev_a_wrapper > .openInner:hover {
-  background: var(--brick);
 }
 
 .leftMenu li.lev2.active > .lev_a_wrapper > .openInner:after {
@@ -540,18 +526,17 @@ li.endLeftBlock {
 }
 
 .leftMenu li.lev2.active > .lev_a_wrapper > a {
-  background: var(--reden);
+  background: var(--tc0);
   border-bottom: 1px solid #fff;
   color: #fff;
 }
 
 .leftMenu li.lev2 > .lev_a_wrapper > a:hover {
-  /* background: var(--x1greyLight); */
-  background: #cecbda;
+  background: var(--x1greyLight);
 }
 
 .leftMenu li.lev2.active > .lev_a_wrapper > a:hover {
-  background: var(--reden);
+  background: var(--tc0);
   border-bottom: 1px solid #fff;
   color: #fff;
 }
@@ -580,8 +565,7 @@ li.endLeftBlock {
 }
 
 .leftMenu li.lev3.active > .lev_a_wrapper a {
-  background: var(--reden);
-  color: #fff;
+  background: rgba(255, 128, 0, 0.5);
 }
 
 .leftMenu li.lev3 > .lev_a_wrapper a:before {
@@ -597,16 +581,12 @@ li.endLeftBlock {
   z-index: 10;
 }
 
-.leftMenu li.lev3.active > .lev_a_wrapper a:before {
-  background: #fff;
-}
-
 .leftMenu li.lev3 > .lev_a_wrapper a:hover {
-  background: #cecbda;
+  background: #ececec;
 }
 
 .leftMenu li.lev3.active > .lev_a_wrapper a:hover {
-  background: var(--reden);
+  background: rgba(255, 128, 0, 0.8);
 }
 
 .leftMenu li span {

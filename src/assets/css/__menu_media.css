@@ -18,15 +18,9 @@
   .topMenu li {
     margin-right: 10px;
   }
-  .leftMenu__outer {
-    display: none;
-  }
 }
 
 @media only screen and (max-width: 920px) {
-  .leftMenu__outer {
-    width: 30%;
-  }
 }
 
 @media only screen and (max-width: 800px) {

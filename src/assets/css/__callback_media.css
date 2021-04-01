@@ -1,9 +1,9 @@
 @media only screen and (max-width: 1200px) {
   .callBackBtn {
-    left: 1rem;
+    right: 1rem;
   }
   .callBackBtn:hover {
-    left: 0.5rem;
+    right: 0.5rem;
   }
 }
 
@@ -28,6 +28,14 @@
 @media only screen and (max-width: 600px) {
   .callBackBtn_top {
     top: 50px;
+  }
+  .callBackBtn {
+    left: 1rem;
+    right: auto;
+  }
+  .callBackBtn:hover {
+    right: auto;
+    left: 0.5rem;
   }
 }
 

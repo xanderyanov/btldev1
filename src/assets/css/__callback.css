@@ -1,6 +1,7 @@
 .callBackBtn {
   position: fixed;
-  left: 3rem;
+  /* left: 3rem; */
+  right: 3rem;
   top: 50%;
   margin-top: -2rem;
   background: var(--brick);
@@ -21,7 +22,7 @@
 .callBackBtn:hover {
   height: 5rem;
   width: 5rem;
-  left: 2.5rem;
+  right: 2.5rem;
   margin-top: -2.5rem;
 }
 
