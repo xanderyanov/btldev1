@@ -25,6 +25,10 @@
   margin-top: -2.5rem;
 }
 
+.callBackBtn_top {
+  top: 120px;
+}
+
 @keyframes d {
   0% {
     opacity: 1;
@@ -49,7 +53,7 @@
 
 .callBack__overlay {
   position: fixed;
-  display: block;
+  display: none;
   top: 0;
   right: 0;
   bottom: 0;
@@ -73,12 +77,16 @@
   padding: 50px 30px 30px;
   background: #fff;
   position: relative;
+  width: 100%;
+  max-width: 414px;
+  display: none;
 }
 
 .callBack__close {
   position: absolute;
   top: 15px;
   right: 15px;
+  cursor: pointer;
 }
 
 .callBack__close i {
@@ -95,13 +103,13 @@
 
 .callback__intro h2 {
   margin: 0 0 10px;
+  font-size: 1.75rem;
 }
 
 .callback__intro span {
   font-size: 1rem;
   line-height: 1.4;
   color: var(--dark);
-  margin-bottom: 5px;
 }
 
 .callback__intro a {

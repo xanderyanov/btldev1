@@ -1,4 +1,10 @@
 @media only screen and (max-width: 1200px) {
+  .callBackBtn {
+    left: 1rem;
+  }
+  .callBackBtn:hover {
+    left: 0.5rem;
+  }
 }
 
 @media only screen and (max-width: 1140px) {
@@ -20,12 +26,50 @@
 }
 
 @media only screen and (max-width: 600px) {
+  .callBackBtn_top {
+    top: 50px;
+  }
 }
 
 @media only screen and (max-width: 480px) {
+  .callBack__form {
+    width: 90%;
+    padding: 40px 20px 20px;
+  }
+  .callback input {
+    line-height: 2rem;
+    margin-bottom: 10px;
+  }
+  .callback__intro h2 {
+    font-size: 1.5rem;
+  }
+  .form_callbackalrightBox {
+    margin-bottom: 10px;
+  }
+  .callback label {
+    margin-bottom: 5px;
+  }
 }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 414px) {
+  .callBack__form {
+    padding: 40px 15px 15px;
+  }
+  .callback__intro {
+    margin-bottom: 10px;
+  }
+  .callback__intro h2 {
+    font-size: 1.25rem;
+    text-align: center;
+  }
+  .form_callbackalrightBox span {
+    font-size: 0.75rem;
+    line-height: 1.2;
+  }
+  .callBack__close {
+    top: 10px;
+    right: 10px;
+  }
 }
 
 @media only screen and (max-width: 320px) {

@@ -426,7 +426,7 @@ $(function () {
     }
   }, 500);
 
-  $(".phoneZ").mask("+7 (999) 999-9999");
+  $(".phone_callback").mask("+7 (999) 999-9999");
   $(".phone1").mask("+7 (999) 999-9999");
   $(".phone13").mask("+7 (999) 999-9999");
   $(".phone_m3").mask("+7 (999) 999-9999");
@@ -558,29 +558,56 @@ $(function () {
   // formZ
 
   // Открытие и закрытие заказа звонка по кнопке
-  $(".header__callAction").click(function (e) {
+  $(window).on("scroll", function () {
+    if ($(this).scrollTop() > 500) {
+      $(".callBackBtn").addClass("callBackBtn_top");
+    } else {
+      $(".callBackBtn").removeClass("callBackBtn_top");
+    }
+  });
+
+  $(".callBackBtn").click(function (e) {
     e.preventDefault();
     if ($(this).hasClass("active")) {
       $(this).removeClass("active");
-      $(".formZ__area").slideUp(200);
+      $(".callBack__form").addClass("bounceOutUp").removeClass("bounceInDown").fadeOut(600);
+      $(".callBack__overlay").fadeOut();
     } else {
       $(this).addClass("active");
-      $(".formZ__area").slideDown(200);
+      $(".callBack__form").removeClass("bounceOutUp").addClass("bounceInDown").fadeIn(200);
+      $(".callBack__overlay").fadeIn();
     }
   });
+  $(".callBack__form").on("click", function (e) {
+    e.stopPropagation();
+  });
   // Закрытие заказа звонка по кнопке Close
-  $(".formZ__close").click(function () {
-    $(".header__callAction").removeClass("active");
-    $(".formZ__area").slideUp(250);
+  $(".callBack__close").click(function () {
+    $(".callBackBtn").removeClass("active");
+    $(".callBack__form").addClass("bounceOutUp").removeClass("bounceInDown").fadeOut(600);
+    setTimeout(function () {
+      $(".callBack__overlay").fadeOut();
+    }, 800);
   });
 
-  $(".formZ").on("click", ".submitZ", function (e) {
+  // Закрытие заказа звонка по оверлею
+  $(".callBack__overlay").click(function () {
+    $(".callBackBtn").removeClass("active");
+    $(".callBack__form").addClass("bounceOutUp").removeClass("bounceInDown").fadeOut(600);
+    setTimeout(function () {
+      $(".callBack__overlay").fadeOut();
+    }, 800);
+  });
+
+  $(".callback").on("click", ".submit_callback", function (e) {
     e.preventDefault();
-    var name = $(".nameZ").val();
-    var phone = $(".phoneZ").val();
-    var workemail = $(".work_emailZ").val();
+    e.stopPropagation();
+    var subj = "Форма заказа обратного звонка";
+    var name = $(".name_callback").val();
+    var phone = $(".phone_callback").val();
+    var checkbox = $(".checkbox_callback");
+    var workemail = $(".work_email_callback").val();
     var r = /^[\w\.\d-_]+@[\w\.\d-_]+\.\w{2,4}$/i;
-    // var recaptcha = grecaptcha.getResponse("recaptcha1");
     if (name == "") {
       swal({
         title: "Поле Имя пустое",
@@ -588,9 +615,9 @@ $(function () {
         type: "error",
         confirmButtonText: "ок",
       });
-      $(".nameZ").addClass("error");
+      $(".name_callback").addClass("error");
       setTimeout(function () {
-        $(".nameZ").removeClass("error");
+        $(".name_callback").removeClass("error");
       }, 3000);
     } else if (phone == "") {
       swal({
@@ -599,9 +626,9 @@ $(function () {
         type: "error",
         confirmButtonText: "ок",
       });
-      $(".phoneZ").addClass("error");
+      $(".phone_callback").addClass("error");
       setTimeout(function () {
-        $(".phoneZ").removeClass("error");
+        $(".phone_callback").removeClass("error");
       }, 3000);
     } else if (workemail != "") {
       swal({
@@ -610,24 +637,36 @@ $(function () {
         type: "error",
         confirmButtonText: "ок",
       });
+    } else if (checkbox.is(":checked") == false) {
+      swal({
+        title: "Отметьте чекбокс",
+        text: "Дайте свое согласие на обработку данных!",
+        type: "error",
+        confirmButtonText: "ок",
+      });
     } else {
       $.post(
-        "mailz.php",
+        "mail.php",
         {
+          subj: subj,
           name: name,
           phone: phone,
         },
         function () {
           swal({
             title: "Спасибо",
-            text: "Ваше сообщение отправлено",
+            text: "Заказ обратного звонка отправлен, наши менеджеры свяжутся с Вами в ближайшее время",
             type: "success",
             confirmButtonText: "ок",
           });
-          $(".nameZ").val("").removeClass("error");
-          $(".phoneZ").val("").removeClass("error");
-          $(".header__callAction").removeClass("active");
-          $(".formZ__area").slideUp(250);
+          $(".name_callback").val("").removeClass("error");
+          $(".phone_callback").val("").removeClass("error");
+          $(".checkbox_callback:checked").prop("checked", false);
+          $(".callBackBtn").removeClass("active");
+          $(".callBack__form").addClass("bounceOutUp").removeClass("bounceInDown").fadeOut(600);
+          setTimeout(function () {
+            $(".callBack__overlay").fadeOut();
+          }, 800);
         }
       );
     }
