@@ -570,11 +570,11 @@ $(function () {
     e.preventDefault();
     if ($(this).hasClass("active")) {
       $(this).removeClass("active");
-      $(".callBack__form").addClass("bounceOutUp").removeClass("bounceInDown").fadeOut(600);
+      $(".callBack__form").hide(600);
       $(".callBack__overlay").fadeOut();
     } else {
       $(this).addClass("active");
-      $(".callBack__form").removeClass("bounceOutUp").addClass("bounceInDown").fadeIn(200);
+      $(".callBack__form").show(200);
       $(".callBack__overlay").fadeIn();
     }
   });
@@ -584,7 +584,7 @@ $(function () {
   // Закрытие заказа звонка по кнопке Close
   $(".callBack__close").click(function () {
     $(".callBackBtn").removeClass("active");
-    $(".callBack__form").addClass("bounceOutUp").removeClass("bounceInDown").fadeOut(600);
+    $(".callBack__form").fadeOut(600);
     setTimeout(function () {
       $(".callBack__overlay").fadeOut();
     }, 800);
@@ -593,7 +593,7 @@ $(function () {
   // Закрытие заказа звонка по оверлею
   $(".callBack__overlay").click(function () {
     $(".callBackBtn").removeClass("active");
-    $(".callBack__form").addClass("bounceOutUp").removeClass("bounceInDown").fadeOut(600);
+    $(".callBack__form").fadeOut(600);
     setTimeout(function () {
       $(".callBack__overlay").fadeOut();
     }, 800);
