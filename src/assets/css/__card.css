@@ -115,7 +115,7 @@
 }
 
 .card3__itemInfoContent {
-  margin: 20px 0 0 0;
+  margin: 10px 0 0 0;
   font-size: 1rem;
   color: #000;
 }
@@ -124,7 +124,7 @@
   font-size: 0.875rem;
   line-height: 1.4;
   color: var(--dark);
-  margin-bottom: 1.25rem;
+  margin-bottom: 10px;
 }
 
 .card3__itemInfoContent ul {
@@ -136,7 +136,7 @@
   color: var(--dark);
   font-weight: 600;
   font-size: 0.875rem;
-  line-height: 1.8;
+  line-height: 1.4;
   color: var(--dark);
 }
 /* .card3__itemInfoContent li:before {
