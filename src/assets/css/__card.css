@@ -240,3 +240,90 @@
   padding: 0 5px 0 0;
   max-height: 60vh;
 }
+
+/*********************************************/
+.eCard {
+  display: flex;
+  margin: 0 -10px;
+  flex-wrap: wrap;
+  padding: 10px 0 0 0;
+}
+
+.eCard__itemOuter {
+  width: 50%;
+  padding: 10px;
+}
+
+.eCard__item {
+  width: 100%;
+  padding-top: 48%;
+  position: relative;
+  box-shadow: 0px 6px 15px rgb(0 0 0 / 8%);
+  text-decoration: none;
+  display: block;
+  transition: all 0.3s;
+}
+
+.eCard__item:hover {
+  box-shadow: 0px 6px 15px rgb(0 0 0 / 30%);
+}
+
+.eCard__itemInner {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  background: #fff;
+}
+
+.eCard__itemInnerLeft {
+  width: 40%;
+  height: 100%;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.eCard__itemInnerRight {
+  width: 60%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 10px 10px 10px 5%;
+  justify-content: center;
+}
+
+.eCard__itemTitle {
+  font-weight: bold;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  color: var(--dark);
+}
+
+.eCard__itemContent {
+  margin: 10px 0 0 0;
+  font-size: 1rem;
+  color: #000;
+}
+
+.eCard__itemContent p {
+  font-size: 0.875rem;
+  line-height: 1.4;
+  color: var(--dark);
+  margin-bottom: 10px;
+}
+
+.eCard__itemContent ul {
+  padding: 0;
+  list-style: none;
+}
+
+.eCard__itemContent li {
+  color: var(--dark);
+  font-weight: 600;
+  font-size: 0.875rem;
+  line-height: 1.4;
+  color: var(--dark);
+}

@@ -12,7 +12,14 @@
     margin: 5px -5px 0;
   }
 
+  .eCard {
+    margin: 5px -5px 0;
+  }
+
   .card3__itemOuter {
+    padding: 5px;
+  }
+  .eCard__itemOuter {
     padding: 5px;
   }
   .card3__itemInfo {
@@ -42,6 +49,18 @@
 @media only screen and (max-width: 768px) {
   .card3__itemOuter {
     width: 100%;
+  }
+  .eCard__itemOuter {
+    width: 100%;
+  }
+  .eCard__itemTitle {
+    font-size: 1.5rem;
+  }
+  .eCard__itemContent p {
+    font-size: 1rem;
+  }
+  .eCard__itemContent li {
+    font-size: 1rem;
   }
   .card3__itemImg {
     width: 40%;
@@ -104,6 +123,15 @@
   .innerPriceBox3 {
     width: 90%;
     padding: 20px;
+  }
+  .eCard__itemTitle {
+    font-size: 1.25rem;
+  }
+  .eCard__itemContent p {
+    font-size: 0.875rem;
+  }
+  .eCard__itemContent li {
+    font-size: 0.845rem;
   }
 }
 
