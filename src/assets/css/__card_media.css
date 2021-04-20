@@ -32,6 +32,13 @@
     bottom: 10px;
     right: 10px;
   }
+  .eCard__itemContent p {
+    font-size: 12px;
+  }
+
+  .eCard__itemContent li {
+    font-size: 12px;
+  }
 }
 
 @media only screen and (max-width: 920px) {
@@ -54,13 +61,13 @@
     width: 100%;
   }
   .eCard__itemTitle {
-    font-size: 1.5rem;
+    font-size: 18px;
   }
   .eCard__itemContent p {
-    font-size: 1rem;
+    font-size: 14px;
   }
   .eCard__itemContent li {
-    font-size: 1rem;
+    font-size: 14px;
   }
   .card3__itemImg {
     width: 40%;
@@ -97,41 +104,27 @@
   .card3 {
     margin: 0 -5px 0;
   }
-  /* .card3__itemInfo {
-    padding: 10px;
-  } */
-  /* .card3__itemImg {
-    width: 50%;
-  }
-
-  .card3__itemInfo {
-    width: 50%;
-  } */
-  /* .card3__itemInfoTitle {
-    font-size: 1.25rem;
-  } */
   .card3__itemInfoContent {
     margin: 5px 0 0 0;
   }
   .innerPriceBox {
     width: 90%;
   }
-  /* .card3__priceBtn {
-    bottom: 10px;
-    right: 10px;
-  } */
   .innerPriceBox3 {
     width: 90%;
     padding: 20px;
   }
   .eCard__itemTitle {
-    font-size: 1.25rem;
+    font-size: 16px;
   }
   .eCard__itemContent p {
-    font-size: 0.875rem;
+    font-size: 12px;
   }
   .eCard__itemContent li {
-    font-size: 0.845rem;
+    font-size: 12px;
+  }
+  .eCard__itemContent {
+    margin: 5px 0 0 0;
   }
 }
 
@@ -145,7 +138,7 @@
     padding: 10px 10px;
   }
   .card3__itemInfoTitle {
-    font-size: 1rem;
+    font-size: 14px;
     font-weight: bold;
   }
   .card3__itemInfoContent {
@@ -158,12 +151,12 @@
   .card3__itemInfoContent ul {
     padding: 0 0 0 5px;
   }
-  .card3__priceBtn {
+  /* .card3__priceBtn {
     position: relative;
     margin: auto 0 0 auto;
     bottom: auto;
     right: auto;
-  }
+  } */
   .card3__itemImg {
     width: 50%;
   }
@@ -180,6 +173,24 @@
   .card3__itemInfo_ap {
     padding: 20px 10px;
   }
+  .eCard__itemTitle {
+    font-size: 14px;
+    line-height: 1.2;
+  }
+  .eCard__itemContent p {
+    font-size: 11px;
+    margin-bottom: 5px;
+    line-height: 1.2;
+  }
+  .eCard__itemContent li {
+    font-size: 11px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  /* .eCard__itemContent {
+    display: none;
+  } */
 }
 
 @media only screen and (max-width: 320px) {
