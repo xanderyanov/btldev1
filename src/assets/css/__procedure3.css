@@ -392,12 +392,13 @@
 }
 
 .priceBox3 table td:nth-child(1) {
-  width: 75%;
+  width: 70%;
 }
 
 .priceBox3 table td:nth-child(2) {
-  width: 25%;
+  width: 30%;
   text-align: right;
+  white-space: nowrap;
 }
 
 .outerLink3__area {

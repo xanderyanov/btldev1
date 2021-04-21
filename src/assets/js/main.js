@@ -363,11 +363,11 @@ $(function () {
     var allUl = $(this).closest("ul").find("li ul");
     var otherOpenInner = $(this).closest("ul").find(".openInner");
     if ($(this).hasClass("open")) {
-      $(this).removeClass("open");
+      $(this).removeClass("open transformOpen");
       daughterUl.slideUp(200);
     } else {
-      otherOpenInner.removeClass("open");
-      $(this).addClass("open");
+      otherOpenInner.removeClass("open transformOpen");
+      $(this).addClass("open transformOpen");
       allUl.slideUp(200);
       daughterUl.slideDown(200);
     }

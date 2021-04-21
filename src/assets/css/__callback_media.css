@@ -32,10 +32,14 @@
   .callBackBtn {
     left: 1rem;
     right: auto;
+    top: 70%;
   }
   .callBackBtn:hover {
     right: auto;
     left: 0.5rem;
+  }
+  .callBackBtn_top {
+    top: 120px;
   }
 }
 
