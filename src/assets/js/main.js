@@ -366,9 +366,9 @@ $(function () {
       $(this).removeClass("open transformOpen");
       daughterUl.slideUp(200);
     } else {
-      otherOpenInner.removeClass("open transformOpen");
+      // otherOpenInner.removeClass("open transformOpen");
       $(this).addClass("open transformOpen");
-      allUl.slideUp(200);
+      // allUl.slideUp(200);
       daughterUl.slideDown(200);
     }
 

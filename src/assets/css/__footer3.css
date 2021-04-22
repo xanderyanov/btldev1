@@ -125,6 +125,25 @@
   text-decoration: none !important;
 }
 
+.footerSGlinks a span i.ig-color {
+  color: transparent;
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285aeb 90%);
+  background: -webkit-radial-gradient(
+    circle at 30% 107%,
+    #fdf497 0%,
+    #fdf497 5%,
+    #fd5949 45%,
+    #d6249f 60%,
+    #285aeb 90%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+
+.footerSGlinks a span i.youtube-color {
+  color: #c4302b;
+}
+
 .footer3c {
   width: 100%;
   display: flex;

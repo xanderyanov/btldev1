@@ -18,6 +18,11 @@
   transform: rotate(180deg);
 }
 
+.esli_inner {
+  position: relative;
+  border-radius: 4px;
+}
+
 /*************************/
 
 .eShopMenu li.lev1 {
@@ -37,7 +42,7 @@
   position: relative;
   font-size: 14px;
   line-height: 20px;
-  padding: 15px 0;
+  padding: 12px 0;
   color: #333333;
 }
 
@@ -57,11 +62,19 @@
 }
 
 .eShopMenu li.lev1 > .esli_inner > .openInner:after {
-  content: "\e954";
+  content: "\e901";
   font-family: "icomoon";
   font-size: 10px;
   line-height: 10px;
   color: #333;
+}
+
+.eShopMenu li.lev1 > ul {
+  display: none;
+}
+
+.eShopMenu li.lev1.active > ul {
+  display: block;
 }
 
 .eShopMenu li.lev1 > .esli_inner a:hover {
@@ -102,7 +115,7 @@
 
 .eShopMenu li.lev2 > .esli_inner a {
   display: block;
-  padding: 15px 10px 15px 30px;
+  padding: 10px 10px 10px 30px;
   text-decoration: none;
   width: 100%;
   font-size: 12px;
@@ -129,7 +142,7 @@
 }
 
 .eShopMenu li.lev2 > .esli_inner > .openInner:after {
-  content: "\e954";
+  content: "\e901";
   font-family: "icomoon";
   font-size: 8px;
   line-height: 8px;
@@ -203,7 +216,7 @@
 
 .eShopMenu li.lev3 > .esli_inner a {
   display: block;
-  padding: 7px 10px 7px 30px;
+  padding: 5px 10px 5px 30px;
   text-decoration: none;
   width: 100%;
   font-size: 0.875rem;
@@ -217,13 +230,13 @@
   color: #7e3692;
 }
 
-.eShopMenu li.lev3 > .esli_inner a:hover {
-  color: #df2f4e;
+.eShopMenu li.lev3 > .esli_inner:hover {
+  background: #f2f2f2;
 }
 
-.eShopMenu li.lev3.active > .esli_inner a:hover {
+/* .eShopMenu li.lev3.active > .esli_inner a:hover {
   color: #df2f4e;
-}
+} */
 
 .eShopMenu li span {
   display: block;

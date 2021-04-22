@@ -386,3 +386,22 @@ mixin eCard
                           tr
                             td Лазерная эпиляция: верхняя губа
                             td 1000 руб.
+
+
+
+mixin eCardApp 
+  .eCard
+    .eCard__itemOuter
+      a.eCard__item(href="#")
+        .eCard__itemInner
+          .eCard__itemInnerLeft.eCard__itemInnerLeft_app(style="background-image: url(assets/img/apparatus/01.jpg)")
+          .eCard__itemInnerRight.eCard__itemInnerRight_app
+            .eCard__itemTitle Омоложение
+            .eCard__itemContent
+              p Инъекции на основе гиалуроновой кислоты. Улучшают качество кожи, разглаживают морщины
+              ul
+                li Мезоскульпт
+                li Новакутан
+                li Профайло 
+                li ИАЛ
+          
