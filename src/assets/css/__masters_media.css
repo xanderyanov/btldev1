@@ -18,6 +18,9 @@
 }
 
 @media only screen and (max-width: 920px) {
+  .mastersBox__itemOuter {
+    width: 25%;
+  }
   .mastersBox__itemInfo {
     padding: 20px;
   }
