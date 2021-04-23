@@ -16,8 +16,8 @@ function FNheader3() {
   header3Height = $(".header3__area").height();
 }
 $(function () {
-  console.log(strGET);
-  console.log(str);
+  // console.log(strGET);
+  // console.log(str);
   // $(".breadcrumbs").html(str);
 
   FNheader3();
