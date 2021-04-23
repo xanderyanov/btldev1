@@ -114,6 +114,9 @@
 @import "__eShopMenu.css";
 @import "__eShopMenu_media.css";
 
+@import "__eShopCatalog.css";
+@import "__eShopCatalog_media.css";
+
 /* в самом низу */
 @import "main.css";
 @import "media.css";

@@ -1,3 +1,8 @@
+// var strGET = window.location.search.replace("?xx", "").split("-");
+// var str = "";
+// for (i = 0; i < strGET.length; i++) {
+//   if (strGET[i] !== undefined) str += "[[pdoField? &id=`[[*" + strGET[i] + "]]` &field=`pagetitle` &top=`2`]]";
+// }
 // $(window).on("load", function () {
 
 // });
@@ -11,6 +16,10 @@ function FNheader3() {
   header3Height = $(".header3__area").height();
 }
 $(function () {
+  console.log(strGET);
+  console.log(str);
+  // $(".breadcrumbs").html(str);
+
   FNheader3();
   $(window).on("resize", FNheader3);
 

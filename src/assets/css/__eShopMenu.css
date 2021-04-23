@@ -34,16 +34,23 @@
 }
 
 .eShopMenu li.lev1 > .esli_inner a {
-  display: block;
+  display: flex;
+  align-items: center;
   text-decoration: none;
   width: 100%;
-
   transition: all 0.3s;
   position: relative;
   font-size: 14px;
   line-height: 20px;
   padding: 12px 0;
   color: #333333;
+}
+.eShopMenu li > .esli_inner a span:last-child {
+  font-size: 0.875em;
+  line-height: 1em;
+  font-weight: 600;
+  color: #df2f4e;
+  padding: 0 0 0 10px;
 }
 
 .eShopMenu li.lev1 > .esli_inner > .openInner {
@@ -115,7 +122,8 @@
 }
 
 .eShopMenu li.lev2 > .esli_inner a {
-  display: block;
+  display: flex;
+  align-items: center;
   padding: 10px 10px 10px 30px;
   text-decoration: none;
   width: 100%;
@@ -217,7 +225,8 @@
 }
 
 .eShopMenu li.lev3 > .esli_inner a {
-  display: block;
+  display: flex;
+  align-items: center;
   padding: 5px 10px 5px 30px;
   text-decoration: none;
   width: 100%;
@@ -240,7 +249,7 @@
   color: #df2f4e;
 } */
 
-.eShopMenu li span {
+/* .eShopMenu li span {
   display: block;
   padding: 0.625rem;
   text-decoration: none;
@@ -268,4 +277,4 @@
   background: var(--color1);
   border-bottom: 1px solid #fff;
   color: #fff;
-}
+} */
