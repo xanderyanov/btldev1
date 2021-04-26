@@ -49,6 +49,25 @@ $(function () {
   //   console.log(data.state);
   // });
 
+  $(".eSort__item").on("click", function (e) {
+    // Сортировка визуал для еКаталога
+    e.preventDefault();
+    e.stopPropagation();
+    var $this = $(this);
+    var othereSortItem = $(this).closest(".eSort__area").find(".eSort__item").not(this);
+    othereSortItem.removeClass("eSort__item_asc").removeClass("eSort__item_desc").removeClass("eSort__item_active");
+    $this.addClass("eSort__item_active");
+    if ($this.hasClass("eSort__item_asc")) {
+      $this.removeClass("eSort__item_asc");
+      $this.addClass("eSort__item_desc");
+      console.log("eSort__item_asc");
+    } else {
+      $this.addClass("eSort__item_asc");
+      $this.removeClass("eSort__item_desc");
+      console.log("eSort__item_desc");
+    }
+  });
+
   //-START Слайдер похожих товаров на странице VARIANTS
 
   var imgSliderOptions = {};

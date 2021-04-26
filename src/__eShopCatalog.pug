@@ -1,0 +1,16 @@
+mixin eCatalog 
+  //- импорт из data.json (подключается через gulp task)
+  each item in eCatalogBase
+    .eCatalog__itemArea(id=item.id)
+      a.eCatalog__item(href="")
+        .eCatalog__itemFav
+          i.icon-favorit1.iconNoFav
+          i.icon-favorit2.iconInFav
+        .eCatalog__itemImgOuter 
+          .eCatalog__itemImg(style='background-image: url(' + item.img + ');')
+        .eCatalog__itemInfo 
+          .eCatalog__itemTitle!= item.title 
+          .eCatalog__itemDesc!= item.content 
+          .eCatalog__itemPrice
+            span!= item.price 
+            span ₽

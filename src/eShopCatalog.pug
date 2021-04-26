@@ -33,17 +33,37 @@ body
 
   .site__center
     +breadcrumbs3
-    +wideBlock
-    
-    .dubleBox3__area 
-      .dubleBox3
-        .dubleBox3__left 
-          //- +leftMenuSuperTree
+
+    .split__area
+      .split 
+        .split__left 
+          .eBrands__area 
+            .eBrands__btn Бренды компании
+
+        .split__right
+          .eGreyLine
+            .eSort__area 
+              .eSort__item.eSort__title Сортировать по
+              .eSort__item
+                span По популярности
+                i.icon-arrow-up2
+              .eSort__item
+                span По цене
+                i.icon-arrow-up2
+              .eSort__item
+                span По алфавиту
+                i.icon-arrow-up2
+            .searchResult__counter 
+              span Найдено товаров:
+              span 256
+      .split 
+        .split__left 
           +eShopMenu
-        .dubleBox3__right
-          .title0 
-            h1 Заголовок страницы
-          +card3
+        .split__right
+          .eCatalog
+            +eCatalog
+
+   
     +zBlock3
 
   .site__footer

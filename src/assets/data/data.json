@@ -14,105 +14,116 @@
       "message": "<p>Неправильно набран адрес, или такой страницы больше не существует.</p><p>Чтобы продолжить работу с сайтом <a href='/'>вернитесь на главную страницу.</a></p>"
     }
   },
-  "tovars": [
+  "eCatalogBase": [
     {
       "id": "321321321",
-      "title": "Двубортное пальто-жакет супер",
-      "content": "Adidas",
+      "title": "Sebastian Professional",
+      "content": "Кондиционер Dark Oil Lightweight Conditioner",
       "discount": "-50%",
       "price": "2500",
       "oldPrice": "3500",
-      "img": "assets/img/tovar/001.jpeg"
+      "img": "assets/img/ecatalog/01.jpg"
     },
     {
       "id": "321321322",
-      "title": "Укороченное пальто",
-      "content": "Puma",
+      "title": "Guinot",
+      "content": "Омолаживающий тональный крем Youth Time №4",
       "discount": "-30%",
       "price": "2500",
       "oldPrice": "3000",
-      "img": "assets/img/tovar/002.jpeg"
+      "img": "assets/img/ecatalog/02.jpg"
     },
     {
       "id": "321321323",
-      "title": "Стеганое пальто",
-      "content": "Nike",
+      "title": "Nioxin",
+      "content": "Очищающий шампунь Система 1",
       "discount": "",
       "price": "2500",
       "oldPrice": "",
-      "img": "assets/img/tovar/003.jpeg"
+      "img": "assets/img/ecatalog/03.jpg"
     },
     {
       "id": "321321324",
-      "title": "Двубортное пальто-жакет 2",
-      "content": "Adidas",
+      "title": "Oribe",
+      "content": "Шампунь для блеска «Драгоценное сияние» Shampoo for Brilliance & Shine",
       "discount": "-50%",
       "price": "2500",
       "oldPrice": "3500",
-      "img": "assets/img/tovar/004.jpeg"
+      "img": "assets/img/ecatalog/04.jpg"
     },
     {
       "id": "321321325",
-      "title": "Двубортное пальто-жакет 3",
-      "content": "Adidas",
+      "title": "Smith & Cult",
+      "content": "Лак для ногтей «Шаг вперед» Mannequin Moves Nail Lacquer ",
       "discount": "-50%",
       "price": "2500",
       "oldPrice": "3500",
-      "img": "assets/img/tovar/005.jpeg"
+      "img": "assets/img/ecatalog/05.jpg"
+    }
+    ,
+    {
+      "id": "321321322",
+      "title": "Guinot",
+      "content": "Омолаживающий тональный крем Youth Time №4",
+      "discount": "-30%",
+      "price": "2500",
+      "oldPrice": "3000",
+      "img": "assets/img/ecatalog/06.jpg"
     },
     {
-      "id": "321321326",
-      "title": "Двубортное пальто-жакет 4",
-      "content": "Adidas",
-      "discount": "-50%",
+      "id": "321321323",
+      "title": "Nioxin",
+      "content": "Очищающий шампунь Система 1",
+      "discount": "",
       "price": "2500",
-      "oldPrice": "3500",
-      "img": "assets/img/tovar/006.jpeg"
+      "oldPrice": "",
+      "img": "assets/img/ecatalog/07.jpg"
     },
     {
-      "id": "321321327",
-      "title": "Двубортное пальто-жакет 5",
-      "content": "Adidas",
+      "id": "321321324",
+      "title": "Oribe",
+      "content": "Шампунь для блеска «Драгоценное сияние» Shampoo for Brilliance & Shine",
       "discount": "-50%",
       "price": "2500",
       "oldPrice": "3500",
-      "img": "assets/img/tovar/007.jpeg"
+      "img": "assets/img/ecatalog/08.jpg"
     },
     {
-      "id": "321321328",
-      "title": "Двубортное пальто-жакет 6",
-      "content": "Adidas",
+      "id": "321321325",
+      "title": "Smith & Cult",
+      "content": "Лак для ногтей «Шаг вперед» Mannequin Moves Nail Lacquer ",
       "discount": "-50%",
       "price": "2500",
       "oldPrice": "3500",
-      "img": "assets/img/tovar/008.jpeg"
+      "img": "assets/img/ecatalog/09.jpg"
+    }
+    ,
+    {
+      "id": "321321323",
+      "title": "Nioxin",
+      "content": "Очищающий шампунь Система 1",
+      "discount": "",
+      "price": "2500",
+      "oldPrice": "",
+      "img": "assets/img/ecatalog/10.jpg"
     },
     {
-      "id": "321321329",
-      "title": "Двубортное пальто-жакет 7",
-      "content": "Adidas",
+      "id": "321321324",
+      "title": "Oribe",
+      "content": "Шампунь для блеска «Драгоценное сияние» Shampoo for Brilliance & Shine",
       "discount": "-50%",
       "price": "2500",
       "oldPrice": "3500",
-      "img": "assets/img/tovar/009.jpeg"
+      "img": "assets/img/ecatalog/11.jpg"
     },
     {
-      "id": "321321330",
-      "title": "Двубортное пальто-жакет 8",
-      "content": "Adidas",
+      "id": "321321325",
+      "title": "Smith & Cult",
+      "content": "Лак для ногтей «Шаг вперед» Mannequin Moves Nail Lacquer ",
       "discount": "-50%",
       "price": "2500",
       "oldPrice": "3500",
-      "img": "assets/img/tovar/010.jpeg"
-    },
-    {
-      "id": "321321331",
-      "title": "Двубортное пальто-жакет 9",
-      "content": "Adidas",
-      "discount": "-50%",
-      "price": "2500",
-      "oldPrice": "3500",
-      "img": "assets/img/tovar/011.jpeg"
+      "img": "assets/img/ecatalog/12.jpg"
     }
   ]
 }
