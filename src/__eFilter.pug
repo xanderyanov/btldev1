@@ -1,0 +1,105 @@
+mixin eFilterArea 
+  .eFilter__area
+    +eFilter1
+    +eFilter2
+    +eFilter3
+    +eFilterPrice
+
+
+mixin eFilter1
+  .eFilter
+    .eFilter__title 
+      span Для кого
+      .eFilter__openBtn
+    .eFilter__content 
+      .eFilterCheckbox
+        input(id="1" type="checkbox" data-id="" data-val="filter")
+        label(for="1") Для женщин
+      .eFilterCheckbox
+        input(id="2" type="checkbox" data-id="" data-val="filter")
+        label(for="2") Для мужчин
+
+
+
+mixin eFilter2
+  .eFilter
+    .eFilter__title 
+      span Зона применения
+      .eFilter__openBtn
+    .eFilter__content 
+      .eFilterCheckbox
+        input(id="21" type="checkbox" data-id="" data-val="filter")
+        label(for="21") Волосы
+      .eFilterCheckbox
+        input(id="22" type="checkbox" data-id="" data-val="filter")
+        label(for="22") Глаза
+      .eFilterCheckbox
+        input(id="23" type="checkbox" data-id="" data-val="filter")
+        label(for="23") Губы
+      .eFilterCheckbox
+        input(id="24" type="checkbox" data-id="" data-val="filter")
+        label(for="24") Лицо
+      .eFilterCheckbox
+        input(id="25" type="checkbox" data-id="" data-val="filter")
+        label(for="25") Ноги
+      .eFilterCheckbox
+        input(id="26" type="checkbox" data-id="" data-val="filter")
+        label(for="26") Руки
+      .eFilterCheckbox
+        input(id="27" type="checkbox" data-id="" data-val="filter")
+        label(for="27") Тело
+      .eFilterCheckbox
+        input(id="28" type="checkbox" data-id="" data-val="filter")
+        label(for="28") Шея
+
+
+mixin eFilter3
+  .eFilter
+    .eFilter__title 
+      span Действие
+      .eFilter__openBtn
+    .eFilter__content 
+      .eFilterCheckbox
+        input(id="31" type="checkbox" data-id="" data-val="filter")
+        label(for="31") Автозагар
+      .eFilterCheckbox
+        input(id="32" type="checkbox" data-id="" data-val="filter")
+        label(for="32") Антиакне
+      .eFilterCheckbox
+        input(id="33" type="checkbox" data-id="" data-val="filter")
+        label(for="33") Антибактериальное
+      .eFilterCheckbox
+        input(id="34" type="checkbox" data-id="" data-val="filter")
+        label(for="34") Антивозрастное
+      .eFilterCheckbox
+        input(id="35" type="checkbox" data-id="" data-val="filter")
+        label(for="35") Восстановление
+      .eFilterCheckbox
+        input(id="36" type="checkbox" data-id="" data-val="filter")
+        label(for="36") Защита
+      .eFilterCheckbox
+        input(id="37" type="checkbox" data-id="" data-val="filter")
+        label(for="37") Защита от солнца
+      .eFilterCheckbox
+        input(id="38" type="checkbox" data-id="" data-val="filter")
+        label(for="38") Защта цвета
+
+mixin eFilterPrice 
+  .eFilter
+    .eFilter__title 
+      span Цена в рублях
+      //- .eFilter__openBtn
+    .eFilter__content_open
+      .eFilter__priceRange 
+        .eFilter__priceRangeTop 
+          .eFilter__priceRangeTopItem 
+            span От
+            input#priceStart(type="number")
+          .eFilter__priceRangeTopItem 
+            span До
+            input#priceEnd(type="number")
+        .eFilter__priceRangeSlider
+          #eFilterPriceSlider
+
+
+

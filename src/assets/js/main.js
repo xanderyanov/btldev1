@@ -1,3 +1,31 @@
+var priceSlider1 = document.getElementById("eFilterPriceSlider");
+noUiSlider.create(priceSlider1, {
+  start: [0, 100],
+  connect: true,
+  range: {
+    min: 0,
+    max: 100,
+  },
+});
+var priceStart = document.getElementById("priceStart");
+var priceEnd = document.getElementById("priceEnd");
+
+priceSlider1.noUiSlider.on("update", function (values, handle) {
+  var value = values[handle];
+  if (handle) {
+    priceEnd.value = value;
+  } else {
+    priceStart.value = value;
+  }
+});
+
+priceStart.addEventListener("change", function () {
+  priceSlider1.noUiSlider.set([this.value, null]);
+});
+priceEnd.addEventListener("change", function () {
+  priceSlider1.noUiSlider.set([null, this.value]);
+});
+
 // var strGET = window.location.search.replace("?xx", "").split("-");
 // var str = "";
 // for (i = 0; i < strGET.length; i++) {
@@ -49,6 +77,21 @@ $(function () {
   //   console.log(data.state);
   // });
 
+  $(".eFilter__openBtn").on("click", function (e) {
+    // раскрытие и закрытие еФильтра по клику на галку
+    e.preventDefault();
+    e.stopPropagation();
+    var $this = $(this);
+    var thisFilterContent = $this.closest(".eFilter").find(".eFilter__content");
+    if ($this.hasClass("eFilter__openBtn_open")) {
+      $this.removeClass("eFilter__openBtn_open");
+      thisFilterContent.slideUp(300);
+    } else {
+      $this.addClass("eFilter__openBtn_open");
+      thisFilterContent.slideDown(300);
+    }
+  });
+
   $(".eSort__item").on("click", function (e) {
     // Сортировка визуал для еКаталога
     e.preventDefault();
@@ -60,11 +103,9 @@ $(function () {
     if ($this.hasClass("eSort__item_asc")) {
       $this.removeClass("eSort__item_asc");
       $this.addClass("eSort__item_desc");
-      console.log("eSort__item_asc");
     } else {
       $this.addClass("eSort__item_asc");
       $this.removeClass("eSort__item_desc");
-      console.log("eSort__item_desc");
     }
   });
 

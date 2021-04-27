@@ -8,6 +8,8 @@ include __header3
 include __menu
 include __eShopMenu
 include __eShopCatalog
+include __pagination
+include __eFilter
 include __mainTop
 include __mainProblem
 include __breadcrumbs
@@ -38,7 +40,10 @@ body
       .split 
         .split__left 
           .eBrands__area 
-            .eBrands__btn Бренды компании
+            .eBrands__btn Бренды
+            .eBrands__content
+              .eBrands__contentInner.eBrands__contentInner_scroll
+                +brands
 
         .split__right
           .eGreyLine
@@ -59,9 +64,11 @@ body
       .split 
         .split__left 
           +eShopMenu
+          +eFilterArea
         .split__right
           .eCatalog
             +eCatalog
+            +pagiantion
 
    
     +zBlock3

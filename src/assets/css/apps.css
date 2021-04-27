@@ -1,7 +1,7 @@
 /* @import url("https://fonts.googleapis.com/css?family=Roboto:300,400,400i,500,500i,600,700&display=swap&subset=cyrillic"); */
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,400&display=swap&subset=cyrillic");
 @import "../../../node_modules/sweetalert/dist/sweetalert.css";
-/* @import "../../../node_modules/nouislider/distribute/nouislider.css"; */
+@import "../../../node_modules/nouislider/distribute/nouislider.css";
 
 @import "../../../node_modules/swiper/css/swiper.css";
 @import "../../../node_modules/slick-carousel/slick/slick";
@@ -116,6 +116,12 @@
 
 @import "__eShopCatalog.css";
 @import "__eShopCatalog_media.css";
+
+@import "__eFilter.css";
+@import "__eFilter_media.css";
+
+@import "__pagination.css";
+@import "__pagination_media.css";
 
 /* в самом низу */
 @import "main.css";

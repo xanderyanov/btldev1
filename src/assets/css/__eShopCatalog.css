@@ -7,6 +7,7 @@
   max-width: 1200px;
   margin: 0 auto;
   display: flex;
+  position: relative;
 }
 
 .split__left {
@@ -130,6 +131,8 @@
 
 .eBrands__area {
   margin-bottom: 30px;
+  position: relative;
+  background: #fff;
 }
 
 .eBrands__btn {
@@ -140,11 +143,127 @@
   font-size: 14px;
   line-height: 20px;
   color: var(--brick);
+  background: #fff;
   display: flex;
   align-items: center;
   justify-content: center;
   height: 46px;
+  cursor: pointer;
+  transition: all 0.3s;
+  position: relative;
+  z-index: 20;
 }
+
+.eBrands__btn:hover,
+.eBrands__btn_active {
+  color: #fff;
+  background: var(--brick);
+}
+
+.eBrands__content {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 40px;
+  z-index: 10;
+  padding: 40px 3px 40px 30px;
+  background: #fff;
+  border: 1px solid #cecbda;
+  box-sizing: border-box;
+  box-shadow: 0px 10px 20px rgba(206, 203, 218, 0.55);
+  border-radius: 0px 0px 6px 6px;
+}
+
+.eBrands__contentInner {
+  padding: 0 27px 0 0;
+}
+
+.eBrands__contentInner_scroll {
+  max-height: calc(60vh - 150px);
+  overflow-y: scroll;
+}
+
+.eBrands__contentInner_scroll::-webkit-scrollbar-track {
+  border-radius: 8px;
+  background-color: #f2f2f2;
+}
+
+.eBrands__contentInner_scroll::-webkit-scrollbar {
+  width: 4px;
+  height: 4px;
+  background-color: #f2f2f2;
+}
+
+.eBrands__contentInner_scroll::-webkit-scrollbar-thumb {
+  border-radius: 8px;
+  background-color: #cecbda;
+}
+
+.scrollHide::-webkit-scrollbar {
+  width: 0;
+}
+
+/*************/
+
+.aShops__az {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+.aShops__azLetterBox {
+  width: 100%;
+  padding: 10px 0;
+  display: flex;
+  border-bottom: 1px solid #f2f2f2;
+}
+.aShops__azLetterBox:last-child {
+  border-bottom: none;
+  padding: 10px 0 0;
+}
+
+.aShops__azLetterBoxTitle {
+  width: 12%;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 20px;
+  color: #9462a2;
+}
+
+.aShops__azLetterBoxContent {
+  /* border-left: 2px solid var(--x1greyLight); */
+
+  display: flex;
+  flex-wrap: wrap;
+  width: 88%;
+}
+
+.aShops__az_mh {
+  min-height: 50vh;
+}
+
+.aShops__azItemOuter {
+  width: 100%;
+}
+
+.aShops__azItem {
+  width: 100%;
+  display: inline-block;
+  text-decoration: none;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 20px;
+  color: #4f4f4f;
+  margin-bottom: 5px;
+}
+
+.aShops__azItem:hover,
+.aShops__azItem:focus {
+  text-decoration: none;
+  color: var(--orange);
+} /********************/
 
 .eGreyLine {
   background: #f2f2f2;
