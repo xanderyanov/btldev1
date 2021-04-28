@@ -77,6 +77,33 @@ $(function () {
   //   console.log(data.state);
   // });
 
+  $(".eBrands__btn").on("click", function (e) {
+    // раскрытие и закрытие еБрендов по клику на кнопку
+    e.preventDefault();
+    e.stopPropagation();
+    var $this = $(this);
+    var thisBrandsContent = $this.closest(".eBrands__area").find(".eBrands__content");
+    if ($this.hasClass("eBrands__btn_active")) {
+      $this.removeClass("eBrands__btn_active");
+      thisBrandsContent.slideUp(300);
+      $(".eBrands__overlay").fadeOut(300);
+      $("body").removeClass("stop");
+    } else {
+      $this.addClass("eBrands__btn_active");
+      $(".eBrands__overlay").fadeIn(300);
+      thisBrandsContent.slideDown(300);
+      $("body").addClass("stop");
+    }
+  });
+  $(".eBrands__overlay").on("click", function (e) {
+    e.preventDefault();
+    e.stopPropagation();
+    $(".eBrands__btn").removeClass("eBrands__btn_active");
+    $(".eBrands__content").slideUp(300);
+    $(".eBrands__overlay").fadeOut(300);
+    $("body").removeClass("stop");
+  });
+
   $(".eFilter__openBtn").on("click", function (e) {
     // раскрытие и закрытие еФильтра по клику на галку
     e.preventDefault();

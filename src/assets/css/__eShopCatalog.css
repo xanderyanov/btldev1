@@ -8,6 +8,7 @@
   margin: 0 auto;
   display: flex;
   position: relative;
+  flex-wrap: wrap;
 }
 
 .split__left {
@@ -15,6 +16,21 @@
 }
 
 .split__right {
+  width: 77%;
+  padding: 0 0 0 30px;
+}
+
+.split__left_top {
+  width: 23%;
+}
+
+.split__left_topFlex {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.split__right_top {
   width: 77%;
   padding: 0 0 0 30px;
 }
@@ -135,6 +151,17 @@
   background: #fff;
 }
 
+.eBrands__overlay {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 2090;
+  display: none;
+  background: rgba(0, 0, 0, 0.5);
+}
+
 .eBrands__btn {
   border: 2px solid var(--brick);
   box-sizing: border-box;
@@ -151,7 +178,7 @@
   cursor: pointer;
   transition: all 0.3s;
   position: relative;
-  z-index: 20;
+  z-index: 2100;
 }
 
 .eBrands__btn:hover,
@@ -165,13 +192,14 @@
   width: 100%;
   left: 0;
   top: 40px;
-  z-index: 10;
+  z-index: 2095;
   padding: 40px 3px 40px 30px;
   background: #fff;
   border: 1px solid #cecbda;
   box-sizing: border-box;
   box-shadow: 0px 10px 20px rgba(206, 203, 218, 0.55);
   border-radius: 0px 0px 6px 6px;
+  display: none;
 }
 
 .eBrands__contentInner {
@@ -280,6 +308,47 @@
   display: flex;
   align-items: center;
   padding: 0 15px;
+}
+
+.eGreyLine__mbBtns {
+  display: none;
+  justify-content: space-between;
+}
+
+.eGreyLine__mbBtnSort {
+  border: 2px solid var(--brick);
+  box-sizing: border-box;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 20px;
+  color: var(--brick);
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 46px;
+  cursor: pointer;
+  transition: all 0.3s;
+  position: relative;
+}
+
+.eGreyLine__mbBtnFiltr {
+  border: 2px solid var(--brick);
+  box-sizing: border-box;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 20px;
+  color: var(--brick);
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 46px;
+  cursor: pointer;
+  transition: all 0.3s;
+  position: relative;
 }
 
 .eSort__title {

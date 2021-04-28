@@ -38,14 +38,21 @@ body
 
     .split__area
       .split 
-        .split__left 
-          .eBrands__area 
+        .split__left_top
+          .eBrands__area
+            .eBrands__overlay 
             .eBrands__btn Бренды
             .eBrands__content
               .eBrands__contentInner.eBrands__contentInner_scroll
                 +brands
 
-        .split__right
+        .split__right_top
+          .eGreyLine__mbBtns 
+            .eGreyLine__mbBtnSort
+              span Сортировать по
+            .eGreyLine__mbBtnFiltr
+              span Фильтры
+              i.icon-filter
           .eGreyLine
             .eSort__area 
               .eSort__item.eSort__title Сортировать по

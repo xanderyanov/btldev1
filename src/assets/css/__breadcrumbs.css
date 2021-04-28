@@ -104,6 +104,13 @@
   margin-left: auto;
 }
 
+.backBtn3__outer_inLeft {
+  margin: 0;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
 .backBtn3 {
   display: flex;
   align-items: center;

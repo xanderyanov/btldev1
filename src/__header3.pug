@@ -23,6 +23,14 @@ mixin header3
             a(href="#") Правовая информация
           li
             a(href="#") Контакты
+      .topLine3__auth
+        a.not__authorized(href="") 
+          i.icon-eavatar
+          span Войти / Регистрация
+        a.authorized(href="") 
+          span Иван Иванович
+          i.icon-exit
+        
   .header3__fake
   .header3__area
     header.header3
@@ -55,8 +63,16 @@ mixin header3
         .header3__contItemInfo 
           span Центр косметологии:
           span +7 (8452) 26-00-00
-      .header3__menuBtn.header2__menuBtn_js(data-id="menu1")
-        i.icon-menu
+      
+      .eShop__headerIcon
+        a.eShop__headerFav(href="")
+          i.icon-eheart1.hederIconNoFav
+          i.icon-like2fill.hederIconInFav
+        a.header__cart(href="")
+          i.icon-shopping-cart
+          span 12
+        .header3__menuBtn.header2__menuBtn_js(data-id="menu1")
+          i.icon-emenu1
         
 
           

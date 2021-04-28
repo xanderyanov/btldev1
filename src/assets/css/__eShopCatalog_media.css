@@ -1,4 +1,7 @@
 @media only screen and (max-width: 1200px) {
+  .split__area {
+    padding: 0 10px;
+  }
 }
 
 @media only screen and (max-width: 1140px) {
@@ -8,24 +11,118 @@
 }
 
 @media only screen and (max-width: 1024px) {
+  .split__left {
+    display: none;
+  }
+
+  .split__right {
+    width: 100%;
+    padding: 0;
+  }
+  .eCatalog {
+    margin: -10px -10px 0;
+  }
+  .eCatalog__itemArea {
+    padding: 10px;
+    width: 25%;
+  }
+  .eGreyLine__mbBtns {
+    display: flex;
+  }
+  .eSort__area {
+    display: none;
+  }
+  .split__right_top {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .searchResult__counter {
+    display: flex;
+    align-items: center;
+    padding: 0 20px 0 20px;
+  }
+
+  .eGreyLine__mbBtnSort {
+    width: 200px;
+    margin: 0 20px 0 0;
+  }
+
+  .eGreyLine__mbBtnFiltr {
+    width: 200px;
+  }
 }
 
 @media only screen and (max-width: 920px) {
+  .eCatalog__itemArea {
+    width: 33.3333%;
+  }
+  .eGreyLine__mbBtnSort {
+    width: 170px;
+    margin: 0 10px 0 0;
+  }
+
+  .eGreyLine__mbBtnFiltr {
+    width: 170px;
+  }
 }
 
 @media only screen and (max-width: 800px) {
+  .eSort__item {
+    margin: 0 10px;
+  }
+  .split__right_top {
+    padding: 0 0 0 20px;
+  }
+  .searchResult__counter {
+    padding: 0 10px 0 10px;
+  }
+  .eSort__area {
+    padding: 0;
+  }
 }
 
 @media only screen and (max-width: 768px) {
+  .split__left_top {
+    width: 100%;
+  }
+  .split__right_top {
+    width: 100%;
+    padding: 0 0 0 0;
+  }
+  .eBrands__area {
+    margin-bottom: 20px;
+  }
+  .eGreyLine__mbBtns {
+    width: 100%;
+  }
+  .eGreyLine__mbBtnSort {
+    width: 49%;
+    margin: 0;
+  }
+
+  .eGreyLine__mbBtnFiltr {
+    width: 49%;
+  }
+  .eGreyLine {
+    width: 100%;
+    margin: 20px 0 20px 0;
+  }
 }
 
 @media only screen and (max-width: 600px) {
+  .eCatalog__itemArea {
+    width: 50%;
+  }
 }
 
 @media only screen and (max-width: 480px) {
 }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 414px) {
+  .eCatalog__itemArea {
+    width: 100%;
+  }
 }
 
 @media only screen and (max-width: 320px) {
