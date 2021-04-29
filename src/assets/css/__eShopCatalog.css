@@ -340,8 +340,8 @@
   font-weight: 600;
   font-size: 14px;
   line-height: 20px;
-  color: var(--brick);
-  background: #fff;
+  color: #fff;
+  background: var(--brick);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -349,6 +349,20 @@
   cursor: pointer;
   transition: all 0.3s;
   position: relative;
+}
+
+.eGreyLine__mbBtnFiltr span {
+  margin: 0 10px 0 0;
+}
+
+.eSort__area_mb {
+  display: none;
+  background: #fff;
+  padding: 12px 12px 24px 24px;
+  border-radius: 4px;
+  box-shadow: 0px 10px 20px rgba(206, 203, 218, 55%);
+  width: 100%;
+  max-width: 300px;
 }
 
 .eSort__title {

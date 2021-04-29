@@ -225,3 +225,96 @@
   border-radius: 50%;
   box-shadow: none;
 }
+
+/*************************/
+.eSortMb {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.eSortMb__title {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.eSortMb__content {
+  display: flex;
+  flex-direction: column;
+}
+
+.eSortMbCheckbox {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-bottom: 12px;
+  min-height: 20px;
+}
+
+.eSortMbCheckbox:last-child {
+  margin-bottom: 0;
+}
+
+.eSortMbCheckbox input[type="checkbox"] {
+  display: none;
+}
+
+.eSortMbCheckbox label {
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding: 0 0 0 32px;
+  cursor: pointer;
+
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 20px;
+  color: #4f4f4f;
+}
+
+.eSortMbCheckbox label::before {
+  position: absolute;
+  top: 50%;
+  margin-top: -7px;
+  left: 0;
+  content: "";
+  display: block;
+  height: 14px;
+  width: 14px;
+  border: 1px solid #e0e0e0;
+  box-sizing: border-box;
+  border-radius: 50%;
+}
+
+.eSortMbCheckbox label::after {
+  position: absolute;
+  top: 50%;
+  margin-top: -3px;
+  left: 4px;
+  content: "";
+  display: block;
+  height: 6px;
+  width: 6px;
+  background: #d74d63;
+  box-sizing: border-box;
+  border-radius: 50%;
+}
+
+.eSortMbCheckbox input[type="checkbox"] + label::after {
+  content: none;
+}
+
+.eSortMbCheckbox input[type="checkbox"]:checked + label::after {
+  content: "";
+}
+
+.eSortMbCheckbox input[type="checkbox"]:checked + label::before {
+  border: 1px solid #d74d63;
+  /* background: #d74d63; */
+}
+
+.eSortMbCheckbox input[type="checkbox"]:checked + label {
+  /* color: #ff4141; */
+}

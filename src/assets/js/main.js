@@ -1,30 +1,32 @@
 var priceSlider1 = document.getElementById("eFilterPriceSlider");
-noUiSlider.create(priceSlider1, {
-  start: [0, 100],
-  connect: true,
-  range: {
-    min: 0,
-    max: 100,
-  },
-});
-var priceStart = document.getElementById("priceStart");
-var priceEnd = document.getElementById("priceEnd");
+if (priceSlider1) {
+  noUiSlider.create(priceSlider1, {
+    start: [0, 100],
+    connect: true,
+    range: {
+      min: 0,
+      max: 100,
+    },
+  });
+  var priceStart = document.getElementById("priceStart");
+  var priceEnd = document.getElementById("priceEnd");
 
-priceSlider1.noUiSlider.on("update", function (values, handle) {
-  var value = values[handle];
-  if (handle) {
-    priceEnd.value = value;
-  } else {
-    priceStart.value = value;
-  }
-});
+  priceSlider1.noUiSlider.on("update", function (values, handle) {
+    var value = values[handle];
+    if (handle) {
+      priceEnd.value = value;
+    } else {
+      priceStart.value = value;
+    }
+  });
 
-priceStart.addEventListener("change", function () {
-  priceSlider1.noUiSlider.set([this.value, null]);
-});
-priceEnd.addEventListener("change", function () {
-  priceSlider1.noUiSlider.set([null, this.value]);
-});
+  priceStart.addEventListener("change", function () {
+    priceSlider1.noUiSlider.set([this.value, null]);
+  });
+  priceEnd.addEventListener("change", function () {
+    priceSlider1.noUiSlider.set([null, this.value]);
+  });
+}
 
 // var strGET = window.location.search.replace("?xx", "").split("-");
 // var str = "";
@@ -135,6 +137,31 @@ $(function () {
       $this.removeClass("eSort__item_desc");
     }
   });
+
+  if ($(window).width() < 1024) {
+    // всплывашка сортировки при разрешении меньше 1024
+    $(".eGreyLine__mbBtnSort").on("click", function (e) {
+      e.preventDefault();
+      e.stopPropagation();
+      $(".eSort__areaWrapper").fadeIn(300);
+      $("body").addClass("stop");
+    });
+    $(".eSort__areaOuter").on("click", function (e) {
+      e.preventDefault();
+      e.stopPropagation();
+      $(".eSort__areaWrapper").fadeOut(300);
+      $("body").removeClass("stop");
+    });
+    $(".eSortMb__close").on("click", function (e) {
+      e.preventDefault();
+      e.stopPropagation();
+      $(".eSort__areaWrapper").fadeOut(300);
+      $("body").removeClass("stop");
+    });
+    $(".eSort__area_mb").on("click", function (e) {
+      e.stopPropagation();
+    });
+  }
 
   //-START Слайдер похожих товаров на странице VARIANTS
 
