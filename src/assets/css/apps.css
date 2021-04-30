@@ -120,6 +120,9 @@
 @import "__eFilter.css";
 @import "__eFilter_media.css";
 
+@import "__eFilterMobile.css";
+@import "__eFilterMobile_media.css";
+
 @import "__pagination.css";
 @import "__pagination_media.css";
 

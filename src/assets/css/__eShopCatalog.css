@@ -178,13 +178,18 @@
   cursor: pointer;
   transition: all 0.3s;
   position: relative;
-  z-index: 2100;
+  /* z-index: 2100; */
 }
 
-.eBrands__btn:hover,
+.eBrands__btn:hover {
+  color: #fff;
+  background: var(--brick);
+}
+
 .eBrands__btn_active {
   color: #fff;
   background: var(--brick);
+  z-index: 2100;
 }
 
 .eBrands__content {

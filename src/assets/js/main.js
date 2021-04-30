@@ -121,6 +121,57 @@ $(function () {
     }
   });
 
+  /*START   eFilterMpobile*/
+  $(".eGreyLine__mbBtnFiltr").on("click", function (e) {
+    e.preventDefault();
+    e.stopPropagation();
+    $("body").addClass("stop");
+    $(".eFilerMobile__overlay").fadeIn(300);
+    $(".eFilerMobile__wrapper").addClass("eFilerMobile__wrapper_open");
+  });
+  $(".eFilerMobile__wrapper").on("click", function (e) {
+    e.stopPropagation();
+  });
+  $(".eFilerMobile__overlay").on("click", function (e) {
+    e.preventDefault();
+    e.stopPropagation();
+    $(".eFilerMobile").removeClass("eFilerMobile_slide");
+    $(".eFilerMobile__itemLev2").fadeOut(500);
+    $(".eFilerMobile__wrapper").removeClass("eFilerMobile__wrapper_open");
+    $(this).fadeOut(500);
+    $("body").removeClass("stop");
+  });
+  $(".eFilerMobile__title").on("click", function (e) {
+    e.preventDefault();
+    e.stopPropagation();
+    $(".eFilerMobile").removeClass("eFilerMobile_slide");
+    $(".eFilerMobile__itemLev2").fadeOut(500);
+    $(".eFilerMobile__wrapper").removeClass("eFilerMobile__wrapper_open");
+    $(".eFilerMobile__overlay").fadeOut(500);
+    $("body").removeClass("stop");
+  });
+  $(".eFilerMobile__itemLev1").on("click", function (e) {
+    e.preventDefault();
+    e.stopPropagation();
+    $(this).closest(".eFilerMobile__item").find(".eFilerMobile__itemLev2").show();
+    $(".eFilerMobile").addClass("eFilerMobile_slide");
+  });
+  $(".eFilerMobile__back2").on("click", function (e) {
+    e.preventDefault();
+    e.stopPropagation();
+    $(".eFilerMobile").removeClass("eFilerMobile_slide");
+    $(this).closest(".eFilerMobile__item").find(".eFilerMobile__itemLev2").fadeOut(500);
+  });
+  $(".eFilterCheckbox").on("click", function () {
+    if ($(".eFilterCheckbox").find("input").is(":checked")) {
+      $(this).closest(".eFilerMobile__item").find(".eFilerMobile__itemLev1").addClass("active");
+    } else {
+      $(this).closest(".eFilerMobile__item").find(".eFilerMobile__itemLev1").removeClass("active");
+    }
+  });
+
+  /*END  eFilterMpobile*/
+
   $(".eSort__item").on("click", function (e) {
     // Сортировка визуал для еКаталога
     e.preventDefault();
@@ -138,7 +189,7 @@ $(function () {
     }
   });
 
-  if ($(window).width() < 1024) {
+  function mobileSortBox() {
     // всплывашка сортировки при разрешении меньше 1024
     $(".eGreyLine__mbBtnSort").on("click", function (e) {
       e.preventDefault();
@@ -162,6 +213,13 @@ $(function () {
       e.stopPropagation();
     });
   }
+  mobileSortBox();
+  $(window).on("resize", function () {
+    if ($(window).width() < 1024) {
+      mobileSortBox();
+    }
+  });
+  // END--всплывашка сортировки при разрешении меньше 1024
 
   //-START Слайдер похожих товаров на странице VARIANTS
 
