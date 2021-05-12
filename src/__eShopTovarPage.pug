@@ -1,0 +1,73 @@
+mixin eShopTovar 
+  .eShopTovar__area 
+    .eShopTovar.clearfix
+      .eShopTovar__sliderArea
+        //- +eShopTovarSlider
+      .eShopTovar__titleArea 
+        .eShopTovar__art 
+          span Артикул:
+          span 12673832
+        .eShopTovar__title
+          h1 Kerastase Paris
+        .eShopTovar__titleDesc Шампунь-ванна для светлых и окрашенных волос Blond Absolu Lumiere Shampoo
+      .eShopTovar__descArea
+        .eShopTovar__desc.eShopTovar__desc_80
+          .eShopTovar__descTitle
+            span О товаре
+          table 
+            tr 
+              td Объем
+              td 250 мл
+            tr 
+              td Действие	
+              td Очищение, увлажнение
+            tr 
+              td Зона применения
+              td Волосы
+            tr 
+              td Линейки косметики
+              td Kerastase | Blond Absolu
+            tr 
+              td Страна бренда
+              td Франция
+            tr 
+              td Страна-производитель
+              td Испания
+        .eShopTovar__priceArea
+          .eShopTovar__oldPriceArea
+            .eShopTovar__oldPrice 2 170 ₽
+            .eShopTovar__discount 20%
+          .eShopTovar__price 1 736 ₽
+        .eShopTovar__btnsArea 
+          .eShopTovar__addToCartBtn Добавить в корзину
+          .eShopTovar__favBtn 
+            i.icon-eheart1.iconNoFav
+            i.icon-like2fill.iconInFav
+        .eShopTovar__desc
+          .eShopTovar__descTitle
+            span Описание
+          .eShopTovar__descContent 
+            p Шампунь с гиалуроновой кислотой подходит для мелированных и осветленных волос. Формула обеспечивает интенсивное очищение, смягчает и увлажняет волосы от корней до самых кончиков. очищает волосы от загрязнений и эффективно удаляет микрочастицы пыли, которые делают волосы тусклыми и безжизненными.
+
+
+mixin eShopTovarSlider
+  .eShopTovarSlider1__area.eShopTovarSlider1_swiperSlider
+    .eShopTovarSlider1
+      .eShopTovarSlider1__image
+        .eShopTovarSlider1__imgOuter
+          .eShopTovarSlider1__img.swiper-container
+            .swiper-wrapper
+              each item in eCatalogBase
+                .eShopTovarSlider1__imgItem.swiper-slide
+                  a(href='assets/img/tovar3/Bluza-5100/Bluza-5100-1.JPG', data-fancybox='group1', data-caption='001', style='background-image: url(' + item.img + ');')
+      .eShopTovarSlider1__thumbs
+        .eShopTovarSlider1__pagination
+        .eShopTovarSlider1__Prev
+          i.icon-arr-left1
+        .eShopTovarSlider1__Next
+          i.icon-arr-right1
+        .eShopTovarSlider1__min.swiper-container
+          .swiper-wrapper
+            each item in eCatalogBase
+              .eShopTovarSlider1__minItem.swiper-slide(style='background-image: url(' + item.img + ');')
+
