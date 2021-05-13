@@ -331,49 +331,69 @@ $(function () {
 
   // Слайдер товара
 
-  if ($(".eShopTovarSlider1").length) {
-    if ($(".eShopTovarSlider1__img .eShopTovarSlider1__imgItem").length === 1) {
-      $("eShopTovarSlider1__imgItem .swiper-wrapper").addClass("disabled");
-      $(".eShopTovarSlider1__pagination").addClass("disabled");
-      $(".eShopTovarSlider1__Prev").addClass("disabled");
-      $(".eShopTovarSlider1__Next").addClass("disabled");
-      $(".eShopTovarSlider1__min").hide();
-    } else {
-      var eShopTovarSlider1Thumbs = new Swiper(".eShopTovarSlider1__min", {
-        spaceBetween: 10,
-        slidesPerView: 5,
-        loop: false,
-        freeMode: true,
-        // watchSlidesVisibility: true,
-        // watchSlidesProgress: true,
-        direction: "vertical",
-        centeredSlides: false,
-      });
+  if ($(".eShopTovarSlider").length) {
+    // if ($(".eShopTovarSlider1__img .eShopTovarSlider1__imgItem").length === 1) {
+    //   $("eShopTovarSlider1__imgItem .swiper-wrapper").addClass("disabled");
+    //   $(".eShopTovarSlider1__pagination").addClass("disabled");
+    //   $(".eShopTovarSlider1__Prev").addClass("disabled");
+    //   $(".eShopTovarSlider1__Next").addClass("disabled");
+    //   $(".eShopTovarSlider1__min").hide();
+    // } else {
 
-      var eShopTovarSlider1Top = new Swiper(".eShopTovarSlider1__img", {
-        autoHeight: false,
-        slidesPerView: 1,
-        spaceBetween: 10,
-        loop: true,
-        autoplay: {
-          delay: 55000,
-          disableOnInteraction: false,
+    var eShopTovarSlider1Thumbs = new Swiper(".eShopTovarSlider__container_thumb", {
+      autoHeight: false,
+      spaceBetween: 5,
+      slidesPerView: 4,
+      loop: false,
+      // freeMode: true,
+      watchSlidesVisibility: true,
+      watchSlidesProgress: true,
+      direction: "vertical",
+      centeredSlides: false,
+      navigation: {
+        nextEl: ".eShopTovarSlider__next",
+        prevEl: ".eShopTovarSlider__prev",
+      },
+      breakpoints: {
+        320: {
+          slidesPerView: 4,
+          direction: "horizontal",
         },
-        pagination: {
-          el: ".eShopTovarSlider1__pagination",
-          type: "bullets",
-          dynamicBullets: false,
-          clickable: true,
+        920: {
+          slidesPerView: 4,
+          direction: "vertical",
         },
-        navigation: {
-          nextEl: ".eShopTovarSlider1__Next",
-          prevEl: ".eShopTovarSlider1__Prev",
-        },
-        thumbs: {
-          swiper: eShopTovarSlider1Thumbs,
-        },
-      });
-    }
+      },
+    });
+    var eShopTovarSlider1Top = new Swiper(".eShopTovarSlider__container_image", {
+      autoHeight: false,
+      slidesPerView: 1,
+      spaceBetween: 5,
+      loop: false,
+      grabCursor: true,
+      watchOverflow: true,
+      speed: 800,
+      autoplay: {
+        delay: 7000,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: ".eShopTovarSlider__pagination",
+        type: "bullets",
+        dynamicBullets: false,
+        clickable: true,
+      },
+      lazy: {
+        loadOnTransitionStart: false,
+        loadPrevNext: true,
+      },
+      thumbs: {
+        swiper: eShopTovarSlider1Thumbs,
+      },
+    });
+    // eShopTovarSlider1Top.controller.control = eShopTovarSlider1Thumbs;
+    // eShopTovarSlider1Thumbs.controller.control = eShopTovarSlider1Top;
+    // }
   }
 
   // var $iframes = $( "iframe" );

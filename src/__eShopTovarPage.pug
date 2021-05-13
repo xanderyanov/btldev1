@@ -3,6 +3,7 @@ mixin eShopTovar
     .eShopTovar.clearfix
       .eShopTovar__sliderArea
         //- +eShopTovarSlider
+        +slider
       .eShopTovar__titleArea 
         .eShopTovar__art 
           span Артикул:
@@ -53,21 +54,42 @@ mixin eShopTovar
 mixin eShopTovarSlider
   .eShopTovarSlider1__area.eShopTovarSlider1_swiperSlider
     .eShopTovarSlider1
-      .eShopTovarSlider1__image
-        .eShopTovarSlider1__imgOuter
-          .eShopTovarSlider1__img.swiper-container
-            .swiper-wrapper
-              each item in eCatalogBase
-                .eShopTovarSlider1__imgItem.swiper-slide
-                  a(href='assets/img/tovar3/Bluza-5100/Bluza-5100-1.JPG', data-fancybox='group1', data-caption='001', style='background-image: url(' + item.img + ');')
-      .eShopTovarSlider1__thumbs
+      .eShopTovarSlider1__image.swiper-container
+        .swiper-wrapper
+          each item in eCatalogBase
+            .eShopTovarSlider1__imgItem.swiper-slide
+              a(href='assets/img/tovar3/Bluza-5100/Bluza-5100-1.JPG', data-fancybox='group1', data-caption='001', style='background-image: url(' + item.img + ');')
         .eShopTovarSlider1__pagination
+      .eShopTovarSlider1__thumbs.swiper-container
         .eShopTovarSlider1__Prev
           i.icon-arr-left1
+        .swiper-wrapper
+          each item in eCatalogBase
+            .eShopTovarSlider1__minItem.swiper-slide
+              img(src=item.img, alt="")
         .eShopTovarSlider1__Next
           i.icon-arr-right1
-        .eShopTovarSlider1__min.swiper-container
-          .swiper-wrapper
-            each item in eCatalogBase
-              .eShopTovarSlider1__minItem.swiper-slide(style='background-image: url(' + item.img + ');')
 
+
+mixin slider 
+  .eShopTovarSlider.clearfix
+    .swiper-container.eShopTovarSlider__container_image
+      .swiper-wrapper.eShopTovarSlider__wrapper_image 
+        each item in eCatalogBase
+          .swiper-slide.eShopTovarSlider__slide_image
+            a(href=item.img, data-fancybox='group1', data-caption='001')
+              img.swiper-lazy(data-src=item.img, alt="")
+              .swiper-lazy-preloader
+      .swiper-pagination.eShopTovarSlider__pagination
+    .eShopTovarSlider__container_thumb_outer
+      .swiper-container.eShopTovarSlider__container_thumb
+        .swiper-wrapper.eShopTovarSlider__wrapper_thumb
+          each item in eCatalogBase
+            .swiper-slide.eShopTovarSlider__slide_thumb
+              .eShopTovarSlider__slide_thumb_inner
+                img(src=item.img, alt="")
+      .swiper-button-prev.eShopTovarSlider__prev
+        i.icon-up3
+      .swiper-button-next.eShopTovarSlider__next
+        i.icon-down3
+          
