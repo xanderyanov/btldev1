@@ -2,6 +2,9 @@
   .eShopTovar {
     padding: 0 10px;
   }
+  .advantage {
+    margin: 0;
+  }
 }
 
 @media only screen and (max-width: 1140px) {
@@ -63,13 +66,47 @@
     padding: 0 0 20px 0;
     order: 3;
   }
+  .advantage__itemOuter {
+    width: 50%;
+  }
+  .eShopTovar__priceArea {
+    order: 0;
+  }
+  .eShopTovar__btnsArea {
+    order: 1;
+  }
+  .eShopTovar__desc {
+    order: 2;
+  }
+  .eShopTovar__priceArea {
+    flex-wrap: nowrap;
+    align-items: center;
+  }
+  .eShopTovar__oldPrice {
+    order: 0;
+    margin: 0 20px 0 0;
+  }
+  .eShopTovar__price {
+    order: 1;
+    width: auto;
+  }
+  .eShopTovar__discount {
+    order: 2;
+    margin: 0 0 0 20px;
+  }
 }
 
 @media only screen and (max-width: 480px) {
+  .eShopTovar__addToCartBtn {
+    max-width: 220px;
+  }
 }
 
 @media only screen and (max-width: 400px) {
 }
 
 @media only screen and (max-width: 320px) {
+  .advantage__itemOuter {
+    width: 100%;
+  }
 }

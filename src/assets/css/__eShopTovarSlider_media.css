@@ -2,6 +2,7 @@
   .eShopTovarSlider__container_image {
     width: 100%;
     float: none;
+    padding: 0 20px 30px;
   }
   .eShopTovarSlider__container_thumb_outer {
     width: 100%;
@@ -44,10 +45,17 @@
   }
 }
 
+@media only screen and (min-width: 600px) {
+  .eShopTovarSlider__container_image {
+    padding: 0 40px 30px;
+  }
+}
+
 @media only screen and (min-width: 920px) {
   .eShopTovarSlider__container_image {
     width: 80%;
     float: left;
+    padding: 0 0 30px;
   }
   .eShopTovarSlider__container_thumb_outer {
     width: 16%;
@@ -87,6 +95,7 @@
     width: 100%;
   }
 }
+
 @media only screen and (max-width: 480px) {
   .eShopTovar__sliderArea {
     padding: 20px 10px;

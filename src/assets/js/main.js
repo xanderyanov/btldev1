@@ -345,7 +345,6 @@ $(function () {
       spaceBetween: 5,
       slidesPerView: 4,
       loop: false,
-      // freeMode: true,
       watchSlidesVisibility: true,
       watchSlidesProgress: true,
       direction: "vertical",
@@ -391,10 +390,111 @@ $(function () {
         swiper: eShopTovarSlider1Thumbs,
       },
     });
-    // eShopTovarSlider1Top.controller.control = eShopTovarSlider1Thumbs;
-    // eShopTovarSlider1Thumbs.controller.control = eShopTovarSlider1Top;
-    // }
   }
+
+  //-START Сладйре похожих товаров на странице VARIANTS
+
+  var optionstsc1 = {};
+  if ($(".tsc1-container .tsc1-slide").length) {
+    optionstsc1 = {
+      slidesPerView: 4,
+      loop: false,
+      spaceBetween: 10,
+      speed: 600,
+      autoplay: {
+        delay: 15000,
+        disableOnInteraction: true,
+      },
+      navigation: {
+        nextEl: ".tsc1__right",
+        prevEl: ".tsc1__left",
+      },
+      keyboard: true,
+      watchOverflow: true,
+      pagination: {
+        el: ".tsc1__pagination",
+        type: "bullets",
+        dynamicBullets: false,
+        clickable: true,
+      },
+      breakpoints: {
+        0: {
+          slidesPerView: 1,
+        },
+        480: {
+          spaceBetween: 5,
+        },
+        600: {
+          slidesPerView: 2,
+          spaceBetween: 10,
+        },
+        768: {
+          slidesPerView: 3,
+          spaceBetween: 5,
+        },
+        1024: {
+          slidesPerView: 4,
+          spaceBetween: 5,
+        },
+        1080: {
+          spaceBetween: 10,
+        },
+      },
+    };
+  }
+  var swiper = new Swiper(".tsc1-container", optionstsc1);
+
+  var optionstsc2 = {};
+  if ($(".tsc2-container .tsc2-slide").length) {
+    optionstsc2 = {
+      slidesPerView: 4,
+      loop: false,
+      spaceBetween: 10,
+      speed: 600,
+      autoplay: {
+        delay: 15000,
+        disableOnInteraction: true,
+      },
+      navigation: {
+        nextEl: ".tsc2__right",
+        prevEl: ".tsc2__left",
+      },
+      keyboard: true,
+      watchOverflow: true,
+      pagination: {
+        el: ".tsc2__pagination",
+        type: "bullets",
+        dynamicBullets: false,
+        clickable: true,
+      },
+      breakpoints: {
+        0: {
+          slidesPerView: 1,
+        },
+        480: {
+          spaceBetween: 5,
+        },
+        600: {
+          slidesPerView: 2,
+          spaceBetween: 10,
+        },
+        768: {
+          slidesPerView: 3,
+          spaceBetween: 5,
+        },
+        1024: {
+          slidesPerView: 4,
+          spaceBetween: 5,
+        },
+        1080: {
+          spaceBetween: 10,
+        },
+      },
+    };
+  }
+  var swiper = new Swiper(".tsc2-container", optionstsc2);
+
+  //-END Сдайдеры похожих товаров
 
   // var $iframes = $( "iframe" );
   // $iframes.each(function () {

@@ -70,6 +70,10 @@
   padding: 0 0 50px 0;
 }
 
+.eShopTovar__desc:last-child {
+  padding: 0;
+}
+
 .eShopTovar__desc_80 {
   width: 80%;
 }
@@ -105,13 +109,8 @@
 
 .eShopTovar__priceArea {
   display: flex;
-  flex-direction: column;
   margin: 0 0 12px 0;
-}
-
-.eShopTovar__oldPriceArea {
-  display: flex;
-  align-items: center;
+  flex-wrap: wrap;
 }
 
 .eShopTovar__oldPrice {
@@ -141,6 +140,7 @@
   font-size: 36px;
   line-height: 1.3;
   color: #333333;
+  width: 100%;
 }
 
 .eShopTovar__btnsArea {
@@ -194,4 +194,55 @@
   font-size: 14px;
   line-height: 22px;
   color: #4f4f4f;
+}
+
+.advantage__area {
+  width: 100%;
+}
+
+.advantage__outer {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+}
+
+.advantage {
+  width: 100%;
+  display: flex;
+  margin: 0 -10px;
+  flex-wrap: wrap;
+}
+
+.advantage__itemOuter {
+  width: 25%;
+  padding: 10px;
+}
+
+.advantage__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.advantage__itemImg {
+  margin-bottom: 20px;
+}
+
+.advantage__itemTitle {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 24px;
+  color: #4f4f4f;
+  text-align: center;
+  margin-bottom: 8px;
+}
+
+.advantage__itemLink {
+  display: block;
+  text-align: center;
+  font-size: 14px;
+  line-height: 20px;
+  color: #4f4f4f;
+  text-decoration: none;
 }
