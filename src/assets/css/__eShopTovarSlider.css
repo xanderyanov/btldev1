@@ -28,7 +28,8 @@
 }
 .eShopTovarSlider__slide_image a img {
   display: block;
-  width: 100%;
+  max-width: 100%;
+  margin: 0 auto;
 }
 
 .eShopTovarSlider__container_thumb_outer {
@@ -76,10 +77,11 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  overflow: hidden;
 }
 
 .eShopTovarSlider__slide_thumb img {
-  width: 100%;
+  max-width: 90%;
   display: block;
 }
 

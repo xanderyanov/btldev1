@@ -354,7 +354,7 @@ $(function () {
         prevEl: ".eShopTovarSlider__prev",
       },
       breakpoints: {
-        320: {
+        0: {
           slidesPerView: 4,
           direction: "horizontal",
         },
@@ -373,7 +373,7 @@ $(function () {
       watchOverflow: true,
       speed: 800,
       autoplay: {
-        delay: 7000,
+        delay: 70000,
         disableOnInteraction: false,
       },
       pagination: {

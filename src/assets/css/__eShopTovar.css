@@ -246,3 +246,6 @@
   color: #4f4f4f;
   text-decoration: none;
 }
+.advantage__itemLink:hover {
+  text-decoration: underline;
+}
