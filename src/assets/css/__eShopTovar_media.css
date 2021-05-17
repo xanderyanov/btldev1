@@ -100,6 +100,21 @@
   .eShopTovar__addToCartBtn {
     max-width: 220px;
   }
+  /* .eShopTovar__desc tr {
+    width: 100%;
+  } */
+
+  .eShopTovar__desc td:first-child {
+    padding: 10px 10px 5px 0;
+    display: block;
+    width: auto;
+    font-weight: 700;
+  }
+  .eShopTovar__desc td:last-child {
+    padding: 5px 10px 10px 0;
+    display: block;
+    width: auto;
+  }
 }
 
 @media only screen and (max-width: 400px) {

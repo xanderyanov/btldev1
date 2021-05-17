@@ -92,7 +92,7 @@
   position: relative;
   display: flex;
   align-items: center;
-  padding: 0;
+  padding: 0 0 0 32px;
   cursor: pointer;
 
   font-family: "Open Sans";
@@ -101,14 +101,13 @@
   font-size: 14px;
   line-height: 20px;
   color: #4f4f4f;
-  width: 100%;
 }
 
 .eFilterCheckbox label::before {
   position: absolute;
   top: 50%;
   margin-top: -8px;
-  right: 0;
+  left: 0;
   content: "";
   display: block;
   height: 16px;
@@ -127,7 +126,7 @@
   border-bottom: 1px solid;
   transform: rotate(-45deg);
   position: absolute;
-  right: 5px;
+  left: 5px;
   top: 50%;
   margin-top: -4px;
   color: #fff;
