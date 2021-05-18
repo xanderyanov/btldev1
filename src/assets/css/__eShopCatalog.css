@@ -211,7 +211,7 @@
 
 .eBrands__content {
   position: absolute;
-  width: 100%;
+  right: 0;
   left: 0;
   top: 40px;
   z-index: 2095;

@@ -16,6 +16,11 @@
     padding: 0 10px;
   }
 
+  .eBrands__content {
+    right: 10px;
+    left: 10px;
+  }
+
   .eGreyLine__mbBtnSortOuter {
     display: block;
     width: 25%;
