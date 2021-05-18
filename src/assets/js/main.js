@@ -106,17 +106,19 @@ $(function () {
     $("body").removeClass("stop");
   });
 
-  $(".eFilter__openBtn").on("click", function (e) {
+  $(".eFilter__title").on("click", function (e) {
     // раскрытие и закрытие еФильтра по клику на галку
     e.preventDefault();
     e.stopPropagation();
     var $this = $(this);
     var thisFilterContent = $this.closest(".eFilter").find(".eFilter__content");
-    if ($this.hasClass("eFilter__openBtn_open")) {
-      $this.removeClass("eFilter__openBtn_open");
+    if ($this.hasClass("eFilter__title_open")) {
+      $this.children(".eFilter__openBtn").removeClass("eFilter__openBtn_open");
+      $this.removeClass("eFilter__title_open");
       thisFilterContent.slideUp(300);
     } else {
-      $this.addClass("eFilter__openBtn_open");
+      $this.addClass("eFilter__title_open");
+      $this.children(".eFilter__openBtn").addClass("eFilter__openBtn_open");
       thisFilterContent.slideDown(300);
     }
   });
