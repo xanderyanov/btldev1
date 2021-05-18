@@ -94,7 +94,7 @@
   border-radius: 50%;
   top: 50%;
   margin-top: -26px;
-  background: #e7e4f4;
+  background: #f6f4ff;
   box-shadow: 0px 0px 18px rgba(0, 0, 0, 0.1);
   display: flex;
   justify-content: center;
@@ -104,9 +104,26 @@
   transition: all 0.3s;
 }
 
+.tovarSimilarCaroucel:hover .tovarSimilarCaroucel__left,
+.tovarSimilarCaroucel:hover .tovarSimilarCaroucel__right {
+  background: #e7e4f4;
+}
+
+.tovarSimilarCaroucel:hover .tovarSimilarCaroucel__left i,
+.tovarSimilarCaroucel:hover .tovarSimilarCaroucel__right i {
+  opacity: 1;
+  color: #5d4b62;
+}
+
 .tovarSimilarCaroucel__left:hover,
 .tovarSimilarCaroucel__right:hover {
-  background: var(--brick);
+  background: var(--brick) !important;
+}
+
+.tovarSimilarCaroucel__left:hover i,
+.tovarSimilarCaroucel__right:hover i {
+  opacity: 1;
+  color: #fff !important;
 }
 
 .tovarSimilarCaroucel__left:focus,
@@ -133,6 +150,7 @@
   font-size: 1.5rem;
   color: var(--brick);
   transition: all 0.3s;
+  opacity: 0.2;
 }
 
 .tovarSimilarCaroucel__left:hover i,
@@ -201,7 +219,8 @@
 }
 
 .eCatalog__item_inSlider:hover {
-  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
+  /* box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3); */
+  box-shadow: 0px 10px 20px rgba(196, 187, 234, 0.45);
 }
 
 .eCatalog__itemInfo_inSlider {

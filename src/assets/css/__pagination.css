@@ -16,27 +16,28 @@
 
 a.pag__item {
   text-decoration: none;
-  height: 2rem;
-  min-width: 2rem;
+  height: 2.5rem;
+  min-width: 2.5rem;
   display: flex;
   justify-content: center;
   align-items: center;
   font-size: 1rem;
   color: #000;
   background: var(--colorLightGrey);
-  margin: 3px;
+  margin: 5px;
   padding: 0 0.5rem;
   transition: all 0.3s;
+  border-radius: 50%;
 }
 
 a.pag__item:hover {
   color: #fff;
-  background: var(--orange);
+  background: var(--brick);
 }
 
 a.pag__item.active {
   color: #fff;
-  background: var(--orange);
+  background: var(--brick);
 }
 
 a.pag__item i {

@@ -59,6 +59,7 @@
 }
 
 .eFilerMobile__content {
+  padding: 10px 0 0 0;
 }
 
 .eFilerMobile__item {
@@ -71,7 +72,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 10px 20px 0 20px;
+  padding: 15px 20px 0 20px;
   color: #4f4f4f;
   position: relative;
 }
@@ -81,7 +82,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 0 10px 0;
+  padding: 0 0 15px 0;
   border-bottom: 1px solid #f2f2f2;
 }
 
@@ -136,7 +137,7 @@
 }
 
 .eFilerMobile__itemElement {
-  padding: 20px;
+  padding: 10px 20px 20px;
   width: 100%;
 }
 

@@ -11,6 +11,23 @@
 }
 
 @media only screen and (max-width: 1024px) {
+  .eBrands__area {
+    width: 25%;
+    padding: 0 10px;
+  }
+
+  .eGreyLine__mbBtnSortOuter {
+    display: block;
+    width: 25%;
+    padding: 0 10px;
+  }
+
+  .eGreyLine__mbBtnFiltrOuter {
+    display: block;
+    width: 25%;
+    padding: 0 10px;
+  }
+
   .split__left {
     display: none;
   }
@@ -28,12 +45,26 @@
   }
   .eGreyLine__mbBtns {
     display: flex;
+
+    margin: 0 -10px;
+  }
+
+  .split_top {
+    margin: 0 -10px;
+    width: auto;
+  }
+
+  .split__left_top {
+    width: 25%;
+    padding: 0 10px;
   }
 
   .split__right_top {
+    width: 75%;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    padding: 0 10px;
   }
   .searchResult__counter {
     display: flex;
@@ -42,12 +73,22 @@
   }
 
   .eGreyLine__mbBtnSort {
-    width: 200px;
-    margin: 0 20px 0 0;
+    width: 100%;
+    margin: 0;
   }
 
   .eGreyLine__mbBtnFiltr {
-    width: 200px;
+    width: 100%;
+    margin: 0;
+  }
+
+  .eGreyLine__outer {
+    width: 25%;
+    padding: 0 10px;
+  }
+
+  .eGreyLine {
+    /* width: 33.333%; */
   }
 
   .eSort__area {
@@ -81,16 +122,29 @@
 }
 
 @media only screen and (max-width: 920px) {
+  .eBrands__area {
+    width: 33.333%;
+  }
   .eCatalog__itemArea {
     width: 33.3333%;
   }
-  .eGreyLine__mbBtnSort {
-    width: 170px;
-    margin: 0 10px 0 0;
+  .eGreyLine__mbBtnSortOuter {
+    width: 33.333%;
+    margin: 0;
   }
 
-  .eGreyLine__mbBtnFiltr {
-    width: 170px;
+  .eGreyLine__mbBtnFiltrOuter {
+    width: 33.333%;
+  }
+  .eGreyLine__outer {
+    width: 100%;
+    padding: 0 10px;
+  }
+  .eBrands__area {
+    margin-bottom: 20px;
+  }
+  .eGreyLine {
+    margin-bottom: 20px;
   }
 }
 
@@ -110,30 +164,21 @@
 }
 
 @media only screen and (max-width: 768px) {
-  .split__left_top {
-    width: 100%;
-  }
-  .split__right_top {
-    width: 100%;
-    padding: 0 0 0 0;
-  }
-  .eBrands__area {
-    margin-bottom: 20px;
-  }
   .eGreyLine__mbBtns {
     width: 100%;
   }
-  .eGreyLine__mbBtnSort {
-    width: 49%;
-    margin: 0;
+  .eBrands__area {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .eGreyLine__mbBtnSortOuter {
+    width: 50%;
+    padding: 0 5px 10px 10px;
   }
 
-  .eGreyLine__mbBtnFiltr {
-    width: 49%;
-  }
-  .eGreyLine {
-    width: 100%;
-    margin: 20px 0 20px 0;
+  .eGreyLine__mbBtnFiltrOuter {
+    width: 50%;
+    padding: 0 10px 10px 5px;
   }
 }
 
