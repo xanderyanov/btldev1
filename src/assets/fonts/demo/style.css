@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('fonts/icomoon.eot?hqa5u8');
-  src:  url('fonts/icomoon.eot?hqa5u8#iefix') format('embedded-opentype'),
-    url('fonts/icomoon.ttf?hqa5u8') format('truetype'),
-    url('fonts/icomoon.woff?hqa5u8') format('woff'),
-    url('fonts/icomoon.svg?hqa5u8#icomoon') format('svg');
+  src:  url('fonts/icomoon.eot?sz5wro');
+  src:  url('fonts/icomoon.eot?sz5wro#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?sz5wro') format('truetype'),
+    url('fonts/icomoon.woff?sz5wro') format('woff'),
+    url('fonts/icomoon.svg?sz5wro#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -25,6 +25,51 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-chevron-down:before {
+  content: "\e93a";
+}
+.icon-chevron-left:before {
+  content: "\e93b";
+}
+.icon-chevron-right:before {
+  content: "\e93c";
+}
+.icon-chevron-up:before {
+  content: "\e940";
+}
+.icon-chevrons-down:before {
+  content: "\e941";
+}
+.icon-chevrons-left:before {
+  content: "\e946";
+}
+.icon-chevrons-right:before {
+  content: "\e947";
+}
+.icon-chevrons-up:before {
+  content: "\e94a";
+}
+.icon-instagram:before {
+  content: "\e94b";
+}
+.icon-minus:before {
+  content: "\e94d";
+}
+.icon-plus1:before {
+  content: "\e94e";
+}
+.icon-skip-back:before {
+  content: "\e956";
+}
+.icon-skip-forward:before {
+  content: "\e957";
+}
+.icon-close5:before {
+  content: "\e95c";
+}
+.icon-youtube1:before {
+  content: "\e95d";
+}
 .icon-filter:before {
   content: "\e939";
 }

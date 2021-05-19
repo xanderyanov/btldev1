@@ -1,4 +1,4 @@
-- var pageTitle = 'Страница товара магазина'
+- var pageTitle = 'Корзина'
 - var seoKeywords = 'Ключевые слова для страницы'
 - var seoDesc = 'Сео описание для страницы'
 
@@ -10,6 +10,7 @@ include __pagination
 include __mainTop
 include __mainProblem
 include __breadcrumbs
+include __eShopCartPage
 include __services
 include __forms
 
@@ -30,14 +31,13 @@ body
   .site__center
     +breadcrumbs3
  
-    +eShopTovar
-
-    +tovarSimilarCaroucel
-    +tovarSimilarCaroucel2
-
-    +advantage
-   
-    //- +zBlock3
+    .eShopCart__pageArea
+      .eShopCart__pageOuter
+        .title
+          h1 Корзина
+        +eShopCart
+        .cart__refundInfo
+        +order
 
   .site__footer
     +footer3
