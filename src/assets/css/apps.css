@@ -135,6 +135,12 @@
 @import "__eShopCartPage.css";
 @import "__eShopCartPage_media.css";
 
+@import "__eShopOrderDetails.css";
+@import "__eShopOrderDetails_media.css";
+
+@import "__eShopCabinet.css";
+@import "__eShopCabinet_media.css";
+
 @import "__pagination.css";
 @import "__pagination_media.css";
 
