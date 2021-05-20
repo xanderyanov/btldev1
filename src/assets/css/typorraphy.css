@@ -79,7 +79,7 @@ strong {
 }
 
 .content ul {
-  padding: 0 0 0 30px;
+  /* padding: 0 0 0 30px; */
 }
 
 .content ol {
@@ -104,11 +104,10 @@ strong {
   content: "";
   position: absolute;
   left: 0;
-  top: 2px;
-  /* margin-top: -7px; */
-  width: 14px;
-  height: 14px;
-  border: 1px solid #828282;
+  top: 6px;
+  width: 6px;
+  height: 6px;
+  background: #d74d63;
   border-radius: 50%;
   box-sizing: border-box;
 }

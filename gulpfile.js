@@ -45,6 +45,15 @@ gulp.task("css", function () {
     .pipe(gulp.dest("build/assets/css/"));
 });
 
+gulp.task("wysiwyg-css", function () {
+  return gulp
+    .src("src/assets/css/wysiwyg.css")
+    .pipe(sourcemaps.init())
+    .pipe(postcss([postcssImport()]))
+    .pipe(sourcemaps.write("."))
+    .pipe(gulp.dest("build/assets/css/"));
+});
+
 gulp.task("image", function () {
   return gulp
     .src("src/assets/img/**/*.*") //Выберем наши картинки
@@ -109,7 +118,10 @@ gulp.task("clean", function () {
   return del("build");
 });
 
-gulp.task("build", gulp.series("clean", gulp.parallel("css", "pug", "image", "js", "myJs", "fonts", "video")));
+gulp.task(
+  "build",
+  gulp.series("clean", gulp.parallel("css", "wysiwyg-css", "pug", "image", "js", "myJs", "fonts", "video"))
+);
 
 gulp.task("watch", function () {
   gulp.watch("src/assets/**/*.css*", gulp.series("css")).on("uplink", function (filepath) {

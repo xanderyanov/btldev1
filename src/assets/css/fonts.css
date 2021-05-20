@@ -1,9 +1,9 @@
 @font-face {
   font-family: "icomoon";
-  src: url("../fonts/icomoon.eot?sz5wro");
-  src: url("../fonts/icomoon.eot?sz5wro#iefix") format("embedded-opentype"),
-    url("../fonts/icomoon.ttf?sz5wro") format("truetype"), url("../fonts/icomoon.woff?sz5wro") format("woff"),
-    url("../fonts/icomoon.svg?sz5wro#icomoon") format("svg");
+  src: url("../fonts/icomoon.eot?cy8f4p");
+  src: url("../fonts/icomoon.eot?cy8f4p#iefix") format("embedded-opentype"),
+    url("../fonts/icomoon.ttf?cy8f4p") format("truetype"), url("../fonts/icomoon.woff?cy8f4p") format("woff"),
+    url("../fonts/icomoon.svg?cy8f4p#icomoon") format("svg");
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -25,50 +25,35 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-chevron-down:before {
-  content: "\e93a";
+.icon-calculator:before {
+  content: "\e95f";
 }
-.icon-chevron-left:before {
-  content: "\e93b";
+.icon-followers1:before {
+  content: "\e963";
 }
-.icon-chevron-right:before {
-  content: "\e93c";
+.icon-home:before {
+  content: "\e96a";
 }
-.icon-chevron-up:before {
-  content: "\e940";
+.icon-log-in:before {
+  content: "\e96b";
 }
-.icon-chevrons-down:before {
-  content: "\e941";
+.icon-log-out:before {
+  content: "\e96c";
 }
-.icon-chevrons-left:before {
-  content: "\e946";
+.icon-pin:before {
+  content: "\e96d";
 }
-.icon-chevrons-right:before {
-  content: "\e947";
+.icon-user-add:before {
+  content: "\e96e";
 }
-.icon-chevrons-up:before {
-  content: "\e94a";
+.icon-user-del:before {
+  content: "\e96f";
 }
-.icon-instagram:before {
-  content: "\e94b";
+.icon-user-ok:before {
+  content: "\e970";
 }
-.icon-minus:before {
-  content: "\e94d";
-}
-.icon-plus1:before {
-  content: "\e94e";
-}
-.icon-skip-back:before {
-  content: "\e956";
-}
-.icon-skip-forward:before {
-  content: "\e957";
-}
-.icon-close5:before {
-  content: "\e95c";
-}
-.icon-youtube1:before {
-  content: "\e95d";
+.icon-youtube4:before {
+  content: "\e971";
 }
 .icon-filter:before {
   content: "\e939";
@@ -391,6 +376,57 @@
 }
 .icon-sort-amount-desc:before {
   content: "\ea4d";
+}
+.icon-chevron-down:before {
+  content: "\e93a";
+}
+.icon-chevron-left:before {
+  content: "\e93b";
+}
+.icon-chevron-right:before {
+  content: "\e93c";
+}
+.icon-chevron-up:before {
+  content: "\e940";
+}
+.icon-chevrons-down:before {
+  content: "\e941";
+}
+.icon-chevrons-left:before {
+  content: "\e946";
+}
+.icon-chevrons-right:before {
+  content: "\e947";
+}
+.icon-chevrons-up:before {
+  content: "\e94a";
+}
+.icon-instagram:before {
+  content: "\e94b";
+}
+.icon-log-in1:before {
+  content: "\e972";
+}
+.icon-log-out1:before {
+  content: "\e973";
+}
+.icon-minus:before {
+  content: "\e94d";
+}
+.icon-plus1:before {
+  content: "\e94e";
+}
+.icon-skip-back:before {
+  content: "\e956";
+}
+.icon-skip-forward:before {
+  content: "\e957";
+}
+.icon-close5:before {
+  content: "\e95c";
+}
+.icon-youtube1:before {
+  content: "\e95d";
 }
 .icon-film:before {
   content: "\e95b";
