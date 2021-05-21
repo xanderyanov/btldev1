@@ -112,6 +112,10 @@
   flex-direction: column;
 }
 
+.gallery4__title h2 {
+  margin: 0 0 10px 0;
+}
+
 .gallery4 {
   width: 100%;
   position: relative;

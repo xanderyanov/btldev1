@@ -81,7 +81,7 @@
 }
 
 .topLineMenu li a {
-  font-weight: 600;
+  /* font-weight: 600; */
   /* font-size: 0.75rem; */
   font-size: 0.875rem;
   line-height: 1rem;
@@ -274,7 +274,7 @@ a.authorized {
   font-size: 1rem;
   color: #4f4f4f;
   font-weight: 600;
-  margin-top: 5px;
+  /* margin-top: 5px; */
 }
 
 .header3__contItem:hover .header3__contItemInfo span:last-child {
@@ -311,7 +311,7 @@ a.authorized {
   text-decoration: none;
   font-size: 24px;
   color: #4f4f4f;
-  margin: 0 20px 0 0;
+  /* margin: 0 20px 0 0; */
 }
 
 .eShop__headerFav:hover {

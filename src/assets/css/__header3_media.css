@@ -35,6 +35,9 @@
   .topLine3__auth a span {
     display: none;
   }
+  .solution3__btn {
+    padding: 0.75rem 1.25rem;
+  }
 }
 
 @media only screen and (max-width: 600px) {

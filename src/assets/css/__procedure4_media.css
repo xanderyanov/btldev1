@@ -48,6 +48,21 @@
     margin: 20px 0 0 0;
     order: 2;
   }
+  .procedure4__introImg__outer {
+    width: 100%;
+    order: 1;
+    padding: 0 0 20px 0;
+  }
+  .procedure4__introText {
+    width: 100%;
+    order: 2;
+  }
+  .procedure4__intro {
+    padding: 0 0 20px 0;
+  }
+  .centerTextBox {
+    margin: 20px auto;
+  }
 }
 
 @media only screen and (max-width: 480px) {
