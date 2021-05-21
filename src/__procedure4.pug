@@ -40,3 +40,32 @@ mixin centerTextBox
           p В нашем салоне доступен александритовый лазер Candela GentleLasePro-U – самый современный и эффективный из них.
           p Врачи-косметологи нашего центра, работающие по телу, обладают огромным опытом проведения процедуры и индивидуально подбирают мощность воздействия лазера для максимально быстрого и безопасного результата.
           
+
+mixin ProcedureImageGallery
+  .gallery4__area
+    .gallery4__outer
+      .gallery4__title
+        h2 Фотогалерея
+      .gallery4
+        .swiper-container.gallery4-container
+          .swiper-wrapper.gallery4-wrapper
+            .swiper-slide.gallery4-slide
+              a.gallery4__item(href="assets/img/gallery4/01.jpg", data-fancybox)
+                img(src="assets/img/gallery4/01.jpg", alt="")
+            .swiper-slide.gallery4-slide
+              a.gallery4__item(href="assets/img/gallery4/02.jpg", data-fancybox)
+                img(src="assets/img/gallery4/02.jpg", alt="")
+            .swiper-slide.gallery4-slide
+              a.gallery4__item(href="assets/img/gallery4/03.jpg", data-fancybox)
+                img(src="assets/img/gallery4/03.jpg", alt="")
+            .swiper-slide.gallery4-slide
+              a.gallery4__item(href="assets/img/gallery4/01.jpg", data-fancybox)
+                img(src="assets/img/gallery4/01.jpg", alt="")
+            .swiper-slide.gallery4-slide
+              a.gallery4__item(href="assets/img/gallery4/02.jpg", data-fancybox)
+                img(src="assets/img/gallery4/02.jpg", alt="")
+        .gallery4__left
+          i.icon-arr-left1
+        .gallery4__right
+          i.icon-arr-right1
+        .swiper-pagination.gallery4__pagination

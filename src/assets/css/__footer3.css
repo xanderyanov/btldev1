@@ -1,5 +1,6 @@
 .footer3__area {
-  background: #f2f2f2;
+  /* background: #f2f2f2; */
+  background: var(--brick);
   padding: 70px 0;
 }
 
@@ -30,7 +31,7 @@
   font-weight: 600;
   font-size: 14px;
   line-height: 20px;
-  color: var(--dark);
+  color: #fff;
   margin-bottom: 2.5rem;
 }
 
@@ -46,9 +47,9 @@
 }
 
 .footer3__menuTitle {
-  font-size: 1rem;
+  font-size: 16px;
   line-height: 1.5rem;
-  color: var(--dark);
+  color: #fff;
   font-weight: 700;
   padding: 0 0 20px 0;
   border-bottom: 1px solid #e0e0e0;
@@ -67,9 +68,9 @@
 
 .footer3__menu li a {
   text-decoration: none;
-  font-size: 0.875rem;
+  font-size: 14px;
   line-height: 1;
-  color: var(--dark);
+  color: #fff;
 }
 
 .footer3__menu li a:hover {
@@ -78,9 +79,10 @@
 
 .footer__linksTitle {
   font-weight: bold;
-  font-size: 1rem;
+  font-size: 16px;
   line-height: 1.5rem;
-  color: var(--dark);
+  /* color: #fff; */
+  color: #d74d63;
   margin-bottom: 1.25rem;
 }
 
@@ -106,9 +108,9 @@
 }
 
 .footerSGlinks a p {
-  font-size: 0.875rem;
+  font-size: 14px;
   line-height: 1.5rem;
-  color: var(--dark);
+  color: #fff;
   text-align: left;
 }
 
@@ -120,9 +122,10 @@
 }
 
 .footerSGlinks a span i {
-  font-size: 1rem;
-  color: var(--dark);
+  font-size: 18px;
+  color: #c9a6d5;
   text-decoration: none !important;
+  margin: 0 20px 0 0;
 }
 
 .footerSGlinks a span i.ig-color {

@@ -532,6 +532,51 @@ $(function () {
 
   //-END Сдайдеры похожих товаров
 
+  //* Галерея на процедуре имидж*/
+
+  var options_gallery4 = {};
+  if ($(".gallery4-container .gallery4-slide").length) {
+    options_gallery4 = {
+      slidesPerView: 4,
+      loop: false,
+      spaceBetween: 20,
+      speed: 600,
+      autoplay: {
+        delay: 15000,
+        disableOnInteraction: true,
+      },
+      navigation: {
+        nextEl: ".gallery4__right",
+        prevEl: ".gallery4__left",
+      },
+      keyboard: true,
+      watchOverflow: true,
+      pagination: {
+        el: ".gallery4__pagination",
+        type: "bullets",
+        dynamicBullets: false,
+        clickable: true,
+      },
+      breakpoints: {
+        0: {
+          slidesPerView: 2,
+          spaceBetween: 10,
+        },
+        768: {
+          slidesPerView: 3,
+          spaceBetween: 15,
+        },
+        1024: {
+          slidesPerView: 4,
+        },
+        1080: {
+          spaceBetween: 20,
+        },
+      },
+    };
+  }
+  var swiper = new Swiper(".gallery4-container", options_gallery4);
+
   // var $iframes = $( "iframe" );
   // $iframes.each(function () {
   //   $( this ).data( "ratio", this.height / this.width )

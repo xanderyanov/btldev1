@@ -1,4 +1,10 @@
 @media only screen and (max-width: 1200px) {
+  .procedure4__introOuter {
+    padding: 0 10px;
+  }
+  .centerTextBox {
+    padding: 0 10px;
+  }
 }
 
 @media only screen and (max-width: 1140px) {
@@ -8,6 +14,18 @@
 }
 
 @media only screen and (max-width: 1024px) {
+  /* .gallery4__pagination {
+    display: flex;
+  }
+  .gallery4__left {
+    display: none;
+  }
+  .gallery4__right {
+    display: none;
+  } */
+  /* .gallery4__area {
+    padding: 0 10px;
+  } */
 }
 
 @media only screen and (max-width: 920px) {
@@ -20,6 +38,16 @@
 }
 
 @media only screen and (max-width: 600px) {
+  .gallery4-container {
+    padding: 10px 0 10px;
+  }
+  .outerLink4__area {
+    flex-direction: column;
+  }
+  .outerLink4 {
+    margin: 20px 0 0 0;
+    order: 2;
+  }
 }
 
 @media only screen and (max-width: 480px) {
