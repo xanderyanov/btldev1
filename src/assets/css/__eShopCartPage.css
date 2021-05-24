@@ -64,7 +64,7 @@ a.eShopCart__img {
 }
 
 a.eShopCart__title {
-  width: 45%;
+  width: 60%;
   text-decoration: none;
   display: flex;
   flex-direction: column;
@@ -79,7 +79,7 @@ a.eShopCart__title {
 }
 
 .eShopCart__title span:first-child {
-  font-size: 0.875rem;
+  font-size: 1.125rem;
 }
 
 .eShopCart__title span:last-child {
@@ -89,6 +89,7 @@ a.eShopCart__title {
 
 .eShopCart__title__desc {
   width: 15%;
+  display: none;
 }
 .eShopCart__title__desc span {
   font-size: 1rem;
@@ -339,6 +340,7 @@ span.orderCart__totalTitle {
 .radioBox__wrapper {
   display: flex;
   flex-direction: column;
+  margin-bottom: 20px;
 }
 
 .radioBox {
