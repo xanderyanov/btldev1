@@ -34,7 +34,8 @@
   }
 
   .split__left {
-    display: none;
+    /* display: none; */
+    width: 100%;
   }
 
   .split__right {

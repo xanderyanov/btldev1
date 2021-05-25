@@ -1,3 +1,7 @@
+.eShopMenu__mobileBtn {
+  display: none;
+}
+
 .eShopMenu__outer100 {
   width: 100%;
 }

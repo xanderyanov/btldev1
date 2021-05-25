@@ -157,7 +157,7 @@
 
 .oferta {
   text-decoration: none;
-  font-size: 0.875rem;
+  font-size: 14px;
   line-height: 1.125rem;
   color: #fff;
   margin: 0;
@@ -165,12 +165,11 @@
 
 a.policy1 {
   text-decoration: none;
-  font-size: 0.875rem;
+  font-size: 14px;
   line-height: 1.125rem;
-  color: var(--dark);
   margin: 0;
   text-transform: capitalize;
-  color: var(--dark);
+  color: #fff;
   text-decoration: underline;
 }
 

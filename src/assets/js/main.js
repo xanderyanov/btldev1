@@ -65,6 +65,10 @@ $(function () {
     }
   });
 
+  /*start-brandsPage*/
+
+  /*end-brandsPage*/
+
   /****************** Табы личного кабинета*/
 
   if ($(window).width() <= 768) {

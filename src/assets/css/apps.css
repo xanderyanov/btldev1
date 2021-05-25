@@ -117,8 +117,8 @@
 @import "__eShopMenu.css";
 @import "__eShopMenu_media.css";
 
-@import "__eShopCatalog.css";
-@import "__eShopCatalog_media.css";
+@import "__eShopCatalogFloat.css";
+@import "__eShopCatalogFloat_media.css";
 
 @import "__eFilter.css";
 @import "__eFilter_media.css";
@@ -143,6 +143,9 @@
 
 @import "__eShopCabinet.css";
 @import "__eShopCabinet_media.css";
+
+@import "__brandPage.css";
+@import "__brandPage_media.css";
 
 @import "__pagination.css";
 @import "__pagination_media.css";
