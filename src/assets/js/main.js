@@ -39,22 +39,28 @@ if (priceSlider1) {
 var topLine3;
 var header3;
 var header3Height;
+var $window;
+var prevWindowWidth = 0;
+var windowWidth;
 
 function FNheader3() {
   topLine3 = $(".topLine3__area").height();
   header3 = $(".header3__area");
   header3Height = $(".header3__area").height();
+  prevWindowWidth = windowWidth;
+  windowWidth = $window.width();
 }
+
 $(function () {
   // console.log(strGET);
   // console.log(str);
   // $(".breadcrumbs").html(str);
-
+  $window = $(window);
   FNheader3();
-  $(window).on("resize", FNheader3);
+  $window.on("resize", FNheader3);
 
-  $(window).scroll(function () {
-    if ($(window).width() > 600) {
+  $window.scroll(function () {
+    if (windowWidth > 600) {
       if ($(this).scrollTop() > topLine3) {
         header3.css({ position: "fixed", top: "0", left: "0" });
         $(".header3__fake").css({ height: header3Height });
@@ -71,10 +77,10 @@ $(function () {
 
   /****************** Табы личного кабинета*/
 
-  if ($(window).width() <= 768) {
-    // $('.cab2__tabs').children('li').first().children('a').addClass('active').next().addClass('open').show();
-    $(".cab2__tabs").on("click", "li > a", function (e) {
-      e.preventDefault();
+  // $('.cab2__tabs').children('li').first().children('a').addClass('active').next().addClass('open').show();
+  $(".cab2__tabs").on("click", "li > a", function (e) {
+    e.preventDefault();
+    if (windowWidth <= 768) {
       if ($(this).hasClass("active")) {
         $(this).removeClass("active");
         $(this).next().removeClass("openSection").slideUp();
@@ -84,11 +90,8 @@ $(function () {
         $(".cab2__tab > section").removeClass("openSection").slideUp();
         $(this).next().addClass("openSection").slideDown();
       }
-    });
-  } else {
-    $(".cab2__tabs").children("li").first().children("a").addClass("active").next().addClass("openSection").show();
-    $(".cab2__tabs").on("click", "li > a", function (e) {
-      e.preventDefault();
+    } else {
+      $(".cab2__tabs").children("li").first().children("a").addClass("active").next().addClass("openSection").show();
       if ($(this).hasClass("active")) {
         // $(this).removeClass('active');
         // $(this).next().removeClass('openSection').hide();
@@ -98,8 +101,8 @@ $(function () {
         $(".cab2__tab > section").removeClass("openSection").hide();
         $(this).next().addClass("openSection").show();
       }
-    });
-  }
+    }
+  });
 
   /****************** */
 
@@ -142,6 +145,45 @@ $(function () {
     $(".eBrands__content").slideUp(300);
     $(".eBrands__overlay").fadeOut(300);
     $("body").removeClass("stop");
+  });
+
+  $(".eShopMenu__mobileBtn").on("click", function (e) {
+    // раскрытие и закрытие каталога товаров по клику на кнопку каталог в мобиле
+    e.preventDefault();
+    e.stopPropagation();
+    var $this = $(this);
+    var thisCatalogContent = $this.closest(".floatBox__left").find(".eShopMenu__outer_catalogOnly");
+    if ($this.hasClass("eShopMenu__mobileBtn_active")) {
+      $this.removeClass("eShopMenu__mobileBtn_active");
+      thisCatalogContent.slideUp(300);
+      $(".floatBox__leftOverlay").fadeOut(300);
+      $("body").removeClass("stop");
+    } else {
+      $this.addClass("eShopMenu__mobileBtn_active");
+      $(".floatBox__leftOverlay").fadeIn(300);
+      thisCatalogContent.slideDown(300);
+      $("body").addClass("stop");
+    }
+  });
+  $(".floatBox__leftOverlay").on("click", function (e) {
+    e.preventDefault();
+    e.stopPropagation();
+    $(".eShopMenu__mobileBtn").removeClass("eShopMenu__mobileBtn_active");
+    $(".eShopMenu__outer_catalogOnly").slideUp(300);
+    $(".floatBox__leftOverlay").fadeOut(300);
+    $("body").removeClass("stop");
+  });
+
+  $(window).on("resize", function () {
+    if (prevWindowWidth <= 1024 && windowWidth > 1024) {
+      $(".eShopMenu__mobileBtn").removeClass("eShopMenu__mobileBtn_active");
+      $(".eShopMenu__outer_catalogOnly").show();
+      $(".floatBox__leftOverlay").fadeOut(300);
+      $("body").removeClass("stop");
+    }
+    if (prevWindowWidth > 1024 && windowWidth <= 1024) {
+      $(".eShopMenu__outer_catalogOnly").hide();
+    }
   });
 
   $(".eFilter__title").on("click", function (e) {

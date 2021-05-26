@@ -252,9 +252,10 @@ mixin eShopMenu
 
 
 mixin eShopMenuCatalogOnly
+  //- .eShopMenu__mobileBtnOuter
   .eShopMenu__mobileBtn Каталог
-  nav.eShopMenu__outer 
-    ul.eShopMenu
+  nav.eShopMenu__outer_catalogOnly
+    ul.eShopMenu.eShopMenu__scroll
       li.lev1
         .esli_inner
           a.hasInner(href="")

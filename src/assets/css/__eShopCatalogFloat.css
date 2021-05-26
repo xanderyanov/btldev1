@@ -11,12 +11,24 @@
 .floatBox__left {
   float: left;
   width: 23%;
+  position: relative;
 }
 
 .floatBox__right {
   width: 77%;
   float: left;
   padding: 0 0 0 30px;
+}
+
+.floatBox__leftOverlay {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 2090;
+  display: none;
+  background: rgba(0, 0, 0, 0.5);
 }
 
 .split__area {
@@ -350,7 +362,7 @@
 
 .eGreyLine {
   background: #f2f2f2;
-  border: 1px solid #e0e0e0;
+  /* border: 1px solid #e0e0e0; */
   border-radius: 4px;
   min-height: 46px;
   display: flex;
