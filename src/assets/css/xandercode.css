@@ -160,5 +160,35 @@ a.hover {
 
 .xScroll2::-webkit-scrollbar-thumb {
   border-radius: 8px;
-  background-color: var(--brick);
+  background-color: #f6e5e4;
+}
+
+/* .xScroll3 {
+  position: relative;
+}
+.xScroll3:after {
+  content: "";
+  position: absolute;
+  right: 4px;
+  top: 0;
+  width: 1px;
+  height: 100%;
+  background: #e0e0e0;
+} */
+
+.xScroll3::-webkit-scrollbar-track {
+  border-radius: 8px;
+  background-color: transparent;
+}
+
+.xScroll3::-webkit-scrollbar {
+  width: 0.5rem;
+  height: 0.5rem;
+  /* background-color: var(--colorLightGrey); */
+  background-color: transparent;
+}
+
+.xScroll3::-webkit-scrollbar-thumb {
+  border-radius: 8px;
+  background-color: #cfc3d2;
 }

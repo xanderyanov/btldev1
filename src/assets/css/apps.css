@@ -144,6 +144,9 @@
 @import "__eShopCabinet.css";
 @import "__eShopCabinet_media.css";
 
+@import "__eShopSlideLeftMenu.css";
+@import "__eShopSlideLeftMenu_media.css";
+
 @import "__brandPage.css";
 @import "__brandPage_media.css";
 

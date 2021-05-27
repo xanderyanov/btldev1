@@ -366,6 +366,11 @@
 .priceBox3__title h3 {
   margin: 0;
   line-height: 1.4;
+
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 32px;
+  color: #333333;
 }
 
 .priceBox3 {
@@ -387,9 +392,9 @@
 
 .priceBox3 table td {
   padding: 10px 0;
-  /* background: var(--x1greySuperLight); */
-  font-size: 1rem;
-  color: var(--dark);
+  font-size: 16px;
+  line-height: 24px;
+  color: #4f4f4f;
 }
 
 .priceBox3 table td:nth-child(1) {
@@ -400,6 +405,7 @@
   width: 30%;
   text-align: right;
   white-space: nowrap;
+  font-weight: bold;
 }
 
 .outerLink3__area {

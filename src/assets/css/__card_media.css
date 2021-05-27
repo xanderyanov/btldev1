@@ -39,6 +39,12 @@
   .eCard__itemContent li {
     font-size: 12px;
   }
+  .innerPriceBox3 {
+    padding: 30px 10px 30px 30px;
+  }
+  .innerPriceBox3__content {
+    padding: 0 20px 0 0;
+  }
 }
 
 @media only screen and (max-width: 920px) {

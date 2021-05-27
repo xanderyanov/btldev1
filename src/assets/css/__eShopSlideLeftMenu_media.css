@@ -20,12 +20,21 @@
 }
 
 @media only screen and (max-width: 600px) {
+  .leftSlideMenu__wrapper {
+    width: 70%;
+  }
 }
 
 @media only screen and (max-width: 480px) {
+  .leftSlideMenu__wrapper {
+    width: 80%;
+  }
 }
 
 @media only screen and (max-width: 414px) {
+  .leftSlideMenu__wrapper {
+    width: 90%;
+  }
 }
 
 @media only screen and (max-width: 400px) {
