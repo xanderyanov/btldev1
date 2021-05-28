@@ -116,8 +116,13 @@
     order: 1;
     padding: 10px 0 0 0;
   }
+
   .videoPhotoBox__photoItemOuter {
     width: 49%;
+  }
+
+  .videoPhotoBox__video .videoPhotoBox__photoItemOuter {
+    width: 100%;
   }
   .price3__area {
     margin: 30px auto;
@@ -168,6 +173,11 @@
   .videoPhotoBox__photoItemOuter:first-child {
     margin-bottom: 10px;
   }
+
+  .videoPhotoBox__video .videoPhotoBox__photoItemOuter:first-child {
+    margin-bottom: 0;
+  }
+
   .price3__area {
     margin: 20px auto;
     padding: 20px 10px;

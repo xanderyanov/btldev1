@@ -104,6 +104,9 @@
   .innerPriceBox3 {
     width: 80%;
   }
+  .innerPriceBox3__title {
+    font-size: 24px;
+  }
 }
 
 @media only screen and (max-width: 480px) {
@@ -118,7 +121,7 @@
   }
   .innerPriceBox3 {
     width: 90%;
-    padding: 20px;
+    padding: 20px 10px 20px 20px;
   }
   .eCard__itemTitle {
     font-size: 16px;
@@ -131,6 +134,9 @@
   }
   .eCard__itemContent {
     margin: 5px 0 0 0;
+  }
+  .innerPriceBox3__content {
+    padding: 0 10px 0 0;
   }
 }
 
@@ -190,6 +196,25 @@
   }
   .eCard__itemContent li {
     font-size: 11px;
+  }
+  .innerPriceBox3__title {
+    font-size: 18px;
+  }
+  .priceBox3__title {
+    padding: 10px 0 0 0;
+  }
+  .priceBox3__title h3 {
+    font-size: 16px;
+    line-height: 1.2;
+  }
+  .priceBox3__area {
+    margin: 0;
+  }
+  .priceBox3 table td {
+    line-height: 1.2;
+  }
+  .priceBox3 {
+    margin-bottom: 10px;
   }
 }
 

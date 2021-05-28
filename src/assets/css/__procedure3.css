@@ -285,6 +285,12 @@
   position: relative;
 }
 
+.videoPhotoBox__video .videoPhotoBox__photoItem {
+  width: 100%;
+  padding: 0 0 56.25% 0;
+  position: relative;
+}
+
 .videoPhotoBox__photoItem a {
   position: absolute;
   top: 0;

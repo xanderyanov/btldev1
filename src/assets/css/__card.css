@@ -226,6 +226,7 @@
 
 .innerPriceBox3__close {
   cursor: pointer;
+  padding: 0 0 0 10px;
 }
 
 .innerPriceBox3__close i {
