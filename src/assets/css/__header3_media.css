@@ -23,6 +23,9 @@
   .topMenu3 {
     display: none;
   }
+  .header3__hamburger {
+    display: block;
+  }
 }
 
 @media only screen and (max-width: 920px) {
