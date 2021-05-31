@@ -75,3 +75,35 @@
   line-height: 20px;
   color: #828282;
 }
+
+.portfolio__area {
+  width: 100%;
+}
+
+.portfolio__outer {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.portfolio {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -10px;
+}
+
+.portfolio__item {
+  padding: 10px;
+  width: 25%;
+}
+
+.portfolio__item a {
+  display: block;
+  width: 100%;
+  text-decoration: none;
+}
+
+.portfolio__item a img {
+  display: block;
+  width: 100%;
+}
