@@ -763,6 +763,7 @@ input.work_email4 {
   color: var(--dark);
   font-weight: 700;
   text-decoration: none;
+  white-space: nowrap;
 }
 .mf3__intro a:hover {
   text-decoration: underline;

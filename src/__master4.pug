@@ -202,11 +202,17 @@ mixin master4
 mixin master4top
   .master4top
     .master4top__left
-      .master4top__img 
-        img(src="assets/img/sotr/101.jpg", alt="")
-      .master4top__title
-        h1 Солод Екатерина Олеговна
-      .master4top__prof Врач-косметолог
+      .master4top__inner
+        .master4top__img 
+          img(src="assets/img/sotr/101.jpg", alt="")
+        .master4top__info
+          h1 Солод Екатерина Олеговна
+          span Врач-косметолог
+          a(href="") Читать отзывы
+      .master4top__openFormBtn
+        i.icon-diamond
+        span Записаться
+
     .master4top__right
       +formInMaster3
 
@@ -282,3 +288,24 @@ mixin portfolio
         .portfolio__item
           a(href='assets/img/portfolio/04.jpg', data-fancybox='group', data-caption='002')
             img(src='assets/img/portfolio/04.jpg', alt='1')
+      .portfolio__more
+        i.icon-refresh2
+        span показать еще
+
+
+mixin masterWindowForm 
+  .masterWindowForm__overlay
+    .masterWindowForm__wrapper
+      .masterWindowForm
+        .masterWindowForm__close 
+          i.icon-close1
+        .masterWindowForm__left 
+          .masterWindowForm__img
+            img(src="assets/img/sotr/101.jpg", alt="")
+          .masterWindowForm__info
+            span Солод Екатерина Олеговна
+            span Врач-косметолог
+        .masterWindowForm__right 
+          +formInMaster3
+          
+

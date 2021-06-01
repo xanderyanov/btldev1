@@ -1,4 +1,7 @@
 @media only screen and (max-width: 1200px) {
+  .imgCaroucel__area {
+    padding: 0 10px;
+  }
 }
 
 @media only screen and (max-width: 1140px) {
@@ -17,9 +20,6 @@
   .imgCaroucel__right {
     display: none;
   } */
-  .imgCaroucel__area {
-    padding: 0 10px;
-  }
 }
 
 @media only screen and (max-width: 920px) {

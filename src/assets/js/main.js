@@ -211,7 +211,40 @@ $(function () {
     if (prevWindowWidth > 1024 && windowWidth <= 1024) {
       $(".eShopMenu__outer_catalogOnly").hide();
     }
+    if (prevWindowWidth <= 600 && windowWidth > 600) {
+      $(".masterWindowForm__overlay").fadeOut(300);
+      $("body").removeClass("stop");
+    }
+    // if (prevWindowWidth > 600 && windowWidth <= 600) {
+    //   $(".eShopMenu__outer_catalogOnly").hide();
+    // }
   });
+
+  //* START Всплывашка формы на странице мастера 4
+  $(".master4top__openFormBtn").on("click", function (e) {
+    // раскрытие и закрытие еБрендов по клику на кнопку
+    e.preventDefault();
+    e.stopPropagation();
+    $(".masterWindowForm__overlay").fadeIn(300);
+    $("body").addClass("stop");
+  });
+  $(".masterWindowForm").on("click", function (e) {
+    e.stopPropagation();
+  });
+  $(".masterWindowForm__overlay").on("click", function (e) {
+    e.preventDefault();
+    e.stopPropagation();
+    $(".masterWindowForm__overlay").fadeOut(300);
+    $("body").removeClass("stop");
+  });
+  $(".masterWindowForm__close").on("click", function (e) {
+    e.preventDefault();
+    e.stopPropagation();
+    $(".masterWindowForm__overlay").fadeOut(300);
+    $("body").removeClass("stop");
+  });
+
+  //* END Всплывашка формы на странице мастера 4
 
   $(".eFilter__title").on("click", function (e) {
     // раскрытие и закрытие еФильтра по клику на галку
@@ -638,7 +671,7 @@ $(function () {
           slidesPerView: 2,
         },
         480: {
-          spaceBetween: 3,
+          spaceBetween: 5,
         },
         600: {
           slidesPerView: 3,
@@ -646,14 +679,14 @@ $(function () {
         },
         768: {
           slidesPerView: 4,
-          spaceBetween: 5,
+          spaceBetween: 10,
         },
         1024: {
           slidesPerView: 5,
-          spaceBetween: 5,
+          spaceBetween: 15,
         },
         1080: {
-          spaceBetween: 10,
+          spaceBetween: 20,
           slidesPerView: 6,
         },
       },
