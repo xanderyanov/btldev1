@@ -71,11 +71,11 @@
   .master4top__info {
     order: 1;
     text-align: left;
+    padding: 0 20px 0 0;
   }
   .master4top__img {
     order: 2;
     margin: 0;
-    padding: 0 0 0 20px;
   }
   .masterWindowForm__info span {
     font-size: 12px;
@@ -126,6 +126,9 @@
     font-size: 18px;
     line-height: 1.2;
     margin-bottom: 10px;
+  }
+  .master4top__info {
+    padding: 0 5px 0 0;
   }
 }
 

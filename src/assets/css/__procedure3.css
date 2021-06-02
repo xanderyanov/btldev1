@@ -122,6 +122,10 @@
   width: 100%;
 }
 
+.imgSlider__area_lock {
+  display: none;
+}
+
 .imgSlider__outer {
   width: 100%;
   padding: 1rem 3rem;
@@ -393,7 +397,7 @@
 }
 
 .priceBox3 table tr {
-  border-bottom: 1.5px dashed #bdbdbd;
+  border-bottom: 1px dashed #bdbdbd;
 }
 
 .priceBox3 table td {

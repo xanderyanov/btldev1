@@ -778,6 +778,10 @@ input.work_email4 {
   max-width: 380px;
 }
 
+.mf3_subj {
+  display: none;
+}
+
 .mf3 label {
   font-size: 0.875rem;
   line-height: 1.4;
@@ -799,6 +803,10 @@ input.work_email4 {
 
 .mf3 input:focus {
   border: 2px solid #5d4b62;
+}
+
+.mf3 input.error {
+  border: 2px solid var(--reden);
 }
 
 input.work_email_mf3 {
@@ -860,6 +868,10 @@ input.work_email_mf3 {
   font-size: 0.875rem;
   line-height: 1.4;
   color: var(--dark);
+}
+
+.form_mf3alrightBox.error span {
+  color: var(--reden);
 }
 
 /*******************************************/

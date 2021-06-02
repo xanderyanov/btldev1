@@ -391,6 +391,8 @@ $(function () {
         },
       },
     };
+  } else {
+    $(".imgSlider__area").addClass("imgSlider__area_lock");
   }
   var swiper = new Swiper(".imgSlider-container", imgSliderOptions);
 
@@ -1555,6 +1557,10 @@ $(function () {
         type: "error",
         confirmButtonText: "ок",
       });
+      $(".form_mf3alrightBox").addClass("error");
+      setTimeout(function () {
+        $(".form_mf3alrightBox").removeClass("error");
+      }, 3000);
     } else {
       $.post(
         "mail.php",
@@ -1574,6 +1580,80 @@ $(function () {
           $(".name_mf3").val("").removeClass("error");
           $(".phone_mf3").val("").removeClass("error");
           $(".checkbox_mf3:checked").prop("checked", false);
+        }
+      );
+    }
+  });
+
+  $(".mf3_popup").on("click", ".submit_mf3_popup", function (e) {
+    e.preventDefault();
+    var masterName = $(".mf3_subj_popup").text();
+    var subj = "Форма со страницы мастера " + masterName;
+    var name = $(".name_mf3_popup").val();
+    var phone = $(".phone_mf3_popup").val();
+    var checkbox = $(".checkbox_mf3_popup");
+    var workemail = $(".work_email_mf3_popup").val();
+    var r = /^[\w\.\d-_]+@[\w\.\d-_]+\.\w{2,4}$/i;
+    if (name == "") {
+      swal({
+        title: "Поле Имя пустое",
+        text: "Заполните поле имя",
+        type: "error",
+        confirmButtonText: "ок",
+      });
+      $(".name_mf3_popup").addClass("error");
+      setTimeout(function () {
+        $(".name_mf3_popup").removeClass("error");
+      }, 3000);
+    } else if (phone == "") {
+      swal({
+        title: "Поле Телефон пустое",
+        text: "Заполните поле телефон",
+        type: "error",
+        confirmButtonText: "ок",
+      });
+      $(".phone_mf3_popup").addClass("error");
+      setTimeout(function () {
+        $(".phone_mf3_popup").removeClass("error");
+      }, 3000);
+    } else if (workemail != "") {
+      swal({
+        title: "Ах ты жулик",
+        text: "Уберите робота от компьютера",
+        type: "error",
+        confirmButtonText: "ок",
+      });
+    } else if (checkbox.is(":checked") == false) {
+      swal({
+        title: "Отметьте чекбокс",
+        text: "Дайте свое согласие на обработку данных!",
+        type: "error",
+        confirmButtonText: "ок",
+      });
+      $(".form_mf3alrightBox_popup").addClass("error");
+      setTimeout(function () {
+        $(".form_mf3alrightBox_popup").removeClass("error");
+      }, 3000);
+    } else {
+      $.post(
+        "mail.php",
+        {
+          subj: subj,
+          name: name,
+          phone: phone,
+          // recaptcha: recaptcha,
+        },
+        function () {
+          swal({
+            title: "Спасибо",
+            text: "Ваше сообщение отправлено",
+            type: "success",
+            confirmButtonText: "ок",
+          });
+          $(".name_mf3_popup").val("").removeClass("error");
+          $(".phone_mf3_popup").val("").removeClass("error");
+          $(".form_mf3alrightBox_popup").val("").removeClass("error");
+          $(".checkbox_mf3_popup:checked").prop("checked", false);
         }
       );
     }
