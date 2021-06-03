@@ -94,6 +94,16 @@
   .topLine3 {
     padding: 5px 10px;
   }
+  .header3 {
+    min-height: auto;
+    padding: 8px 10px;
+  }
+  .header3__logo {
+    width: 78px;
+  }
+  .header3__hamburger {
+    margin: 0 30px 0 0;
+  }
 }
 
 @media only screen and (max-width: 320px) {

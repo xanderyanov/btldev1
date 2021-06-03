@@ -1,0 +1,196 @@
+include __menu
+
+mixin mainTop4
+  .mainTop4__area.w0
+    .mainTop4__outer.w1
+      .mainTop4
+        .mainTop4__left
+          .mainTop4__promo
+            video(width="100%" height="auto" muted="" playsinline="" autoplay="" loop="" preload="auto")
+              source(src='assets/video/video1803.mp4' type='video/mp4')
+        .mainTop4__right
+          //- +hideBox
+          .mainTop4__menu
+            .mainTop4__menuItemOuter.mainTop4__menuItemOuter_a
+              .mainTop4__menuItemWrapper
+                a.mainTop4__menuItem.mainTop4__menuItem_js.colorBox_a(href="#", data-id="menu3")
+                  .mainTop4__menuItemTop
+                    .mainTop4__menuItemTitle Решить проблему
+                    i.icon-question-round
+                  .mainTop4__menuItemBottom Современное решение косметологических проблем
+            .mainTop4__menuItemOuter.mainTop4__menuItemOuter_b
+              .mainTop4__menuItemWrapper
+                a.mainTop4__menuItem.mainTop4__menuItem_js.colorBox_b(href="#", data-id="menu2")
+                  .mainTop4__menuItemTop
+                    .mainTop4__menuItemTitle Услуги
+                    i.icon-smile
+                  .mainTop4__menuItemBottom Выбрать нужную услугу нашего Центра
+            .mainTop4__menuItemOuter.mainTop4__menuItemOuter_c
+              .mainTop4__menuItemWrapper
+                a.mainTop4__menuItem.colorBox_c(href="#")
+                  .mainTop4__menuItemTop
+                    .mainTop4__menuItemTitle Оборудование
+                    i.icon-equipment
+                  .mainTop4__menuItemBottom  Современное оборудование в нашем «Бьюти Лаунж»
+            .mainTop4__menuItemOuter.mainTop4__menuItemOuter_d
+              .mainTop4__menuItemWrapper
+                a.mainTop4__menuItem.colorBox_d(href="#")
+                  .mainTop4__menuItemTop
+                    .mainTop4__menuItemTitle Специалисты
+                    i.icon-user
+                  .mainTop4__menuItemBottom Наши врачи-косметологи и стилисты
+      .mainTop4LineBox 
+        .mainTop4LineBox__leftOuter
+          .mainTop4LineBox__leftWrapper
+            a.mainTop4LineBox__leftItem.colorBox_f(href="#")
+              i.icon-shopping-bag
+              .mainTop4LineBox__itemTitle E-shop
+              .mainTop4LineBox__itemDesc Интернет-магазин профессиональной косметики
+        .mainTop4LineBox__rightOuter
+          a.mainTop4LineBox__rightLink1(href="")
+            img(src="assets/img/creative/m22-1200х150-2.jpg", alt="")
+          a.mainTop4LineBox__rightLink2(href="")
+            img(src="assets/img/creative/m22-600х150.jpg", alt="")
+
+mixin hideBox
+  .mainTop4__hideBoxOverlay
+    .mainTop4__hideContainer
+      .mainTop4__hideBox(data-index="menu1")
+        .mainTop4__hideBoxInner.colorBox_e
+          .mainTop4__hideBoxInnerHeader
+            .mainTop4__hideBoxInnerTitle
+              i.icon-menu
+              span Меню
+            .mainTop4__hideBoxClose
+              i.icon-close2021
+          .mainTop4__hideBoxInnerContent.xScroll2
+            .mainTop4__hideBoxInnerContentInner
+              +MenuBottom1__menu 
+      .mainTop4__hideBox(data-index="menu2")
+        .mainTop4__hideBoxInner.colorBox_e
+          .mainTop4__hideBoxInnerHeader
+            .mainTop4__hideBoxInnerTitle
+              i.icon-smile
+              span Услуги
+            .mainTop4__hideBoxClose
+              i.icon-close2021
+          .mainTop4__hideBoxInnerContent.xScroll2
+            .mainTop4__hideBoxInnerContentInner
+              +MenuBottom1__serv 
+      .mainTop4__hideBox(data-index="menu3")
+        .mainTop4__hideBoxInner.colorBox_e
+          .mainTop4__hideBoxInnerHeader
+            .mainTop4__hideBoxInnerTitle
+              i.icon-question-round
+              span Решить проблему
+            .mainTop4__hideBoxClose
+              i.icon-close2021
+          .mainTop4__hideBoxInnerContent.xScroll2
+            .mainTop4__hideBoxInnerContentInner
+              +MenuBottom1__probl 
+      //- .mainTop4__hideBox(data-index="menu4")
+      //-   .mainTop4__hideBoxInner.colorBox_e
+      //-     .mainTop4__hideBoxInnerHeader
+      //-       .mainTop4__hideBoxInnerTitle
+      //-         i.icon-menu
+      //-         span Меню
+      //-       .mainTop4__hideBoxClose
+      //-         i.icon-close2021
+      //-     .mainTop4__hideBoxInnerContent.xScroll2
+      //-       .mainTop4__hideBoxInnerContentInner
+      //-         +MenuBottom1__probl
+
+
+mixin hideBox2 
+  .mainTop4__hideBoxOverlay
+    .mainTop4__hideContainer
+      .mainTop4__hideBox(data-index="menu1")
+        .mainTop4__hideBoxInner.colorBox_e
+          .mainTop4__hideBoxInnerHeader
+            .mainTop4__hideBoxInnerTitle
+              i.icon-menu
+              span Меню
+            .mainTop4__hideBoxClose
+              i.icon-close2021
+          .mainTop4__hideBoxInnerContent.xScroll2
+            .mainTop4__hideBoxInnerContentInner
+              +eShopMenu
+      .mainTop4__hideBox(data-index="menu2")
+        .mainTop4__hideBoxInner.colorBox_e
+          .mainTop4__hideBoxInnerHeader
+            .mainTop4__hideBoxInnerTitle
+              i.icon-smile
+              span Услуги
+            .mainTop4__hideBoxClose
+              i.icon-close2021
+          .mainTop4__hideBoxInnerContent.xScroll2
+            .mainTop4__hideBoxInnerContentInner
+              +MenuBottom1__serv 
+      .mainTop4__hideBox(data-index="menu3")
+        .mainTop4__hideBoxInner.colorBox_e
+          .mainTop4__hideBoxInnerHeader
+            .mainTop4__hideBoxInnerTitle
+              i.icon-question-round
+              span Решить проблему
+            .mainTop4__hideBoxClose
+              i.icon-close2021
+          .mainTop4__hideBoxInnerContent.xScroll2
+            .mainTop4__hideBoxInnerContentInner
+              +MenuBottom1__probl 
+      //- .mainTop4__hideBox(data-index="menu4")
+      //-   .mainTop4__hideBoxInner.colorBox_e
+      //-     .mainTop4__hideBoxInnerHeader
+      //-       .mainTop4__hideBoxInnerTitle
+      //-         i.icon-menu
+      //-         span Меню
+      //-       .mainTop4__hideBoxClose
+      //-         i.icon-close2021
+      //-     .mainTop4__hideBoxInnerContent.xScroll2
+      //-       .mainTop4__hideBoxInnerContentInner
+      //-         +MenuBottom1__probl
+  
+
+mixin topMenuBox
+  ul.topMenuBox
+    li
+      a(href="#") Главная
+    li
+      a(href="#") Услуги
+    li
+      a(href="#") Специалисты
+    li
+      a(href="#") Бренды
+    li
+      a(href="#") Советы эксперта
+    li
+      a(href="#") Информация
+    li
+      a(href="#") Контакты
+    li
+      a(href="#") Главная
+    li
+      a(href="#") Услуги
+    li
+      a(href="#") Специалисты
+    li
+      a(href="#") Бренды
+    li
+      a(href="#") Советы эксперта
+    li
+      a(href="#") Информация
+    //- li
+    //-   a(href="#") Контакты
+    //- li
+    //-   a(href="#") Главная
+    //- li
+    //-   a(href="#") Услуги
+    //- li
+    //-   a(href="#") Специалисты
+    //- li
+    //-   a(href="#") Бренды
+    //- li
+    //-   a(href="#") Советы эксперта
+    //- li
+    //-   a(href="#") Информация
+    //- li
+    //-   a(href="#") Контакты

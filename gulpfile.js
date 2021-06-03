@@ -72,7 +72,6 @@ gulp.task("image", function () {
 var jsfiles = [
   "node_modules/jquery/dist/jquery.min.js",
   "node_modules/@fancyapps/fancybox/dist/jquery.fancybox.min.js",
-  "node_modules/slick-carousel/slick/slick.min.js",
   "node_modules/swiper/js/swiper.min.js",
   "node_modules/jquery.maskedinput/src/jquery.maskedinput.js",
   "node_modules/sweetalert/dist/sweetalert.min.js",
@@ -96,8 +95,9 @@ gulp.task("js", function () {
 gulp.task("myJs", function () {
   return (
     gulp
-      // .src("src/assets/js/**/*.*")
-      .src("src/assets/js/main.js")
+      .src("src/assets/js/**/*.js*")
+      // .src("src/assets/js/main.js")
+      .pipe(concat("main.js")) // в какой файл объединить
       .pipe(plumber())
       .pipe(sourcemaps.init()) //Инициализируем sourcemap
       .pipe(uglify()) //Сожмем наш js

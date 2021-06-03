@@ -782,6 +782,10 @@ input.work_email4 {
   display: none;
 }
 
+.mf3_subj_popup {
+  display: none;
+}
+
 .mf3 label {
   font-size: 0.875rem;
   line-height: 1.4;
@@ -813,7 +817,8 @@ input.work_email_mf3 {
   display: none;
 }
 
-.submit_mf3 {
+.submit_mf3,
+.submit_mf3_popup {
   font-family: "Open Sans", sans-serif;
   outline: none;
   cursor: pointer;
@@ -830,16 +835,19 @@ input.work_email_mf3 {
   transition: all 0.3s;
 }
 
-.submit_mf3:hover {
+.submit_mf3:hover,
+.submit_mf3_popup:hover {
   background: var(--reden);
 }
 
-.submit_mf3 i {
+.submit_mf3 i,
+.submit_mf3_popup i {
   font-size: 20px;
   margin: 0 20px 0 0;
 }
 
-.submit_mf3 span {
+.submit_mf3 span,
+.submit_mf3_popup span {
   text-transform: uppercase;
   font-weight: bold;
   font-size: 14px;
