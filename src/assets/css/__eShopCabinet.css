@@ -47,7 +47,6 @@ a.cab2__tabTitle {
   background: var(--colorLightGrey);
   color: #000;
   border-radius: 4px;
-  text-decoration: none;
 }
 
 .cab2__tabTitle.active {
@@ -168,7 +167,7 @@ a.order2:focus {
 }
 
 .order2Status {
-  font-size: 1.125rem;
+  font-size: 1rem;
   /* text-transform: uppercase; */
   /* color: #000; */
 }

@@ -92,14 +92,25 @@ gulp.task("js", function () {
   );
 });
 
+var myjsfiles = [
+  "src/assets/js/__globalVar.js",
+  "src/assets/js/__leftSlideMenu.js",
+  "src/assets/js/__efilter.js",
+  "src/assets/js/__eShopCabinet.js",
+  "src/assets/js/__master4.js",
+  "src/assets/js/main.js",
+  "src/assets/js/__resize.js",
+];
+
 gulp.task("myJs", function () {
   return (
     gulp
-      .src("src/assets/js/**/*.js*")
+      // .src("src/assets/js/**/*.js*")
       // .src("src/assets/js/main.js")
-      .pipe(concat("main.js")) // в какой файл объединить
+      .src(myjsfiles, { base: "assets/js" })
       .pipe(plumber())
       .pipe(sourcemaps.init()) //Инициализируем sourcemap
+      .pipe(concat("main.js")) // в какой файл объединить
       .pipe(uglify()) //Сожмем наш js
       .pipe(sourcemaps.write("."))
       .pipe(gulp.dest("build/assets/js"))
