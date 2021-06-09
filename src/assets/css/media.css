@@ -57,6 +57,43 @@
     margin: 30px auto;
     padding: 20px 40px;
   }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    color: #000;
+    font-weight: 400;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+  }
+  h1 {
+    font-size: 1.75rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  h3 {
+    font-size: 1.375rem;
+  }
+
+  h4 {
+    font-size: 1.25rem;
+  }
+
+  h5 {
+    font-size: 1.125rem;
+  }
+
+  h6 {
+    font-size: 1rem;
+  }
+  .title3 {
+    text-align: center;
+  }
 }
 
 @media only screen and (max-width: 480px) {
@@ -83,7 +120,7 @@
 }
 
 @media only screen and (max-width: 414px) {
-  h1 {
+  /* h1 {
     font-size: 1.875rem;
     margin: 0 0 10px 0;
   }
@@ -106,7 +143,7 @@
 
   h6 {
     font-size: 1rem;
-  }
+  } */
   .content__outer {
     padding: 10px 0;
   }

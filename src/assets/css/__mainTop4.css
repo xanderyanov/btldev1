@@ -43,7 +43,7 @@
   width: 50%;
   height: 50%;
   position: absolute;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 
 .mainTop4__menuItemOuter_a {
@@ -104,16 +104,10 @@
 
 .colorBox_f {
   background: #5d4b63;
-  /* background: #d74d63; */
-  /* background: #cecbda; */
   color: #fff;
 
-  /* background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #f0f0f0 100%), #ffffff; */
-  /* background: #fff; */
-  /* color: #4f4f4f; */
-
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #f0f0f0 100%), #ffffff;
-  color: #5d4b63;
+  /* background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #f0f0f0 100%), #ffffff;
+  color: #5d4b63; */
 }
 
 .mainTop4__menuItemWrapper {

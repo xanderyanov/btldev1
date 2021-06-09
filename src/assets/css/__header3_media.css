@@ -97,6 +97,18 @@
   .header3 {
     min-height: auto;
     padding: 8px 10px;
+
+    background: #69656f;
+    box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.1);
+  }
+  .header3__hamburger i {
+    color: #fff;
+  }
+  .eShop__headerFav {
+    color: #fff;
+  }
+  .eShop__headerIcon i {
+    color: #fff;
   }
   .header3__logo {
     width: 78px;

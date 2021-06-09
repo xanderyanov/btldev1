@@ -1,6 +1,7 @@
 .topLine3__area {
   width: 100%;
-  background: var(--brick);
+  /* background: var(--brick); */
+  background: #fff;
 }
 
 .topLine3 {
@@ -33,7 +34,8 @@
 .topLine3__address span {
   font-size: 0.75rem;
   /* font-size: 0.875rem; */
-  color: #fff;
+  /* color: #fff; */
+  color: #000;
   line-height: 1;
 }
 
@@ -60,7 +62,8 @@
 }
 
 .topLine3__sLinkItem i {
-  color: #fff;
+  /* color: #fff; */
+  color: #000;
   font-size: 1rem;
 }
 
@@ -102,7 +105,8 @@
   text-decoration: none;
   display: flex;
   align-items: center;
-  color: #fff;
+  /* color: #fff; */
+  color: #000;
   font-weight: 600;
   font-size: 12px;
   line-height: 16px;
@@ -366,7 +370,7 @@ a.authorized {
   width: 18px;
   height: 18px;
   border-radius: 50%;
-  background: #df2f4e;
+  background: #7e4b61;
   color: #fff;
   font-size: 10px;
   font-weight: 700;

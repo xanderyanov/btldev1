@@ -325,7 +325,7 @@
 .eCard__itemContent p {
   font-size: 14px;
   line-height: 1.4;
-  color: var(--dark);
+  color: #000;
   margin-bottom: 10px;
 }
 
