@@ -1,4 +1,4 @@
-- var pageTitle = 'Страница мастера'
+- var pageTitle = 'Просто текстовая страница'
 - var seoKeywords = 'Ключевые слова для страницы'
 - var seoDesc = 'Сео описание для страницы'
 
@@ -7,17 +7,13 @@ include __header3
 include __menu
 include __breadcrumbs
 include __wideBlock
-include __eShopMenu
-include __eShopSlideLeftMenu
-
-include __master4
+include __procedure
+include __newBlocks
 
 include __forms
 include __footer
-include __menuBottom1
-include __mainTop
 
-include __popUpBlocks
+
 
 
 <!DOCTYPE html>
@@ -27,38 +23,30 @@ body
 
   .site__header
     +header3
-  
+    //- +topMenu
 
 
   .site__center
-    +breadcrumbs4
-
-    +master4
+    +breadcrumbs
     +wideBlock
-
-    +portfolio
-
-    +imgCaroucel1
-
-
-
-
-
+    
+    .textPage__area.w0
+      .textPage__outer.w1
+        .title1
+          h1 Лазерная эпиляция
+        textarea#textPage_tinymce.textPage.clearfix Что такое?
+          
 
   .site__footer
     +footer3
 
 
-  //- +topMenuAdaptive
+  +topMenuAdaptive
   +search1
-
-  +masterWindowForm
 
   +toUp
   
-  //- +formCallBack
-
-  +popUpBlocks
+  +formCallBack
 
   +scripts
   
